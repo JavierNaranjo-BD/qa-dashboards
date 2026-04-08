@@ -1,16 +1,16 @@
 # Karate Nightly Consolidated Report
 
-Generated at: 2026-04-08T11:32:57.782Z
+Generated at: 2026-04-08T11:49:10.517Z
 
 ## Karate Extended Live
-- Status: red
-- Exit code: 1
-- Note: No summary artifact found for lane.
+- Status: green
+- Exit code: 0
+- Note: Built from step outcome: success
 - Artifacts: runs/live
 
 ## Karate Extended Mock
-- Status: red
-- Exit code: 1
-- Note: No summary artifact found for lane.
+- Status: green
+- Exit code: 0
+- Note: Built from step outcome: success
 - Artifacts: runs/mock
 

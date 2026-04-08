@@ -1,0 +1,1410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"25456168-a336-4f5c-ab59-13dd1c620a50",karate_version:"1.5.2",karate_meta:null});
+  }
+});
+</script>
+
+    <title>com.beedigital.global.web.karate.auth.metricool</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">2</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2026-04-08 11:47:04 AM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[4:31]"><span>[4:31]</span> <span>metricool with E2E credentials but a fake service id returns a controlled response</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[5:44]"><span>[5:44]</span> <span>metricool with E2E credentials and a real service id returns a usable live loginUrl</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">com/beedigital/global/web/karate/auth/metricool.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Metricool integration entrypoint</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:31]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">extended-live</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:31]</span>
+                <span class="scenario-name">metricool with E2E credentials but a fake service id returns a controlled response</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>781</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:31]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:31]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">11:47:03.273 Karate env: local 
+11:47:03.275 Karate baseUrl: https://adminnewworkspaceuat.beedigital.es/api/v1 
+11:47:03.275 Karate tenant: adminnewworkspaceuat.beedigital.es 
+11:47:03.277 Karate tenantId: beeEspana 
+11:47:03.279 Karate tenantProfile: beeEspana 
+11:47:03.279 Karate loginEmail configured: true 
+11:47:03.283 Karate loginPassword configured: true 
+11:47:03.283 Karate loginToken configured: false 
+11:47:03.285 Karate accessCheckToken configured: false 
+11:47:03.285 Karate sessionToken configured: false 
+11:47:03.285 Karate runUserEventDeliveryScenarios: false 
+11:47:03.285 Karate startApiGlobalMock: false 
+11:47:03.285 Karate apiGlobalMockUrl:  
+11:47:03.285 Karate metricoolMockEnabled: false 
+11:47:03.285 Karate metricoolServiceId configured: true 
+11:47:03.285 Karate metricoolAuthToken configured: false 
+11:47:03.289 Karate yextMockEnabled: false 
+11:47:03.289 Karate yextServiceId configured: true 
+11:47:03.289 Karate yextAuthToken configured: false 
+11:47:03.293 Karate yextPublisherId: yext 
+11:47:03.293 Karate gbpMockEnabled: false 
+11:47:03.295 Karate gbpProductId configured: true 
+11:47:03.299 Karate gbpAuthToken configured: false 
+11:47:03.299 Karate organizationId: beesible 
+11:47:03.299 Karate brandingTitle configured: true 
+11:47:03.300 Karate cognitoDomain configured: true 
+11:47:03.300 Karate supportsMetricool: true 
+11:47:03.301 Karate supportsYext: true 
+11:47:03.301 Karate supportsGbp: true 
+11:47:03.301 Workspace .env detected: false 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def auth = callonce read(&#39;live-auth-context.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">590</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.32">11:47:03.900 &lt;&lt; lock released, cached callonce: read(&#39;live-auth-context.feature&#39;)
+</div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.32.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">com.beedigital.global.web.karate.auth.live-auth-context</div>
+      </div>
+      <div class="time-cell passed">567</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.32.0.call">
+    <div class="step-container" id="0.32.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (!loginEmail || !loginPassword) karate.abort()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.32.0.call.0.4">11:47:03.321 &gt;&gt; lock acquired, begin callonce: read(&#39;live-auth-context.feature&#39;)
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.32.0.call">
+    <div class="step-container" id="0.32.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.32.0.call">
+    <div class="step-container" id="0.32.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Tenant = tenant</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.32.0.call">
+    <div class="step-container" id="0.32.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def loginRequest = { email: &#39;#(loginEmail)&#39;, password: &#39;#(loginPassword)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.32.0.call">
+    <div class="step-container" id="0.32.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (loginToken) loginRequest.token = loginToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.32.0.call">
+    <div class="step-container" id="0.32.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;auth&#39;, &#39;login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.32.0.call">
+    <div class="step-container" id="0.32.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request loginRequest</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.32.0.call">
+    <div class="step-container" id="0.32.0.call.0.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">550</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.32.0.call.0.11">11:47:03.341 request:
+1 &gt; POST https://adminnewworkspaceuat.beedigital.es/api/v1/auth/login
+1 &gt; Tenant: adminnewworkspaceuat.beedigital.es
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 68
+1 &gt; Host: adminnewworkspaceuat.beedigital.es
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/22.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;pruebasqabeesible@gmail.com&quot;,&quot;password&quot;:&quot;h1[{6z0=q8*f73V&quot;}
+
+11:47:03.886 response time in milliseconds: 545
+1 &lt; 200
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Date: Wed, 08 Apr 2026 11:47:03 GMT
+1 &lt; X-Frame-Options: DENY
+1 &lt; Vary: origin,access-control-request-method,access-control-request-headers,accept-encoding
+1 &lt; Vary: Origin
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Cache: Miss from cloudfront
+1 &lt; Via: 1.1 30c6d7b3beb0a918037485bea6e0158c.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: ORD58-P13
+1 &lt; X-Amz-Cf-Id: DvX-AMLez2_VgMNffD5nJ4PreFklnbK3ML7GF_XdCkraCL5SD3rc6A==
+{&quot;httpCode&quot;:200,&quot;httpStatus&quot;:null,&quot;data&quot;:{&quot;jwt&quot;:&quot;eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJCZWVHbG9iYWxXZWIiLCJleHAiOjE3NzY5NDQ4MjMsImlzR3Vlc3QiOmZhbHNlLCJwcm9maWxlSWQiOiJwcm9mXzRjMjNlY2Y1MTA2NDQ0ODdiZDQzOTEzMmRhMGZiOTQ5IiwibWZhVHlwZSI6bnVsbCwicm9sZUlkIjoibWVyY2hhbnQiLCJ0ZW5hbnRJZCI6ImJlZUVzcGFuYSIsImNvZ25pdG86dXNlcm5hbWUiOiIzMjk1YTQ2NC1lMDMxLTcwY2EtMzQ2Yy1lOTJiNDVkNjA5MWEiLCJtZmFSZXF1aXJlZCI6ZmFsc2UsImFjY2Vzc1Rva2VuIjoiZXlKcmFXUWlPaUl5TTJ0RFEweE5iM1pxWTBaa1NXWXdWR2xVUVVOTE9EZGhZelp6VlRGWlhDOVhiSFpZVkcxelUxVTNSVDBpTENKaGJHY2lPaUpTVXpJMU5pSjkuZXlKemRXSWlPaUl6TWprMVlUUTJOQzFsTURNeExUY3dZMkV0TXpRMll5MWxPVEppTkRWa05qQTVNV0VpTENKa1pYWnBZMlZmYTJWNUlqb2laWFV0ZDJWemRDMHhYelpsWkRBeFpHVXhMVEUxT0RZdE5HVXpaQzA1WVRZM0xUazFZbVF4WWpSbU5qRmlNU0lzSW1semN5STZJbWgwZEhCek9sd3ZYQzlqYjJkdWFYUnZMV2xrY0M1bGRTMTNaWE4wTFRFdVlXMWhlbTl1WVhkekxtTnZiVnd2WlhVdGQyVnpkQzB4WHpGaFJrMXpTR3B2U0NJc0ltTnNhV1Z1ZEY5cFpDSTZJamxzY0dGeU56aGtOR001Tkdoak4yb3daM1J3TTI1eFpqY2lMQ0p2Y21sbmFXNWZhblJwSWpvaVpqSTRaalU0TURrdFpXVXdZUzAwTUdVMkxXSTNORE10WWpVeE5qQTRZek14WVRBd0lpd2laWFpsYm5SZmFXUWlPaUpoWWpabFl6SXdNaTFtTURVNUxUUmlNalF0WVRSa01DMWtaVFZtTm1JeU1UUXpNVE1pTENKMGIydGxibDkxYzJVaU9pSmhZMk5sYzNNaUxDSnpZMjl3WlNJNkltRjNjeTVqYjJkdWFYUnZMbk5wWjI1cGJpNTFjMlZ5TG1Ga2JXbHVJaXdpWVhWMGFGOTBhVzFsSWpveE56YzFOalE0T0RJekxDSmxlSEFpT2pFM056VTNNelV5TWpNc0ltbGhkQ0k2TVRjM05UWTBPRGd5TXl3aWFuUnBJam9pTXpka05HUTVZV0l0TlRJeU55MDBOamswTFRobE16VXRaVGMzTWpGbFl6WXlPVE5rSWl3aWRYTmxjbTVoYldVaU9pSXpNamsxWVRRMk5DMWxNRE14TFRjd1kyRXRNelEyWXkxbE9USmlORFZrTmpBNU1XRWlmUS56ZVlTOXR2cW56UXp3bmtuejhoMi1DZ3l6WjJQd0JpejF0UTRFcmtLQkVhdXpsODRlS3lGOW50V2ZTUllyWWZ5dkpjUWdBRmVWVEtNaG4zVmZHQnNhRC05NG4yVDdSZnVwdk1SWm9zUXIySE5RWF9DemNOZDFLMWMxYWJwX3ZVbVlnb2E1ZzU5RVhrMkpObGYwUkxudk5DdHI3QlZmR1Fpc3RoZnZEdUNKWHVuVTBJSjlRWGNaMTdKSlhvaVFIREFlSC1sOTgwb1dLSkx5M1hOZ2Q1ekk5ZTl2Ym9aTGhJcGpKOERDRHJIZEFFSDVyU0FMbTZyQWJIS3dscUROdHdoNjY5WFg2M2M4TjB5dzlXeUlLbzlMcVB2MHRzMzNsVW0zRHRFaEQzOUsyRHNmTEJPOVRoN1RVdkhJM25EbmFfXzdldXh6RzZKYTQ4aTZsaXpTSmRXNUEiLCJpc01mYUVuYWJsZWQiOmZhbHNlLCJlbWFpbCI6InBydWViYXNxYWJlZXNpYmxlQGdtYWlsLmNvbSIsInJlZnJlc2hUb2tlbiI6ImV5SmpkSGtpT2lKS1YxUWlMQ0psYm1NaU9pSkJNalUyUjBOTklpd2lZV3huSWpvaVVsTkJMVTlCUlZBaWZRLm5IWVM0NlJGT2QtbFhyWmFfODYzQXQzXy0wMmdJV1lPUTlEX091cHdsSVI1MDVScVJ4N2lDanVUVEJkYmp2T0VKOW1ES0RMTmlRTWhPc180VzVxZkF4SmF5N1V4Q2xxNmdkcTFHSUt3MVRRM2FDbTc4ZEdyT3YwYnMwbUc2VmpQNHhDUmtWcEZvRlM0cWMzLWplbmg0N1BWdGxLVDRKTWF2dTgxZjg1U3FwM240dkUxMTNvQkQzbTV0bUl2aTRhMWhWcHRONFBSZ2MwZDlOazJVMS0xdDdYZzA5NmxJRGp1QmtoSGUxeWpGRVJTaFZoLVdvS21rT0hRR2lwM3Nha1hIYUlKQmQxZEZUaVpGbVdCTnp6NVdNN21LTHdsTzFIYWNXQWxmUlZwR012VDF5dDNKdFN3V2ZXcE5rUjJ5SUcwRlZVeGh0aVZvUzRFNlh1dFhvRGFEdy5mMk12Mnczd3RpbDAyVXIwLk5OVzFYNnE4Q2dKSXB4YWl2WVU1bWpRZlhFQlRTRGtTV25RbmNPb3M5UTlSMHFxdHpWeGVkRk1rLXZGT3RxeVZMa1p3UkQyZFNjY2EzSERWN1hlZy1mLU4zX01ObXkyOW15VmpjYTBidDlSbVhZUTZCWjUyNVRKZTFabGRoeDdycjduOXlCbDdVUmtfX0l5YXFZSDE1SVFKdlFadVpaZm9iT2lhakhmZ0diLTVZYjBVQURGbkxMS2hndmpKQ0VHN0dGdUR1a0oyYXRwb1RHN0llWkpCLWxQN25PU2xYdWhPYThkTm9YWmFHVTlrNkR3ZzhMNmFHRzEtcWU3YXNJb19nVG1nUl8wd1huNFh5cU5GQkF0bWFoUWViMnhIXzBXejREQmk0VnNYZWNNVnhWU3h6ZnhfOUJnY2RZWGZQd2ZUNVRaTDFkVko4QjlLRnY3MW1EWlNCYWtyVTN0Mm1IcWE5NnRKTENzOEVoRThkSjdldnVDVjlQcklyQVVqd0tsdjNkY2lUTk5xcTRvNDFmSjZ4OFNBdmdkUUhWSnhyWTFCa0J6VjVMeHZCclZzUXJ5UFNQcnJSd3VxelZfZFdpVW03NDNTNVBnTzVYaDdZdXV1UXV5Y3E3WHdRS3dFTGprSkVtYld2Y2Z4V25rSS15S29STXF6TFV4Rk5DNTdEU1hoZ2VvMHM3azhzMmlGSjhWXzFhRHU5Mm83RDlXb1otZjNDbGpRSEl2bzJCZEVuY1Ywb1kwSWpaUnR6N29WQ2FKZEUyWjlLbEtUQlJXblV3SHFkWUs5RVZ1M1dRWEVtTkxGakRpYk84MENxZEZuUUNMa0F2bXczRVJzUHRnSzI4aUNOVGRpa1d4ZTgzeFJJT19ZQU1UbDBPeTdwckZmRW9RbTJ4bHlGc2pvZGV1ejhFU1g5Y2FoN0xHcmNoWWExYjRLYjg0WUV2Z3oxU0d2NE0tMmEzc29WNVgtcmRBRWMxSjR2V28yN1dXZHNmLWg1RllwV0pVby1JcTMzR2ZlS0tPVlFSS096a2JpbThpVTFfOGpTR0FmR3ByeWY5VUZTNlVlTEt4aktvSjdnbkM0ODUzY3A4ejZlWE9kVXdxeTVRU0k3bVN6bjdRUW9GVjVaUDhaOWoxSFR0RFd3dUV1MmZEZVJoQmJzeUpmdHVNTEo0YXNod25KaVhibFIzcjlCMzNwVWpkY2d4WTQyTU1yTWlEX1RETDNnMHA3d3RrV1JpNWltZE1xNHJpaG5sX1JOS0NiRjcxbHFRcGJqMWxONmwxT3dURHBtbEhTVjVPVFdxT3h1YVVmdlBOQmtrZF9JX0trQVlNTzBTaFRGRmVZVENxOVZhVGphVnJ0cExOUDZ5bzdlOGZ2bk1vZmhEMXdWQ21DU1BiX0lTVDlPeDBXWVJWODE4WUYxaFA5ejhZbG1GRlhmdlk5U1I5N1N4aHA5bVhQSHc0S1FZaXFCQ1BrY1R2am5TaGR5V3pfeFlXUURrMVFsYjNTeVFwR284VkZUMGFWTjhoU3hFY1dDOUhXajRvTWg5VGZtNzJTbkJ4bnBnX0lxMGxmcE1zdS0tV3pHcGJGOUNyZTQ3UVVnck1oX3diNjZqc1ItWGlzSU9YYnJqQzVtM3ZpRjdJT2czdXZaMHRKZkJNZEpvN3ZKb2JBN3J6NDZJekpnVnFIQXVZZE83TnhrOFB1MkQ2MTU1dVNqcFY5MGw3cHU5c3Ntak1LZHVaaTBEdjY4cGRYUF80aU54dW81WUxseUJYWEZUdEJqVlhzdXBva3JBdEMtbDg1UzV0TUtfWnhiVkR2TWNHWENpX29GY1ppOWhMWmpfR3hyRllFRkdnQURoWFdaeWpTRnROa3RFeWR6S3RXSkdJaDczSnY0a3phZUNDcThkYk9yUjZwYkNDTWwwQjRYWTJ2eE1jdHpUc0gxTXZsLlZZQUFYYjlKYmVrdmFsZ0c5cXZ5ckEifQ.EKiRy-JeC7d_fvSiUlnwcEJM9WecJPlGbuGW-gIoNfFYFykC5sL9qRGO06BWoGG_COHcXany1Idh3hYjwF758UnkZ-rPB11DZY-cjLMo-N1e1YB62NtW14hIFe4oaxFMrIHPlDmEAFF9NiMtzoDddl8fzEzn_XrPcSbHIuiiLBAZ4mZAiYqoZukJxkcsqfUF3r_QARpUPeSvIY0nNn_5EvATGuDL2ebZ3Iwfxe_4T0xTVjX59PwkGUH4vDAKmRl74-FWvaM4mgaO0p_-6V_rNE3ri3y9-Ji1kwdwpK-5F2duByrX7uN_5RvxgR0Kx_oq3bjbaVbBWQFXDStJbrTuKA&quot;},&quot;errors&quot;:[],&quot;warnings&quot;:[],&quot;metadata&quot;:null}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.32.0.call">
+    <div class="step-container" id="0.32.0.call.0.12">
+      <div class="step-ref passed">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.32.0.call">
+    <div class="step-container" id="0.32.0.call.0.13">
+      <div class="step-ref passed">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def loginResponse = response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.32.0.call">
+    <div class="step-container" id="0.32.0.call.0.14">
+      <div class="step-ref passed">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def loginData = loginResponse.data || {}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.32.0.call">
+    <div class="step-container" id="0.32.0.call.0.15">
+      <div class="step-ref passed">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def jwt = loginData.jwt</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.32.0.call">
+    <div class="step-container" id="0.32.0.call.0.16">
+      <div class="step-ref passed">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def mfaRequired = loginData.mfaRequired</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.32.0.call">
+    <div class="step-container" id="0.32.0.call.0.17">
+      <div class="step-ref passed">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def passwordChangeRequired = loginData.passwordChangeRequired</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.32.0.call">
+    <div class="step-container" id="0.32.0.call.0.18">
+      <div class="step-ref passed">18</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def mfaJwt = loginData.mfaJwt</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.32.0.call">
+    <div class="step-container" id="0.32.0.call.0.19">
+      <div class="step-ref passed">19</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def passwordChangeJwt = loginData.passwordChangeJwt</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match auth.jwt == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;metricool&#39;, &#39;fake-service-id&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Tenant = tenant</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + auth.jwt</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.37">
+      <div class="step-ref passed">37</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">185</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.37">11:47:03.904 request:
+1 &gt; GET https://adminnewworkspaceuat.beedigital.es/api/v1/metricool/fake-service-id
+1 &gt; Tenant: adminnewworkspaceuat.beedigital.es
+1 &gt; Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJCZWVHbG9iYWxXZWIiLCJleHAiOjE3NzY5NDQ4MjMsImlzR3Vlc3QiOmZhbHNlLCJwcm9maWxlSWQiOiJwcm9mXzRjMjNlY2Y1MTA2NDQ0ODdiZDQzOTEzMmRhMGZiOTQ5IiwibWZhVHlwZSI6bnVsbCwicm9sZUlkIjoibWVyY2hhbnQiLCJ0ZW5hbnRJZCI6ImJlZUVzcGFuYSIsImNvZ25pdG86dXNlcm5hbWUiOiIzMjk1YTQ2NC1lMDMxLTcwY2EtMzQ2Yy1lOTJiNDVkNjA5MWEiLCJtZmFSZXF1aXJlZCI6ZmFsc2UsImFjY2Vzc1Rva2VuIjoiZXlKcmFXUWlPaUl5TTJ0RFEweE5iM1pxWTBaa1NXWXdWR2xVUVVOTE9EZGhZelp6VlRGWlhDOVhiSFpZVkcxelUxVTNSVDBpTENKaGJHY2lPaUpTVXpJMU5pSjkuZXlKemRXSWlPaUl6TWprMVlUUTJOQzFsTURNeExUY3dZMkV0TXpRMll5MWxPVEppTkRWa05qQTVNV0VpTENKa1pYWnBZMlZmYTJWNUlqb2laWFV0ZDJWemRDMHhYelpsWkRBeFpHVXhMVEUxT0RZdE5HVXpaQzA1WVRZM0xUazFZbVF4WWpSbU5qRmlNU0lzSW1semN5STZJbWgwZEhCek9sd3ZYQzlqYjJkdWFYUnZMV2xrY0M1bGRTMTNaWE4wTFRFdVlXMWhlbTl1WVhkekxtTnZiVnd2WlhVdGQyVnpkQzB4WHpGaFJrMXpTR3B2U0NJc0ltTnNhV1Z1ZEY5cFpDSTZJamxzY0dGeU56aGtOR001Tkdoak4yb3daM1J3TTI1eFpqY2lMQ0p2Y21sbmFXNWZhblJwSWpvaVpqSTRaalU0TURrdFpXVXdZUzAwTUdVMkxXSTNORE10WWpVeE5qQTRZek14WVRBd0lpd2laWFpsYm5SZmFXUWlPaUpoWWpabFl6SXdNaTFtTURVNUxUUmlNalF0WVRSa01DMWtaVFZtTm1JeU1UUXpNVE1pTENKMGIydGxibDkxYzJVaU9pSmhZMk5sYzNNaUxDSnpZMjl3WlNJNkltRjNjeTVqYjJkdWFYUnZMbk5wWjI1cGJpNTFjMlZ5TG1Ga2JXbHVJaXdpWVhWMGFGOTBhVzFsSWpveE56YzFOalE0T0RJekxDSmxlSEFpT2pFM056VTNNelV5TWpNc0ltbGhkQ0k2TVRjM05UWTBPRGd5TXl3aWFuUnBJam9pTXpka05HUTVZV0l0TlRJeU55MDBOamswTFRobE16VXRaVGMzTWpGbFl6WXlPVE5rSWl3aWRYTmxjbTVoYldVaU9pSXpNamsxWVRRMk5DMWxNRE14TFRjd1kyRXRNelEyWXkxbE9USmlORFZrTmpBNU1XRWlmUS56ZVlTOXR2cW56UXp3bmtuejhoMi1DZ3l6WjJQd0JpejF0UTRFcmtLQkVhdXpsODRlS3lGOW50V2ZTUllyWWZ5dkpjUWdBRmVWVEtNaG4zVmZHQnNhRC05NG4yVDdSZnVwdk1SWm9zUXIySE5RWF9DemNOZDFLMWMxYWJwX3ZVbVlnb2E1ZzU5RVhrMkpObGYwUkxudk5DdHI3QlZmR1Fpc3RoZnZEdUNKWHVuVTBJSjlRWGNaMTdKSlhvaVFIREFlSC1sOTgwb1dLSkx5M1hOZ2Q1ekk5ZTl2Ym9aTGhJcGpKOERDRHJIZEFFSDVyU0FMbTZyQWJIS3dscUROdHdoNjY5WFg2M2M4TjB5dzlXeUlLbzlMcVB2MHRzMzNsVW0zRHRFaEQzOUsyRHNmTEJPOVRoN1RVdkhJM25EbmFfXzdldXh6RzZKYTQ4aTZsaXpTSmRXNUEiLCJpc01mYUVuYWJsZWQiOmZhbHNlLCJlbWFpbCI6InBydWViYXNxYWJlZXNpYmxlQGdtYWlsLmNvbSIsInJlZnJlc2hUb2tlbiI6ImV5SmpkSGtpT2lKS1YxUWlMQ0psYm1NaU9pSkJNalUyUjBOTklpd2lZV3huSWpvaVVsTkJMVTlCUlZBaWZRLm5IWVM0NlJGT2QtbFhyWmFfODYzQXQzXy0wMmdJV1lPUTlEX091cHdsSVI1MDVScVJ4N2lDanVUVEJkYmp2T0VKOW1ES0RMTmlRTWhPc180VzVxZkF4SmF5N1V4Q2xxNmdkcTFHSUt3MVRRM2FDbTc4ZEdyT3YwYnMwbUc2VmpQNHhDUmtWcEZvRlM0cWMzLWplbmg0N1BWdGxLVDRKTWF2dTgxZjg1U3FwM240dkUxMTNvQkQzbTV0bUl2aTRhMWhWcHRONFBSZ2MwZDlOazJVMS0xdDdYZzA5NmxJRGp1QmtoSGUxeWpGRVJTaFZoLVdvS21rT0hRR2lwM3Nha1hIYUlKQmQxZEZUaVpGbVdCTnp6NVdNN21LTHdsTzFIYWNXQWxmUlZwR012VDF5dDNKdFN3V2ZXcE5rUjJ5SUcwRlZVeGh0aVZvUzRFNlh1dFhvRGFEdy5mMk12Mnczd3RpbDAyVXIwLk5OVzFYNnE4Q2dKSXB4YWl2WVU1bWpRZlhFQlRTRGtTV25RbmNPb3M5UTlSMHFxdHpWeGVkRk1rLXZGT3RxeVZMa1p3UkQyZFNjY2EzSERWN1hlZy1mLU4zX01ObXkyOW15VmpjYTBidDlSbVhZUTZCWjUyNVRKZTFabGRoeDdycjduOXlCbDdVUmtfX0l5YXFZSDE1SVFKdlFadVpaZm9iT2lhakhmZ0diLTVZYjBVQURGbkxMS2hndmpKQ0VHN0dGdUR1a0oyYXRwb1RHN0llWkpCLWxQN25PU2xYdWhPYThkTm9YWmFHVTlrNkR3ZzhMNmFHRzEtcWU3YXNJb19nVG1nUl8wd1huNFh5cU5GQkF0bWFoUWViMnhIXzBXejREQmk0VnNYZWNNVnhWU3h6ZnhfOUJnY2RZWGZQd2ZUNVRaTDFkVko4QjlLRnY3MW1EWlNCYWtyVTN0Mm1IcWE5NnRKTENzOEVoRThkSjdldnVDVjlQcklyQVVqd0tsdjNkY2lUTk5xcTRvNDFmSjZ4OFNBdmdkUUhWSnhyWTFCa0J6VjVMeHZCclZzUXJ5UFNQcnJSd3VxelZfZFdpVW03NDNTNVBnTzVYaDdZdXV1UXV5Y3E3WHdRS3dFTGprSkVtYld2Y2Z4V25rSS15S29STXF6TFV4Rk5DNTdEU1hoZ2VvMHM3azhzMmlGSjhWXzFhRHU5Mm83RDlXb1otZjNDbGpRSEl2bzJCZEVuY1Ywb1kwSWpaUnR6N29WQ2FKZEUyWjlLbEtUQlJXblV3SHFkWUs5RVZ1M1dRWEVtTkxGakRpYk84MENxZEZuUUNMa0F2bXczRVJzUHRnSzI4aUNOVGRpa1d4ZTgzeFJJT19ZQU1UbDBPeTdwckZmRW9RbTJ4bHlGc2pvZGV1ejhFU1g5Y2FoN0xHcmNoWWExYjRLYjg0WUV2Z3oxU0d2NE0tMmEzc29WNVgtcmRBRWMxSjR2V28yN1dXZHNmLWg1RllwV0pVby1JcTMzR2ZlS0tPVlFSS096a2JpbThpVTFfOGpTR0FmR3ByeWY5VUZTNlVlTEt4aktvSjdnbkM0ODUzY3A4ejZlWE9kVXdxeTVRU0k3bVN6bjdRUW9GVjVaUDhaOWoxSFR0RFd3dUV1MmZEZVJoQmJzeUpmdHVNTEo0YXNod25KaVhibFIzcjlCMzNwVWpkY2d4WTQyTU1yTWlEX1RETDNnMHA3d3RrV1JpNWltZE1xNHJpaG5sX1JOS0NiRjcxbHFRcGJqMWxONmwxT3dURHBtbEhTVjVPVFdxT3h1YVVmdlBOQmtrZF9JX0trQVlNTzBTaFRGRmVZVENxOVZhVGphVnJ0cExOUDZ5bzdlOGZ2bk1vZmhEMXdWQ21DU1BiX0lTVDlPeDBXWVJWODE4WUYxaFA5ejhZbG1GRlhmdlk5U1I5N1N4aHA5bVhQSHc0S1FZaXFCQ1BrY1R2am5TaGR5V3pfeFlXUURrMVFsYjNTeVFwR284VkZUMGFWTjhoU3hFY1dDOUhXajRvTWg5VGZtNzJTbkJ4bnBnX0lxMGxmcE1zdS0tV3pHcGJGOUNyZTQ3UVVnck1oX3diNjZqc1ItWGlzSU9YYnJqQzVtM3ZpRjdJT2czdXZaMHRKZkJNZEpvN3ZKb2JBN3J6NDZJekpnVnFIQXVZZE83TnhrOFB1MkQ2MTU1dVNqcFY5MGw3cHU5c3Ntak1LZHVaaTBEdjY4cGRYUF80aU54dW81WUxseUJYWEZUdEJqVlhzdXBva3JBdEMtbDg1UzV0TUtfWnhiVkR2TWNHWENpX29GY1ppOWhMWmpfR3hyRllFRkdnQURoWFdaeWpTRnROa3RFeWR6S3RXSkdJaDczSnY0a3phZUNDcThkYk9yUjZwYkNDTWwwQjRYWTJ2eE1jdHpUc0gxTXZsLlZZQUFYYjlKYmVrdmFsZ0c5cXZ5ckEifQ.EKiRy-JeC7d_fvSiUlnwcEJM9WecJPlGbuGW-gIoNfFYFykC5sL9qRGO06BWoGG_COHcXany1Idh3hYjwF758UnkZ-rPB11DZY-cjLMo-N1e1YB62NtW14hIFe4oaxFMrIHPlDmEAFF9NiMtzoDddl8fzEzn_XrPcSbHIuiiLBAZ4mZAiYqoZukJxkcsqfUF3r_QARpUPeSvIY0nNn_5EvATGuDL2ebZ3Iwfxe_4T0xTVjX59PwkGUH4vDAKmRl74-FWvaM4mgaO0p_-6V_rNE3ri3y9-Ji1kwdwpK-5F2duByrX7uN_5RvxgR0Kx_oq3bjbaVbBWQFXDStJbrTuKA
+1 &gt; Host: adminnewworkspaceuat.beedigital.es
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/22.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+11:47:04.087 response time in milliseconds: 182
+1 &lt; 200
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Date: Wed, 08 Apr 2026 11:47:04 GMT
+1 &lt; X-Frame-Options: DENY
+1 &lt; Vary: origin,access-control-request-method,access-control-request-headers,accept-encoding
+1 &lt; Vary: Origin
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Cache: Miss from cloudfront
+1 &lt; Via: 1.1 6d608495c704c3391c897a110e88cffa.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: ORD58-P13
+1 &lt; X-Amz-Cf-Id: B_QG5QyVB3xfrDIoFXAiOVpQj9ZJukhsgUeAKeRzd_87IGBdJ0Mcsw==
+{&quot;httpCode&quot;:403,&quot;httpStatus&quot;:&quot;FORBIDDEN&quot;,&quot;data&quot;:null,&quot;errors&quot;:[{&quot;code&quot;:&quot;ERR027&quot;,&quot;msg&quot;:&quot;${ERROR_PERMISOS}&quot;,&quot;txt&quot;:&quot;Permissions error&quot;,&quot;metadata&quot;:null}],&quot;warnings&quot;:[],&quot;metadata&quot;:null}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.38">
+      <div class="step-ref passed">38</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.39">
+      <div class="step-ref passed">39</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response contains { errors: &#39;#[]&#39;, warnings: &#39;#[]&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.40">
+      <div class="step-ref passed">40</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def hasControlledOutcome = response.errors.length &gt; 0 || response.data == null || (response.data != null &amp;&amp; response.data.loginUrl != null)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.41">
+      <div class="step-ref passed">41</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>assert hasControlledOutcome</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5:44]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">extended-live</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5:44]</span>
+                <span class="scenario-name">metricool with E2E credentials and a real service id returns a usable live loginUrl</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>5</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[5:44]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[5:44]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">11:47:04.123 Karate env: local 
+11:47:04.123 Karate baseUrl: https://adminnewworkspaceuat.beedigital.es/api/v1 
+11:47:04.125 Karate tenant: adminnewworkspaceuat.beedigital.es 
+11:47:04.125 Karate tenantId: beeEspana 
+11:47:04.125 Karate tenantProfile: beeEspana 
+11:47:04.125 Karate loginEmail configured: true 
+11:47:04.125 Karate loginPassword configured: true 
+11:47:04.125 Karate loginToken configured: false 
+11:47:04.125 Karate accessCheckToken configured: false 
+11:47:04.125 Karate sessionToken configured: false 
+11:47:04.125 Karate runUserEventDeliveryScenarios: false 
+11:47:04.127 Karate startApiGlobalMock: false 
+11:47:04.127 Karate apiGlobalMockUrl:  
+11:47:04.127 Karate metricoolMockEnabled: false 
+11:47:04.127 Karate metricoolServiceId configured: true 
+11:47:04.127 Karate metricoolAuthToken configured: false 
+11:47:04.131 Karate yextMockEnabled: false 
+11:47:04.131 Karate yextServiceId configured: true 
+11:47:04.131 Karate yextAuthToken configured: false 
+11:47:04.131 Karate yextPublisherId: yext 
+11:47:04.131 Karate gbpMockEnabled: false 
+11:47:04.131 Karate gbpProductId configured: true 
+11:47:04.133 Karate gbpAuthToken configured: false 
+11:47:04.133 Karate organizationId: beesible 
+11:47:04.133 Karate brandingTitle configured: true 
+11:47:04.133 Karate cognitoDomain configured: true 
+11:47:04.133 Karate supportsMetricool: true 
+11:47:04.133 Karate supportsYext: true 
+11:47:04.133 Karate supportsGbp: true 
+11:47:04.133 Workspace .env detected: false 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.45">
+      <div class="step-ref passed">45</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (!metricoolServiceId || metricoolServiceId.startsWith(&#39;mock-&#39;)) karate.abort()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.45">11:47:04.143 abort at classpath:com/beedigital/global/web/karate/auth/metricool.feature:45
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.46">
+      <div class="step-ref skipped">46</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def auth = callonce read(&#39;live-auth-context.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.47">
+      <div class="step-ref skipped">47</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>match auth.jwt == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.48">
+      <div class="step-ref skipped">48</div>
+      
+      <div class="step-cell skipped">
+        <span>Given</span>&nbsp;<span>path &#39;metricool&#39;, metricoolServiceId</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.49">
+      <div class="step-ref skipped">49</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>header Tenant = tenant</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.50">
+      <div class="step-ref skipped">50</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + auth.jwt</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.51">
+      <div class="step-ref skipped">51</div>
+      
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.52">
+      <div class="step-ref skipped">52</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.53">
+      <div class="step-ref skipped">53</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.httpCode == 200</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.54">
+      <div class="step-ref skipped">54</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.errors == []</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.55">
+      <div class="step-ref skipped">55</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.data == &#39;#object&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.56">
+      <div class="step-ref skipped">56</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.data.loginUrl == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.57">
+      <div class="step-ref skipped">57</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>assert response.data.loginUrl.startsWith(&#39;http&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

@@ -1,22 +1,22 @@
 {
-  "generatedAt": "2026-04-08T11:32:57.782Z",
+  "generatedAt": "2026-04-08T11:49:10.517Z",
   "reportRoot": "D:\\a\\front-beeglobal\\front-beeglobal\\api-tests\\target\\karate-lane-report",
   "lanes": [
     {
       "id": "live",
       "name": "Karate Extended Live",
-      "exitCode": 1,
-      "status": "red",
+      "exitCode": 0,
+      "status": "green",
       "summary": null,
-      "note": "No summary artifact found for lane."
+      "note": "Built from step outcome: success"
     },
     {
       "id": "mock",
       "name": "Karate Extended Mock",
-      "exitCode": 1,
-      "status": "red",
+      "exitCode": 0,
+      "status": "green",
       "summary": null,
-      "note": "No summary artifact found for lane."
+      "note": "Built from step outcome: success"
     }
   ]
 }
