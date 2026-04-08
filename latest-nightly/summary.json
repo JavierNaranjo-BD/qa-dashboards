@@ -1,0 +1,51 @@
+{
+  "generatedAt": "2026-04-08T09:30:33.526Z",
+  "reportRoot": "D:\\a\\front-beeglobal\\front-beeglobal\\api-tests\\target\\karate-lane-report",
+  "lanes": [
+    {
+      "id": "default",
+      "name": "Karate Default",
+      "exitCode": 0,
+      "status": "green",
+      "summary": {
+        "testsRun": 42,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "durationSeconds": 12.39,
+        "status": "green"
+      },
+      "note": ""
+    },
+    {
+      "id": "deterministic",
+      "name": "Karate Extended Deterministic",
+      "exitCode": 0,
+      "status": "green",
+      "summary": {
+        "testsRun": 15,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "durationSeconds": 10.85,
+        "status": "green"
+      },
+      "note": ""
+    },
+    {
+      "id": "mock",
+      "name": "Karate Extended Mock",
+      "exitCode": 0,
+      "status": "green",
+      "summary": {
+        "testsRun": 22,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "durationSeconds": 9.789,
+        "status": "green"
+      },
+      "note": ""
+    }
+  ]
+}
