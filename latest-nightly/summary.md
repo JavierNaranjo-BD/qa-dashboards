@@ -1,6 +1,6 @@
 # Karate Lane Report
 
-Generated at: 2026-04-08T09:49:08.272Z
+Generated at: 2026-04-08T10:13:30.621Z
 
 ## Karate Default
 - Status: green
@@ -9,7 +9,7 @@ Generated at: 2026-04-08T09:49:08.272Z
 - Failures: 0
 - Errors: 0
 - Skipped: 0
-- Duration: 12.58s
+- Duration: 34.86s
 - Artifacts: runs/default
 
 ## Karate Extended Deterministic
@@ -19,7 +19,7 @@ Generated at: 2026-04-08T09:49:08.272Z
 - Failures: 0
 - Errors: 0
 - Skipped: 0
-- Duration: 10.72s
+- Duration: 11.19s
 - Artifacts: runs/deterministic
 
 ## Karate Extended Mock
@@ -29,6 +29,6 @@ Generated at: 2026-04-08T09:49:08.272Z
 - Failures: 0
 - Errors: 0
 - Skipped: 0
-- Duration: 10.11s
+- Duration: 10.4s
 - Artifacts: runs/mock
 
