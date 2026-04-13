@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karate Extended Mock - Bee QA</title>
+  <style>
+    body { margin: 0; font-family: Georgia, "Times New Roman", serif; color: #18222d; background: #f5f1e8; }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 28px 20px 40px; }
+    .panel { background: #fffaf2; border: 1px solid #d8cfc2; border-radius: 18px; padding: 20px; box-shadow: 0 8px 30px rgba(24, 34, 45, 0.05); }
+    .grid { display: grid; gap: 16px; margin-top: 20px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+    .muted { color: #5d6b78; }
+    .pill { display: inline-block; padding: 4px 10px; border-radius: 999px; font-size: 0.9rem; font-weight: 700; background: #d7f3ef; color: #0f766e; }
+    a { color: #0f766e; }
+    ul { margin: 8px 0 0 18px; }
+    table { width: 100%; border-collapse: collapse; margin-top: 18px; background: #fffaf2; border: 1px solid #d8cfc2; border-radius: 16px; overflow: hidden; }
+    th, td { text-align: left; padding: 12px 14px; border-bottom: 1px solid #d8cfc2; vertical-align: top; font-size: 0.95rem; }
+    th { background: #efe6d8; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <p><a href="../index.html">Volver al dashboard</a></p>
+    <div class="panel">
+      <h1>Karate Extended Mock</h1>
+      <p class="muted">Snapshot 13 abr 2026, 11:18</p>
+      <p><strong>Estado:</strong> <span class="pill">green</span></p>
+      <p><strong>Tests:</strong> 0</p>
+      <p><strong>Fallos:</strong> 0</p>
+      <p><strong>Errores:</strong> 0</p>
+      <p><strong>Duracion:</strong> 0 s</p>
+    </div>
+    <div class="grid">
+      <div class="panel">
+        <h2>Karate HTML</h2>
+        <ul><li><a href="../artifacts/karate-lane-report/runs/mock/karate-reports/com.beedigital.global.web.karate.auth.metricool.html">com.beedigital.global.web.karate.auth.metricool.html</a></li><li><a href="../artifacts/karate-lane-report/runs/mock/karate-reports/com.beedigital.global.web.karate.integrations.gbp-posts.html">com.beedigital.global.web.karate.integrations.gbp-posts.html</a></li><li><a href="../artifacts/karate-lane-report/runs/mock/karate-reports/com.beedigital.global.web.karate.integrations.yext-publishers.html">com.beedigital.global.web.karate.integrations.yext-publishers.html</a></li><li><a href="../artifacts/karate-lane-report/runs/mock/karate-reports/index.html">index.html</a></li><li><a href="../artifacts/karate-lane-report/runs/mock/karate-reports/karate-summary.html">karate-summary.html</a></li></ul>
+      </div>
+      <div class="panel">
+        <h2>Surefire</h2>
+        <ul><li><a href="../artifacts/karate-lane-report/runs/mock/surefire-reports/com.beedigital.global.web.karate.KarateExtendedMockIT.txt">com.beedigital.global.web.karate.KarateExtendedMockIT.txt</a></li></ul>
+      </div>
+    </div>
+    <div class="panel" style="margin-top: 20px;">
+      <h2>Escenarios ejecutados</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Escenario</th>
+            <th>Estado</th>
+            <th>Duracion</th>
+            <th>Ref</th>
+          </tr>
+        </thead>
+        <tbody>
+      <tr>
+        <td><a href="../artifacts/karate-lane-report/runs/mock/karate-reports/com.beedigital.global.web.karate.auth.metricool.html">Metricool integration entrypoint</a></td>
+        <td>metricool returns a deterministic happy path when API-GLOBAL is mocked</td>
+        <td><span class="pill ok">passed</span></td>
+        <td>271.6845 ms</td>
+        <td>[11:130]</td>
+      </tr>
+    
+      <tr>
+        <td><a href="../artifacts/karate-lane-report/runs/mock/karate-reports/com.beedigital.global.web.karate.auth.metricool.html">Metricool integration entrypoint</a></td>
+        <td>metricool surfaces a mocked downstream unauthorized response in a controlled way</td>
+        <td><span class="pill ok">passed</span></td>
+        <td>48.1692 ms</td>
+        <td>[12:144]</td>
+      </tr>
+    
+      <tr>
+        <td><a href="../artifacts/karate-lane-report/runs/mock/karate-reports/com.beedigital.global.web.karate.auth.metricool.html">Metricool integration entrypoint</a></td>
+        <td>metricool surfaces a mocked downstream unavailable response in a controlled way</td>
+        <td><span class="pill ok">passed</span></td>
+        <td>43.43 ms</td>
+        <td>[13:156]</td>
+      </tr>
+    
+      <tr>
+        <td><a href="../artifacts/karate-lane-report/runs/mock/karate-reports/com.beedigital.global.web.karate.auth.metricool.html">Metricool integration entrypoint</a></td>
+        <td>metricool exposes a mocked incomplete downstream payload without inventing a loginUrl</td>
+        <td><span class="pill ok">passed</span></td>
+        <td>41.8555 ms</td>
+        <td>[14:168]</td>
+      </tr>
+    
+      <tr>
+        <td><a href="../artifacts/karate-lane-report/runs/mock/karate-reports/com.beedigital.global.web.karate.auth.metricool.html">Metricool integration entrypoint</a></td>
+        <td>metricool surfaces a mocked business error wrapped in a 200 response</td>
+        <td><span class="pill ok">passed</span></td>
+        <td>37.9275 ms</td>
+        <td>[15:181]</td>
+      </tr>
+    
+      <tr>
+        <td><a href="../artifacts/karate-lane-report/runs/mock/karate-reports/com.beedigital.global.web.karate.integrations.gbp-posts.html">Google Business Profile posts integration entrypoint</a></td>
+        <td>gbp posts returns a deterministic mocked happy path</td>
+        <td><span class="pill ok">passed</span></td>
+        <td>86.7441 ms</td>
+        <td>[5:40]</td>
+      </tr>
+    
+      <tr>
+        <td><a href="../artifacts/karate-lane-report/runs/mock/karate-reports/com.beedigital.global.web.karate.integrations.gbp-posts.html">Google Business Profile posts integration entrypoint</a></td>
+        <td>gbp posts surfaces a mocked downstream unavailable response in a controlled way</td>
+        <td><span class="pill ok">passed</span></td>
+        <td>43.9196 ms</td>
+        <td>[8:148]</td>
+      </tr>
+    
+      <tr>
+        <td><a href="../artifacts/karate-lane-report/runs/mock/karate-reports/com.beedigital.global.web.karate.integrations.gbp-posts.html">Google Business Profile posts integration entrypoint</a></td>
+        <td>gbp posts surfaces a mocked business error wrapped in a controlled response</td>
+        <td><span class="pill ok">passed</span></td>
+        <td>58.3659 ms</td>
+        <td>[9:163]</td>
+      </tr>
+    
+      <tr>
+        <td><a href="../artifacts/karate-lane-report/runs/mock/karate-reports/com.beedigital.global.web.karate.integrations.gbp-posts.html">Google Business Profile posts integration entrypoint</a></td>
+        <td>gbp posts exposes an empty mocked payload as an empty list</td>
+        <td><span class="pill ok">passed</span></td>
+        <td>28.2697 ms</td>
+        <td>[10:176]</td>
+      </tr>
+    
+      <tr>
+        <td><a href="../artifacts/karate-lane-report/runs/mock/karate-reports/com.beedigital.global.web.karate.integrations.gbp-posts.html">Google Business Profile posts integration entrypoint</a></td>
+        <td>gbp posts does not invent multimedia when the mocked wrapper payload is incomplete</td>
+        <td><span class="pill ok">passed</span></td>
+        <td>60.528 ms</td>
+        <td>[11:188]</td>
+      </tr>
+    
+      <tr>
+        <td><a href="../artifacts/karate-lane-report/runs/mock/karate-reports/com.beedigital.global.web.karate.integrations.yext-publishers.html">Yext publisher integration entrypoint</a></td>
+        <td>yext diffusion returns a deterministic mocked happy path</td>
+        <td><span class="pill ok">passed</span></td>
+        <td>34.7105 ms</td>
+        <td>[3:21]</td>
+      </tr>
+    
+      <tr>
+        <td><a href="../artifacts/karate-lane-report/runs/mock/karate-reports/com.beedigital.global.web.karate.integrations.yext-publishers.html">Yext publisher integration entrypoint</a></td>
+        <td>yext diffusion surfaces a mocked downstream unavailable response in a controlled way</td>
+        <td><span class="pill ok">passed</span></td>
+        <td>25.0564 ms</td>
+        <td>[5:53]</td>
+      </tr>
+    
+      <tr>
+        <td><a href="../artifacts/karate-lane-report/runs/mock/karate-reports/com.beedigital.global.web.karate.integrations.yext-publishers.html">Yext publisher integration entrypoint</a></td>
+        <td>yext diffusion surfaces a mocked business error wrapped in a 200 response</td>
+        <td><span class="pill ok">passed</span></td>
+        <td>26.031 ms</td>
+        <td>[6:65]</td>
+      </tr>
+    
+      <tr>
+        <td><a href="../artifacts/karate-lane-report/runs/mock/karate-reports/com.beedigital.global.web.karate.integrations.yext-publishers.html">Yext publisher integration entrypoint</a></td>
+        <td>yext diffusion exposes a mocked incomplete publishers payload</td>
+        <td><span class="pill ok">passed</span></td>
+        <td>30.7167 ms</td>
+        <td>[7:77]</td>
+      </tr>
+    
+      <tr>
+        <td><a href="../artifacts/karate-lane-report/runs/mock/karate-reports/com.beedigital.global.web.karate.integrations.yext-publishers.html">Yext publisher integration entrypoint</a></td>
+        <td>yext connect returns a deterministic mocked happy path</td>
+        <td><span class="pill ok">passed</span></td>
+        <td>54.1585 ms</td>
+        <td>[11:121]</td>
+      </tr>
+    
+      <tr>
+        <td><a href="../artifacts/karate-lane-report/runs/mock/karate-reports/com.beedigital.global.web.karate.integrations.yext-publishers.html">Yext publisher integration entrypoint</a></td>
+        <td>yext connect surfaces a mocked downstream unavailable response in a controlled way</td>
+        <td><span class="pill ok">passed</span></td>
+        <td>49.9066 ms</td>
+        <td>[13:157]</td>
+      </tr>
+    
+      <tr>
+        <td><a href="../artifacts/karate-lane-report/runs/mock/karate-reports/com.beedigital.global.web.karate.integrations.yext-publishers.html">Yext publisher integration entrypoint</a></td>
+        <td>yext connect surfaces a mocked business error wrapped in a 200 response</td>
+        <td><span class="pill ok">passed</span></td>
+        <td>25.3616 ms</td>
+        <td>[14:172]</td>
+      </tr>
+    
+      <tr>
+        <td><a href="../artifacts/karate-lane-report/runs/mock/karate-reports/com.beedigital.global.web.karate.integrations.yext-publishers.html">Yext publisher integration entrypoint</a></td>
+        <td>yext connect exposes a mocked incomplete diffusion payload</td>
+        <td><span class="pill ok">passed</span></td>
+        <td>23.7684 ms</td>
+        <td>[15:187]</td>
+      </tr>
+    
+      <tr>
+        <td><a href="../artifacts/karate-lane-report/runs/mock/karate-reports/com.beedigital.global.web.karate.integrations.yext-publishers.html">Yext publisher integration entrypoint</a></td>
+        <td>yext disconnect returns a deterministic mocked happy path</td>
+        <td><span class="pill ok">passed</span></td>
+        <td>22.8518 ms</td>
+        <td>[16:203]</td>
+      </tr>
+    
+      <tr>
+        <td><a href="../artifacts/karate-lane-report/runs/mock/karate-reports/com.beedigital.global.web.karate.integrations.yext-publishers.html">Yext publisher integration entrypoint</a></td>
+        <td>yext disconnect surfaces a mocked downstream unavailable response in a controlled way</td>
+        <td><span class="pill ok">passed</span></td>
+        <td>26.8948 ms</td>
+        <td>[18:239]</td>
+      </tr>
+    
+      <tr>
+        <td><a href="../artifacts/karate-lane-report/runs/mock/karate-reports/com.beedigital.global.web.karate.integrations.yext-publishers.html">Yext publisher integration entrypoint</a></td>
+        <td>yext disconnect surfaces a mocked business error wrapped in a 200 response</td>
+        <td><span class="pill ok">passed</span></td>
+        <td>24.8847 ms</td>
+        <td>[22:284]</td>
+      </tr>
+    
+      <tr>
+        <td><a href="../artifacts/karate-lane-report/runs/mock/karate-reports/com.beedigital.global.web.karate.integrations.yext-publishers.html">Yext publisher integration entrypoint</a></td>
+        <td>yext disconnect exposes a mocked incomplete diffusion payload</td>
+        <td><span class="pill ok">passed</span></td>
+        <td>30.4509 ms</td>
+        <td>[23:299]</td>
+      </tr>
+    </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>

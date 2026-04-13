@@ -1,69 +1,341 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Karate Nightly Consolidated Report</title>
+  <title>BeeDigital QA Progress Dashboard</title>
   <style>
-    body { font-family: Georgia, "Times New Roman", serif; margin: 0; padding: 24px; background: #f6f1e8; color: #1e293b; }
-    .hero, .panel { background: #fffaf2; border: 1px solid #dacfbf; border-radius: 18px; padding: 20px; box-shadow: 0 8px 30px rgba(30,41,59,.06); }
-    .panel { margin-top: 18px; }
-    table { width: 100%; border-collapse: collapse; margin-top: 12px; }
-    th, td { text-align: left; padding: 12px; border-bottom: 1px solid #e5dccf; }
-    th { background: #efe5d6; }
-    .pill { display: inline-block; padding: 4px 10px; border-radius: 999px; font-weight: 700; }
-    .green { background: #d9f4eb; color: #0f766e; }
-    .red { background: #fee2e2; color: #b91c1c; }
-    .yellow { background: #fef3c7; color: #a16207; }
-    .muted { color: #64748b; }
-    a { color: #0f766e; }
+    :root {
+      --bg: #f5f1e8;
+      --panel: #fffaf2;
+      --ink: #18222d;
+      --muted: #5d6b78;
+      --accent: #0f766e;
+      --accent-soft: #d7f3ef;
+      --warn: #a16207;
+      --warn-soft: #fef3c7;
+      --border: #d8cfc2;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top right, #f6dec7 0, transparent 28%),
+        linear-gradient(180deg, #f7f2ea 0%, var(--bg) 100%);
+    }
+    .wrap {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 32px 20px 48px;
+    }
+    h1, h2, h3 { margin: 0 0 12px; }
+    p { margin: 0 0 12px; }
+    .hero {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 28px;
+      box-shadow: 0 12px 40px rgba(24, 34, 45, 0.08);
+    }
+    .muted { color: var(--muted); }
+    .grid {
+      display: grid;
+      gap: 16px;
+      margin-top: 20px;
+    }
+    .grid.cards {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .grid.panels {
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
+    .card, .panel {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 20px;
+      box-shadow: 0 8px 30px rgba(24, 34, 45, 0.05);
+    }
+    .metric {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .metric-label {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    .section {
+      margin-top: 24px;
+    }
+    .pill {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+    .pill.ok {
+      background: var(--accent-soft);
+      color: var(--accent);
+    }
+    .pill.risk {
+      background: var(--warn-soft);
+      color: var(--warn);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+    }
+    th, td {
+      text-align: left;
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+      font-size: 0.95rem;
+    }
+    th {
+      background: #efe6d8;
+    }
+    tr:last-child td {
+      border-bottom: none;
+    }
+    ul {
+      margin: 8px 0 0 18px;
+      padding: 0;
+    }
+    code {
+      font-family: Consolas, monospace;
+      font-size: 0.9em;
+      background: #f0ebe2;
+      padding: 1px 4px;
+      border-radius: 4px;
+    }
   </style>
 </head>
 <body>
-  <section class="hero">
-    <h1>Karate Nightly Consolidated Report</h1>
-    <p class="muted">Generated at 2026-04-08T13:20:42.142Z</p>
-    <p>Built from existing lane artifacts (no re-run).</p>
-  </section>
-  <section class="panel">
+  <div class="wrap">
+    <section class="hero">
+      <h1>BeeDigital QA Progress Dashboard</h1>
+      <p class="muted">Snapshot generado el 13 abr 2026, 11:18. Pensado para dailies, seguimiento local y lectura rapida del avance en integraciones, contratos y lanes de CI.</p>
+    </section>
+
+    <section class="section grid cards">
+      <div class="card">
+        <div class="metric">9/9</div>
+        <div class="metric-label">Capacidades implementadas</div>
+        <p class="muted">100% del baseline rastreado</p>
+      </div>
+      <div class="card">
+        <div class="metric">15</div>
+        <div class="metric-label">Escenarios Karate deterministas</div>
+        <p class="muted">Lane local bajo control</p>
+      </div>
+      <div class="card">
+        <div class="metric">10</div>
+        <div class="metric-label">Escenarios live</div>
+        <p class="muted">Validacion superior y nightly</p>
+      </div>
+      <div class="card">
+        <div class="metric">22</div>
+        <div class="metric-label">Escenarios mock</div>
+        <p class="muted">Carriles auxiliares y controlados</p>
+      </div>
+      <div class="card">
+        <div class="metric">N/A</div>
+        <div class="metric-label">Tests del lane determinista</div>
+        <p class="muted">Sin reporte</p>
+      </div>
+      <div class="card">
+        <div class="metric">3/11</div>
+        <div class="metric-label">Schemas / ejemplos Kafka</div>
+        <p class="muted">3 positivos, 8 negativos</p>
+      </div>
+      <div class="card">
+        <div class="metric">2/3</div>
+        <div class="metric-label">Tenants mock activos / pilotos</div>
+        <p class="muted">4 sources, 1 variantes de dominio</p>
+      </div>
+      <div class="card">
+        <div class="metric">9/13</div>
+        <div class="metric-label">Export endpoints capturados</div>
+        <p class="muted">4 saneados, 1 parciales</p>
+      </div>
+    </section>
+
+    <section class="section grid panels">
+      <div class="panel">
+        <h2>Lanes</h2>
+        <p><strong>Karate deterministic:</strong> <span class="muted">sin datos</span></p>
+        <p><strong>Tests:</strong> 0</p>
+        <p><strong>Fallos:</strong> 0</p>
+        <p><strong>Errores:</strong> 0</p>
+        <p><strong>Duracion:</strong> 0 s</p>
+        <p><strong>Kafka contracts:</strong> 3 schemas, 11 ejemplos (3 positivos, 8 negativos)</p>
+      </div>
+      <div class="panel">
+        <h2>Tenant Mock Server</h2>
+        <p><strong>Pilotos saneados:</strong> 4 files / 3 tenants reales</p>
+        <p><strong>Export plans:</strong> 3</p>
+        <p><strong>Tenants generados en catalogo:</strong> 2 (beeArgentina, beeEspana)</p>
+      </div>
+      <div class="panel">
+        <h2>CI y operativa</h2>
+        <p><strong>Hub PR fast:</strong> Si</p>
+        <p><strong>Hub nightly:</strong> Si</p>
+        <p><strong>Front Karate PR:</strong> Si</p>
+        <p><strong>Front Karate nightly:</strong> Si</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Resumen consolidado de lanes</h2>
+      <p class="muted">Ultima actualizacion: 13 abr 2026, 11:18</p>
+      
     <table>
       <thead>
         <tr>
           <th>Lane</th>
-          <th>Status</th>
-          <th>Exit code</th>
+          <th>Estado</th>
           <th>Tests</th>
-          <th>Failures</th>
-          <th>Errors</th>
-          <th>Duration (s)</th>
-          <th>Artifacts</th>
+          <th>Fallos</th>
+          <th>Errores</th>
+          <th>Duracion (s)</th>
+          <th>Ejecucion</th>
         </tr>
       </thead>
       <tbody>
-        
-<tr>
-  <td>Karate Extended Live</td>
-  <td><span class="pill green">green</span></td>
-  <td>0</td>
-  <td></td>
-  <td></td>
-  <td></td>
-  <td></td>
-  <td><a href="./runs/live/karate-reports/index.html">karate-reports</a></td>
-</tr>
-
-<tr>
-  <td>Karate Extended Mock</td>
-  <td><span class="pill green">green</span></td>
-  <td>0</td>
-  <td></td>
-  <td></td>
-  <td></td>
-  <td></td>
-  <td><a href="./runs/mock/karate-reports/index.html">karate-reports</a></td>
-</tr>
-      </tbody>
+    <tr>
+      <td>Karate Extended Live</td>
+      <td><span class="pill risk">yellow</span></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td><a href="./lanes/live.html">Abrir ejecucion</a></td>
+    </tr>
+  
+    <tr>
+      <td>Karate Extended Mock</td>
+      <td><span class="pill ok">green</span></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td><a href="./lanes/mock.html">Abrir ejecucion</a></td>
+    </tr>
+  </tbody>
     </table>
-  </section>
+  
+    </section>
+
+    <section class="section">
+      <h2>Capacidades rastreadas</h2>
+      
+    <table>
+      <thead>
+        <tr>
+          <th>Estado</th>
+          <th>Capacidad</th>
+          <th>Escenario</th>
+          <th>Fuente</th>
+        </tr>
+      </thead>
+      <tbody>
+    <tr>
+      <td>Si</td>
+      <td>Bootstrap config</td>
+      <td>config endpoint responds with deterministic local tenant configuration</td>
+      <td>api-tests/src/test/resources/com/beedigital/global/web/karate/bootstrap/config.feature</td>
+    </tr>
+  
+    <tr>
+      <td>Si</td>
+      <td>Bootstrap organizations/domains</td>
+      <td>organizations domains endpoint returns deterministic tenant map for the seeded organization</td>
+      <td>api-tests/src/test/resources/com/beedigital/global/web/karate/bootstrap/organizations-domains.feature</td>
+    </tr>
+  
+    <tr>
+      <td>Si</td>
+      <td>Auth login</td>
+      <td>login with deterministic local credentials and capture auth context</td>
+      <td>api-tests/src/test/resources/com/beedigital/global/web/karate/auth/local-auth-context.feature</td>
+    </tr>
+  
+    <tr>
+      <td>Si</td>
+      <td>Auth session</td>
+      <td>session returns a logged-in session shape with deterministic local auth</td>
+      <td>api-tests/src/test/resources/com/beedigital/global/web/karate/auth/session.feature</td>
+    </tr>
+  
+    <tr>
+      <td>Si</td>
+      <td>Auth access-check</td>
+      <td>access-check returns granted access with deterministic local auth and seeded merchant data</td>
+      <td>api-tests/src/test/resources/com/beedigital/global/web/karate/auth/access-check.feature</td>
+    </tr>
+  
+    <tr>
+      <td>Si</td>
+      <td>Metricool deterministic happy path</td>
+      <td>metricool returns a deterministic happy path when API-GLOBAL is mocked</td>
+      <td>api-tests/src/test/resources/com/beedigital/global/web/karate/auth/metricool.feature</td>
+    </tr>
+  
+    <tr>
+      <td>Si</td>
+      <td>Yext diffusion/connect/disconnect</td>
+      <td>yext diffusion returns a deterministic local happy path</td>
+      <td>api-tests/src/test/resources/com/beedigital/global/web/karate/integrations/yext-publishers.feature</td>
+    </tr>
+  
+    <tr>
+      <td>Si</td>
+      <td>GBP posts read</td>
+      <td>gbp posts returns a deterministic local happy path</td>
+      <td>api-tests/src/test/resources/com/beedigital/global/web/karate/integrations/gbp-posts.feature</td>
+    </tr>
+  
+    <tr>
+      <td>Si</td>
+      <td>GBP posts CRUD</td>
+      <td>gbp posts supports a deterministic local create update delete lifecycle</td>
+      <td>api-tests/src/test/resources/com/beedigital/global/web/karate/integrations/gbp-posts.feature</td>
+    </tr>
+  </tbody>
+    </table>
+  
+    </section>
+
+    <section class="section">
+      <h2>Historico reciente</h2>
+      
+    <table>
+      <thead>
+        <tr>
+          <th>Snapshot</th>
+          <th>Capacidades</th>
+          <th>Escenarios deterministas</th>
+        </tr>
+      </thead>
+      <tbody>
+    <tr>
+      <td>13 abr 2026, 11:18</td>
+      <td>9/9</td>
+      <td>15</td>
+    </tr>
+  </tbody>
+    </table>
+  
+    </section>
+  </div>
 </body>
 </html>
