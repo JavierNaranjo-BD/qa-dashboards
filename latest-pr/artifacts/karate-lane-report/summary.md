@@ -1,14 +1,9 @@
 # Karate Lane Report
 
-Generated at: 2026-04-13T11:07:58.918Z
+Generated at: 2026-04-13T10:46:33.529Z
 
 ## Karate Extended Deterministic
 - Status: red
 - Exit code: 1
-- Tests: 15
-- Failures: 13
-- Errors: 0
-- Skipped: 0
-- Duration: 11.95s
 - Artifacts: runs/deterministic
 
