@@ -21,7 +21,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   capture_pageview:false,
   api_transport:'sendBeacon',
   loaded: function(posthog) { 
-    posthog.capture("report_feature",{distinct_id:"8c3c334e-642c-4581-99f7-077401b43089",karate_version:"1.5.2",karate_meta:null});
+    posthog.capture("report_feature",{distinct_id:"a4f2d533-eb92-4fb1-8095-458e2ede37b5",karate_version:"1.5.2",karate_meta:null});
   }
 });
 </script>
@@ -38,8 +38,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">3</div>
-      <div id="nav-fail" class="bg-danger">0</div>
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">3</div>
     </div>
   </div>
   <div id="nav-env">
@@ -49,18 +49,18 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2026-04-13 11:02:06 AM</div>
+    <div>2026-04-13 11:07:52 AM</div>
   </div>
 </div>
 
         <div class="nav-container">
-          <div class="nav-item passed">
+          <div class="nav-item failed">
             <a href="#[4:36]"><span>[4:36]</span> <span>yext diffusion returns a deterministic local happy path</span></a>
           </div>
-          <div class="nav-item passed">
+          <div class="nav-item failed">
             <a href="#[12:138]"><span>[12:138]</span> <span>yext connect returns a deterministic local happy path</span></a>
           </div>
-          <div class="nav-item passed">
+          <div class="nav-item failed">
             <a href="#[17:220]"><span>[17:220]</span> <span>yext disconnect returns a deterministic local happy path</span></a>
           </div>
         </div>
@@ -86,8 +86,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>120</span>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>68</span>
             </div>
           </div>
           <div class="step-row">
@@ -119,36 +119,36 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4">11:02:06.644 Karate env: local 
-11:02:06.644 Karate baseUrl: http://localhost:4000/api/v1 
-11:02:06.644 Karate tenant: adminnewworkspaceuat.beedigital.es 
-11:02:06.644 Karate tenantId: beeEspana 
-11:02:06.644 Karate tenantProfile: beeEspana 
-11:02:06.646 Karate loginEmail configured: true 
-11:02:06.646 Karate loginPassword configured: true 
-11:02:06.646 Karate loginToken configured: false 
-11:02:06.646 Karate accessCheckToken configured: false 
-11:02:06.646 Karate sessionToken configured: false 
-11:02:06.646 Karate runUserEventDeliveryScenarios: false 
-11:02:06.646 Karate startApiGlobalMock: false 
-11:02:06.646 Karate apiGlobalMockUrl:  
-11:02:06.646 Karate metricoolMockEnabled: false 
-11:02:06.646 Karate metricoolServiceId configured: true 
-11:02:06.646 Karate metricoolAuthToken configured: false 
-11:02:06.646 Karate yextMockEnabled: false 
-11:02:06.646 Karate yextServiceId configured: true 
-11:02:06.646 Karate yextAuthToken configured: false 
-11:02:06.646 Karate yextPublisherId: yext 
-11:02:06.646 Karate gbpMockEnabled: false 
-11:02:06.646 Karate gbpProductId configured: true 
-11:02:06.646 Karate gbpAuthToken configured: false 
-11:02:06.646 Karate organizationId: beesible 
-11:02:06.646 Karate brandingTitle configured: true 
-11:02:06.646 Karate cognitoDomain configured: true 
-11:02:06.646 Karate supportsMetricool: true 
-11:02:06.646 Karate supportsYext: true 
-11:02:06.646 Karate supportsGbp: true 
-11:02:06.646 Workspace .env detected: false 
+  <div class="preformatted" data-parent="0.4">11:07:52.605 Karate env: local 
+11:07:52.605 Karate baseUrl: http://localhost:4000/api/v1 
+11:07:52.605 Karate tenant: adminnewworkspaceuat.beedigital.es 
+11:07:52.605 Karate tenantId: beeEspana 
+11:07:52.605 Karate tenantProfile: beeEspana 
+11:07:52.605 Karate loginEmail configured: true 
+11:07:52.605 Karate loginPassword configured: true 
+11:07:52.605 Karate loginToken configured: false 
+11:07:52.605 Karate accessCheckToken configured: false 
+11:07:52.605 Karate sessionToken configured: false 
+11:07:52.607 Karate runUserEventDeliveryScenarios: false 
+11:07:52.615 Karate startApiGlobalMock: false 
+11:07:52.615 Karate apiGlobalMockUrl:  
+11:07:52.615 Karate metricoolMockEnabled: false 
+11:07:52.615 Karate metricoolServiceId configured: true 
+11:07:52.617 Karate metricoolAuthToken configured: false 
+11:07:52.617 Karate yextMockEnabled: false 
+11:07:52.619 Karate yextServiceId configured: true 
+11:07:52.619 Karate yextAuthToken configured: false 
+11:07:52.619 Karate yextPublisherId: yext 
+11:07:52.619 Karate gbpMockEnabled: false 
+11:07:52.619 Karate gbpProductId configured: true 
+11:07:52.623 Karate gbpAuthToken configured: false 
+11:07:52.629 Karate organizationId: beesible 
+11:07:52.629 Karate brandingTitle configured: true 
+11:07:52.629 Karate cognitoDomain configured: true 
+11:07:52.629 Karate supportsMetricool: true 
+11:07:52.629 Karate supportsYext: true 
+11:07:52.629 Karate supportsGbp: true 
+11:07:52.629 Workspace .env detected: false 
 </div>   
 
   
@@ -196,7 +196,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def auth = callonce read(&#39;../auth/local-auth-context.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">80</div>
+    <div class="time-cell passed">40</div>
   </div>
 
    
@@ -205,7 +205,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.38">11:02:06.729 &lt;&lt; lock released, cached callonce: read(&#39;../auth/local-auth-context.feature&#39;)
+  <div class="preformatted" data-parent="0.38">11:07:52.671 &lt;&lt; lock released, cached callonce: read(&#39;../auth/local-auth-context.feature&#39;)
 </div>   
 
   <div>
@@ -216,7 +216,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <div class="step-indent"></div>
         <div class="step-cell passed">com.beedigital.global.web.karate.integrations.auth.local-auth-context</div>
       </div>
-      <div class="time-cell passed">69</div>
+      <div class="time-cell passed">32</div>
     </div>
     <div>
       <div><div>
@@ -241,7 +241,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.38.0.call.0.4">11:02:06.650 &gt;&gt; lock acquired, begin callonce: read(&#39;../auth/local-auth-context.feature&#39;)
+  <div class="preformatted" data-parent="0.38.0.call.0.4">11:07:52.633 &gt;&gt; lock acquired, begin callonce: read(&#39;../auth/local-auth-context.feature&#39;)
 </div>   
 
   
@@ -401,7 +401,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">68</div>
+    <div class="time-cell passed">30</div>
   </div>
 
    
@@ -410,7 +410,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.38.0.call.0.10">11:02:06.673 request:
+  <div class="preformatted" data-parent="0.38.0.call.0.10">11:07:52.641 request:
 1 &gt; POST http://localhost:4000/api/v1/auth/login
 1 &gt; Tenant: adminnewworkspaceuat.beedigital.es
 1 &gt; Content-Type: application/json; charset=UTF-8
@@ -421,7 +421,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;email&quot;:&quot;pruebasqabeesible@gmail.com&quot;,&quot;password&quot;:&quot;h1[{6z0=q8*f73V&quot;}
 
-11:02:06.727 response time in milliseconds: 54
+11:07:52.669 response time in milliseconds: 28
 1 &lt; 200
 1 &lt; Vary: Origin
 1 &lt; Vary: Access-Control-Request-Method
@@ -434,10 +434,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Mon, 13 Apr 2026 11:02:06 GMT
+1 &lt; Date: Mon, 13 Apr 2026 11:07:52 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-{&quot;httpCode&quot;:200,&quot;httpStatus&quot;:null,&quot;data&quot;:{&quot;jwt&quot;:&quot;eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJCZWVHbG9iYWxXZWIiLCJleHAiOjE3NzYyOTQxMjYsImlzR3Vlc3QiOmZhbHNlLCJwcm9maWxlSWQiOiJwcm9mX21vY2tfYmVlX2FkbWluXzAwMSIsIm1mYVR5cGUiOiJlbWFpbCIsInJvbGVJZCI6InJvbGVfYWRtaW4iLCJ0ZW5hbnRJZCI6ImJlZUVzcGFuYSIsImNvZ25pdG86dXNlcm5hbWUiOiJiZWUtYWRtaW4tdGVzdC11c2VyIiwibWZhUmVxdWlyZWQiOmZhbHNlLCJhY2Nlc3NUb2tlbiI6Im1vY2stbG9jYWwtYWNjZXNzLXRva2VuIiwiaXNNZmFFbmFibGVkIjpmYWxzZSwiZW1haWwiOiJwcnVlYmFzcWFiZWVzaWJsZUBnbWFpbC5jb20iLCJyZWZyZXNoVG9rZW4iOiJtb2NrLWxvY2FsLXJlZnJlc2gtdG9rZW4ifQ.cWTyqhsEEfXQ_y3vLQJIoKYsI_wbdQZtN6VSrfTM-s56T47FPSt87zcg-FHBchHTJIOTSQVOkkzAl0gmYT8WhPgznGbRMJOafk0UmlWLqBo--3vQ3JBT2NfHveP8GP4bNklpsWwOP-TLskdP2m90BN_gNQnzAXtwQ6lTNZOpvT80aa4OpNECyHF4EtzJ4d6FdAhAG-QyYW01BWPkrytPvlgXD8Ez8oHYmDK8opnLpdTY9UuBef0AxMrxVA5AQkc-_b_cD1CaAY_jDkyUOUNK4RO-LEY__EJ-YyGEjt64G-QetTKA3Y8XhiOudKS0Meo2bGJ0tS5oRcxfsSI0ZPsBgw&quot;},&quot;errors&quot;:[],&quot;warnings&quot;:[],&quot;metadata&quot;:null}
+{&quot;httpCode&quot;:200,&quot;httpStatus&quot;:null,&quot;data&quot;:{&quot;error&quot;:&quot;${USER_PASSWORD_INCORRECT}&quot;},&quot;errors&quot;:[],&quot;warnings&quot;:[],&quot;metadata&quot;:null}
 
 </div>   
 
@@ -514,7 +514,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def loginData = loginResponse.data || {}</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -687,7 +687,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">37</div>
+    <div class="time-cell passed">27</div>
   </div>
 
    
@@ -696,17 +696,17 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.43">11:02:06.731 request:
+  <div class="preformatted" data-parent="0.43">11:07:52.675 request:
 1 &gt; GET http://localhost:4000/api/v1/service/mock-yext-service/diffusion
 1 &gt; Tenant: adminnewworkspaceuat.beedigital.es
-1 &gt; Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJCZWVHbG9iYWxXZWIiLCJleHAiOjE3NzYyOTQxMjYsImlzR3Vlc3QiOmZhbHNlLCJwcm9maWxlSWQiOiJwcm9mX21vY2tfYmVlX2FkbWluXzAwMSIsIm1mYVR5cGUiOiJlbWFpbCIsInJvbGVJZCI6InJvbGVfYWRtaW4iLCJ0ZW5hbnRJZCI6ImJlZUVzcGFuYSIsImNvZ25pdG86dXNlcm5hbWUiOiJiZWUtYWRtaW4tdGVzdC11c2VyIiwibWZhUmVxdWlyZWQiOmZhbHNlLCJhY2Nlc3NUb2tlbiI6Im1vY2stbG9jYWwtYWNjZXNzLXRva2VuIiwiaXNNZmFFbmFibGVkIjpmYWxzZSwiZW1haWwiOiJwcnVlYmFzcWFiZWVzaWJsZUBnbWFpbC5jb20iLCJyZWZyZXNoVG9rZW4iOiJtb2NrLWxvY2FsLXJlZnJlc2gtdG9rZW4ifQ.cWTyqhsEEfXQ_y3vLQJIoKYsI_wbdQZtN6VSrfTM-s56T47FPSt87zcg-FHBchHTJIOTSQVOkkzAl0gmYT8WhPgznGbRMJOafk0UmlWLqBo--3vQ3JBT2NfHveP8GP4bNklpsWwOP-TLskdP2m90BN_gNQnzAXtwQ6lTNZOpvT80aa4OpNECyHF4EtzJ4d6FdAhAG-QyYW01BWPkrytPvlgXD8Ez8oHYmDK8opnLpdTY9UuBef0AxMrxVA5AQkc-_b_cD1CaAY_jDkyUOUNK4RO-LEY__EJ-YyGEjt64G-QetTKA3Y8XhiOudKS0Meo2bGJ0tS5oRcxfsSI0ZPsBgw
+1 &gt; Authorization: Bearer null
 1 &gt; Host: localhost:4000
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/22.0.2)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-11:02:06.766 response time in milliseconds: 35
+11:07:52.699 response time in milliseconds: 22
 1 &lt; 200
 1 &lt; Vary: Origin
 1 &lt; Vary: Access-Control-Request-Method
@@ -719,10 +719,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Mon, 13 Apr 2026 11:02:06 GMT
+1 &lt; Date: Mon, 13 Apr 2026 11:07:52 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-{&quot;httpCode&quot;:200,&quot;httpStatus&quot;:null,&quot;data&quot;:{&quot;publishers&quot;:{&quot;yext&quot;:{&quot;status&quot;:&quot;live&quot;,&quot;manageUrl&quot;:&quot;https://mock.yext.local/manage&quot;}}},&quot;errors&quot;:[],&quot;warnings&quot;:[],&quot;metadata&quot;:null}
+{&quot;httpCode&quot;:401,&quot;httpStatus&quot;:&quot;UNAUTHORIZED&quot;,&quot;data&quot;:null,&quot;errors&quot;:[{&quot;code&quot;:&quot;ERR006&quot;,&quot;msg&quot;:&quot;Unauthorized&quot;,&quot;txt&quot;:&quot;Unauthorized&quot;,&quot;metadata&quot;:null}],&quot;warnings&quot;:[],&quot;metadata&quot;:null}
 
 </div>   
 
@@ -765,13 +765,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.45">
-      <div class="step-ref passed">45</div>
+      <div class="step-ref failed">45</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>And</span>&nbsp;<span>match response.httpCode == 200</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell failed">1</div>
   </div>
 
    
@@ -780,7 +780,15 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
+  <div class="preformatted" data-parent="0.45">11:07:52.699 classpath:com/beedigital/global/web/karate/integrations/yext-publishers.feature:45
+And match response.httpCode == 200
+match failed: EQUALS
+  $ | not equal (NUMBER:NUMBER)
+  401
+  200
+
+classpath:com/beedigital/global/web/karate/integrations/yext-publishers.feature:45
+</div>   
 
   
 
@@ -793,13 +801,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.46">
-      <div class="step-ref passed">46</div>
+      <div class="step-ref skipped">46</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>match response.errors == []</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -821,13 +829,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.47">
-      <div class="step-ref passed">47</div>
+      <div class="step-ref skipped">47</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>match response.warnings == []</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -849,13 +857,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.48">
-      <div class="step-ref passed">48</div>
+      <div class="step-ref skipped">48</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>match response.data.publishers == &#39;#object&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -877,13 +885,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.49">
-      <div class="step-ref passed">49</div>
+      <div class="step-ref skipped">49</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def publisherData = response.data.publishers[yextPublisherId]</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -905,13 +913,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.50">
-      <div class="step-ref passed">50</div>
+      <div class="step-ref skipped">50</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>match publisherData == { status: &#39;live&#39;, manageUrl: &#39;https://mock.yext.local/manage&#39;, ownershipUrl: &#39;#notpresent&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -939,8 +947,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>37</span>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>67</span>
             </div>
           </div>
           <div class="step-row">
@@ -972,36 +980,36 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4">11:02:06.791 Karate env: local 
-11:02:06.791 Karate baseUrl: http://localhost:4000/api/v1 
-11:02:06.791 Karate tenant: adminnewworkspaceuat.beedigital.es 
-11:02:06.791 Karate tenantId: beeEspana 
-11:02:06.791 Karate tenantProfile: beeEspana 
-11:02:06.791 Karate loginEmail configured: true 
-11:02:06.791 Karate loginPassword configured: true 
-11:02:06.791 Karate loginToken configured: false 
-11:02:06.791 Karate accessCheckToken configured: false 
-11:02:06.791 Karate sessionToken configured: false 
-11:02:06.791 Karate runUserEventDeliveryScenarios: false 
-11:02:06.791 Karate startApiGlobalMock: false 
-11:02:06.791 Karate apiGlobalMockUrl:  
-11:02:06.791 Karate metricoolMockEnabled: false 
-11:02:06.791 Karate metricoolServiceId configured: true 
-11:02:06.791 Karate metricoolAuthToken configured: false 
-11:02:06.791 Karate yextMockEnabled: false 
-11:02:06.791 Karate yextServiceId configured: true 
-11:02:06.791 Karate yextAuthToken configured: false 
-11:02:06.791 Karate yextPublisherId: yext 
-11:02:06.791 Karate gbpMockEnabled: false 
-11:02:06.791 Karate gbpProductId configured: true 
-11:02:06.791 Karate gbpAuthToken configured: false 
-11:02:06.791 Karate organizationId: beesible 
-11:02:06.791 Karate brandingTitle configured: true 
-11:02:06.791 Karate cognitoDomain configured: true 
-11:02:06.791 Karate supportsMetricool: true 
-11:02:06.791 Karate supportsYext: true 
-11:02:06.791 Karate supportsGbp: true 
-11:02:06.791 Workspace .env detected: false 
+  <div class="preformatted" data-parent="0.4">11:07:52.711 Karate env: local 
+11:07:52.711 Karate baseUrl: http://localhost:4000/api/v1 
+11:07:52.711 Karate tenant: adminnewworkspaceuat.beedigital.es 
+11:07:52.711 Karate tenantId: beeEspana 
+11:07:52.711 Karate tenantProfile: beeEspana 
+11:07:52.711 Karate loginEmail configured: true 
+11:07:52.711 Karate loginPassword configured: true 
+11:07:52.711 Karate loginToken configured: false 
+11:07:52.711 Karate accessCheckToken configured: false 
+11:07:52.711 Karate sessionToken configured: false 
+11:07:52.711 Karate runUserEventDeliveryScenarios: false 
+11:07:52.711 Karate startApiGlobalMock: false 
+11:07:52.711 Karate apiGlobalMockUrl:  
+11:07:52.711 Karate metricoolMockEnabled: false 
+11:07:52.711 Karate metricoolServiceId configured: true 
+11:07:52.711 Karate metricoolAuthToken configured: false 
+11:07:52.711 Karate yextMockEnabled: false 
+11:07:52.711 Karate yextServiceId configured: true 
+11:07:52.711 Karate yextAuthToken configured: false 
+11:07:52.711 Karate yextPublisherId: yext 
+11:07:52.711 Karate gbpMockEnabled: false 
+11:07:52.711 Karate gbpProductId configured: true 
+11:07:52.711 Karate gbpAuthToken configured: false 
+11:07:52.711 Karate organizationId: beesible 
+11:07:52.711 Karate brandingTitle configured: true 
+11:07:52.711 Karate cognitoDomain configured: true 
+11:07:52.713 Karate supportsMetricool: true 
+11:07:52.713 Karate supportsYext: true 
+11:07:52.713 Karate supportsGbp: true 
+11:07:52.713 Workspace .env detected: false 
 </div>   
 
   
@@ -1021,7 +1029,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>if (!supportsYext || !yextServiceId) karate.abort()</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1049,7 +1057,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def auth = callonce read(&#39;../auth/local-auth-context.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1105,7 +1113,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>path &#39;service&#39;, serviceId, &#39;diffusion&#39;, &#39;connect&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1245,7 +1253,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">31</div>
+    <div class="time-cell passed">64</div>
   </div>
 
    
@@ -1254,10 +1262,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.147">11:02:06.800 request:
+  <div class="preformatted" data-parent="0.147">11:07:52.717 request:
 1 &gt; POST http://localhost:4000/api/v1/service/mock-yext-service/diffusion/connect?publisher=yext
 1 &gt; Tenant: adminnewworkspaceuat.beedigital.es
-1 &gt; Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJCZWVHbG9iYWxXZWIiLCJleHAiOjE3NzYyOTQxMjYsImlzR3Vlc3QiOmZhbHNlLCJwcm9maWxlSWQiOiJwcm9mX21vY2tfYmVlX2FkbWluXzAwMSIsIm1mYVR5cGUiOiJlbWFpbCIsInJvbGVJZCI6InJvbGVfYWRtaW4iLCJ0ZW5hbnRJZCI6ImJlZUVzcGFuYSIsImNvZ25pdG86dXNlcm5hbWUiOiJiZWUtYWRtaW4tdGVzdC11c2VyIiwibWZhUmVxdWlyZWQiOmZhbHNlLCJhY2Nlc3NUb2tlbiI6Im1vY2stbG9jYWwtYWNjZXNzLXRva2VuIiwiaXNNZmFFbmFibGVkIjpmYWxzZSwiZW1haWwiOiJwcnVlYmFzcWFiZWVzaWJsZUBnbWFpbC5jb20iLCJyZWZyZXNoVG9rZW4iOiJtb2NrLWxvY2FsLXJlZnJlc2gtdG9rZW4ifQ.cWTyqhsEEfXQ_y3vLQJIoKYsI_wbdQZtN6VSrfTM-s56T47FPSt87zcg-FHBchHTJIOTSQVOkkzAl0gmYT8WhPgznGbRMJOafk0UmlWLqBo--3vQ3JBT2NfHveP8GP4bNklpsWwOP-TLskdP2m90BN_gNQnzAXtwQ6lTNZOpvT80aa4OpNECyHF4EtzJ4d6FdAhAG-QyYW01BWPkrytPvlgXD8Ez8oHYmDK8opnLpdTY9UuBef0AxMrxVA5AQkc-_b_cD1CaAY_jDkyUOUNK4RO-LEY__EJ-YyGEjt64G-QetTKA3Y8XhiOudKS0Meo2bGJ0tS5oRcxfsSI0ZPsBgw
+1 &gt; Authorization: Bearer null
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 2
 1 &gt; Host: localhost:4000
@@ -1266,7 +1274,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 {}
 
-11:02:06.827 response time in milliseconds: 27
+11:07:52.778 response time in milliseconds: 61
 1 &lt; 200
 1 &lt; Vary: Origin
 1 &lt; Vary: Access-Control-Request-Method
@@ -1279,10 +1287,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Mon, 13 Apr 2026 11:02:06 GMT
+1 &lt; Date: Mon, 13 Apr 2026 11:07:52 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-{&quot;httpCode&quot;:200,&quot;httpStatus&quot;:null,&quot;data&quot;:{&quot;publishers&quot;:{&quot;yext&quot;:{&quot;status&quot;:&quot;live&quot;,&quot;manageUrl&quot;:&quot;https://mock.yext.local/manage&quot;}}},&quot;errors&quot;:[],&quot;warnings&quot;:[],&quot;metadata&quot;:null}
+{&quot;httpCode&quot;:401,&quot;httpStatus&quot;:&quot;UNAUTHORIZED&quot;,&quot;data&quot;:null,&quot;errors&quot;:[{&quot;code&quot;:&quot;ERR006&quot;,&quot;msg&quot;:&quot;Unauthorized&quot;,&quot;txt&quot;:&quot;Unauthorized&quot;,&quot;metadata&quot;:null}],&quot;warnings&quot;:[],&quot;metadata&quot;:null}
 
 </div>   
 
@@ -1325,13 +1333,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.149">
-      <div class="step-ref passed">149</div>
+      <div class="step-ref failed">149</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>And</span>&nbsp;<span>match response.httpCode == 200</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell failed">1</div>
   </div>
 
    
@@ -1340,7 +1348,15 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
+  <div class="preformatted" data-parent="0.149">11:07:52.781 classpath:com/beedigital/global/web/karate/integrations/yext-publishers.feature:149
+And match response.httpCode == 200
+match failed: EQUALS
+  $ | not equal (NUMBER:NUMBER)
+  401
+  200
+
+classpath:com/beedigital/global/web/karate/integrations/yext-publishers.feature:149
+</div>   
 
   
 
@@ -1353,13 +1369,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.150">
-      <div class="step-ref passed">150</div>
+      <div class="step-ref skipped">150</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>match response.errors == []</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1381,13 +1397,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.151">
-      <div class="step-ref passed">151</div>
+      <div class="step-ref skipped">151</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>match response.warnings == []</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1409,13 +1425,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.152">
-      <div class="step-ref passed">152</div>
+      <div class="step-ref skipped">152</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>match response.data.publishers == &#39;#object&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1437,13 +1453,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.153">
-      <div class="step-ref passed">153</div>
+      <div class="step-ref skipped">153</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def publisherData = response.data.publishers[yextPublisherId]</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1465,13 +1481,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.154">
-      <div class="step-ref passed">154</div>
+      <div class="step-ref skipped">154</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>match publisherData == { status: &#39;live&#39;, manageUrl: &#39;https://mock.yext.local/manage&#39;, ownershipUrl: &#39;#notpresent&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1499,8 +1515,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>31</span>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>33</span>
             </div>
           </div>
           <div class="step-row">
@@ -1532,36 +1548,36 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4">11:02:06.851 Karate env: local 
-11:02:06.851 Karate baseUrl: http://localhost:4000/api/v1 
-11:02:06.851 Karate tenant: adminnewworkspaceuat.beedigital.es 
-11:02:06.852 Karate tenantId: beeEspana 
-11:02:06.852 Karate tenantProfile: beeEspana 
-11:02:06.852 Karate loginEmail configured: true 
-11:02:06.852 Karate loginPassword configured: true 
-11:02:06.852 Karate loginToken configured: false 
-11:02:06.852 Karate accessCheckToken configured: false 
-11:02:06.852 Karate sessionToken configured: false 
-11:02:06.852 Karate runUserEventDeliveryScenarios: false 
-11:02:06.852 Karate startApiGlobalMock: false 
-11:02:06.852 Karate apiGlobalMockUrl:  
-11:02:06.852 Karate metricoolMockEnabled: false 
-11:02:06.852 Karate metricoolServiceId configured: true 
-11:02:06.852 Karate metricoolAuthToken configured: false 
-11:02:06.852 Karate yextMockEnabled: false 
-11:02:06.853 Karate yextServiceId configured: true 
-11:02:06.853 Karate yextAuthToken configured: false 
-11:02:06.853 Karate yextPublisherId: yext 
-11:02:06.853 Karate gbpMockEnabled: false 
-11:02:06.854 Karate gbpProductId configured: true 
-11:02:06.854 Karate gbpAuthToken configured: false 
-11:02:06.854 Karate organizationId: beesible 
-11:02:06.854 Karate brandingTitle configured: true 
-11:02:06.854 Karate cognitoDomain configured: true 
-11:02:06.854 Karate supportsMetricool: true 
-11:02:06.854 Karate supportsYext: true 
-11:02:06.854 Karate supportsGbp: true 
-11:02:06.855 Workspace .env detected: false 
+  <div class="preformatted" data-parent="0.4">11:07:52.805 Karate env: local 
+11:07:52.806 Karate baseUrl: http://localhost:4000/api/v1 
+11:07:52.806 Karate tenant: adminnewworkspaceuat.beedigital.es 
+11:07:52.806 Karate tenantId: beeEspana 
+11:07:52.806 Karate tenantProfile: beeEspana 
+11:07:52.806 Karate loginEmail configured: true 
+11:07:52.806 Karate loginPassword configured: true 
+11:07:52.806 Karate loginToken configured: false 
+11:07:52.806 Karate accessCheckToken configured: false 
+11:07:52.806 Karate sessionToken configured: false 
+11:07:52.806 Karate runUserEventDeliveryScenarios: false 
+11:07:52.806 Karate startApiGlobalMock: false 
+11:07:52.806 Karate apiGlobalMockUrl:  
+11:07:52.806 Karate metricoolMockEnabled: false 
+11:07:52.806 Karate metricoolServiceId configured: true 
+11:07:52.806 Karate metricoolAuthToken configured: false 
+11:07:52.806 Karate yextMockEnabled: false 
+11:07:52.806 Karate yextServiceId configured: true 
+11:07:52.806 Karate yextAuthToken configured: false 
+11:07:52.806 Karate yextPublisherId: yext 
+11:07:52.807 Karate gbpMockEnabled: false 
+11:07:52.807 Karate gbpProductId configured: true 
+11:07:52.807 Karate gbpAuthToken configured: false 
+11:07:52.807 Karate organizationId: beesible 
+11:07:52.807 Karate brandingTitle configured: true 
+11:07:52.807 Karate cognitoDomain configured: true 
+11:07:52.807 Karate supportsMetricool: true 
+11:07:52.807 Karate supportsYext: true 
+11:07:52.807 Karate supportsGbp: true 
+11:07:52.807 Workspace .env detected: false 
 </div>   
 
   
@@ -1665,7 +1681,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>path &#39;service&#39;, serviceId, &#39;diffusion&#39;, &#39;disconnect&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1805,7 +1821,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">28</div>
+    <div class="time-cell passed">30</div>
   </div>
 
    
@@ -1814,10 +1830,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.229">11:02:06.871 request:
+  <div class="preformatted" data-parent="0.229">11:07:52.812 request:
 1 &gt; POST http://localhost:4000/api/v1/service/mock-yext-service/diffusion/disconnect?publisher=yext
 1 &gt; Tenant: adminnewworkspaceuat.beedigital.es
-1 &gt; Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJCZWVHbG9iYWxXZWIiLCJleHAiOjE3NzYyOTQxMjYsImlzR3Vlc3QiOmZhbHNlLCJwcm9maWxlSWQiOiJwcm9mX21vY2tfYmVlX2FkbWluXzAwMSIsIm1mYVR5cGUiOiJlbWFpbCIsInJvbGVJZCI6InJvbGVfYWRtaW4iLCJ0ZW5hbnRJZCI6ImJlZUVzcGFuYSIsImNvZ25pdG86dXNlcm5hbWUiOiJiZWUtYWRtaW4tdGVzdC11c2VyIiwibWZhUmVxdWlyZWQiOmZhbHNlLCJhY2Nlc3NUb2tlbiI6Im1vY2stbG9jYWwtYWNjZXNzLXRva2VuIiwiaXNNZmFFbmFibGVkIjpmYWxzZSwiZW1haWwiOiJwcnVlYmFzcWFiZWVzaWJsZUBnbWFpbC5jb20iLCJyZWZyZXNoVG9rZW4iOiJtb2NrLWxvY2FsLXJlZnJlc2gtdG9rZW4ifQ.cWTyqhsEEfXQ_y3vLQJIoKYsI_wbdQZtN6VSrfTM-s56T47FPSt87zcg-FHBchHTJIOTSQVOkkzAl0gmYT8WhPgznGbRMJOafk0UmlWLqBo--3vQ3JBT2NfHveP8GP4bNklpsWwOP-TLskdP2m90BN_gNQnzAXtwQ6lTNZOpvT80aa4OpNECyHF4EtzJ4d6FdAhAG-QyYW01BWPkrytPvlgXD8Ez8oHYmDK8opnLpdTY9UuBef0AxMrxVA5AQkc-_b_cD1CaAY_jDkyUOUNK4RO-LEY__EJ-YyGEjt64G-QetTKA3Y8XhiOudKS0Meo2bGJ0tS5oRcxfsSI0ZPsBgw
+1 &gt; Authorization: Bearer null
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 2
 1 &gt; Host: localhost:4000
@@ -1826,7 +1842,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 {}
 
-11:02:06.895 response time in milliseconds: 24
+11:07:52.840 response time in milliseconds: 28
 1 &lt; 200
 1 &lt; Vary: Origin
 1 &lt; Vary: Access-Control-Request-Method
@@ -1839,10 +1855,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Mon, 13 Apr 2026 11:02:06 GMT
+1 &lt; Date: Mon, 13 Apr 2026 11:07:52 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-{&quot;httpCode&quot;:200,&quot;httpStatus&quot;:null,&quot;data&quot;:{&quot;publishers&quot;:{&quot;yext&quot;:{&quot;status&quot;:&quot;not_live&quot;}}},&quot;errors&quot;:[],&quot;warnings&quot;:[],&quot;metadata&quot;:null}
+{&quot;httpCode&quot;:401,&quot;httpStatus&quot;:&quot;UNAUTHORIZED&quot;,&quot;data&quot;:null,&quot;errors&quot;:[{&quot;code&quot;:&quot;ERR006&quot;,&quot;msg&quot;:&quot;Unauthorized&quot;,&quot;txt&quot;:&quot;Unauthorized&quot;,&quot;metadata&quot;:null}],&quot;warnings&quot;:[],&quot;metadata&quot;:null}
 
 </div>   
 
@@ -1885,13 +1901,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.231">
-      <div class="step-ref passed">231</div>
+      <div class="step-ref failed">231</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>And</span>&nbsp;<span>match response.httpCode == 200</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell failed">0</div>
   </div>
 
    
@@ -1900,7 +1916,15 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
+  <div class="preformatted" data-parent="0.231">11:07:52.840 classpath:com/beedigital/global/web/karate/integrations/yext-publishers.feature:231
+And match response.httpCode == 200
+match failed: EQUALS
+  $ | not equal (NUMBER:NUMBER)
+  401
+  200
+
+classpath:com/beedigital/global/web/karate/integrations/yext-publishers.feature:231
+</div>   
 
   
 
@@ -1913,13 +1937,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.232">
-      <div class="step-ref passed">232</div>
+      <div class="step-ref skipped">232</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>match response.errors == []</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1941,13 +1965,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.233">
-      <div class="step-ref passed">233</div>
+      <div class="step-ref skipped">233</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>match response.warnings == []</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1969,13 +1993,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.234">
-      <div class="step-ref passed">234</div>
+      <div class="step-ref skipped">234</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>match response.data.publishers == &#39;#object&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1997,13 +2021,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.235">
-      <div class="step-ref passed">235</div>
+      <div class="step-ref skipped">235</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def publisherData = response.data.publishers[yextPublisherId]</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -2025,13 +2049,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.236">
-      <div class="step-ref passed">236</div>
+      <div class="step-ref skipped">236</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>match publisherData == { status: &#39;not_live&#39;, manageUrl: &#39;#notpresent&#39;, ownershipUrl: &#39;#notpresent&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
