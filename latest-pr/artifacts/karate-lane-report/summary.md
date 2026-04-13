@@ -1,6 +1,6 @@
 # Karate Lane Report
 
-Generated at: 2026-04-13T09:13:58.021Z
+Generated at: 2026-04-13T09:19:43.277Z
 
 ## Karate Extended Deterministic
 - Status: red
@@ -9,6 +9,6 @@ Generated at: 2026-04-13T09:13:58.021Z
 - Failures: 13
 - Errors: 0
 - Skipped: 0
-- Duration: 10.41s
+- Duration: 9.359s
 - Artifacts: runs/deterministic
 
