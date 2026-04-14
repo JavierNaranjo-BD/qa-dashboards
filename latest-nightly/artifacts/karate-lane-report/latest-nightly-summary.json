@@ -8,7 +8,7 @@
   "failures": 0,
   "errors": 0,
   "durationSeconds": 0,
-  "generatedAt": "2026-04-14T10:36:46.559Z",
+  "generatedAt": "2026-04-14T11:06:47.620Z",
   "reportRoot": "D:\\a\\front-beeglobal\\front-beeglobal\\api-tests\\target\\karate-lane-report",
   "lanes": [
     {
@@ -28,7 +28,7 @@
       "note": "Built from step outcome: success"
     }
   ],
-  "runUrl": "https://github.com/BeeDigital-AI/front-beeglobal/actions/runs/24394234119",
+  "runUrl": "https://github.com/BeeDigital-AI/front-beeglobal/actions/runs/24395360172",
   "commitSha": "877e6517356198be6a90ae1a1a99d86f5ff8fccb",
   "branch": "feature/qa-5-tenant-aware-mock-server"
 }
