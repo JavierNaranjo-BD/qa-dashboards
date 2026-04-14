@@ -21,7 +21,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   capture_pageview:false,
   api_transport:'sendBeacon',
   loaded: function(posthog) { 
-    posthog.capture("report_feature",{distinct_id:"0e4e5141-ec53-4d0b-8bd3-9b93807e833e",karate_version:"1.5.2",karate_meta:null});
+    posthog.capture("report_feature",{distinct_id:"ec7ad6e7-69a8-4aac-8606-f5c5ea7c6559",karate_version:"1.5.2",karate_meta:null});
   }
 });
 </script>
@@ -49,7 +49,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2026-04-14 11:11:38 AM</div>
+    <div>2026-04-14 11:26:15 AM</div>
   </div>
 </div>
 
@@ -125,36 +125,36 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4">11:11:37.917 Karate env: local 
-11:11:37.919 Karate baseUrl: http://localhost:4015/api/v1 
-11:11:37.919 Karate tenant: adminnewworkspaceuat.beedigital.es 
-11:11:37.919 Karate tenantId: beeEspana 
-11:11:37.919 Karate tenantProfile: beeEspana 
-11:11:37.921 Karate loginEmail configured: false 
-11:11:37.921 Karate loginPassword configured: false 
-11:11:37.923 Karate loginToken configured: false 
-11:11:37.923 Karate accessCheckToken configured: false 
-11:11:37.923 Karate sessionToken configured: false 
-11:11:37.923 Karate runUserEventDeliveryScenarios: false 
-11:11:37.925 Karate startApiGlobalMock: true 
-11:11:37.925 Karate apiGlobalMockUrl: http://localhost:28088 
-11:11:37.925 Karate metricoolMockEnabled: true 
-11:11:37.925 Karate metricoolServiceId configured: true 
-11:11:37.925 Karate metricoolAuthToken configured: true 
-11:11:37.927 Karate yextMockEnabled: true 
-11:11:37.927 Karate yextServiceId configured: true 
-11:11:37.927 Karate yextAuthToken configured: true 
-11:11:37.927 Karate yextPublisherId: yext 
-11:11:37.929 Karate gbpMockEnabled: true 
-11:11:37.929 Karate gbpProductId configured: true 
-11:11:37.929 Karate gbpAuthToken configured: true 
-11:11:37.933 Karate organizationId: beesible 
-11:11:37.935 Karate brandingTitle configured: true 
-11:11:37.935 Karate cognitoDomain configured: true 
-11:11:37.935 Karate supportsMetricool: true 
-11:11:37.937 Karate supportsYext: true 
-11:11:37.937 Karate supportsGbp: true 
-11:11:37.948 Workspace .env detected: false 
+  <div class="preformatted" data-parent="0.4">11:26:14.139 Karate env: local 
+11:26:14.141 Karate baseUrl: http://localhost:4015/api/v1 
+11:26:14.141 Karate tenant: adminnewworkspaceuat.beedigital.es 
+11:26:14.141 Karate tenantId: beeEspana 
+11:26:14.141 Karate tenantProfile: beeEspana 
+11:26:14.143 Karate loginEmail configured: false 
+11:26:14.143 Karate loginPassword configured: false 
+11:26:14.145 Karate loginToken configured: false 
+11:26:14.145 Karate accessCheckToken configured: false 
+11:26:14.145 Karate sessionToken configured: false 
+11:26:14.145 Karate runUserEventDeliveryScenarios: false 
+11:26:14.147 Karate startApiGlobalMock: true 
+11:26:14.147 Karate apiGlobalMockUrl: http://localhost:28088 
+11:26:14.147 Karate metricoolMockEnabled: true 
+11:26:14.149 Karate metricoolServiceId configured: true 
+11:26:14.149 Karate metricoolAuthToken configured: true 
+11:26:14.149 Karate yextMockEnabled: true 
+11:26:14.153 Karate yextServiceId configured: true 
+11:26:14.153 Karate yextAuthToken configured: true 
+11:26:14.155 Karate yextPublisherId: yext 
+11:26:14.157 Karate gbpMockEnabled: true 
+11:26:14.159 Karate gbpProductId configured: true 
+11:26:14.161 Karate gbpAuthToken configured: true 
+11:26:14.163 Karate organizationId: beesible 
+11:26:14.163 Karate brandingTitle configured: true 
+11:26:14.165 Karate cognitoDomain configured: true 
+11:26:14.167 Karate supportsMetricool: true 
+11:26:14.167 Karate supportsYext: true 
+11:26:14.169 Karate supportsGbp: true 
+11:26:14.177 Workspace .env detected: false 
 </div>   
 
   
@@ -174,7 +174,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>if (!metricoolMockEnabled || !metricoolAuthToken || !metricoolServiceId) karate.abort()</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">6</div>
   </div>
 
    
@@ -202,7 +202,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def expectedLoginUrl = &#39;https://mock.metricool.local/login?tenant=&#39; + tenantId + &#39;&amp;serviceId=&#39; + metricoolServiceId</span>
       </div>
     </div>
-    <div class="time-cell passed">5</div>
+    <div class="time-cell passed">4</div>
   </div>
 
    
@@ -230,7 +230,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>path &#39;metricool&#39;, metricoolServiceId</span>
       </div>
     </div>
-    <div class="time-cell passed">8</div>
+    <div class="time-cell passed">14</div>
   </div>
 
    
@@ -314,7 +314,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">203</div>
+    <div class="time-cell passed">192</div>
   </div>
 
    
@@ -323,17 +323,17 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.136">11:11:38.131 request:
+  <div class="preformatted" data-parent="0.136">11:26:14.401 request:
 1 &gt; GET http://localhost:4015/api/v1/metricool/mock-metricool-service
 1 &gt; Tenant: adminnewworkspaceuat.beedigital.es
-1 &gt; Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJCZWVHbG9iYWxXZWIiLCJleHAiOjE3NzYzODEwODQsImlzR3Vlc3QiOmZhbHNlLCJwcm9maWxlSWQiOiJwcm9mX21vY2tfYmVlX2FkbWluXzAwMSIsIm1mYVR5cGUiOiJlbWFpbCIsInJvbGVJZCI6InJvbGVfYWRtaW4iLCJ0ZW5hbnRJZCI6ImJlZUVzcGFuYSIsImNvZ25pdG86dXNlcm5hbWUiOiJiZWUtYWRtaW4tdGVzdC11c2VyIiwibWZhUmVxdWlyZWQiOmZhbHNlLCJhY2Nlc3NUb2tlbiI6Im1vY2stbG9jYWwtYWNjZXNzLXRva2VuIiwiaXNNZmFFbmFibGVkIjpmYWxzZSwiZW1haWwiOiJxYS5tb2NrQGJlZWRpZ2l0YWwubG9jYWwiLCJyZWZyZXNoVG9rZW4iOiJtb2NrLWxvY2FsLXJlZnJlc2gtdG9rZW4ifQ.mcY25y1U2uKEO7cNnaw-cmZt5kIGR-S9iyueK5X2BGRoqBE6b4wTRmjagJ1dAxWQHUiRxjQiOvHWK9eMRAX35x4ov6Jd8HBHPOoZqx_4DTESifmLOuQhXtkcdkdBZGSlSOMznu0ZBRePe56iFCfl-AOT5-L9V1C8TRE5n73hWKxwgAOUUQsmD_k8QG7hTXseaTtss69KlNof5mHaw-5kPu-IVDk4GXObehO4JwqMrZJkSQtPR-8uff392WTsqitbBU_RjNKtEitTIVErTSYtoYK9s0rUKPMD1OF1Ze5-bgLATndXOGm7BqTkT4ci-oAyTFrMqHVo57scuEjmvPPMqw
+1 &gt; Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJCZWVHbG9iYWxXZWIiLCJleHAiOjE3NzYzODE5NTksImlzR3Vlc3QiOmZhbHNlLCJwcm9maWxlSWQiOiJwcm9mX21vY2tfYmVlX2FkbWluXzAwMSIsIm1mYVR5cGUiOiJlbWFpbCIsInJvbGVJZCI6InJvbGVfYWRtaW4iLCJ0ZW5hbnRJZCI6ImJlZUVzcGFuYSIsImNvZ25pdG86dXNlcm5hbWUiOiJiZWUtYWRtaW4tdGVzdC11c2VyIiwibWZhUmVxdWlyZWQiOmZhbHNlLCJhY2Nlc3NUb2tlbiI6Im1vY2stbG9jYWwtYWNjZXNzLXRva2VuIiwiaXNNZmFFbmFibGVkIjpmYWxzZSwiZW1haWwiOiJxYS5tb2NrQGJlZWRpZ2l0YWwubG9jYWwiLCJyZWZyZXNoVG9rZW4iOiJtb2NrLWxvY2FsLXJlZnJlc2gtdG9rZW4ifQ.ksTwkbmJSthaUnQ7ge-kgX0taFsnhQLig5_0DVnQ00q16ZiIMSIdGUKFHVP6F7nJzsWZMqPeR2jip3_qYK8dYy2dVxthp7k8aKPqPG-haSGYBm1Hw9HHQWt2gtCn5_BTFXeS5JXB5GPGEjaVh_ofQPzBOiqU766-KOLhf2NfQvuxjKnJN64m3mXX4JCe19f62EJWRjQDfO-ISMkq7qV4aqF_gRrWzt7lg_I7PSYu1-f7qBIPAYeDQw74ZqXbzmte8o7Qf8k_dSkxmtmuQvPvnvU_8QWHwfmHWDQMc_ZnjwVdXJou_co9ZcVrwkhv5ZT5c0_oamy6eej7T-RhJM2jBQ
 1 &gt; Host: localhost:4015
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/22.0.2)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-11:11:38.187 response time in milliseconds: 52
+11:26:14.453 response time in milliseconds: 48
 1 &lt; 200
 1 &lt; Vary: Origin
 1 &lt; Vary: Access-Control-Request-Method
@@ -346,7 +346,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 14 Apr 2026 11:11:38 GMT
+1 &lt; Date: Tue, 14 Apr 2026 11:26:14 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
 {&quot;httpCode&quot;:200,&quot;httpStatus&quot;:null,&quot;data&quot;:{&quot;loginUrl&quot;:&quot;https://mock.metricool.local/login?tenant=beeEspana&amp;serviceId=mock-metricool-service&quot;},&quot;errors&quot;:[],&quot;warnings&quot;:[],&quot;metadata&quot;:null}
@@ -398,7 +398,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>match response.httpCode == 200</span>
       </div>
     </div>
-    <div class="time-cell passed">32</div>
+    <div class="time-cell passed">35</div>
   </div>
 
    
@@ -482,7 +482,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>match response.data == { loginUrl: &#39;#(expectedLoginUrl)&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">4</div>
   </div>
 
    
@@ -511,7 +511,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>56</span>
+              <span>ms:</span>&nbsp;<span>50</span>
             </div>
           </div>
           <div class="step-row">
@@ -534,7 +534,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>url baseUrl</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -543,36 +543,36 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4">11:11:38.335 Karate env: local 
-11:11:38.335 Karate baseUrl: http://localhost:4015/api/v1 
-11:11:38.335 Karate tenant: adminnewworkspaceuat.beedigital.es 
-11:11:38.335 Karate tenantId: beeEspana 
-11:11:38.335 Karate tenantProfile: beeEspana 
-11:11:38.337 Karate loginEmail configured: false 
-11:11:38.337 Karate loginPassword configured: false 
-11:11:38.337 Karate loginToken configured: false 
-11:11:38.339 Karate accessCheckToken configured: false 
-11:11:38.339 Karate sessionToken configured: false 
-11:11:38.339 Karate runUserEventDeliveryScenarios: false 
-11:11:38.339 Karate startApiGlobalMock: true 
-11:11:38.339 Karate apiGlobalMockUrl: http://localhost:28088 
-11:11:38.339 Karate metricoolMockEnabled: true 
-11:11:38.339 Karate metricoolServiceId configured: true 
-11:11:38.339 Karate metricoolAuthToken configured: true 
-11:11:38.339 Karate yextMockEnabled: true 
-11:11:38.339 Karate yextServiceId configured: true 
-11:11:38.339 Karate yextAuthToken configured: true 
-11:11:38.339 Karate yextPublisherId: yext 
-11:11:38.339 Karate gbpMockEnabled: true 
-11:11:38.339 Karate gbpProductId configured: true 
-11:11:38.343 Karate gbpAuthToken configured: true 
-11:11:38.343 Karate organizationId: beesible 
-11:11:38.345 Karate brandingTitle configured: true 
-11:11:38.345 Karate cognitoDomain configured: true 
-11:11:38.345 Karate supportsMetricool: true 
-11:11:38.345 Karate supportsYext: true 
-11:11:38.345 Karate supportsGbp: true 
-11:11:38.345 Workspace .env detected: false 
+  <div class="preformatted" data-parent="0.4">11:26:14.604 Karate env: local 
+11:26:14.604 Karate baseUrl: http://localhost:4015/api/v1 
+11:26:14.604 Karate tenant: adminnewworkspaceuat.beedigital.es 
+11:26:14.604 Karate tenantId: beeEspana 
+11:26:14.604 Karate tenantProfile: beeEspana 
+11:26:14.606 Karate loginEmail configured: false 
+11:26:14.608 Karate loginPassword configured: false 
+11:26:14.608 Karate loginToken configured: false 
+11:26:14.608 Karate accessCheckToken configured: false 
+11:26:14.608 Karate sessionToken configured: false 
+11:26:14.608 Karate runUserEventDeliveryScenarios: false 
+11:26:14.608 Karate startApiGlobalMock: true 
+11:26:14.608 Karate apiGlobalMockUrl: http://localhost:28088 
+11:26:14.608 Karate metricoolMockEnabled: true 
+11:26:14.608 Karate metricoolServiceId configured: true 
+11:26:14.608 Karate metricoolAuthToken configured: true 
+11:26:14.608 Karate yextMockEnabled: true 
+11:26:14.608 Karate yextServiceId configured: true 
+11:26:14.608 Karate yextAuthToken configured: true 
+11:26:14.608 Karate yextPublisherId: yext 
+11:26:14.610 Karate gbpMockEnabled: true 
+11:26:14.610 Karate gbpProductId configured: true 
+11:26:14.614 Karate gbpAuthToken configured: true 
+11:26:14.614 Karate organizationId: beesible 
+11:26:14.614 Karate brandingTitle configured: true 
+11:26:14.614 Karate cognitoDomain configured: true 
+11:26:14.614 Karate supportsMetricool: true 
+11:26:14.614 Karate supportsYext: true 
+11:26:14.614 Karate supportsGbp: true 
+11:26:14.614 Workspace .env detected: false 
 </div>   
 
   
@@ -676,7 +676,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + metricoolAuthToken</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -704,7 +704,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">46</div>
+    <div class="time-cell passed">43</div>
   </div>
 
    
@@ -713,17 +713,17 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.149">11:11:38.373 request:
+  <div class="preformatted" data-parent="0.149">11:26:14.636 request:
 1 &gt; GET http://localhost:4015/api/v1/metricool/mock-metricool-unauthorized
 1 &gt; Tenant: adminnewworkspaceuat.beedigital.es
-1 &gt; Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJCZWVHbG9iYWxXZWIiLCJleHAiOjE3NzYzODEwODQsImlzR3Vlc3QiOmZhbHNlLCJwcm9maWxlSWQiOiJwcm9mX21vY2tfYmVlX2FkbWluXzAwMSIsIm1mYVR5cGUiOiJlbWFpbCIsInJvbGVJZCI6InJvbGVfYWRtaW4iLCJ0ZW5hbnRJZCI6ImJlZUVzcGFuYSIsImNvZ25pdG86dXNlcm5hbWUiOiJiZWUtYWRtaW4tdGVzdC11c2VyIiwibWZhUmVxdWlyZWQiOmZhbHNlLCJhY2Nlc3NUb2tlbiI6Im1vY2stbG9jYWwtYWNjZXNzLXRva2VuIiwiaXNNZmFFbmFibGVkIjpmYWxzZSwiZW1haWwiOiJxYS5tb2NrQGJlZWRpZ2l0YWwubG9jYWwiLCJyZWZyZXNoVG9rZW4iOiJtb2NrLWxvY2FsLXJlZnJlc2gtdG9rZW4ifQ.mcY25y1U2uKEO7cNnaw-cmZt5kIGR-S9iyueK5X2BGRoqBE6b4wTRmjagJ1dAxWQHUiRxjQiOvHWK9eMRAX35x4ov6Jd8HBHPOoZqx_4DTESifmLOuQhXtkcdkdBZGSlSOMznu0ZBRePe56iFCfl-AOT5-L9V1C8TRE5n73hWKxwgAOUUQsmD_k8QG7hTXseaTtss69KlNof5mHaw-5kPu-IVDk4GXObehO4JwqMrZJkSQtPR-8uff392WTsqitbBU_RjNKtEitTIVErTSYtoYK9s0rUKPMD1OF1Ze5-bgLATndXOGm7BqTkT4ci-oAyTFrMqHVo57scuEjmvPPMqw
+1 &gt; Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJCZWVHbG9iYWxXZWIiLCJleHAiOjE3NzYzODE5NTksImlzR3Vlc3QiOmZhbHNlLCJwcm9maWxlSWQiOiJwcm9mX21vY2tfYmVlX2FkbWluXzAwMSIsIm1mYVR5cGUiOiJlbWFpbCIsInJvbGVJZCI6InJvbGVfYWRtaW4iLCJ0ZW5hbnRJZCI6ImJlZUVzcGFuYSIsImNvZ25pdG86dXNlcm5hbWUiOiJiZWUtYWRtaW4tdGVzdC11c2VyIiwibWZhUmVxdWlyZWQiOmZhbHNlLCJhY2Nlc3NUb2tlbiI6Im1vY2stbG9jYWwtYWNjZXNzLXRva2VuIiwiaXNNZmFFbmFibGVkIjpmYWxzZSwiZW1haWwiOiJxYS5tb2NrQGJlZWRpZ2l0YWwubG9jYWwiLCJyZWZyZXNoVG9rZW4iOiJtb2NrLWxvY2FsLXJlZnJlc2gtdG9rZW4ifQ.ksTwkbmJSthaUnQ7ge-kgX0taFsnhQLig5_0DVnQ00q16ZiIMSIdGUKFHVP6F7nJzsWZMqPeR2jip3_qYK8dYy2dVxthp7k8aKPqPG-haSGYBm1Hw9HHQWt2gtCn5_BTFXeS5JXB5GPGEjaVh_ofQPzBOiqU766-KOLhf2NfQvuxjKnJN64m3mXX4JCe19f62EJWRjQDfO-ISMkq7qV4aqF_gRrWzt7lg_I7PSYu1-f7qBIPAYeDQw74ZqXbzmte8o7Qf8k_dSkxmtmuQvPvnvU_8QWHwfmHWDQMc_ZnjwVdXJou_co9ZcVrwkhv5ZT5c0_oamy6eej7T-RhJM2jBQ
 1 &gt; Host: localhost:4015
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/22.0.2)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-11:11:38.403 response time in milliseconds: 30
+11:26:14.666 response time in milliseconds: 30
 1 &lt; 200
 1 &lt; Vary: Origin
 1 &lt; Vary: Access-Control-Request-Method
@@ -736,7 +736,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 14 Apr 2026 11:11:38 GMT
+1 &lt; Date: Tue, 14 Apr 2026 11:26:14 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
 {&quot;httpCode&quot;:401,&quot;httpStatus&quot;:null,&quot;data&quot;:null,&quot;errors&quot;:[{&quot;code&quot;:&quot;MOCK401&quot;,&quot;msg&quot;:&quot;Metricool mock unauthorized&quot;,&quot;txt&quot;:null,&quot;metadata&quot;:null}],&quot;warnings&quot;:[],&quot;metadata&quot;:null}
@@ -844,7 +844,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>match response.errors[0].code == &#39;MOCK401&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -873,7 +873,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>49</span>
+              <span>ms:</span>&nbsp;<span>47</span>
             </div>
           </div>
           <div class="step-row">
@@ -905,36 +905,36 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4">11:11:38.472 Karate env: local 
-11:11:38.472 Karate baseUrl: http://localhost:4015/api/v1 
-11:11:38.474 Karate tenant: adminnewworkspaceuat.beedigital.es 
-11:11:38.474 Karate tenantId: beeEspana 
-11:11:38.474 Karate tenantProfile: beeEspana 
-11:11:38.474 Karate loginEmail configured: false 
-11:11:38.474 Karate loginPassword configured: false 
-11:11:38.474 Karate loginToken configured: false 
-11:11:38.474 Karate accessCheckToken configured: false 
-11:11:38.474 Karate sessionToken configured: false 
-11:11:38.474 Karate runUserEventDeliveryScenarios: false 
-11:11:38.474 Karate startApiGlobalMock: true 
-11:11:38.476 Karate apiGlobalMockUrl: http://localhost:28088 
-11:11:38.476 Karate metricoolMockEnabled: true 
-11:11:38.477 Karate metricoolServiceId configured: true 
-11:11:38.477 Karate metricoolAuthToken configured: true 
-11:11:38.477 Karate yextMockEnabled: true 
-11:11:38.477 Karate yextServiceId configured: true 
-11:11:38.478 Karate yextAuthToken configured: true 
-11:11:38.479 Karate yextPublisherId: yext 
-11:11:38.479 Karate gbpMockEnabled: true 
-11:11:38.479 Karate gbpProductId configured: true 
-11:11:38.480 Karate gbpAuthToken configured: true 
-11:11:38.480 Karate organizationId: beesible 
-11:11:38.480 Karate brandingTitle configured: true 
-11:11:38.481 Karate cognitoDomain configured: true 
-11:11:38.482 Karate supportsMetricool: true 
-11:11:38.483 Karate supportsYext: true 
-11:11:38.483 Karate supportsGbp: true 
-11:11:38.483 Workspace .env detected: false 
+  <div class="preformatted" data-parent="0.4">11:26:14.718 Karate env: local 
+11:26:14.718 Karate baseUrl: http://localhost:4015/api/v1 
+11:26:14.718 Karate tenant: adminnewworkspaceuat.beedigital.es 
+11:26:14.718 Karate tenantId: beeEspana 
+11:26:14.718 Karate tenantProfile: beeEspana 
+11:26:14.718 Karate loginEmail configured: false 
+11:26:14.718 Karate loginPassword configured: false 
+11:26:14.720 Karate loginToken configured: false 
+11:26:14.720 Karate accessCheckToken configured: false 
+11:26:14.720 Karate sessionToken configured: false 
+11:26:14.720 Karate runUserEventDeliveryScenarios: false 
+11:26:14.720 Karate startApiGlobalMock: true 
+11:26:14.720 Karate apiGlobalMockUrl: http://localhost:28088 
+11:26:14.720 Karate metricoolMockEnabled: true 
+11:26:14.720 Karate metricoolServiceId configured: true 
+11:26:14.720 Karate metricoolAuthToken configured: true 
+11:26:14.720 Karate yextMockEnabled: true 
+11:26:14.720 Karate yextServiceId configured: true 
+11:26:14.720 Karate yextAuthToken configured: true 
+11:26:14.720 Karate yextPublisherId: yext 
+11:26:14.722 Karate gbpMockEnabled: true 
+11:26:14.722 Karate gbpProductId configured: true 
+11:26:14.722 Karate gbpAuthToken configured: true 
+11:26:14.722 Karate organizationId: beesible 
+11:26:14.722 Karate brandingTitle configured: true 
+11:26:14.725 Karate cognitoDomain configured: true 
+11:26:14.729 Karate supportsMetricool: true 
+11:26:14.731 Karate supportsYext: true 
+11:26:14.731 Karate supportsGbp: true 
+11:26:14.733 Workspace .env detected: false 
 </div>   
 
   
@@ -1066,7 +1066,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">39</div>
+    <div class="time-cell passed">41</div>
   </div>
 
    
@@ -1075,17 +1075,17 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.161">11:11:38.498 request:
+  <div class="preformatted" data-parent="0.161">11:26:14.750 request:
 1 &gt; GET http://localhost:4015/api/v1/metricool/mock-metricool-unavailable
 1 &gt; Tenant: adminnewworkspaceuat.beedigital.es
-1 &gt; Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJCZWVHbG9iYWxXZWIiLCJleHAiOjE3NzYzODEwODQsImlzR3Vlc3QiOmZhbHNlLCJwcm9maWxlSWQiOiJwcm9mX21vY2tfYmVlX2FkbWluXzAwMSIsIm1mYVR5cGUiOiJlbWFpbCIsInJvbGVJZCI6InJvbGVfYWRtaW4iLCJ0ZW5hbnRJZCI6ImJlZUVzcGFuYSIsImNvZ25pdG86dXNlcm5hbWUiOiJiZWUtYWRtaW4tdGVzdC11c2VyIiwibWZhUmVxdWlyZWQiOmZhbHNlLCJhY2Nlc3NUb2tlbiI6Im1vY2stbG9jYWwtYWNjZXNzLXRva2VuIiwiaXNNZmFFbmFibGVkIjpmYWxzZSwiZW1haWwiOiJxYS5tb2NrQGJlZWRpZ2l0YWwubG9jYWwiLCJyZWZyZXNoVG9rZW4iOiJtb2NrLWxvY2FsLXJlZnJlc2gtdG9rZW4ifQ.mcY25y1U2uKEO7cNnaw-cmZt5kIGR-S9iyueK5X2BGRoqBE6b4wTRmjagJ1dAxWQHUiRxjQiOvHWK9eMRAX35x4ov6Jd8HBHPOoZqx_4DTESifmLOuQhXtkcdkdBZGSlSOMznu0ZBRePe56iFCfl-AOT5-L9V1C8TRE5n73hWKxwgAOUUQsmD_k8QG7hTXseaTtss69KlNof5mHaw-5kPu-IVDk4GXObehO4JwqMrZJkSQtPR-8uff392WTsqitbBU_RjNKtEitTIVErTSYtoYK9s0rUKPMD1OF1Ze5-bgLATndXOGm7BqTkT4ci-oAyTFrMqHVo57scuEjmvPPMqw
+1 &gt; Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJCZWVHbG9iYWxXZWIiLCJleHAiOjE3NzYzODE5NTksImlzR3Vlc3QiOmZhbHNlLCJwcm9maWxlSWQiOiJwcm9mX21vY2tfYmVlX2FkbWluXzAwMSIsIm1mYVR5cGUiOiJlbWFpbCIsInJvbGVJZCI6InJvbGVfYWRtaW4iLCJ0ZW5hbnRJZCI6ImJlZUVzcGFuYSIsImNvZ25pdG86dXNlcm5hbWUiOiJiZWUtYWRtaW4tdGVzdC11c2VyIiwibWZhUmVxdWlyZWQiOmZhbHNlLCJhY2Nlc3NUb2tlbiI6Im1vY2stbG9jYWwtYWNjZXNzLXRva2VuIiwiaXNNZmFFbmFibGVkIjpmYWxzZSwiZW1haWwiOiJxYS5tb2NrQGJlZWRpZ2l0YWwubG9jYWwiLCJyZWZyZXNoVG9rZW4iOiJtb2NrLWxvY2FsLXJlZnJlc2gtdG9rZW4ifQ.ksTwkbmJSthaUnQ7ge-kgX0taFsnhQLig5_0DVnQ00q16ZiIMSIdGUKFHVP6F7nJzsWZMqPeR2jip3_qYK8dYy2dVxthp7k8aKPqPG-haSGYBm1Hw9HHQWt2gtCn5_BTFXeS5JXB5GPGEjaVh_ofQPzBOiqU766-KOLhf2NfQvuxjKnJN64m3mXX4JCe19f62EJWRjQDfO-ISMkq7qV4aqF_gRrWzt7lg_I7PSYu1-f7qBIPAYeDQw74ZqXbzmte8o7Qf8k_dSkxmtmuQvPvnvU_8QWHwfmHWDQMc_ZnjwVdXJou_co9ZcVrwkhv5ZT5c0_oamy6eej7T-RhJM2jBQ
 1 &gt; Host: localhost:4015
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/22.0.2)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-11:11:38.534 response time in milliseconds: 34
+11:26:14.780 response time in milliseconds: 29
 1 &lt; 200
 1 &lt; Vary: Origin
 1 &lt; Vary: Access-Control-Request-Method
@@ -1098,7 +1098,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 14 Apr 2026 11:11:38 GMT
+1 &lt; Date: Tue, 14 Apr 2026 11:26:14 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
 {&quot;httpCode&quot;:503,&quot;httpStatus&quot;:null,&quot;data&quot;:null,&quot;errors&quot;:[{&quot;code&quot;:&quot;MOCK503&quot;,&quot;msg&quot;:&quot;Metricool mock unavailable&quot;,&quot;txt&quot;:null,&quot;metadata&quot;:null}],&quot;warnings&quot;:[],&quot;metadata&quot;:null}
@@ -1150,7 +1150,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>match response.httpCode == 503</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1178,7 +1178,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>match response.data == null</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1206,7 +1206,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>match response.errors[0].code == &#39;MOCK503&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">4</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1235,7 +1235,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>47</span>
+              <span>ms:</span>&nbsp;<span>50</span>
             </div>
           </div>
           <div class="step-row">
@@ -1267,36 +1267,36 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4">11:11:38.625 Karate env: local 
-11:11:38.625 Karate baseUrl: http://localhost:4015/api/v1 
-11:11:38.625 Karate tenant: adminnewworkspaceuat.beedigital.es 
-11:11:38.625 Karate tenantId: beeEspana 
-11:11:38.627 Karate tenantProfile: beeEspana 
-11:11:38.627 Karate loginEmail configured: false 
-11:11:38.627 Karate loginPassword configured: false 
-11:11:38.627 Karate loginToken configured: false 
-11:11:38.627 Karate accessCheckToken configured: false 
-11:11:38.631 Karate sessionToken configured: false 
-11:11:38.633 Karate runUserEventDeliveryScenarios: false 
-11:11:38.633 Karate startApiGlobalMock: true 
-11:11:38.633 Karate apiGlobalMockUrl: http://localhost:28088 
-11:11:38.633 Karate metricoolMockEnabled: true 
-11:11:38.633 Karate metricoolServiceId configured: true 
-11:11:38.633 Karate metricoolAuthToken configured: true 
-11:11:38.635 Karate yextMockEnabled: true 
-11:11:38.637 Karate yextServiceId configured: true 
-11:11:38.637 Karate yextAuthToken configured: true 
-11:11:38.637 Karate yextPublisherId: yext 
-11:11:38.637 Karate gbpMockEnabled: true 
-11:11:38.637 Karate gbpProductId configured: true 
-11:11:38.637 Karate gbpAuthToken configured: true 
-11:11:38.639 Karate organizationId: beesible 
-11:11:38.639 Karate brandingTitle configured: true 
-11:11:38.639 Karate cognitoDomain configured: true 
-11:11:38.639 Karate supportsMetricool: true 
-11:11:38.639 Karate supportsYext: true 
-11:11:38.639 Karate supportsGbp: true 
-11:11:38.641 Workspace .env detected: false 
+  <div class="preformatted" data-parent="0.4">11:26:14.852 Karate env: local 
+11:26:14.852 Karate baseUrl: http://localhost:4015/api/v1 
+11:26:14.853 Karate tenant: adminnewworkspaceuat.beedigital.es 
+11:26:14.853 Karate tenantId: beeEspana 
+11:26:14.853 Karate tenantProfile: beeEspana 
+11:26:14.853 Karate loginEmail configured: false 
+11:26:14.853 Karate loginPassword configured: false 
+11:26:14.853 Karate loginToken configured: false 
+11:26:14.853 Karate accessCheckToken configured: false 
+11:26:14.853 Karate sessionToken configured: false 
+11:26:14.853 Karate runUserEventDeliveryScenarios: false 
+11:26:14.854 Karate startApiGlobalMock: true 
+11:26:14.854 Karate apiGlobalMockUrl: http://localhost:28088 
+11:26:14.854 Karate metricoolMockEnabled: true 
+11:26:14.854 Karate metricoolServiceId configured: true 
+11:26:14.854 Karate metricoolAuthToken configured: true 
+11:26:14.855 Karate yextMockEnabled: true 
+11:26:14.855 Karate yextServiceId configured: true 
+11:26:14.855 Karate yextAuthToken configured: true 
+11:26:14.855 Karate yextPublisherId: yext 
+11:26:14.855 Karate gbpMockEnabled: true 
+11:26:14.855 Karate gbpProductId configured: true 
+11:26:14.856 Karate gbpAuthToken configured: true 
+11:26:14.856 Karate organizationId: beesible 
+11:26:14.856 Karate brandingTitle configured: true 
+11:26:14.858 Karate cognitoDomain configured: true 
+11:26:14.858 Karate supportsMetricool: true 
+11:26:14.858 Karate supportsYext: true 
+11:26:14.858 Karate supportsGbp: true 
+11:26:14.860 Workspace .env detected: false 
 </div>   
 
   
@@ -1316,7 +1316,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>if (!metricoolMockEnabled || !metricoolAuthToken) karate.abort()</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1428,7 +1428,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">39</div>
+    <div class="time-cell passed">45</div>
   </div>
 
    
@@ -1437,17 +1437,17 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.173">11:11:38.655 request:
+  <div class="preformatted" data-parent="0.173">11:26:14.874 request:
 1 &gt; GET http://localhost:4015/api/v1/metricool/mock-metricool-missing-login-url
 1 &gt; Tenant: adminnewworkspaceuat.beedigital.es
-1 &gt; Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJCZWVHbG9iYWxXZWIiLCJleHAiOjE3NzYzODEwODQsImlzR3Vlc3QiOmZhbHNlLCJwcm9maWxlSWQiOiJwcm9mX21vY2tfYmVlX2FkbWluXzAwMSIsIm1mYVR5cGUiOiJlbWFpbCIsInJvbGVJZCI6InJvbGVfYWRtaW4iLCJ0ZW5hbnRJZCI6ImJlZUVzcGFuYSIsImNvZ25pdG86dXNlcm5hbWUiOiJiZWUtYWRtaW4tdGVzdC11c2VyIiwibWZhUmVxdWlyZWQiOmZhbHNlLCJhY2Nlc3NUb2tlbiI6Im1vY2stbG9jYWwtYWNjZXNzLXRva2VuIiwiaXNNZmFFbmFibGVkIjpmYWxzZSwiZW1haWwiOiJxYS5tb2NrQGJlZWRpZ2l0YWwubG9jYWwiLCJyZWZyZXNoVG9rZW4iOiJtb2NrLWxvY2FsLXJlZnJlc2gtdG9rZW4ifQ.mcY25y1U2uKEO7cNnaw-cmZt5kIGR-S9iyueK5X2BGRoqBE6b4wTRmjagJ1dAxWQHUiRxjQiOvHWK9eMRAX35x4ov6Jd8HBHPOoZqx_4DTESifmLOuQhXtkcdkdBZGSlSOMznu0ZBRePe56iFCfl-AOT5-L9V1C8TRE5n73hWKxwgAOUUQsmD_k8QG7hTXseaTtss69KlNof5mHaw-5kPu-IVDk4GXObehO4JwqMrZJkSQtPR-8uff392WTsqitbBU_RjNKtEitTIVErTSYtoYK9s0rUKPMD1OF1Ze5-bgLATndXOGm7BqTkT4ci-oAyTFrMqHVo57scuEjmvPPMqw
+1 &gt; Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJCZWVHbG9iYWxXZWIiLCJleHAiOjE3NzYzODE5NTksImlzR3Vlc3QiOmZhbHNlLCJwcm9maWxlSWQiOiJwcm9mX21vY2tfYmVlX2FkbWluXzAwMSIsIm1mYVR5cGUiOiJlbWFpbCIsInJvbGVJZCI6InJvbGVfYWRtaW4iLCJ0ZW5hbnRJZCI6ImJlZUVzcGFuYSIsImNvZ25pdG86dXNlcm5hbWUiOiJiZWUtYWRtaW4tdGVzdC11c2VyIiwibWZhUmVxdWlyZWQiOmZhbHNlLCJhY2Nlc3NUb2tlbiI6Im1vY2stbG9jYWwtYWNjZXNzLXRva2VuIiwiaXNNZmFFbmFibGVkIjpmYWxzZSwiZW1haWwiOiJxYS5tb2NrQGJlZWRpZ2l0YWwubG9jYWwiLCJyZWZyZXNoVG9rZW4iOiJtb2NrLWxvY2FsLXJlZnJlc2gtdG9rZW4ifQ.ksTwkbmJSthaUnQ7ge-kgX0taFsnhQLig5_0DVnQ00q16ZiIMSIdGUKFHVP6F7nJzsWZMqPeR2jip3_qYK8dYy2dVxthp7k8aKPqPG-haSGYBm1Hw9HHQWt2gtCn5_BTFXeS5JXB5GPGEjaVh_ofQPzBOiqU766-KOLhf2NfQvuxjKnJN64m3mXX4JCe19f62EJWRjQDfO-ISMkq7qV4aqF_gRrWzt7lg_I7PSYu1-f7qBIPAYeDQw74ZqXbzmte8o7Qf8k_dSkxmtmuQvPvnvU_8QWHwfmHWDQMc_ZnjwVdXJou_co9ZcVrwkhv5ZT5c0_oamy6eej7T-RhJM2jBQ
 1 &gt; Host: localhost:4015
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/22.0.2)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-11:11:38.688 response time in milliseconds: 31
+11:26:14.915 response time in milliseconds: 39
 1 &lt; 200
 1 &lt; Vary: Origin
 1 &lt; Vary: Access-Control-Request-Method
@@ -1460,7 +1460,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 14 Apr 2026 11:11:38 GMT
+1 &lt; Date: Tue, 14 Apr 2026 11:26:14 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
 {&quot;httpCode&quot;:200,&quot;httpStatus&quot;:null,&quot;data&quot;:{},&quot;errors&quot;:[],&quot;warnings&quot;:[{&quot;code&quot;:&quot;MOCK_WARN&quot;,&quot;msg&quot;:&quot;Metricool mock returned an incomplete payload&quot;,&quot;txt&quot;:null,&quot;metadata&quot;:null}],&quot;metadata&quot;:null}
@@ -1512,7 +1512,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>match response.httpCode == 200</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1540,7 +1540,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>match response.errors == []</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1596,7 +1596,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>match response.data == {}</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1625,7 +1625,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>39</span>
+              <span>ms:</span>&nbsp;<span>47</span>
             </div>
           </div>
           <div class="step-row">
@@ -1657,36 +1657,36 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4">11:11:38.733 Karate env: local 
-11:11:38.733 Karate baseUrl: http://localhost:4015/api/v1 
-11:11:38.733 Karate tenant: adminnewworkspaceuat.beedigital.es 
-11:11:38.733 Karate tenantId: beeEspana 
-11:11:38.733 Karate tenantProfile: beeEspana 
-11:11:38.733 Karate loginEmail configured: false 
-11:11:38.733 Karate loginPassword configured: false 
-11:11:38.735 Karate loginToken configured: false 
-11:11:38.735 Karate accessCheckToken configured: false 
-11:11:38.735 Karate sessionToken configured: false 
-11:11:38.737 Karate runUserEventDeliveryScenarios: false 
-11:11:38.739 Karate startApiGlobalMock: true 
-11:11:38.739 Karate apiGlobalMockUrl: http://localhost:28088 
-11:11:38.739 Karate metricoolMockEnabled: true 
-11:11:38.739 Karate metricoolServiceId configured: true 
-11:11:38.739 Karate metricoolAuthToken configured: true 
-11:11:38.739 Karate yextMockEnabled: true 
-11:11:38.739 Karate yextServiceId configured: true 
-11:11:38.739 Karate yextAuthToken configured: true 
-11:11:38.739 Karate yextPublisherId: yext 
-11:11:38.739 Karate gbpMockEnabled: true 
-11:11:38.739 Karate gbpProductId configured: true 
-11:11:38.741 Karate gbpAuthToken configured: true 
-11:11:38.741 Karate organizationId: beesible 
-11:11:38.741 Karate brandingTitle configured: true 
-11:11:38.741 Karate cognitoDomain configured: true 
-11:11:38.741 Karate supportsMetricool: true 
-11:11:38.741 Karate supportsYext: true 
-11:11:38.741 Karate supportsGbp: true 
-11:11:38.741 Workspace .env detected: false 
+  <div class="preformatted" data-parent="0.4">11:26:14.957 Karate env: local 
+11:26:14.957 Karate baseUrl: http://localhost:4015/api/v1 
+11:26:14.957 Karate tenant: adminnewworkspaceuat.beedigital.es 
+11:26:14.957 Karate tenantId: beeEspana 
+11:26:14.957 Karate tenantProfile: beeEspana 
+11:26:14.957 Karate loginEmail configured: false 
+11:26:14.959 Karate loginPassword configured: false 
+11:26:14.961 Karate loginToken configured: false 
+11:26:14.961 Karate accessCheckToken configured: false 
+11:26:14.961 Karate sessionToken configured: false 
+11:26:14.967 Karate runUserEventDeliveryScenarios: false 
+11:26:14.971 Karate startApiGlobalMock: true 
+11:26:14.971 Karate apiGlobalMockUrl: http://localhost:28088 
+11:26:14.971 Karate metricoolMockEnabled: true 
+11:26:14.971 Karate metricoolServiceId configured: true 
+11:26:14.971 Karate metricoolAuthToken configured: true 
+11:26:14.971 Karate yextMockEnabled: true 
+11:26:14.971 Karate yextServiceId configured: true 
+11:26:14.971 Karate yextAuthToken configured: true 
+11:26:14.973 Karate yextPublisherId: yext 
+11:26:14.973 Karate gbpMockEnabled: true 
+11:26:14.975 Karate gbpProductId configured: true 
+11:26:14.977 Karate gbpAuthToken configured: true 
+11:26:14.977 Karate organizationId: beesible 
+11:26:14.977 Karate brandingTitle configured: true 
+11:26:14.977 Karate cognitoDomain configured: true 
+11:26:14.977 Karate supportsMetricool: true 
+11:26:14.979 Karate supportsYext: true 
+11:26:14.979 Karate supportsGbp: true 
+11:26:14.979 Workspace .env detected: false 
 </div>   
 
   
@@ -1818,7 +1818,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">30</div>
+    <div class="time-cell passed">39</div>
   </div>
 
    
@@ -1827,17 +1827,17 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.186">11:11:38.754 request:
+  <div class="preformatted" data-parent="0.186">11:26:14.993 request:
 1 &gt; GET http://localhost:4015/api/v1/metricool/mock-metricool-business-error
 1 &gt; Tenant: adminnewworkspaceuat.beedigital.es
-1 &gt; Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJCZWVHbG9iYWxXZWIiLCJleHAiOjE3NzYzODEwODQsImlzR3Vlc3QiOmZhbHNlLCJwcm9maWxlSWQiOiJwcm9mX21vY2tfYmVlX2FkbWluXzAwMSIsIm1mYVR5cGUiOiJlbWFpbCIsInJvbGVJZCI6InJvbGVfYWRtaW4iLCJ0ZW5hbnRJZCI6ImJlZUVzcGFuYSIsImNvZ25pdG86dXNlcm5hbWUiOiJiZWUtYWRtaW4tdGVzdC11c2VyIiwibWZhUmVxdWlyZWQiOmZhbHNlLCJhY2Nlc3NUb2tlbiI6Im1vY2stbG9jYWwtYWNjZXNzLXRva2VuIiwiaXNNZmFFbmFibGVkIjpmYWxzZSwiZW1haWwiOiJxYS5tb2NrQGJlZWRpZ2l0YWwubG9jYWwiLCJyZWZyZXNoVG9rZW4iOiJtb2NrLWxvY2FsLXJlZnJlc2gtdG9rZW4ifQ.mcY25y1U2uKEO7cNnaw-cmZt5kIGR-S9iyueK5X2BGRoqBE6b4wTRmjagJ1dAxWQHUiRxjQiOvHWK9eMRAX35x4ov6Jd8HBHPOoZqx_4DTESifmLOuQhXtkcdkdBZGSlSOMznu0ZBRePe56iFCfl-AOT5-L9V1C8TRE5n73hWKxwgAOUUQsmD_k8QG7hTXseaTtss69KlNof5mHaw-5kPu-IVDk4GXObehO4JwqMrZJkSQtPR-8uff392WTsqitbBU_RjNKtEitTIVErTSYtoYK9s0rUKPMD1OF1Ze5-bgLATndXOGm7BqTkT4ci-oAyTFrMqHVo57scuEjmvPPMqw
+1 &gt; Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJCZWVHbG9iYWxXZWIiLCJleHAiOjE3NzYzODE5NTksImlzR3Vlc3QiOmZhbHNlLCJwcm9maWxlSWQiOiJwcm9mX21vY2tfYmVlX2FkbWluXzAwMSIsIm1mYVR5cGUiOiJlbWFpbCIsInJvbGVJZCI6InJvbGVfYWRtaW4iLCJ0ZW5hbnRJZCI6ImJlZUVzcGFuYSIsImNvZ25pdG86dXNlcm5hbWUiOiJiZWUtYWRtaW4tdGVzdC11c2VyIiwibWZhUmVxdWlyZWQiOmZhbHNlLCJhY2Nlc3NUb2tlbiI6Im1vY2stbG9jYWwtYWNjZXNzLXRva2VuIiwiaXNNZmFFbmFibGVkIjpmYWxzZSwiZW1haWwiOiJxYS5tb2NrQGJlZWRpZ2l0YWwubG9jYWwiLCJyZWZyZXNoVG9rZW4iOiJtb2NrLWxvY2FsLXJlZnJlc2gtdG9rZW4ifQ.ksTwkbmJSthaUnQ7ge-kgX0taFsnhQLig5_0DVnQ00q16ZiIMSIdGUKFHVP6F7nJzsWZMqPeR2jip3_qYK8dYy2dVxthp7k8aKPqPG-haSGYBm1Hw9HHQWt2gtCn5_BTFXeS5JXB5GPGEjaVh_ofQPzBOiqU766-KOLhf2NfQvuxjKnJN64m3mXX4JCe19f62EJWRjQDfO-ISMkq7qV4aqF_gRrWzt7lg_I7PSYu1-f7qBIPAYeDQw74ZqXbzmte8o7Qf8k_dSkxmtmuQvPvnvU_8QWHwfmHWDQMc_ZnjwVdXJou_co9ZcVrwkhv5ZT5c0_oamy6eej7T-RhJM2jBQ
 1 &gt; Host: localhost:4015
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/22.0.2)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-11:11:38.779 response time in milliseconds: 25
+11:26:15.028 response time in milliseconds: 35
 1 &lt; 200
 1 &lt; Vary: Origin
 1 &lt; Vary: Access-Control-Request-Method
@@ -1850,7 +1850,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 14 Apr 2026 11:11:38 GMT
+1 &lt; Date: Tue, 14 Apr 2026 11:26:15 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
 {&quot;httpCode&quot;:200,&quot;httpStatus&quot;:null,&quot;data&quot;:null,&quot;errors&quot;:[{&quot;code&quot;:&quot;MOCK_BUSINESS_ERROR&quot;,&quot;msg&quot;:&quot;Metricool mock business error&quot;,&quot;txt&quot;:null,&quot;metadata&quot;:null}],&quot;warnings&quot;:[],&quot;metadata&quot;:null}

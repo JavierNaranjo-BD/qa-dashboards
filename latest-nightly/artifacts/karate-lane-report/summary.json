@@ -4,11 +4,11 @@
   "channel": "nightly",
   "lane": "multi",
   "status": "passed",
-  "testsRun": 0,
+  "testsRun": 32,
   "failures": 0,
   "errors": 0,
-  "durationSeconds": 0,
-  "generatedAt": "2026-04-14T11:12:39.820Z",
+  "durationSeconds": 22.99,
+  "generatedAt": "2026-04-14T11:27:12.394Z",
   "reportRoot": "D:\\a\\front-beeglobal\\front-beeglobal\\api-tests\\target\\karate-lane-report",
   "lanes": [
     {
@@ -16,7 +16,13 @@
       "name": "Karate Extended Live",
       "exitCode": 0,
       "status": "green",
-      "summary": null,
+      "summary": {
+        "skipped": 0,
+        "durationSeconds": 12.98,
+        "failures": 0,
+        "errors": 0,
+        "testsRun": 10
+      },
       "note": "Built from step outcome: success"
     },
     {
@@ -24,11 +30,17 @@
       "name": "Karate Extended Mock",
       "exitCode": 0,
       "status": "green",
-      "summary": null,
+      "summary": {
+        "durationSeconds": 10.01,
+        "skipped": 0,
+        "errors": 0,
+        "testsRun": 22,
+        "failures": 0
+      },
       "note": "Built from step outcome: success"
     }
   ],
-  "runUrl": "https://github.com/BeeDigital-AI/front-beeglobal/actions/runs/24395360172",
-  "commitSha": "877e6517356198be6a90ae1a1a99d86f5ff8fccb",
+  "runUrl": "https://github.com/BeeDigital-AI/front-beeglobal/actions/runs/24396247005",
+  "commitSha": "d172e30d00ade068316ce53f59472d4f9deabf1d",
   "branch": "feature/qa-5-tenant-aware-mock-server"
 }
