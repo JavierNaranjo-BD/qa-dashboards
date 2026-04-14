@@ -1,6 +1,6 @@
 # Karate Nightly Consolidated Report
 
-Generated at: 2026-04-13T14:15:01.005Z
+Generated at: 2026-04-14T10:36:46.559Z
 
 ## Karate Extended Live
 - Status: green
