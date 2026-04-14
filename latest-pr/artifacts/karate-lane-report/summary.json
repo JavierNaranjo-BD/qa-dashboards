@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-14T06:59:28.795Z",
+  "generatedAt": "2026-04-14T07:59:38.520Z",
   "reportRoot": "D:\\a\\front-beeglobal\\front-beeglobal\\api-tests\\target\\karate-lane-report",
   "lanes": [
     {
@@ -7,7 +7,14 @@
       "name": "Karate Extended Deterministic",
       "exitCode": 1,
       "status": "red",
-      "summary": null,
+      "summary": {
+        "testsRun": 15,
+        "failures": 13,
+        "errors": 0,
+        "skipped": 0,
+        "durationSeconds": 28.66,
+        "status": "red"
+      },
       "note": ""
     }
   ]
