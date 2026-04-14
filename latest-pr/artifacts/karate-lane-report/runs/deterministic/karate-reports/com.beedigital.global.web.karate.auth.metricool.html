@@ -21,7 +21,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   capture_pageview:false,
   api_transport:'sendBeacon',
   loaded: function(posthog) { 
-    posthog.capture("report_feature",{distinct_id:"5aea2339-6d07-4345-9a1b-623bd2e11c7b",karate_version:"1.5.2",karate_meta:null});
+    posthog.capture("report_feature",{distinct_id:"7e9c010e-297f-4658-b873-74b6ca39f0eb",karate_version:"1.5.2",karate_meta:null});
   }
 });
 </script>
@@ -38,8 +38,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">0</div>
-      <div id="nav-fail" class="bg-danger">5</div>
+      <div id="nav-pass" class="bg-success">5</div>
+      <div id="nav-fail" class="bg-danger">0</div>
     </div>
   </div>
   <div id="nav-env">
@@ -49,24 +49,24 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2026-04-14 08:30:06 AM</div>
+    <div>2026-04-14 08:41:57 AM</div>
   </div>
 </div>
 
         <div class="nav-container">
-          <div class="nav-item failed">
+          <div class="nav-item passed">
             <a href="#[6:60]"><span>[6:60]</span> <span>metricool returns a deterministic loginUrl when the local auth harness and API Global mock are enabled</span></a>
           </div>
-          <div class="nav-item failed">
+          <div class="nav-item passed">
             <a href="#[7:76]"><span>[7:76]</span> <span>metricool surfaces a deterministic local unauthorized response in a controlled way</span></a>
           </div>
-          <div class="nav-item failed">
+          <div class="nav-item passed">
             <a href="#[8:89]"><span>[8:89]</span> <span>metricool surfaces a deterministic local unavailable response in a controlled way</span></a>
           </div>
-          <div class="nav-item failed">
+          <div class="nav-item passed">
             <a href="#[9:102]"><span>[9:102]</span> <span>metricool exposes a deterministic local incomplete payload without inventing a loginUrl</span></a>
           </div>
-          <div class="nav-item failed">
+          <div class="nav-item passed">
             <a href="#[10:116]"><span>[10:116]</span> <span>metricool surfaces a deterministic local business error wrapped in a 200 response</span></a>
           </div>
         </div>
@@ -92,8 +92,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>404</span>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>120</span>
             </div>
           </div>
           <div class="step-row">
@@ -116,7 +116,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>url baseUrl</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -125,36 +125,36 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4">08:30:05.383 Karate env: local 
-08:30:05.383 Karate baseUrl: http://localhost:4000/api/v1 
-08:30:05.385 Karate tenant: adminnewworkspaceuat.beedigital.es 
-08:30:05.385 Karate tenantId: beeEspana 
-08:30:05.385 Karate tenantProfile: beeEspana 
-08:30:05.387 Karate loginEmail configured: true 
-08:30:05.387 Karate loginPassword configured: true 
-08:30:05.393 Karate loginToken configured: false 
-08:30:05.393 Karate accessCheckToken configured: false 
-08:30:05.393 Karate sessionToken configured: false 
-08:30:05.393 Karate runUserEventDeliveryScenarios: false 
-08:30:05.393 Karate startApiGlobalMock: false 
-08:30:05.393 Karate apiGlobalMockUrl:  
-08:30:05.393 Karate metricoolMockEnabled: false 
-08:30:05.393 Karate metricoolServiceId configured: true 
-08:30:05.395 Karate metricoolAuthToken configured: false 
-08:30:05.395 Karate yextMockEnabled: false 
-08:30:05.395 Karate yextServiceId configured: true 
-08:30:05.395 Karate yextAuthToken configured: false 
-08:30:05.395 Karate yextPublisherId: yext 
-08:30:05.395 Karate gbpMockEnabled: false 
-08:30:05.395 Karate gbpProductId configured: true 
-08:30:05.395 Karate gbpAuthToken configured: false 
-08:30:05.395 Karate organizationId: beesible 
-08:30:05.395 Karate brandingTitle configured: true 
-08:30:05.397 Karate cognitoDomain configured: true 
-08:30:05.397 Karate supportsMetricool: true 
-08:30:05.397 Karate supportsYext: true 
-08:30:05.397 Karate supportsGbp: true 
-08:30:05.397 Workspace .env detected: false 
+  <div class="preformatted" data-parent="0.4">08:41:55.174 Karate env: local 
+08:41:55.174 Karate baseUrl: http://localhost:4000/api/v1 
+08:41:55.174 Karate tenant: adminnewworkspaceuat.beedigital.es 
+08:41:55.176 Karate tenantId: beeEspana 
+08:41:55.176 Karate tenantProfile: beeEspana 
+08:41:55.176 Karate loginEmail configured: true 
+08:41:55.176 Karate loginPassword configured: true 
+08:41:55.176 Karate loginToken configured: false 
+08:41:55.176 Karate accessCheckToken configured: false 
+08:41:55.176 Karate sessionToken configured: false 
+08:41:55.176 Karate runUserEventDeliveryScenarios: false 
+08:41:55.176 Karate startApiGlobalMock: false 
+08:41:55.176 Karate apiGlobalMockUrl:  
+08:41:55.176 Karate metricoolMockEnabled: false 
+08:41:55.176 Karate metricoolServiceId configured: true 
+08:41:55.176 Karate metricoolAuthToken configured: false 
+08:41:55.176 Karate yextMockEnabled: false 
+08:41:55.176 Karate yextServiceId configured: true 
+08:41:55.176 Karate yextAuthToken configured: false 
+08:41:55.178 Karate yextPublisherId: yext 
+08:41:55.178 Karate gbpMockEnabled: false 
+08:41:55.180 Karate gbpProductId configured: true 
+08:41:55.180 Karate gbpAuthToken configured: false 
+08:41:55.180 Karate organizationId: beesible 
+08:41:55.180 Karate brandingTitle configured: true 
+08:41:55.180 Karate cognitoDomain configured: true 
+08:41:55.180 Karate supportsMetricool: true 
+08:41:55.180 Karate supportsYext: true 
+08:41:55.180 Karate supportsGbp: true 
+08:41:55.180 Workspace .env detected: false 
 </div>   
 
   
@@ -202,7 +202,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def auth = callonce read(&#39;local-auth-context.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">38</div>
+    <div class="time-cell passed">79</div>
   </div>
 
    
@@ -211,7 +211,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.62">08:30:05.440 &lt;&lt; lock released, cached callonce: read(&#39;local-auth-context.feature&#39;)
+  <div class="preformatted" data-parent="0.62">08:41:55.263 &lt;&lt; lock released, cached callonce: read(&#39;local-auth-context.feature&#39;)
 </div>   
 
   <div>
@@ -222,7 +222,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <div class="step-indent"></div>
         <div class="step-cell passed">com.beedigital.global.web.karate.auth.local-auth-context</div>
       </div>
-      <div class="time-cell passed">26</div>
+      <div class="time-cell passed">68</div>
     </div>
     <div>
       <div><div>
@@ -247,7 +247,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.62.0.call.0.4">08:30:05.405 &gt;&gt; lock acquired, begin callonce: read(&#39;local-auth-context.feature&#39;)
+  <div class="preformatted" data-parent="0.62.0.call.0.4">08:41:55.184 &gt;&gt; lock acquired, begin callonce: read(&#39;local-auth-context.feature&#39;)
 </div>   
 
   
@@ -407,7 +407,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">23</div>
+    <div class="time-cell passed">67</div>
   </div>
 
    
@@ -416,7 +416,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.62.0.call.0.10">08:30:05.419 request:
+  <div class="preformatted" data-parent="0.62.0.call.0.10">08:41:55.197 request:
 1 &gt; POST http://localhost:4000/api/v1/auth/login
 1 &gt; Tenant: adminnewworkspaceuat.beedigital.es
 1 &gt; Content-Type: application/json; charset=UTF-8
@@ -427,7 +427,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;email&quot;:&quot;pruebasqabeesible@gmail.com&quot;,&quot;password&quot;:&quot;h1[{6z0=q8*f73V&quot;}
 
-08:30:05.437 response time in milliseconds: 18
+08:41:55.261 response time in milliseconds: 64
 1 &lt; 200
 1 &lt; Vary: Origin
 1 &lt; Vary: Access-Control-Request-Method
@@ -440,10 +440,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 14 Apr 2026 08:30:05 GMT
+1 &lt; Date: Tue, 14 Apr 2026 08:41:55 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-{&quot;httpCode&quot;:200,&quot;httpStatus&quot;:null,&quot;data&quot;:{&quot;error&quot;:&quot;${USER_PASSWORD_INCORRECT}&quot;},&quot;errors&quot;:[],&quot;warnings&quot;:[],&quot;metadata&quot;:null}
+{&quot;httpCode&quot;:200,&quot;httpStatus&quot;:null,&quot;data&quot;:{&quot;jwt&quot;:&quot;eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJCZWVHbG9iYWxXZWIiLCJleHAiOjE3NzYzNzIxMTUsImlzR3Vlc3QiOmZhbHNlLCJwcm9maWxlSWQiOiJwcm9mX21vY2tfYmVlX2FkbWluXzAwMSIsIm1mYVR5cGUiOiJlbWFpbCIsInJvbGVJZCI6InJvbGVfYWRtaW4iLCJ0ZW5hbnRJZCI6ImJlZUVzcGFuYSIsImNvZ25pdG86dXNlcm5hbWUiOiJiZWUtYWRtaW4tdGVzdC11c2VyIiwibWZhUmVxdWlyZWQiOmZhbHNlLCJhY2Nlc3NUb2tlbiI6Im1vY2stbG9jYWwtYWNjZXNzLXRva2VuIiwiaXNNZmFFbmFibGVkIjpmYWxzZSwiZW1haWwiOiJwcnVlYmFzcWFiZWVzaWJsZUBnbWFpbC5jb20iLCJyZWZyZXNoVG9rZW4iOiJtb2NrLWxvY2FsLXJlZnJlc2gtdG9rZW4ifQ.dFATZE1l3V-sPPRZFHzX7J530zQfUlaqOiS4mWy8EPMW8mf8sx779L4MODC03_mfJm9QPRf_ed3CJFfI0lLKiAFm_HZGwZypeDeoB8P88IAKLvJYdxXuH2PJ8JOG-QvozUjeSoMPrDpBVeodWzCCy3PvmhQ4EgTiOV1YfZpWuFh2CdnMTxTZgmmMOZMk20VcUkhRZizfrQTzblUPUGXo-7s7qDhK7a2TOc5wfDyqscKoKap9HoUR1rNyTMIrm8qTwshN3fixsTKsCDcRbdbjRQ3XPYpTKRmw1SEkJLH59g0MWoNERVuwv_vAKLjYArfEr1KTCtC1Q14I3yHDWftCqQ&quot;},&quot;errors&quot;:[],&quot;warnings&quot;:[],&quot;metadata&quot;:null}
 
 </div>   
 
@@ -548,7 +548,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def jwt = loginData.jwt</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -609,7 +609,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def expectedLoginUrl = &#39;https://mock.metricool.local/login?tenant=&#39; + tenantId + &#39;&amp;serviceId=&#39; + serviceId</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -693,7 +693,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + auth.jwt</span>
       </div>
     </div>
-    <div class="time-cell passed">135</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -721,7 +721,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">226</div>
+    <div class="time-cell passed">33</div>
   </div>
 
    
@@ -730,17 +730,17 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.68">08:30:05.580 request:
+  <div class="preformatted" data-parent="0.68">08:41:55.270 request:
 1 &gt; GET http://localhost:4000/api/v1/metricool/mock-metricool-service
 1 &gt; Tenant: adminnewworkspaceuat.beedigital.es
-1 &gt; Authorization: Bearer null
+1 &gt; Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJCZWVHbG9iYWxXZWIiLCJleHAiOjE3NzYzNzIxMTUsImlzR3Vlc3QiOmZhbHNlLCJwcm9maWxlSWQiOiJwcm9mX21vY2tfYmVlX2FkbWluXzAwMSIsIm1mYVR5cGUiOiJlbWFpbCIsInJvbGVJZCI6InJvbGVfYWRtaW4iLCJ0ZW5hbnRJZCI6ImJlZUVzcGFuYSIsImNvZ25pdG86dXNlcm5hbWUiOiJiZWUtYWRtaW4tdGVzdC11c2VyIiwibWZhUmVxdWlyZWQiOmZhbHNlLCJhY2Nlc3NUb2tlbiI6Im1vY2stbG9jYWwtYWNjZXNzLXRva2VuIiwiaXNNZmFFbmFibGVkIjpmYWxzZSwiZW1haWwiOiJwcnVlYmFzcWFiZWVzaWJsZUBnbWFpbC5jb20iLCJyZWZyZXNoVG9rZW4iOiJtb2NrLWxvY2FsLXJlZnJlc2gtdG9rZW4ifQ.dFATZE1l3V-sPPRZFHzX7J530zQfUlaqOiS4mWy8EPMW8mf8sx779L4MODC03_mfJm9QPRf_ed3CJFfI0lLKiAFm_HZGwZypeDeoB8P88IAKLvJYdxXuH2PJ8JOG-QvozUjeSoMPrDpBVeodWzCCy3PvmhQ4EgTiOV1YfZpWuFh2CdnMTxTZgmmMOZMk20VcUkhRZizfrQTzblUPUGXo-7s7qDhK7a2TOc5wfDyqscKoKap9HoUR1rNyTMIrm8qTwshN3fixsTKsCDcRbdbjRQ3XPYpTKRmw1SEkJLH59g0MWoNERVuwv_vAKLjYArfEr1KTCtC1Q14I3yHDWftCqQ
 1 &gt; Host: localhost:4000
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/22.0.2)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-08:30:05.802 response time in milliseconds: 222
+08:41:55.299 response time in milliseconds: 29
 1 &lt; 200
 1 &lt; Vary: Origin
 1 &lt; Vary: Access-Control-Request-Method
@@ -753,10 +753,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 14 Apr 2026 08:30:05 GMT
+1 &lt; Date: Tue, 14 Apr 2026 08:41:55 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-{&quot;httpCode&quot;:401,&quot;httpStatus&quot;:&quot;UNAUTHORIZED&quot;,&quot;data&quot;:null,&quot;errors&quot;:[{&quot;code&quot;:&quot;ERR006&quot;,&quot;msg&quot;:&quot;Unauthorized&quot;,&quot;txt&quot;:&quot;Unauthorized&quot;,&quot;metadata&quot;:null}],&quot;warnings&quot;:[],&quot;metadata&quot;:null}
+{&quot;httpCode&quot;:200,&quot;httpStatus&quot;:null,&quot;data&quot;:{&quot;loginUrl&quot;:&quot;https://mock.metricool.local/login?tenant=beeEspana&amp;serviceId=mock-metricool-service&quot;},&quot;errors&quot;:[],&quot;warnings&quot;:[],&quot;metadata&quot;:null}
 
 </div>   
 
@@ -799,13 +799,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.70">
-      <div class="step-ref failed">70</div>
+      <div class="step-ref passed">70</div>
       
-      <div class="step-cell failed">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>match response.httpCode == 200</span>
       </div>
     </div>
-    <div class="time-cell failed">1</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -814,15 +814,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.70">08:30:05.804 classpath:com/beedigital/global/web/karate/auth/metricool.feature:70
-And match response.httpCode == 200
-match failed: EQUALS
-  $ | not equal (NUMBER:NUMBER)
-  401
-  200
-
-classpath:com/beedigital/global/web/karate/auth/metricool.feature:70
-</div>   
+     
 
   
 
@@ -835,13 +827,13 @@ classpath:com/beedigital/global/web/karate/auth/metricool.feature:70
 
   <div class="step-row">
     <div class="step-container" id="0.71">
-      <div class="step-ref skipped">71</div>
+      <div class="step-ref passed">71</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>match response.errors == []</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -863,13 +855,13 @@ classpath:com/beedigital/global/web/karate/auth/metricool.feature:70
 
   <div class="step-row">
     <div class="step-container" id="0.72">
-      <div class="step-ref skipped">72</div>
+      <div class="step-ref passed">72</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>match response.warnings == []</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -891,13 +883,13 @@ classpath:com/beedigital/global/web/karate/auth/metricool.feature:70
 
   <div class="step-row">
     <div class="step-container" id="0.73">
-      <div class="step-ref skipped">73</div>
+      <div class="step-ref passed">73</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>match response.data == { loginUrl: &#39;#(expectedLoginUrl)&#39; }</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -925,8 +917,8 @@ classpath:com/beedigital/global/web/karate/auth/metricool.feature:70
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>46</span>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>115</span>
             </div>
           </div>
           <div class="step-row">
@@ -958,36 +950,36 @@ classpath:com/beedigital/global/web/karate/auth/metricool.feature:70
 
   
 
-  <div class="preformatted" data-parent="0.4">08:30:05.856 Karate env: local 
-08:30:05.860 Karate baseUrl: http://localhost:4000/api/v1 
-08:30:05.860 Karate tenant: adminnewworkspaceuat.beedigital.es 
-08:30:05.860 Karate tenantId: beeEspana 
-08:30:05.860 Karate tenantProfile: beeEspana 
-08:30:05.860 Karate loginEmail configured: true 
-08:30:05.860 Karate loginPassword configured: true 
-08:30:05.862 Karate loginToken configured: false 
-08:30:05.862 Karate accessCheckToken configured: false 
-08:30:05.864 Karate sessionToken configured: false 
-08:30:05.864 Karate runUserEventDeliveryScenarios: false 
-08:30:05.864 Karate startApiGlobalMock: false 
-08:30:05.864 Karate apiGlobalMockUrl:  
-08:30:05.864 Karate metricoolMockEnabled: false 
-08:30:05.864 Karate metricoolServiceId configured: true 
-08:30:05.864 Karate metricoolAuthToken configured: false 
-08:30:05.864 Karate yextMockEnabled: false 
-08:30:05.867 Karate yextServiceId configured: true 
-08:30:05.867 Karate yextAuthToken configured: false 
-08:30:05.870 Karate yextPublisherId: yext 
-08:30:05.871 Karate gbpMockEnabled: false 
-08:30:05.872 Karate gbpProductId configured: true 
-08:30:05.872 Karate gbpAuthToken configured: false 
-08:30:05.873 Karate organizationId: beesible 
-08:30:05.873 Karate brandingTitle configured: true 
-08:30:05.874 Karate cognitoDomain configured: true 
-08:30:05.874 Karate supportsMetricool: true 
-08:30:05.874 Karate supportsYext: true 
-08:30:05.874 Karate supportsGbp: true 
-08:30:05.874 Workspace .env detected: false 
+  <div class="preformatted" data-parent="0.4">08:41:55.343 Karate env: local 
+08:41:55.343 Karate baseUrl: http://localhost:4000/api/v1 
+08:41:55.343 Karate tenant: adminnewworkspaceuat.beedigital.es 
+08:41:55.343 Karate tenantId: beeEspana 
+08:41:55.343 Karate tenantProfile: beeEspana 
+08:41:55.346 Karate loginEmail configured: true 
+08:41:55.346 Karate loginPassword configured: true 
+08:41:55.346 Karate loginToken configured: false 
+08:41:55.351 Karate accessCheckToken configured: false 
+08:41:55.351 Karate sessionToken configured: false 
+08:41:55.351 Karate runUserEventDeliveryScenarios: false 
+08:41:55.351 Karate startApiGlobalMock: false 
+08:41:55.351 Karate apiGlobalMockUrl:  
+08:41:55.352 Karate metricoolMockEnabled: false 
+08:41:55.352 Karate metricoolServiceId configured: true 
+08:41:55.352 Karate metricoolAuthToken configured: false 
+08:41:55.352 Karate yextMockEnabled: false 
+08:41:55.352 Karate yextServiceId configured: true 
+08:41:55.352 Karate yextAuthToken configured: false 
+08:41:55.352 Karate yextPublisherId: yext 
+08:41:55.352 Karate gbpMockEnabled: false 
+08:41:55.353 Karate gbpProductId configured: true 
+08:41:55.353 Karate gbpAuthToken configured: false 
+08:41:55.353 Karate organizationId: beesible 
+08:41:55.353 Karate brandingTitle configured: true 
+08:41:55.353 Karate cognitoDomain configured: true 
+08:41:55.353 Karate supportsMetricool: true 
+08:41:55.354 Karate supportsYext: true 
+08:41:55.354 Karate supportsGbp: true 
+08:41:55.354 Workspace .env detected: false 
 </div>   
 
   
@@ -1147,7 +1139,7 @@ classpath:com/beedigital/global/web/karate/auth/metricool.feature:70
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">40</div>
+    <div class="time-cell passed">109</div>
   </div>
 
    
@@ -1156,17 +1148,17 @@ classpath:com/beedigital/global/web/karate/auth/metricool.feature:70
 
   
 
-  <div class="preformatted" data-parent="0.82">08:30:05.886 request:
+  <div class="preformatted" data-parent="0.82">08:41:55.363 request:
 1 &gt; GET http://localhost:4000/api/v1/metricool/mock-metricool-unauthorized
 1 &gt; Tenant: adminnewworkspaceuat.beedigital.es
-1 &gt; Authorization: Bearer null
+1 &gt; Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJCZWVHbG9iYWxXZWIiLCJleHAiOjE3NzYzNzIxMTUsImlzR3Vlc3QiOmZhbHNlLCJwcm9maWxlSWQiOiJwcm9mX21vY2tfYmVlX2FkbWluXzAwMSIsIm1mYVR5cGUiOiJlbWFpbCIsInJvbGVJZCI6InJvbGVfYWRtaW4iLCJ0ZW5hbnRJZCI6ImJlZUVzcGFuYSIsImNvZ25pdG86dXNlcm5hbWUiOiJiZWUtYWRtaW4tdGVzdC11c2VyIiwibWZhUmVxdWlyZWQiOmZhbHNlLCJhY2Nlc3NUb2tlbiI6Im1vY2stbG9jYWwtYWNjZXNzLXRva2VuIiwiaXNNZmFFbmFibGVkIjpmYWxzZSwiZW1haWwiOiJwcnVlYmFzcWFiZWVzaWJsZUBnbWFpbC5jb20iLCJyZWZyZXNoVG9rZW4iOiJtb2NrLWxvY2FsLXJlZnJlc2gtdG9rZW4ifQ.dFATZE1l3V-sPPRZFHzX7J530zQfUlaqOiS4mWy8EPMW8mf8sx779L4MODC03_mfJm9QPRf_ed3CJFfI0lLKiAFm_HZGwZypeDeoB8P88IAKLvJYdxXuH2PJ8JOG-QvozUjeSoMPrDpBVeodWzCCy3PvmhQ4EgTiOV1YfZpWuFh2CdnMTxTZgmmMOZMk20VcUkhRZizfrQTzblUPUGXo-7s7qDhK7a2TOc5wfDyqscKoKap9HoUR1rNyTMIrm8qTwshN3fixsTKsCDcRbdbjRQ3XPYpTKRmw1SEkJLH59g0MWoNERVuwv_vAKLjYArfEr1KTCtC1Q14I3yHDWftCqQ
 1 &gt; Host: localhost:4000
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/22.0.2)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-08:30:05.923 response time in milliseconds: 37
+08:41:55.468 response time in milliseconds: 105
 1 &lt; 200
 1 &lt; Vary: Origin
 1 &lt; Vary: Access-Control-Request-Method
@@ -1179,10 +1171,10 @@ classpath:com/beedigital/global/web/karate/auth/metricool.feature:70
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 14 Apr 2026 08:30:05 GMT
+1 &lt; Date: Tue, 14 Apr 2026 08:41:55 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-{&quot;httpCode&quot;:401,&quot;httpStatus&quot;:&quot;UNAUTHORIZED&quot;,&quot;data&quot;:null,&quot;errors&quot;:[{&quot;code&quot;:&quot;ERR006&quot;,&quot;msg&quot;:&quot;Unauthorized&quot;,&quot;txt&quot;:&quot;Unauthorized&quot;,&quot;metadata&quot;:null}],&quot;warnings&quot;:[],&quot;metadata&quot;:null}
+{&quot;httpCode&quot;:401,&quot;httpStatus&quot;:null,&quot;data&quot;:null,&quot;errors&quot;:[{&quot;code&quot;:&quot;MOCK401&quot;,&quot;msg&quot;:&quot;Metricool mock unauthorized&quot;,&quot;txt&quot;:null,&quot;metadata&quot;:null}],&quot;warnings&quot;:[],&quot;metadata&quot;:null}
 
 </div>   
 
@@ -1281,13 +1273,13 @@ classpath:com/beedigital/global/web/karate/auth/metricool.feature:70
 
   <div class="step-row">
     <div class="step-container" id="0.86">
-      <div class="step-ref failed">86</div>
+      <div class="step-ref passed">86</div>
       
-      <div class="step-cell failed">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>match response.errors[0].code == &#39;MOCK401&#39;</span>
       </div>
     </div>
-    <div class="time-cell failed">2</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -1296,15 +1288,7 @@ classpath:com/beedigital/global/web/karate/auth/metricool.feature:70
 
   
 
-  <div class="preformatted" data-parent="0.86">08:30:05.927 classpath:com/beedigital/global/web/karate/auth/metricool.feature:86
-And match response.errors[0].code == &#39;MOCK401&#39;
-match failed: EQUALS
-  $ | not equal (STRING:STRING)
-  &#39;ERR006&#39;
-  &#39;MOCK401&#39;
-
-classpath:com/beedigital/global/web/karate/auth/metricool.feature:86
-</div>   
+     
 
   
 
@@ -1323,8 +1307,8 @@ classpath:com/beedigital/global/web/karate/auth/metricool.feature:86
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>37</span>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>35</span>
             </div>
           </div>
           <div class="step-row">
@@ -1356,36 +1340,36 @@ classpath:com/beedigital/global/web/karate/auth/metricool.feature:86
 
   
 
-  <div class="preformatted" data-parent="0.4">08:30:05.952 Karate env: local 
-08:30:05.952 Karate baseUrl: http://localhost:4000/api/v1 
-08:30:05.952 Karate tenant: adminnewworkspaceuat.beedigital.es 
-08:30:05.952 Karate tenantId: beeEspana 
-08:30:05.952 Karate tenantProfile: beeEspana 
-08:30:05.952 Karate loginEmail configured: true 
-08:30:05.952 Karate loginPassword configured: true 
-08:30:05.953 Karate loginToken configured: false 
-08:30:05.953 Karate accessCheckToken configured: false 
-08:30:05.953 Karate sessionToken configured: false 
-08:30:05.953 Karate runUserEventDeliveryScenarios: false 
-08:30:05.953 Karate startApiGlobalMock: false 
-08:30:05.955 Karate apiGlobalMockUrl:  
-08:30:05.955 Karate metricoolMockEnabled: false 
-08:30:05.955 Karate metricoolServiceId configured: true 
-08:30:05.955 Karate metricoolAuthToken configured: false 
-08:30:05.955 Karate yextMockEnabled: false 
-08:30:05.955 Karate yextServiceId configured: true 
-08:30:05.955 Karate yextAuthToken configured: false 
-08:30:05.955 Karate yextPublisherId: yext 
-08:30:05.955 Karate gbpMockEnabled: false 
-08:30:05.957 Karate gbpProductId configured: true 
-08:30:05.957 Karate gbpAuthToken configured: false 
-08:30:05.957 Karate organizationId: beesible 
-08:30:05.957 Karate brandingTitle configured: true 
-08:30:05.957 Karate cognitoDomain configured: true 
-08:30:05.957 Karate supportsMetricool: true 
-08:30:05.957 Karate supportsYext: true 
-08:30:05.957 Karate supportsGbp: true 
-08:30:05.957 Workspace .env detected: false 
+  <div class="preformatted" data-parent="0.4">08:41:55.490 Karate env: local 
+08:41:55.490 Karate baseUrl: http://localhost:4000/api/v1 
+08:41:55.490 Karate tenant: adminnewworkspaceuat.beedigital.es 
+08:41:55.490 Karate tenantId: beeEspana 
+08:41:55.490 Karate tenantProfile: beeEspana 
+08:41:55.490 Karate loginEmail configured: true 
+08:41:55.490 Karate loginPassword configured: true 
+08:41:55.492 Karate loginToken configured: false 
+08:41:55.492 Karate accessCheckToken configured: false 
+08:41:55.492 Karate sessionToken configured: false 
+08:41:55.492 Karate runUserEventDeliveryScenarios: false 
+08:41:55.492 Karate startApiGlobalMock: false 
+08:41:55.492 Karate apiGlobalMockUrl:  
+08:41:55.492 Karate metricoolMockEnabled: false 
+08:41:55.492 Karate metricoolServiceId configured: true 
+08:41:55.492 Karate metricoolAuthToken configured: false 
+08:41:55.492 Karate yextMockEnabled: false 
+08:41:55.492 Karate yextServiceId configured: true 
+08:41:55.494 Karate yextAuthToken configured: false 
+08:41:55.494 Karate yextPublisherId: yext 
+08:41:55.494 Karate gbpMockEnabled: false 
+08:41:55.494 Karate gbpProductId configured: true 
+08:41:55.494 Karate gbpAuthToken configured: false 
+08:41:55.494 Karate organizationId: beesible 
+08:41:55.494 Karate brandingTitle configured: true 
+08:41:55.494 Karate cognitoDomain configured: true 
+08:41:55.494 Karate supportsMetricool: true 
+08:41:55.494 Karate supportsYext: true 
+08:41:55.494 Karate supportsGbp: true 
+08:41:55.494 Workspace .env detected: false 
 </div>   
 
   
@@ -1433,7 +1417,7 @@ classpath:com/beedigital/global/web/karate/auth/metricool.feature:86
         <span>*</span>&nbsp;<span>def auth = callonce read(&#39;local-auth-context.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">4</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -1461,7 +1445,7 @@ classpath:com/beedigital/global/web/karate/auth/metricool.feature:86
         <span>Given</span>&nbsp;<span>path &#39;metricool&#39;, &#39;mock-metricool-unavailable&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1554,17 +1538,17 @@ classpath:com/beedigital/global/web/karate/auth/metricool.feature:86
 
   
 
-  <div class="preformatted" data-parent="0.95">08:30:05.975 request:
+  <div class="preformatted" data-parent="0.95">08:41:55.499 request:
 1 &gt; GET http://localhost:4000/api/v1/metricool/mock-metricool-unavailable
 1 &gt; Tenant: adminnewworkspaceuat.beedigital.es
-1 &gt; Authorization: Bearer null
+1 &gt; Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJCZWVHbG9iYWxXZWIiLCJleHAiOjE3NzYzNzIxMTUsImlzR3Vlc3QiOmZhbHNlLCJwcm9maWxlSWQiOiJwcm9mX21vY2tfYmVlX2FkbWluXzAwMSIsIm1mYVR5cGUiOiJlbWFpbCIsInJvbGVJZCI6InJvbGVfYWRtaW4iLCJ0ZW5hbnRJZCI6ImJlZUVzcGFuYSIsImNvZ25pdG86dXNlcm5hbWUiOiJiZWUtYWRtaW4tdGVzdC11c2VyIiwibWZhUmVxdWlyZWQiOmZhbHNlLCJhY2Nlc3NUb2tlbiI6Im1vY2stbG9jYWwtYWNjZXNzLXRva2VuIiwiaXNNZmFFbmFibGVkIjpmYWxzZSwiZW1haWwiOiJwcnVlYmFzcWFiZWVzaWJsZUBnbWFpbC5jb20iLCJyZWZyZXNoVG9rZW4iOiJtb2NrLWxvY2FsLXJlZnJlc2gtdG9rZW4ifQ.dFATZE1l3V-sPPRZFHzX7J530zQfUlaqOiS4mWy8EPMW8mf8sx779L4MODC03_mfJm9QPRf_ed3CJFfI0lLKiAFm_HZGwZypeDeoB8P88IAKLvJYdxXuH2PJ8JOG-QvozUjeSoMPrDpBVeodWzCCy3PvmhQ4EgTiOV1YfZpWuFh2CdnMTxTZgmmMOZMk20VcUkhRZizfrQTzblUPUGXo-7s7qDhK7a2TOc5wfDyqscKoKap9HoUR1rNyTMIrm8qTwshN3fixsTKsCDcRbdbjRQ3XPYpTKRmw1SEkJLH59g0MWoNERVuwv_vAKLjYArfEr1KTCtC1Q14I3yHDWftCqQ
 1 &gt; Host: localhost:4000
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/22.0.2)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-08:30:06.004 response time in milliseconds: 29
+08:41:55.528 response time in milliseconds: 29
 1 &lt; 200
 1 &lt; Vary: Origin
 1 &lt; Vary: Access-Control-Request-Method
@@ -1577,10 +1561,10 @@ classpath:com/beedigital/global/web/karate/auth/metricool.feature:86
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 14 Apr 2026 08:30:06 GMT
+1 &lt; Date: Tue, 14 Apr 2026 08:41:55 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-{&quot;httpCode&quot;:401,&quot;httpStatus&quot;:&quot;UNAUTHORIZED&quot;,&quot;data&quot;:null,&quot;errors&quot;:[{&quot;code&quot;:&quot;ERR006&quot;,&quot;msg&quot;:&quot;Unauthorized&quot;,&quot;txt&quot;:&quot;Unauthorized&quot;,&quot;metadata&quot;:null}],&quot;warnings&quot;:[],&quot;metadata&quot;:null}
+{&quot;httpCode&quot;:503,&quot;httpStatus&quot;:null,&quot;data&quot;:null,&quot;errors&quot;:[{&quot;code&quot;:&quot;MOCK503&quot;,&quot;msg&quot;:&quot;Metricool mock unavailable&quot;,&quot;txt&quot;:null,&quot;metadata&quot;:null}],&quot;warnings&quot;:[],&quot;metadata&quot;:null}
 
 </div>   
 
@@ -1623,13 +1607,13 @@ classpath:com/beedigital/global/web/karate/auth/metricool.feature:86
 
   <div class="step-row">
     <div class="step-container" id="0.97">
-      <div class="step-ref failed">97</div>
+      <div class="step-ref passed">97</div>
       
-      <div class="step-cell failed">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>match response.httpCode == 503</span>
       </div>
     </div>
-    <div class="time-cell failed">1</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1638,15 +1622,7 @@ classpath:com/beedigital/global/web/karate/auth/metricool.feature:86
 
   
 
-  <div class="preformatted" data-parent="0.97">08:30:06.006 classpath:com/beedigital/global/web/karate/auth/metricool.feature:97
-And match response.httpCode == 503
-match failed: EQUALS
-  $ | not equal (NUMBER:NUMBER)
-  401
-  503
-
-classpath:com/beedigital/global/web/karate/auth/metricool.feature:97
-</div>   
+     
 
   
 
@@ -1659,13 +1635,13 @@ classpath:com/beedigital/global/web/karate/auth/metricool.feature:97
 
   <div class="step-row">
     <div class="step-container" id="0.98">
-      <div class="step-ref skipped">98</div>
+      <div class="step-ref passed">98</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>match response.data == null</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1687,13 +1663,13 @@ classpath:com/beedigital/global/web/karate/auth/metricool.feature:97
 
   <div class="step-row">
     <div class="step-container" id="0.99">
-      <div class="step-ref skipped">99</div>
+      <div class="step-ref passed">99</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>match response.errors[0].code == &#39;MOCK503&#39;</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1721,8 +1697,8 @@ classpath:com/beedigital/global/web/karate/auth/metricool.feature:97
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>67</span>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>36</span>
             </div>
           </div>
           <div class="step-row">
@@ -1754,36 +1730,36 @@ classpath:com/beedigital/global/web/karate/auth/metricool.feature:97
 
   
 
-  <div class="preformatted" data-parent="0.4">08:30:06.030 Karate env: local 
-08:30:06.030 Karate baseUrl: http://localhost:4000/api/v1 
-08:30:06.030 Karate tenant: adminnewworkspaceuat.beedigital.es 
-08:30:06.030 Karate tenantId: beeEspana 
-08:30:06.032 Karate tenantProfile: beeEspana 
-08:30:06.032 Karate loginEmail configured: true 
-08:30:06.032 Karate loginPassword configured: true 
-08:30:06.034 Karate loginToken configured: false 
-08:30:06.034 Karate accessCheckToken configured: false 
-08:30:06.034 Karate sessionToken configured: false 
-08:30:06.034 Karate runUserEventDeliveryScenarios: false 
-08:30:06.034 Karate startApiGlobalMock: false 
-08:30:06.034 Karate apiGlobalMockUrl:  
-08:30:06.034 Karate metricoolMockEnabled: false 
-08:30:06.034 Karate metricoolServiceId configured: true 
-08:30:06.034 Karate metricoolAuthToken configured: false 
-08:30:06.034 Karate yextMockEnabled: false 
-08:30:06.034 Karate yextServiceId configured: true 
-08:30:06.034 Karate yextAuthToken configured: false 
-08:30:06.034 Karate yextPublisherId: yext 
-08:30:06.034 Karate gbpMockEnabled: false 
-08:30:06.034 Karate gbpProductId configured: true 
-08:30:06.034 Karate gbpAuthToken configured: false 
-08:30:06.034 Karate organizationId: beesible 
-08:30:06.034 Karate brandingTitle configured: true 
-08:30:06.034 Karate cognitoDomain configured: true 
-08:30:06.036 Karate supportsMetricool: true 
-08:30:06.036 Karate supportsYext: true 
-08:30:06.036 Karate supportsGbp: true 
-08:30:06.036 Workspace .env detected: false 
+  <div class="preformatted" data-parent="0.4">08:41:57.842 Karate env: local 
+08:41:57.842 Karate baseUrl: http://localhost:4000/api/v1 
+08:41:57.842 Karate tenant: adminnewworkspaceuat.beedigital.es 
+08:41:57.842 Karate tenantId: beeEspana 
+08:41:57.842 Karate tenantProfile: beeEspana 
+08:41:57.842 Karate loginEmail configured: true 
+08:41:57.842 Karate loginPassword configured: true 
+08:41:57.842 Karate loginToken configured: false 
+08:41:57.842 Karate accessCheckToken configured: false 
+08:41:57.842 Karate sessionToken configured: false 
+08:41:57.842 Karate runUserEventDeliveryScenarios: false 
+08:41:57.842 Karate startApiGlobalMock: false 
+08:41:57.842 Karate apiGlobalMockUrl:  
+08:41:57.842 Karate metricoolMockEnabled: false 
+08:41:57.842 Karate metricoolServiceId configured: true 
+08:41:57.842 Karate metricoolAuthToken configured: false 
+08:41:57.842 Karate yextMockEnabled: false 
+08:41:57.842 Karate yextServiceId configured: true 
+08:41:57.842 Karate yextAuthToken configured: false 
+08:41:57.842 Karate yextPublisherId: yext 
+08:41:57.842 Karate gbpMockEnabled: false 
+08:41:57.842 Karate gbpProductId configured: true 
+08:41:57.842 Karate gbpAuthToken configured: false 
+08:41:57.842 Karate organizationId: beesible 
+08:41:57.842 Karate brandingTitle configured: true 
+08:41:57.842 Karate cognitoDomain configured: true 
+08:41:57.842 Karate supportsMetricool: true 
+08:41:57.842 Karate supportsYext: true 
+08:41:57.842 Karate supportsGbp: true 
+08:41:57.842 Workspace .env detected: false 
 </div>   
 
   
@@ -1831,7 +1807,7 @@ classpath:com/beedigital/global/web/karate/auth/metricool.feature:97
         <span>*</span>&nbsp;<span>def auth = callonce read(&#39;local-auth-context.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -1859,7 +1835,7 @@ classpath:com/beedigital/global/web/karate/auth/metricool.feature:97
         <span>Given</span>&nbsp;<span>path &#39;metricool&#39;, &#39;mock-metricool-missing-login-url&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">5</div>
   </div>
 
    
@@ -1943,7 +1919,7 @@ classpath:com/beedigital/global/web/karate/auth/metricool.feature:97
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">64</div>
+    <div class="time-cell passed">27</div>
   </div>
 
    
@@ -1952,17 +1928,17 @@ classpath:com/beedigital/global/web/karate/auth/metricool.feature:97
 
   
 
-  <div class="preformatted" data-parent="0.108">08:30:06.044 request:
+  <div class="preformatted" data-parent="0.108">08:41:57.858 request:
 1 &gt; GET http://localhost:4000/api/v1/metricool/mock-metricool-missing-login-url
 1 &gt; Tenant: adminnewworkspaceuat.beedigital.es
-1 &gt; Authorization: Bearer null
+1 &gt; Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJCZWVHbG9iYWxXZWIiLCJleHAiOjE3NzYzNzIxMTUsImlzR3Vlc3QiOmZhbHNlLCJwcm9maWxlSWQiOiJwcm9mX21vY2tfYmVlX2FkbWluXzAwMSIsIm1mYVR5cGUiOiJlbWFpbCIsInJvbGVJZCI6InJvbGVfYWRtaW4iLCJ0ZW5hbnRJZCI6ImJlZUVzcGFuYSIsImNvZ25pdG86dXNlcm5hbWUiOiJiZWUtYWRtaW4tdGVzdC11c2VyIiwibWZhUmVxdWlyZWQiOmZhbHNlLCJhY2Nlc3NUb2tlbiI6Im1vY2stbG9jYWwtYWNjZXNzLXRva2VuIiwiaXNNZmFFbmFibGVkIjpmYWxzZSwiZW1haWwiOiJwcnVlYmFzcWFiZWVzaWJsZUBnbWFpbC5jb20iLCJyZWZyZXNoVG9rZW4iOiJtb2NrLWxvY2FsLXJlZnJlc2gtdG9rZW4ifQ.dFATZE1l3V-sPPRZFHzX7J530zQfUlaqOiS4mWy8EPMW8mf8sx779L4MODC03_mfJm9QPRf_ed3CJFfI0lLKiAFm_HZGwZypeDeoB8P88IAKLvJYdxXuH2PJ8JOG-QvozUjeSoMPrDpBVeodWzCCy3PvmhQ4EgTiOV1YfZpWuFh2CdnMTxTZgmmMOZMk20VcUkhRZizfrQTzblUPUGXo-7s7qDhK7a2TOc5wfDyqscKoKap9HoUR1rNyTMIrm8qTwshN3fixsTKsCDcRbdbjRQ3XPYpTKRmw1SEkJLH59g0MWoNERVuwv_vAKLjYArfEr1KTCtC1Q14I3yHDWftCqQ
 1 &gt; Host: localhost:4000
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/22.0.2)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-08:30:06.105 response time in milliseconds: 61
+08:41:57.881 response time in milliseconds: 23
 1 &lt; 200
 1 &lt; Vary: Origin
 1 &lt; Vary: Access-Control-Request-Method
@@ -1975,10 +1951,10 @@ classpath:com/beedigital/global/web/karate/auth/metricool.feature:97
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 14 Apr 2026 08:30:06 GMT
+1 &lt; Date: Tue, 14 Apr 2026 08:41:57 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-{&quot;httpCode&quot;:401,&quot;httpStatus&quot;:&quot;UNAUTHORIZED&quot;,&quot;data&quot;:null,&quot;errors&quot;:[{&quot;code&quot;:&quot;ERR006&quot;,&quot;msg&quot;:&quot;Unauthorized&quot;,&quot;txt&quot;:&quot;Unauthorized&quot;,&quot;metadata&quot;:null}],&quot;warnings&quot;:[],&quot;metadata&quot;:null}
+{&quot;httpCode&quot;:200,&quot;httpStatus&quot;:null,&quot;data&quot;:{},&quot;errors&quot;:[],&quot;warnings&quot;:[{&quot;code&quot;:&quot;MOCK_WARN&quot;,&quot;msg&quot;:&quot;Metricool mock returned an incomplete payload&quot;,&quot;txt&quot;:null,&quot;metadata&quot;:null}],&quot;metadata&quot;:null}
 
 </div>   
 
@@ -2021,13 +1997,13 @@ classpath:com/beedigital/global/web/karate/auth/metricool.feature:97
 
   <div class="step-row">
     <div class="step-container" id="0.110">
-      <div class="step-ref failed">110</div>
+      <div class="step-ref passed">110</div>
       
-      <div class="step-cell failed">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>match response.httpCode == 200</span>
       </div>
     </div>
-    <div class="time-cell failed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -2036,15 +2012,7 @@ classpath:com/beedigital/global/web/karate/auth/metricool.feature:97
 
   
 
-  <div class="preformatted" data-parent="0.110">08:30:06.109 classpath:com/beedigital/global/web/karate/auth/metricool.feature:110
-And match response.httpCode == 200
-match failed: EQUALS
-  $ | not equal (NUMBER:NUMBER)
-  401
-  200
-
-classpath:com/beedigital/global/web/karate/auth/metricool.feature:110
-</div>   
+     
 
   
 
@@ -2057,13 +2025,13 @@ classpath:com/beedigital/global/web/karate/auth/metricool.feature:110
 
   <div class="step-row">
     <div class="step-container" id="0.111">
-      <div class="step-ref skipped">111</div>
+      <div class="step-ref passed">111</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>match response.errors == []</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -2085,13 +2053,13 @@ classpath:com/beedigital/global/web/karate/auth/metricool.feature:110
 
   <div class="step-row">
     <div class="step-container" id="0.112">
-      <div class="step-ref skipped">112</div>
+      <div class="step-ref passed">112</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>match response.warnings[0].code == &#39;MOCK_WARN&#39;</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -2113,13 +2081,13 @@ classpath:com/beedigital/global/web/karate/auth/metricool.feature:110
 
   <div class="step-row">
     <div class="step-container" id="0.113">
-      <div class="step-ref skipped">113</div>
+      <div class="step-ref passed">113</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>match response.data == {}</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -2147,8 +2115,8 @@ classpath:com/beedigital/global/web/karate/auth/metricool.feature:110
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>31</span>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>33</span>
             </div>
           </div>
           <div class="step-row">
@@ -2180,36 +2148,36 @@ classpath:com/beedigital/global/web/karate/auth/metricool.feature:110
 
   
 
-  <div class="preformatted" data-parent="0.4">08:30:06.139 Karate env: local 
-08:30:06.139 Karate baseUrl: http://localhost:4000/api/v1 
-08:30:06.139 Karate tenant: adminnewworkspaceuat.beedigital.es 
-08:30:06.139 Karate tenantId: beeEspana 
-08:30:06.139 Karate tenantProfile: beeEspana 
-08:30:06.139 Karate loginEmail configured: true 
-08:30:06.139 Karate loginPassword configured: true 
-08:30:06.139 Karate loginToken configured: false 
-08:30:06.139 Karate accessCheckToken configured: false 
-08:30:06.139 Karate sessionToken configured: false 
-08:30:06.139 Karate runUserEventDeliveryScenarios: false 
-08:30:06.139 Karate startApiGlobalMock: false 
-08:30:06.139 Karate apiGlobalMockUrl:  
-08:30:06.139 Karate metricoolMockEnabled: false 
-08:30:06.139 Karate metricoolServiceId configured: true 
-08:30:06.139 Karate metricoolAuthToken configured: false 
-08:30:06.141 Karate yextMockEnabled: false 
-08:30:06.141 Karate yextServiceId configured: true 
-08:30:06.141 Karate yextAuthToken configured: false 
-08:30:06.141 Karate yextPublisherId: yext 
-08:30:06.141 Karate gbpMockEnabled: false 
-08:30:06.141 Karate gbpProductId configured: true 
-08:30:06.141 Karate gbpAuthToken configured: false 
-08:30:06.141 Karate organizationId: beesible 
-08:30:06.141 Karate brandingTitle configured: true 
-08:30:06.141 Karate cognitoDomain configured: true 
-08:30:06.141 Karate supportsMetricool: true 
-08:30:06.141 Karate supportsYext: true 
-08:30:06.141 Karate supportsGbp: true 
-08:30:06.141 Workspace .env detected: false 
+  <div class="preformatted" data-parent="0.4">08:41:57.897 Karate env: local 
+08:41:57.897 Karate baseUrl: http://localhost:4000/api/v1 
+08:41:57.897 Karate tenant: adminnewworkspaceuat.beedigital.es 
+08:41:57.897 Karate tenantId: beeEspana 
+08:41:57.897 Karate tenantProfile: beeEspana 
+08:41:57.901 Karate loginEmail configured: true 
+08:41:57.901 Karate loginPassword configured: true 
+08:41:57.901 Karate loginToken configured: false 
+08:41:57.901 Karate accessCheckToken configured: false 
+08:41:57.901 Karate sessionToken configured: false 
+08:41:57.901 Karate runUserEventDeliveryScenarios: false 
+08:41:57.901 Karate startApiGlobalMock: false 
+08:41:57.901 Karate apiGlobalMockUrl:  
+08:41:57.903 Karate metricoolMockEnabled: false 
+08:41:57.903 Karate metricoolServiceId configured: true 
+08:41:57.903 Karate metricoolAuthToken configured: false 
+08:41:57.903 Karate yextMockEnabled: false 
+08:41:57.903 Karate yextServiceId configured: true 
+08:41:57.903 Karate yextAuthToken configured: false 
+08:41:57.903 Karate yextPublisherId: yext 
+08:41:57.903 Karate gbpMockEnabled: false 
+08:41:57.903 Karate gbpProductId configured: true 
+08:41:57.903 Karate gbpAuthToken configured: false 
+08:41:57.905 Karate organizationId: beesible 
+08:41:57.905 Karate brandingTitle configured: true 
+08:41:57.905 Karate cognitoDomain configured: true 
+08:41:57.905 Karate supportsMetricool: true 
+08:41:57.905 Karate supportsYext: true 
+08:41:57.905 Karate supportsGbp: true 
+08:41:57.905 Workspace .env detected: false 
 </div>   
 
   
@@ -2257,7 +2225,7 @@ classpath:com/beedigital/global/web/karate/auth/metricool.feature:110
         <span>*</span>&nbsp;<span>def auth = callonce read(&#39;local-auth-context.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -2285,7 +2253,7 @@ classpath:com/beedigital/global/web/karate/auth/metricool.feature:110
         <span>Given</span>&nbsp;<span>path &#39;metricool&#39;, &#39;mock-metricool-business-error&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -2369,7 +2337,7 @@ classpath:com/beedigital/global/web/karate/auth/metricool.feature:110
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">28</div>
+    <div class="time-cell passed">29</div>
   </div>
 
    
@@ -2378,17 +2346,17 @@ classpath:com/beedigital/global/web/karate/auth/metricool.feature:110
 
   
 
-  <div class="preformatted" data-parent="0.122">08:30:06.147 request:
+  <div class="preformatted" data-parent="0.122">08:41:57.912 request:
 1 &gt; GET http://localhost:4000/api/v1/metricool/mock-metricool-business-error
 1 &gt; Tenant: adminnewworkspaceuat.beedigital.es
-1 &gt; Authorization: Bearer null
+1 &gt; Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJCZWVHbG9iYWxXZWIiLCJleHAiOjE3NzYzNzIxMTUsImlzR3Vlc3QiOmZhbHNlLCJwcm9maWxlSWQiOiJwcm9mX21vY2tfYmVlX2FkbWluXzAwMSIsIm1mYVR5cGUiOiJlbWFpbCIsInJvbGVJZCI6InJvbGVfYWRtaW4iLCJ0ZW5hbnRJZCI6ImJlZUVzcGFuYSIsImNvZ25pdG86dXNlcm5hbWUiOiJiZWUtYWRtaW4tdGVzdC11c2VyIiwibWZhUmVxdWlyZWQiOmZhbHNlLCJhY2Nlc3NUb2tlbiI6Im1vY2stbG9jYWwtYWNjZXNzLXRva2VuIiwiaXNNZmFFbmFibGVkIjpmYWxzZSwiZW1haWwiOiJwcnVlYmFzcWFiZWVzaWJsZUBnbWFpbC5jb20iLCJyZWZyZXNoVG9rZW4iOiJtb2NrLWxvY2FsLXJlZnJlc2gtdG9rZW4ifQ.dFATZE1l3V-sPPRZFHzX7J530zQfUlaqOiS4mWy8EPMW8mf8sx779L4MODC03_mfJm9QPRf_ed3CJFfI0lLKiAFm_HZGwZypeDeoB8P88IAKLvJYdxXuH2PJ8JOG-QvozUjeSoMPrDpBVeodWzCCy3PvmhQ4EgTiOV1YfZpWuFh2CdnMTxTZgmmMOZMk20VcUkhRZizfrQTzblUPUGXo-7s7qDhK7a2TOc5wfDyqscKoKap9HoUR1rNyTMIrm8qTwshN3fixsTKsCDcRbdbjRQ3XPYpTKRmw1SEkJLH59g0MWoNERVuwv_vAKLjYArfEr1KTCtC1Q14I3yHDWftCqQ
 1 &gt; Host: localhost:4000
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/22.0.2)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-08:30:06.172 response time in milliseconds: 25
+08:41:57.939 response time in milliseconds: 26
 1 &lt; 200
 1 &lt; Vary: Origin
 1 &lt; Vary: Access-Control-Request-Method
@@ -2401,10 +2369,10 @@ classpath:com/beedigital/global/web/karate/auth/metricool.feature:110
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 14 Apr 2026 08:30:06 GMT
+1 &lt; Date: Tue, 14 Apr 2026 08:41:57 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-{&quot;httpCode&quot;:401,&quot;httpStatus&quot;:&quot;UNAUTHORIZED&quot;,&quot;data&quot;:null,&quot;errors&quot;:[{&quot;code&quot;:&quot;ERR006&quot;,&quot;msg&quot;:&quot;Unauthorized&quot;,&quot;txt&quot;:&quot;Unauthorized&quot;,&quot;metadata&quot;:null}],&quot;warnings&quot;:[],&quot;metadata&quot;:null}
+{&quot;httpCode&quot;:200,&quot;httpStatus&quot;:null,&quot;data&quot;:null,&quot;errors&quot;:[{&quot;code&quot;:&quot;MOCK_BUSINESS_ERROR&quot;,&quot;msg&quot;:&quot;Metricool mock business error&quot;,&quot;txt&quot;:null,&quot;metadata&quot;:null}],&quot;warnings&quot;:[],&quot;metadata&quot;:null}
 
 </div>   
 
@@ -2447,13 +2415,13 @@ classpath:com/beedigital/global/web/karate/auth/metricool.feature:110
 
   <div class="step-row">
     <div class="step-container" id="0.124">
-      <div class="step-ref failed">124</div>
+      <div class="step-ref passed">124</div>
       
-      <div class="step-cell failed">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>match response.httpCode == 200</span>
       </div>
     </div>
-    <div class="time-cell failed">1</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -2462,15 +2430,7 @@ classpath:com/beedigital/global/web/karate/auth/metricool.feature:110
 
   
 
-  <div class="preformatted" data-parent="0.124">08:30:06.174 classpath:com/beedigital/global/web/karate/auth/metricool.feature:124
-And match response.httpCode == 200
-match failed: EQUALS
-  $ | not equal (NUMBER:NUMBER)
-  401
-  200
-
-classpath:com/beedigital/global/web/karate/auth/metricool.feature:124
-</div>   
+     
 
   
 
@@ -2483,13 +2443,13 @@ classpath:com/beedigital/global/web/karate/auth/metricool.feature:124
 
   <div class="step-row">
     <div class="step-container" id="0.125">
-      <div class="step-ref skipped">125</div>
+      <div class="step-ref passed">125</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>match response.data == null</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -2511,13 +2471,13 @@ classpath:com/beedigital/global/web/karate/auth/metricool.feature:124
 
   <div class="step-row">
     <div class="step-container" id="0.126">
-      <div class="step-ref skipped">126</div>
+      <div class="step-ref passed">126</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>match response.errors[0].code == &#39;MOCK_BUSINESS_ERROR&#39;</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -2539,13 +2499,13 @@ classpath:com/beedigital/global/web/karate/auth/metricool.feature:124
 
   <div class="step-row">
     <div class="step-container" id="0.127">
-      <div class="step-ref skipped">127</div>
+      <div class="step-ref passed">127</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>match response.warnings == []</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
