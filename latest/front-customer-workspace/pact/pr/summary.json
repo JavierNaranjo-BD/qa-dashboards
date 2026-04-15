@@ -7,11 +7,11 @@
   "testsRun": 8,
   "failures": 0,
   "errors": 0,
-  "durationSeconds": 518.09,
-  "generatedAt": "2026-04-15T11:01:02.858Z",
-  "runUrl": "https://github.com/BeeDigital-AI/front-customer-workspace/actions/runs/24449435035",
+  "durationSeconds": 497.43,
+  "generatedAt": "2026-04-15T11:50:04.756Z",
+  "runUrl": "https://github.com/BeeDigital-AI/front-customer-workspace/actions/runs/24452422969",
   "branch": "864/merge",
-  "commitSha": "743365ed208608674d142bc09c682a9fa65fda2d",
+  "commitSha": "de56660d32399918e21926e37a7dcc2cd6bd8f4c",
   "artifacts": [
     {
       "name": "playwright-pact-results",
