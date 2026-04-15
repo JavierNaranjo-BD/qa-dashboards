@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.beedigital.global.web.karate.KarateExtendedDeterministicIT
 -------------------------------------------------------------------------------
-Tests run: 15, Failures: 13, Errors: 0, Skipped: 0, Time elapsed: 13.71 s <<< FAILURE! -- in com.beedigital.global.web.karate.KarateExtendedDeterministicIT
-com.beedigital.global.web.karate.KarateExtendedDeterministicIT.[5:47] access-check returns granted access with deterministic local auth and seeded merchant data -- Time elapsed: 3.271 s <<< FAILURE!
+Tests run: 15, Failures: 13, Errors: 0, Skipped: 0, Time elapsed: 15.80 s <<< FAILURE! -- in com.beedigital.global.web.karate.KarateExtendedDeterministicIT
+com.beedigital.global.web.karate.KarateExtendedDeterministicIT.[5:47] access-check returns granted access with deterministic local auth and seeded merchant data -- Time elapsed: 4.310 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: 
 match failed: EQUALS
   $ | not a string (NULL:STRING)
@@ -27,7 +27,7 @@ classpath:com/beedigital/global/web/karate/auth/access-check.feature:49
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 
-com.beedigital.global.web.karate.KarateExtendedDeterministicIT.[8:112] login returns a deterministic local JWT when the local auth harness is enabled -- Time elapsed: 2.397 s <<< FAILURE!
+com.beedigital.global.web.karate.KarateExtendedDeterministicIT.[8:112] login returns a deterministic local JWT when the local auth harness is enabled -- Time elapsed: 1.191 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: 
 match failed: EQUALS
 
@@ -49,7 +49,7 @@ classpath:com/beedigital/global/web/karate/auth/login.feature:118
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 
-com.beedigital.global.web.karate.KarateExtendedDeterministicIT.[6:60] metricool returns a deterministic loginUrl when the local auth harness and API Global mock are enabled -- Time elapsed: 0.208 s <<< FAILURE!
+com.beedigital.global.web.karate.KarateExtendedDeterministicIT.[6:60] metricool returns a deterministic loginUrl when the local auth harness and API Global mock are enabled -- Time elapsed: 0.366 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: 
 match failed: EQUALS
   $ | not equal (NUMBER:NUMBER)
@@ -74,7 +74,7 @@ classpath:com/beedigital/global/web/karate/auth/metricool.feature:70
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 
-com.beedigital.global.web.karate.KarateExtendedDeterministicIT.[7:76] metricool surfaces a deterministic local unauthorized response in a controlled way -- Time elapsed: 0.103 s <<< FAILURE!
+com.beedigital.global.web.karate.KarateExtendedDeterministicIT.[7:76] metricool surfaces a deterministic local unauthorized response in a controlled way -- Time elapsed: 0.116 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: 
 match failed: EQUALS
   $ | not equal (STRING:STRING)
@@ -99,7 +99,7 @@ classpath:com/beedigital/global/web/karate/auth/metricool.feature:86
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 
-com.beedigital.global.web.karate.KarateExtendedDeterministicIT.[8:89] metricool surfaces a deterministic local unavailable response in a controlled way -- Time elapsed: 0.068 s <<< FAILURE!
+com.beedigital.global.web.karate.KarateExtendedDeterministicIT.[8:89] metricool surfaces a deterministic local unavailable response in a controlled way -- Time elapsed: 0.105 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: 
 match failed: EQUALS
   $ | not equal (NUMBER:NUMBER)
@@ -124,7 +124,7 @@ classpath:com/beedigital/global/web/karate/auth/metricool.feature:97
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 
-com.beedigital.global.web.karate.KarateExtendedDeterministicIT.[9:102] metricool exposes a deterministic local incomplete payload without inventing a loginUrl -- Time elapsed: 0.066 s <<< FAILURE!
+com.beedigital.global.web.karate.KarateExtendedDeterministicIT.[9:102] metricool exposes a deterministic local incomplete payload without inventing a loginUrl -- Time elapsed: 0.129 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: 
 match failed: EQUALS
   $ | not equal (NUMBER:NUMBER)
@@ -149,7 +149,7 @@ classpath:com/beedigital/global/web/karate/auth/metricool.feature:110
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 
-com.beedigital.global.web.karate.KarateExtendedDeterministicIT.[10:116] metricool surfaces a deterministic local business error wrapped in a 200 response -- Time elapsed: 0.348 s <<< FAILURE!
+com.beedigital.global.web.karate.KarateExtendedDeterministicIT.[10:116] metricool surfaces a deterministic local business error wrapped in a 200 response -- Time elapsed: 1.174 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: 
 match failed: EQUALS
   $ | not equal (NUMBER:NUMBER)
@@ -174,7 +174,7 @@ classpath:com/beedigital/global/web/karate/auth/metricool.feature:124
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 
-com.beedigital.global.web.karate.KarateExtendedDeterministicIT.[5:74] session returns a logged-in session shape with deterministic local auth -- Time elapsed: 0.364 s <<< FAILURE!
+com.beedigital.global.web.karate.KarateExtendedDeterministicIT.[5:74] session returns a logged-in session shape with deterministic local auth -- Time elapsed: 0.692 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: 
 match failed: EQUALS
   $ | not a string (NULL:STRING)
@@ -199,7 +199,7 @@ classpath:com/beedigital/global/web/karate/auth/session.feature:76
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 
-com.beedigital.global.web.karate.KarateExtendedDeterministicIT.[6:58] gbp posts returns a deterministic local happy path -- Time elapsed: 0.131 s <<< FAILURE!
+com.beedigital.global.web.karate.KarateExtendedDeterministicIT.[6:58] gbp posts returns a deterministic local happy path -- Time elapsed: 0.167 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: 
 match failed: EQUALS
   $ | not equal (NUMBER:NUMBER)
@@ -224,7 +224,7 @@ classpath:com/beedigital/global/web/karate/integrations/gbp-posts.feature:67
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 
-com.beedigital.global.web.karate.KarateExtendedDeterministicIT.[7:78] gbp posts supports a deterministic local create update delete lifecycle -- Time elapsed: 0.560 s <<< FAILURE!
+com.beedigital.global.web.karate.KarateExtendedDeterministicIT.[7:78] gbp posts supports a deterministic local create update delete lifecycle -- Time elapsed: 0.637 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: 
 match failed: EQUALS
   $ | not equal (NUMBER:NUMBER)
@@ -249,7 +249,7 @@ classpath:com/beedigital/global/web/karate/integrations/gbp-posts.feature:94
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 
-com.beedigital.global.web.karate.KarateExtendedDeterministicIT.[4:36] yext diffusion returns a deterministic local happy path -- Time elapsed: 0.146 s <<< FAILURE!
+com.beedigital.global.web.karate.KarateExtendedDeterministicIT.[4:36] yext diffusion returns a deterministic local happy path -- Time elapsed: 0.104 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: 
 match failed: EQUALS
   $ | not equal (NUMBER:NUMBER)
@@ -274,7 +274,7 @@ classpath:com/beedigital/global/web/karate/integrations/yext-publishers.feature:
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 
-com.beedigital.global.web.karate.KarateExtendedDeterministicIT.[12:138] yext connect returns a deterministic local happy path -- Time elapsed: 0.039 s <<< FAILURE!
+com.beedigital.global.web.karate.KarateExtendedDeterministicIT.[12:138] yext connect returns a deterministic local happy path -- Time elapsed: 0.043 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: 
 match failed: EQUALS
   $ | not equal (NUMBER:NUMBER)
@@ -299,7 +299,7 @@ classpath:com/beedigital/global/web/karate/integrations/yext-publishers.feature:
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 
-com.beedigital.global.web.karate.KarateExtendedDeterministicIT.[17:220] yext disconnect returns a deterministic local happy path -- Time elapsed: 0.350 s <<< FAILURE!
+com.beedigital.global.web.karate.KarateExtendedDeterministicIT.[17:220] yext disconnect returns a deterministic local happy path -- Time elapsed: 0.331 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: 
 match failed: EQUALS
   $ | not equal (NUMBER:NUMBER)
