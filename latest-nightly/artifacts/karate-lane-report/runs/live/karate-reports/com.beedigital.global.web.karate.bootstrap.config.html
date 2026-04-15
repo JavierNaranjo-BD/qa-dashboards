@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"fbd5c29b-b9fc-481f-8b6c-ea6476a723c6",karate_version:"1.5.2",karate_meta:null});
+  }
+});
+</script>
+
+    <title>com.beedigital.global.web.karate.bootstrap.config</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2026-04-14 11:25:22 AM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:7]"><span>[1:7]</span> <span>config endpoint responds with tenant-aware configuration</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">com/beedigital/global/web/karate/bootstrap/config.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Config smoke test</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:7]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">extended-live</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:7]</span>
+                <span class="scenario-name">config endpoint responds with tenant-aware configuration</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>298</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:7]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:7]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">11:25:22.074 Karate env: local 
+11:25:22.074 Karate baseUrl: https://adminnewworkspaceuat.beedigital.es/api/v1 
+11:25:22.074 Karate tenant: adminnewworkspaceuat.beedigital.es 
+11:25:22.076 Karate tenantId: beeEspana 
+11:25:22.076 Karate tenantProfile: beeEspana 
+11:25:22.076 Karate loginEmail configured: true 
+11:25:22.076 Karate loginPassword configured: true 
+11:25:22.076 Karate loginToken configured: false 
+11:25:22.076 Karate accessCheckToken configured: false 
+11:25:22.080 Karate sessionToken configured: false 
+11:25:22.080 Karate runUserEventDeliveryScenarios: false 
+11:25:22.080 Karate startApiGlobalMock: false 
+11:25:22.080 Karate apiGlobalMockUrl:  
+11:25:22.080 Karate metricoolMockEnabled: false 
+11:25:22.080 Karate metricoolServiceId configured: true 
+11:25:22.080 Karate metricoolAuthToken configured: false 
+11:25:22.080 Karate yextMockEnabled: false 
+11:25:22.080 Karate yextServiceId configured: true 
+11:25:22.080 Karate yextAuthToken configured: false 
+11:25:22.082 Karate yextPublisherId: yext 
+11:25:22.082 Karate gbpMockEnabled: false 
+11:25:22.082 Karate gbpProductId configured: true 
+11:25:22.082 Karate gbpAuthToken configured: false 
+11:25:22.082 Karate organizationId: beesible 
+11:25:22.082 Karate brandingTitle configured: true 
+11:25:22.082 Karate cognitoDomain configured: true 
+11:25:22.082 Karate supportsMetricool: true 
+11:25:22.082 Karate supportsYext: true 
+11:25:22.082 Karate supportsGbp: true 
+11:25:22.082 Workspace .env detected: false 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Tenant = tenant</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;config&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">293</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">11:25:22.088 request:
+1 &gt; GET https://adminnewworkspaceuat.beedigital.es/api/v1/config
+1 &gt; Tenant: adminnewworkspaceuat.beedigital.es
+1 &gt; Host: adminnewworkspaceuat.beedigital.es
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/22.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+11:25:22.366 response time in milliseconds: 274
+1 &lt; 200
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Date: Tue, 14 Apr 2026 11:25:22 GMT
+1 &lt; X-XSS-Protection: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; Vary: Origin
+1 &lt; ETag: &quot;9270676D93C4E723700978D9717D3E90CE5768808E9D30BF5CA635B9C9423F0D&quot;
+1 &lt; Cache-Control: max-age=0, must-revalidate, private
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Cache: Miss from cloudfront
+1 &lt; Via: 1.1 2cdf77010cd36014b610596238031afa.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: DFW56-P4
+1 &lt; X-Amz-Cf-Id: alNVZplsOmf7kxqWJ1beul5F75C4OUNH7Bc2hmFHI_D20L1JqEJL5w==
+{&quot;httpCode&quot;:200,&quot;httpStatus&quot;:null,&quot;data&quot;:{&quot;registerModel&quot;:{&quot;submitLabel&quot;:&quot;${ACTION_ACTIVATE_SERVICE}&quot;,&quot;attributes&quot;:[{&quot;template&quot;:&quot;field&quot;,&quot;valids&quot;:{&quot;required&quot;:true},&quot;widget&quot;:&quot;userData&quot;,&quot;field&quot;:&quot;code&quot;,&quot;fillFromQueryParam&quot;:&quot;code&quot;,&quot;defaultLabel&quot;:&quot;Promo code&quot;,&quot;label&quot;:&quot;${PROMO_CODE}&quot;,&quot;type&quot;:&quot;String&quot;},{&quot;template&quot;:&quot;field&quot;,&quot;valids&quot;:{&quot;patterns&quot;:[{&quot;msgError&quot;:&quot;${FORM_ERR_EMAIL}&quot;,&quot;regExp&quot;:&quot;^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$&quot;}],&quot;required&quot;:true},&quot;widget&quot;:&quot;userData&quot;,&quot;field&quot;:&quot;profile.email&quot;,&quot;fillFromQueryParam&quot;:&quot;email&quot;,&quot;label&quot;:&quot;${EMAIL}&quot;,&quot;tags&quot;:[&quot;accessEmail&quot;]},{&quot;template&quot;:&quot;field&quot;,&quot;valids&quot;:{&quot;minLength&quot;:3,&quot;maxLength&quot;:100},&quot;widget&quot;:&quot;userData&quot;,&quot;field&quot;:&quot;profile.name&quot;,&quot;footprintSection&quot;:&quot;profile_name&quot;,&quot;label&quot;:&quot;${NAME}&quot;},{&quot;template&quot;:&quot;field&quot;,&quot;valids&quot;:{&quot;minLength&quot;:3,&quot;maxLength&quot;:200},&quot;widget&quot;:&quot;userData&quot;,&quot;field&quot;:&quot;profile.surname&quot;,&quot;footprintSection&quot;:&quot;profile_surnames&quot;,&quot;label&quot;:&quot;${SURNAME}&quot;},{&quot;template&quot;:&quot;field&quot;,&quot;asyncValids&quot;:{&quot;phone&quot;:true},&quot;valids&quot;:{&quot;required&quot;:true},&quot;widget&quot;:&quot;userData&quot;,&quot;field&quot;:&quot;profile.phone&quot;,&quot;label&quot;:&quot;${PHONE}&quot;},{&quot;template&quot;:&quot;field&quot;,&quot;valids&quot;:{&quot;minLength&quot;:2,&quot;maxLength&quot;:200,&quot;required&quot;:true},&quot;widget&quot;:&quot;merchantData&quot;,&quot;field&quot;:&quot;merchant.businessName&quot;,&quot;defaultLabel&quot;:&quot;Business name&quot;,&quot;label&quot;:&quot;${COMPANY_BUSINESS_NAME}&quot;,&quot;type&quot;:&quot;String&quot;},{&quot;template&quot;:&quot;field&quot;,&quot;valids&quot;:{&quot;maxLength&quot;:20,&quot;required&quot;:true},&quot;widget&quot;:&quot;merchantData&quot;,&quot;field&quot;:&quot;merchant.cif&quot;,&quot;defaultLabel&quot;:&quot;CIF&quot;,&quot;label&quot;:&quot;${COMPANY_CIF}&quot;,&quot;type&quot;:&quot;String&quot;},{&quot;template&quot;:&quot;field&quot;,&quot;valids&quot;:{&quot;maxLength&quot;:300},&quot;widget&quot;:&quot;merchantData&quot;,&quot;field&quot;:&quot;merchant.address&quot;,&quot;footprintSection&quot;:&quot;email_contact&quot;,&quot;defaultLabel&quot;:&quot;Contact address&quot;,&quot;label&quot;:&quot;${COMPANY_CONTACT_ADDRESS}&quot;,&quot;type&quot;:&quot;String&quot;},{&quot;template&quot;:&quot;field&quot;,&quot;valids&quot;:{&quot;minLength&quot;:2,&quot;maxLength&quot;:200,&quot;required&quot;:true},&quot;widget&quot;:&quot;placeData&quot;,&quot;field&quot;:&quot;place.name&quot;,&quot;defaultLabel&quot;:&quot;Commerce name&quot;,&quot;label&quot;:&quot;${COMMERCE_NAME}&quot;,&quot;type&quot;:&quot;String&quot;},{&quot;template&quot;:&quot;field&quot;,&quot;valids&quot;:{&quot;required&quot;:true},&quot;dictionary&quot;:{&quot;source&quot;:&quot;dict_activity&quot;,&quot;valueField&quot;:&quot;id&quot;,&quot;allowCustomValues&quot;:false,&quot;labelField&quot;:&quot;label&quot;},&quot;widget&quot;:&quot;placeData&quot;,&quot;field&quot;:&quot;mainActivity&quot;,&quot;defaultLabel&quot;:&quot;Main activity&quot;,&quot;label&quot;:&quot;${COMMERCE_MAIN_ACTIVITY}&quot;,&quot;type&quot;:&quot;String&quot;},{&quot;template&quot;:&quot;address&quot;,&quot;valids&quot;:{&quot;required&quot;:true},&quot;widget&quot;:&quot;placeData&quot;,&quot;field&quot;:&quot;place.address&quot;,&quot;geoFields&quot;:[{&quot;field&quot;:&quot;route&quot;,&quot;label&quot;:&quot;${ADDRESS_STREET}&quot;,&quot;required&quot;:true},{&quot;field&quot;:&quot;street_number&quot;,&quot;label&quot;:&quot;${ADDRESS_STREET_NUMBER}&quot;,&quot;required&quot;:true},{&quot;field&quot;:&quot;postal_code&quot;,&quot;label&quot;:&quot;${ADDRESS_POSTAL_CODE}&quot;,&quot;required&quot;:true},{&quot;field&quot;:&quot;locality&quot;,&quot;label&quot;:&quot;${ADDRESS_LOCALITY}&quot;},{&quot;field&quot;:&quot;administrative_area_level_1&quot;,&quot;label&quot;:&quot;${ADDRESS_PROVINCE}&quot;},{&quot;field&quot;:&quot;subpremise&quot;,&quot;label&quot;:&quot;${ADDRESS_SUBPREMISE}&quot;}],&quot;hint&quot;:&quot;${ADDRESS_EDIT_HINT}&quot;,&quot;label&quot;:&quot;${COMMERCE_ADDRESS}&quot;,&quot;type&quot;:&quot;Object&quot;},{&quot;template&quot;:&quot;field&quot;,&quot;asyncValids&quot;:{&quot;phone&quot;:true},&quot;valids&quot;:{&quot;required&quot;:true},&quot;widget&quot;:&quot;placeData&quot;,&quot;field&quot;:&quot;place.phone.phone&quot;,&quot;width&quot;:70,&quot;label&quot;:&quot;${COMMERCE_PHONE}&quot;},{&quot;template&quot;:&quot;field&quot;,&quot;valids&quot;:{&quot;required&quot;:true},&quot;dictionary&quot;:{&quot;values&quot;:[{&quot;id&quot;:&quot;landline&quot;,&quot;label&quot;:&quot;${PHONE_LANDLINE}&quot;},{&quot;id&quot;:&quot;mobile&quot;,&quot;label&quot;:&quot;${PHONE_MOBILE}&quot;}],&quot;valueField&quot;:&quot;id&quot;,&quot;labelField&quot;:&quot;label&quot;},&quot;widget&quot;:&quot;placeData&quot;,&quot;field&quot;:&quot;place.phone.type&quot;,&quot;width&quot;:30,&quot;label&quot;:&quot;${COMMERCE_PHONE_TYPE}&quot;},{&quot;template&quot;:&quot;field&quot;,&quot;valids&quot;:{&quot;patterns&quot;:[{&quot;msgError&quot;:&quot;${FORM_ERR_URL}&quot;,&quot;regExp&quot;:&quot;/^(https?:\\/\\/)?(www\\.)?[-a-zñçA-ZÑÇ0-9@:%._\\+~#=]{2,256}\\.[a-z]{2,24}\\b([-a-zA-Z0-9@:%_\\+.~#?&amp;//=]*)$/&quot;},{&quot;msgError&quot;:&quot;${FORM_ERR_URL_PROTOCOL}&quot;,&quot;regExp&quot;:&quot;/^(https?:\\/\\/).*$/&quot;}]},&quot;widget&quot;:&quot;placeData&quot;,&quot;field&quot;:&quot;place.web&quot;,&quot;label&quot;:&quot;${COMMERCE_WEB}&quot;},{&quot;template&quot;:&quot;toggle&quot;,&quot;valids&quot;:{&quot;requiredTrue&quot;:true},&quot;widget&quot;:&quot;tos&quot;,&quot;field&quot;:&quot;acceptTos&quot;,&quot;label&quot;:&quot;${REGISTER_TOS}&quot;,&quot;type&quot;:&quot;Boolean&quot;}],&quot;id&quot;:&quot;register-tenant&quot;,&quot;successLabel&quot;:&quot;${REGISTER_SUCCESS_SENT_EMAIL}&quot;,&quot;widgets&quot;:[{&quot;template&quot;:&quot;generic&quot;,&quot;isEditable&quot;:true,&quot;id&quot;:&quot;userData&quot;,&quot;isVisible&quot;:true,&quot;order&quot;:10},{&quot;template&quot;:&quot;generic&quot;,&quot;isEditable&quot;:true,&quot;description&quot;:&quot;${COMPANY_COMMERCIAL_DATA_DESCRIPTION}&quot;,&quot;id&quot;:&quot;merchantData&quot;,&quot;isVisible&quot;:true,&quot;label&quot;:&quot;${COMPANY_COMMERCIAL_DATA}&quot;,&quot;order&quot;:20},{&quot;template&quot;:&quot;generic&quot;,&quot;isEditable&quot;:true,&quot;description&quot;:&quot;${COMMERCE_BASIC_DATA_DESCRIPTION}&quot;,&quot;id&quot;:&quot;placeData&quot;,&quot;isVisible&quot;:true,&quot;label&quot;:&quot;${PUBLICATION_DATA}&quot;,&quot;order&quot;:30},{&quot;template&quot;:&quot;generic&quot;,&quot;isEditable&quot;:true,&quot;id&quot;:&quot;tos&quot;,&quot;isVisible&quot;:true,&quot;label&quot;:&quot;&quot;,&quot;order&quot;:40}]},&quot;externalImpersonationTarget&quot;:true,&quot;cognitoConfig&quot;:{&quot;client_id&quot;:&quot;9lpar78d4c94hc7j0gtp3nqf7&quot;,&quot;domain&quot;:&quot;https://beeglobal-uat-bee-espana.auth.eu-west-1.amazoncognito.com&quot;,&quot;allowedMfaTypes&quot;:[&quot;email&quot;]},&quot;activationFilesFormat&quot;:{&quot;fields&quot;:{&quot;profileName&quot;:{&quot;valids&quot;:[],&quot;field&quot;:&quot;profileData.name&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;mand&quot;:true,&quot;userEvents&quot;:{&quot;initiateContracting&quot;:&quot;name&quot;},&quot;order&quot;:4,&quot;target&quot;:[&quot;profile/name&quot;]},&quot;placeAddress&quot;:{&quot;mand&quot;:false,&quot;valids&quot;:[{&quot;errorText&quot;:&quot;No se ha encontrado la dirección&quot;,&quot;byPassIfError&quot;:true,&quot;function&quot;:&quot;geolocation&quot;}],&quot;field&quot;:&quot;productData.address.fullAddress&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;order&quot;:6,&quot;products&quot;:[{&quot;targetIfByPass&quot;:[&quot;place/address/fullAddress&quot;],&quot;mand&quot;:true,&quot;productType&quot;:&quot;digitalPresenceYextBasic&quot;,&quot;target&quot;:[&quot;place/address&quot;]},{&quot;targetIfByPass&quot;:[&quot;place/address/fullAddress&quot;],&quot;mand&quot;:true,&quot;productType&quot;:&quot;productWeb&quot;,&quot;target&quot;:[&quot;place/address&quot;]}]},&quot;placeId&quot;:{&quot;mand&quot;:false,&quot;valids&quot;:[],&quot;field&quot;:&quot;productData.id&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;target&quot;:[&quot;place/id&quot;]},&quot;publishingAddressComponents&quot;:{&quot;valids&quot;:[],&quot;field&quot;:&quot;productData.address.components&quot;,&quot;depends&quot;:&quot;placeAddress&quot;,&quot;dataType&quot;:&quot;Map&quot;,&quot;mand&quot;:false,&quot;fields&quot;:{&quot;productData.address.components.locality&quot;:{&quot;field&quot;:&quot;locality&quot;},&quot;productData.address.components.route&quot;:{&quot;field&quot;:&quot;route&quot;},&quot;productData.address.components.political&quot;:{&quot;field&quot;:&quot;political&quot;},&quot;productData.address.components.administrative_area_level_2&quot;:{&quot;field&quot;:&quot;administrative_area_level_2&quot;},&quot;productData.address.components.administrative_area_level_1&quot;:{&quot;field&quot;:&quot;administrative_area_level_1&quot;},&quot;productData.address.components.postal_code&quot;:{&quot;field&quot;:&quot;postal_code&quot;},&quot;productData.address.components.administrative_area_level_3&quot;:{&quot;field&quot;:&quot;administrative_area_level_3&quot;},&quot;productData.address.components.country&quot;:{&quot;field&quot;:&quot;country&quot;},&quot;productData.address.components.street_number&quot;:{&quot;field&quot;:&quot;street_number&quot;}},&quot;order&quot;:27,&quot;products&quot;:[{&quot;mand&quot;:false,&quot;addIfFailField&quot;:&quot;placeAddress&quot;,&quot;needsToAdd&quot;:false,&quot;productType&quot;:&quot;digitalPresenceYextBasic&quot;,&quot;target&quot;:[&quot;place/address.components&quot;]}]},&quot;contractedIdPackExterno&quot;:{&quot;default&quot;:true,&quot;valids&quot;:[],&quot;field&quot;:&quot;idPackExternal&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;mand&quot;:false,&quot;order&quot;:20,&quot;target&quot;:[&quot;productionInfo/idPackExterno&quot;]},&quot;IdentificadorExterno1&quot;:{&quot;mand&quot;:true,&quot;valids&quot;:[],&quot;field&quot;:&quot;externalId1&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;order&quot;:13,&quot;target&quot;:[&quot;productionInfo/externalTenantId1&quot;]},&quot;placeGmbProfileFromCommercialOrder&quot;:{&quot;default&quot;:true,&quot;valids&quot;:[],&quot;field&quot;:&quot;productData.gmbProfileFromCommercialOrder&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;mand&quot;:false,&quot;order&quot;:22,&quot;target&quot;:[&quot;place/gmbProfileFromCommercialOrder&quot;]},&quot;merchantMainActivity&quot;:{&quot;mand&quot;:true,&quot;valids&quot;:[{&quot;errorText&quot;:&quot;No se ha encontrado la actividad&quot;,&quot;function&quot;:&quot;activityId&quot;}],&quot;field&quot;:&quot;merchantData.mainActivity&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;order&quot;:8,&quot;target&quot;:[&quot;merchant/mainActivity&quot;]},&quot;placeCoordsAddress&quot;:{&quot;valids&quot;:[],&quot;field&quot;:&quot;productData.address.coords&quot;,&quot;depends&quot;:&quot;placeAddress&quot;,&quot;dataType&quot;:&quot;Map&quot;,&quot;mand&quot;:false,&quot;fields&quot;:{&quot;productData.address.coords.lat&quot;:{&quot;field&quot;:&quot;lat&quot;},&quot;productData.address.coords.lng&quot;:{&quot;field&quot;:&quot;lng&quot;}},&quot;order&quot;:28,&quot;products&quot;:[{&quot;mand&quot;:false,&quot;addIfFailField&quot;:&quot;placeAddress&quot;,&quot;needsToAdd&quot;:false,&quot;productType&quot;:&quot;digitalPresenceYextBasic&quot;,&quot;target&quot;:[&quot;place/address.coords&quot;]}]},&quot;placeContactWeb0&quot;:{&quot;mand&quot;:false,&quot;valids&quot;:[{&quot;errorText&quot;:&quot;El campo URL no cumple con el formato establecido. Debe comenzar con https://www.&quot;,&quot;regex&quot;:&quot;^https?:\\/\\/(?:www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b(?:[-a-zA-Z0-9()@:%_\\+.~#?&amp;\\/=]*)$&quot;}],&quot;field&quot;:&quot;productData.contact.webs.0&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;order&quot;:11,&quot;target&quot;:[&quot;place/contact/webs[0]&quot;]},&quot;placeAddressVisible&quot;:{&quot;default&quot;:true,&quot;valids&quot;:[],&quot;field&quot;:&quot;productData.address.isHidden&quot;,&quot;dataType&quot;:&quot;Boolean&quot;,&quot;mand&quot;:false,&quot;backOfFrontRevertFieldValue&quot;:false,&quot;order&quot;:18,&quot;products&quot;:[{&quot;mand&quot;:true,&quot;productType&quot;:&quot;digitalPresenceYextBasic&quot;,&quot;target&quot;:[&quot;place/address/isHidden&quot;]}]},&quot;IdentificadorExterno2&quot;:{&quot;mand&quot;:false,&quot;valids&quot;:[],&quot;field&quot;:&quot;externalId2&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;order&quot;:14,&quot;target&quot;:[&quot;productionInfo/externalTenantId2&quot;]},&quot;productUrlFacebook&quot;:{&quot;mand&quot;:false,&quot;valids&quot;:[{&quot;errorText&quot;:&quot;El campo URL Facebook no cumple con el formato establecido. Debe comenzar con https://www.&quot;,&quot;regex&quot;:&quot;^https?:\\/\\/(?:www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b(?:[-a-zA-Z0-9()@:%_\\+.~#?&amp;\\/=]*)$&quot;}],&quot;field&quot;:&quot;productData.data.urlFacebook&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;order&quot;:23,&quot;target&quot;:[&quot;product/urlFacebook&quot;]},&quot;contractedPackConfigId&quot;:{&quot;mand&quot;:false,&quot;valids&quot;:[],&quot;field&quot;:&quot;packConfigId&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;order&quot;:29,&quot;target&quot;:[&quot;productionInfo/packConfigId&quot;]},&quot;IdentificadorExterno3&quot;:{&quot;mand&quot;:false,&quot;valids&quot;:[],&quot;field&quot;:&quot;externalId3&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;order&quot;:15,&quot;target&quot;:[&quot;productionInfo/externalTenantId3&quot;]},&quot;productSalesforceServiceId_{{UDAC}}&quot;:{&quot;mand&quot;:false,&quot;valids&quot;:[],&quot;field&quot;:&quot;productData.data.salesforceServiceId_{{UDAC}}&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;order&quot;:34,&quot;target&quot;:[&quot;product/salesforceServiceId&quot;]},&quot;IdentificadorExterno4&quot;:{&quot;mand&quot;:false,&quot;valids&quot;:[],&quot;field&quot;:&quot;externalId4&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;order&quot;:16,&quot;target&quot;:[&quot;productionInfo/externalTenantId4&quot;]},&quot;merchantPostalCode&quot;:{&quot;default&quot;:true,&quot;valids&quot;:[],&quot;field&quot;:&quot;merchantData.postal_code&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;mand&quot;:true,&quot;order&quot;:26,&quot;target&quot;:[&quot;merchant/postal_code&quot;]},&quot;productUrlInstagram&quot;:{&quot;mand&quot;:false,&quot;valids&quot;:[{&quot;errorText&quot;:&quot;El campo URL Instagram no cumple con el formato establecido. Debe comenzar con https://www.&quot;,&quot;regex&quot;:&quot;^https?:\\/\\/(?:www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b(?:[-a-zA-Z0-9()@:%_\\+.~#?&amp;\\/=]*)$&quot;}],&quot;field&quot;:&quot;productData.data.urlInstagram&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;order&quot;:24,&quot;target&quot;:[&quot;product/urlInstagram&quot;]},&quot;id&quot;:&quot;model2&quot;,&quot;merchantBusinessName&quot;:{&quot;valids&quot;:[],&quot;field&quot;:&quot;merchantData.businessName&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;mand&quot;:true,&quot;userEvents&quot;:{&quot;initiateContracting&quot;:&quot;companyNameData&quot;},&quot;order&quot;:3,&quot;target&quot;:[&quot;merchant/businessName&quot;]},&quot;IdPackBeeDIGITAL&quot;:{&quot;default&quot;:true,&quot;valids&quot;:[],&quot;field&quot;:&quot;idPack&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;hardcode&quot;:[&quot;api&quot;,&quot;adn&quot;],&quot;mand&quot;:true,&quot;order&quot;:19,&quot;target&quot;:[&quot;productionInfo/IdPackBeeDIGITAL&quot;]},&quot;contractedAddonsList&quot;:{&quot;default&quot;:true,&quot;valids&quot;:[],&quot;field&quot;:&quot;addons&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;hardcode&quot;:[&quot;api&quot;],&quot;mand&quot;:false,&quot;order&quot;:25,&quot;target&quot;:[&quot;productionInfo/addons&quot;]},&quot;merchantCIF&quot;:{&quot;valids&quot;:[{&quot;msgError&quot;:&quot;${ERR_CIF_BEES}&quot;,&quot;regExp&quot;:&quot;^([XYZ][0-9]{7}[A-Z]|[0-9]{8}[A-Z]|[A-HJNP-SUVW][0-9]{7}[0-9A-J])$&quot;}],&quot;field&quot;:&quot;merchantData.cif&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;mand&quot;:true,&quot;userEvents&quot;:{&quot;initiateContracting&quot;:&quot;cifData&quot;},&quot;order&quot;:2,&quot;target&quot;:[&quot;merchant/cif&quot;]},&quot;Producto contratado&quot;:{&quot;valids&quot;:[],&quot;field&quot;:&quot;contractProduct&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;hardcode&quot;:[&quot;api&quot;],&quot;mand&quot;:true,&quot;order&quot;:17,&quot;target&quot;:[&quot;&quot;]},&quot;merchantProvince&quot;:{&quot;default&quot;:true,&quot;valids&quot;:[],&quot;field&quot;:&quot;merchantData.province&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;mand&quot;:true,&quot;order&quot;:26,&quot;target&quot;:[&quot;merchant/province&quot;]},&quot;productObs&quot;:{&quot;mand&quot;:false,&quot;valids&quot;:[],&quot;field&quot;:&quot;productData.data.obs&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;order&quot;:37,&quot;target&quot;:[&quot;product/obs&quot;]},&quot;merchantLocality&quot;:{&quot;default&quot;:true,&quot;valids&quot;:[],&quot;field&quot;:&quot;merchantData.locality&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;mand&quot;:true,&quot;order&quot;:26,&quot;target&quot;:[&quot;merchant/locality&quot;]},&quot;merchantBdcCustomerId&quot;:{&quot;mand&quot;:true,&quot;valids&quot;:[],&quot;field&quot;:&quot;merchantData.bdcCustomerId&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;order&quot;:5,&quot;target&quot;:[&quot;merchant/bdcCustomerId&quot;]},&quot;contractedDate&quot;:{&quot;mand&quot;:false,&quot;valids&quot;:[],&quot;field&quot;:&quot;date&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;order&quot;:1,&quot;target&quot;:[&quot;&quot;]},&quot;merchantSalesforceCustomerId&quot;:{&quot;mand&quot;:true,&quot;valids&quot;:[],&quot;field&quot;:&quot;merchantData.salesforceCustomerId&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;order&quot;:5,&quot;target&quot;:[&quot;merchant/salesforceCustomerId&quot;]},&quot;profileEmail&quot;:{&quot;valids&quot;:[{&quot;errorText&quot;:&quot;El campo correo no cumple con el formato establecido.&quot;,&quot;regex&quot;:&quot;^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$&quot;}],&quot;field&quot;:&quot;profileData.email&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;mand&quot;:true,&quot;userEvents&quot;:{&quot;initiateContracting&quot;:&quot;companyEmailData&quot;},&quot;order&quot;:7,&quot;target&quot;:[&quot;profile/email&quot;]},&quot;merchantPhone&quot;:{&quot;valids&quot;:[{&quot;errorText&quot;:&quot;El teléfono no corresponde a uno del pais deseado&quot;,&quot;function&quot;:&quot;formatPhoneNumberString&quot;}],&quot;field&quot;:&quot;merchantData.phone&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;mand&quot;:true,&quot;userEvents&quot;:{&quot;initiateContracting&quot;:&quot;phone&quot;},&quot;order&quot;:5,&quot;target&quot;:[&quot;merchant/phone&quot;,&quot;profile/phone&quot;]},&quot;placeContactEmail0&quot;:{&quot;mand&quot;:false,&quot;valids&quot;:[{&quot;errorText&quot;:&quot;El campo email de publicación no cumple con el formato establecido.&quot;,&quot;regex&quot;:&quot;^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$&quot;}],&quot;field&quot;:&quot;productData.contact.emails.0.email&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;order&quot;:12,&quot;target&quot;:[&quot;place/contact/emails[0]/email&quot;]},&quot;merchantContactScheduling&quot;:{&quot;default&quot;:true,&quot;valids&quot;:[],&quot;field&quot;:&quot;merchantData.contactScheduling&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;mand&quot;:false,&quot;order&quot;:21,&quot;target&quot;:[&quot;merchant/contactScheduling&quot;]},&quot;merchantAddress&quot;:{&quot;default&quot;:true,&quot;valids&quot;:[],&quot;field&quot;:&quot;merchantData.route&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;mand&quot;:true,&quot;order&quot;:26,&quot;target&quot;:[&quot;merchant/address&quot;]},&quot;placeContactPhone0&quot;:{&quot;mand&quot;:false,&quot;valids&quot;:[],&quot;field&quot;:&quot;productData.contact.phones.0.phone&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;order&quot;:10,&quot;target&quot;:[&quot;place/contact/phones[0]/phone&quot;]},&quot;packName&quot;:{&quot;mand&quot;:false,&quot;valids&quot;:[],&quot;field&quot;:&quot;packConfig.packId&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;order&quot;:30,&quot;target&quot;:[&quot;productionInfo/packName&quot;]},&quot;placeName&quot;:{&quot;mand&quot;:false,&quot;valids&quot;:[],&quot;field&quot;:&quot;productData.name&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;order&quot;:9,&quot;products&quot;:[{&quot;mand&quot;:true,&quot;productType&quot;:&quot;digitalPresenceYextBasic&quot;,&quot;target&quot;:[&quot;place/name&quot;]},{&quot;mand&quot;:true,&quot;productType&quot;:&quot;productWeb&quot;,&quot;target&quot;:[&quot;place/name&quot;]}]}},&quot;enrollment_fields&quot;:{&quot;merchantCIF&quot;:{&quot;valids&quot;:[{&quot;msgError&quot;:&quot;${ERR_CIF_BEES}&quot;,&quot;regExp&quot;:&quot;^([XYZ][0-9]{7}[A-Z]|[0-9]{8}[A-Z]|[A-HJNP-SUVW][0-9]{7}[0-9A-J])$&quot;}],&quot;field&quot;:&quot;merchantData.cif&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;mand&quot;:true,&quot;userEvents&quot;:{&quot;initiateContracting&quot;:&quot;cifData&quot;},&quot;order&quot;:2,&quot;target&quot;:[&quot;merchant/cif&quot;]},&quot;Producto contratado&quot;:{&quot;valids&quot;:[],&quot;field&quot;:&quot;contractProduct&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;hardcode&quot;:[&quot;api&quot;],&quot;mand&quot;:true,&quot;order&quot;:17,&quot;target&quot;:[&quot;&quot;]},&quot;merchantProvince&quot;:{&quot;default&quot;:true,&quot;valids&quot;:[],&quot;field&quot;:&quot;merchantData.province&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;mand&quot;:true,&quot;order&quot;:26,&quot;target&quot;:[&quot;merchant/province&quot;]},&quot;merchantEmail&quot;:{&quot;mand&quot;:true,&quot;valids&quot;:[{&quot;errorText&quot;:&quot;El campo correo no cumple con el formato establecido.&quot;,&quot;regex&quot;:&quot;^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$&quot;}],&quot;field&quot;:&quot;merchantData.email&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;order&quot;:5,&quot;target&quot;:[&quot;merchant/email&quot;]},&quot;contractedIdPackExterno&quot;:{&quot;default&quot;:true,&quot;valids&quot;:[],&quot;field&quot;:&quot;idPackExternal&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;mand&quot;:false,&quot;order&quot;:20,&quot;target&quot;:[&quot;productionInfo/idPackExterno&quot;]},&quot;IdentificadorExterno1&quot;:{&quot;mand&quot;:true,&quot;valids&quot;:[],&quot;field&quot;:&quot;externalId1&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;order&quot;:13,&quot;target&quot;:[&quot;productionInfo/externalTenantId1&quot;]},&quot;merchantLocality&quot;:{&quot;default&quot;:true,&quot;valids&quot;:[],&quot;field&quot;:&quot;merchantData.locality&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;mand&quot;:true,&quot;order&quot;:26,&quot;target&quot;:[&quot;merchant/locality&quot;]},&quot;profileEmail&quot;:{&quot;valids&quot;:[{&quot;errorText&quot;:&quot;El campo correo no cumple con el formato establecido.&quot;,&quot;regex&quot;:&quot;^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$&quot;}],&quot;field&quot;:&quot;profileData.email&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;mand&quot;:true,&quot;userEvents&quot;:{&quot;initiateContracting&quot;:&quot;companyEmailData&quot;},&quot;order&quot;:7,&quot;target&quot;:[&quot;profile/email&quot;]},&quot;IdentificadorExterno2&quot;:{&quot;mand&quot;:false,&quot;valids&quot;:[],&quot;field&quot;:&quot;externalId2&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;order&quot;:14,&quot;target&quot;:[&quot;productionInfo/externalTenantId2&quot;]},&quot;contractedPackConfigId&quot;:{&quot;mand&quot;:false,&quot;valids&quot;:[],&quot;field&quot;:&quot;packConfigId&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;order&quot;:29,&quot;target&quot;:[&quot;productionInfo/packConfigId&quot;]},&quot;IdentificadorExterno3&quot;:{&quot;mand&quot;:false,&quot;valids&quot;:[],&quot;field&quot;:&quot;externalId3&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;order&quot;:15,&quot;target&quot;:[&quot;productionInfo/externalTenantId3&quot;]},&quot;merchantId&quot;:{&quot;default&quot;:true,&quot;valids&quot;:[],&quot;field&quot;:&quot;merchantData.id&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;mand&quot;:true,&quot;order&quot;:26,&quot;target&quot;:[&quot;merchant/id&quot;]},&quot;IdentificadorExterno4&quot;:{&quot;mand&quot;:false,&quot;valids&quot;:[],&quot;field&quot;:&quot;externalId4&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;order&quot;:16,&quot;target&quot;:[&quot;productionInfo/externalTenantId4&quot;]},&quot;merchantPostalCode&quot;:{&quot;default&quot;:true,&quot;valids&quot;:[],&quot;field&quot;:&quot;merchantData.postal_code&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;mand&quot;:true,&quot;order&quot;:26,&quot;target&quot;:[&quot;merchant/postal_code&quot;]},&quot;merchantAddress&quot;:{&quot;default&quot;:true,&quot;valids&quot;:[],&quot;field&quot;:&quot;merchantData.route&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;mand&quot;:true,&quot;order&quot;:26,&quot;target&quot;:[&quot;merchant/address&quot;]},&quot;paymentMethod&quot;:{&quot;mand&quot;:false,&quot;valids&quot;:[],&quot;field&quot;:&quot;paymentMethod&quot;,&quot;dataType&quot;:&quot;Map&quot;,&quot;order&quot;:31,&quot;target&quot;:[&quot;merchant/paymentMethod&quot;]},&quot;merchantBusinessName&quot;:{&quot;valids&quot;:[],&quot;field&quot;:&quot;merchantData.businessName&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;mand&quot;:true,&quot;userEvents&quot;:{&quot;initiateContracting&quot;:&quot;companyNameData&quot;},&quot;order&quot;:3,&quot;target&quot;:[&quot;merchant/businessName&quot;]},&quot;id&quot;:&quot;enrollment_fields&quot;,&quot;paymentStatusHistory&quot;:{&quot;default&quot;:true,&quot;valids&quot;:[],&quot;field&quot;:&quot;paymentStatusHistory&quot;,&quot;dataType&quot;:&quot;List&quot;,&quot;mand&quot;:false,&quot;order&quot;:30,&quot;target&quot;:[&quot;productionInfo/paymentStatusHistory&quot;]},&quot;IdPackBeeDIGITAL&quot;:{&quot;default&quot;:true,&quot;valids&quot;:[],&quot;field&quot;:&quot;idPack&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;hardcode&quot;:[&quot;api&quot;,&quot;adn&quot;],&quot;mand&quot;:true,&quot;order&quot;:19,&quot;target&quot;:[&quot;productionInfo/IdPackBeeDIGITAL&quot;]},&quot;packName&quot;:{&quot;mand&quot;:true,&quot;valids&quot;:[],&quot;field&quot;:&quot;packConfig.packId&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;order&quot;:30,&quot;target&quot;:[&quot;productionInfo/packName&quot;]}},&quot;contractOrigin&quot;:{&quot;salesforce&quot;:{&quot;sendMessageToFeed&quot;:true,&quot;init&quot;:&quot;sf&quot;,&quot;showInAdmin&quot;:true,&quot;provider&quot;:&quot;salesforce&quot;,&quot;alwaysSaveProductionInfo&quot;:true,&quot;contractOriginField&quot;:&quot;sfTicket&quot;},&quot;devi&quot;:{&quot;sendMessageToFeed&quot;:true,&quot;init&quot;:&quot;devi&quot;,&quot;showInAdmin&quot;:false,&quot;provider&quot;:&quot;devi&quot;,&quot;alwaysSaveProductionInfo&quot;:false,&quot;contractOriginField&quot;:&quot;deviRequestId&quot;},&quot;file&quot;:{&quot;sendMessageToFeed&quot;:false,&quot;init&quot;:&quot;devi&quot;,&quot;showInAdmin&quot;:false,&quot;provider&quot;:&quot;adn&quot;,&quot;alwaysSaveProductionInfo&quot;:true,&quot;contractOriginField&quot;:&quot;fileName&quot;},&quot;form&quot;:{&quot;sendMessageToFeed&quot;:false,&quot;init&quot;:&quot;formContracting&quot;,&quot;showInAdmin&quot;:true,&quot;provider&quot;:&quot;adn&quot;,&quot;alwaysSaveProductionInfo&quot;:true,&quot;contractOriginField&quot;:&quot;formTicket&quot;},&quot;enrollment&quot;:{&quot;init&quot;:&quot;enrollment&quot;,&quot;showInAdmin&quot;:true,&quot;provider&quot;:&quot;adn&quot;,&quot;contractOriginField&quot;:&quot;formTicket&quot;,&quot;sendMessageToFeed&quot;:false,&quot;model&quot;:&quot;enrollment_fields&quot;,&quot;alwaysSaveProductionInfo&quot;:true}}},&quot;branding&quot;:{&quot;omnitureReportSuite&quot;:&quot;yellareaclientesbeeespanauat&quot;,&quot;amplitudeConfig&quot;:{&quot;apiKey&quot;:&quot;0b344ff9eddbe5547583d7ff09e7087b&quot;,&quot;enabledNCWS&quot;:true,&quot;host&quot;:&quot;https://api.eu.amplitude.com&quot;},&quot;registerEnabled&quot;:false,&quot;gmapsKey&quot;:&quot;AIzaSyAw0qbRD0Snf2a83p3mLhizTqwtQrTRepE&quot;,&quot;primaryColor&quot;:&quot;#6818AA&quot;,&quot;userPilotConfig&quot;:{&quot;token&quot;:&quot;STG-NX-fdf35aee&quot;},&quot;logoDarkUrl&quot;:&quot;/shared/static/tenant/bee-espana/img/beesible-logo.png&quot;,&quot;logoLightUrl&quot;:&quot;/shared/static/tenant/bee-espana/img/logo-light-beesible.png&quot;,&quot;title&quot;:&quot;Beesible&quot;,&quot;contrastColor&quot;:&quot;#EEEEEE&quot;,&quot;contractingWizardEnabled&quot;:false,&quot;didomiConfig&quot;:{&quot;apiKey&quot;:&quot;3115befd-b3f3-4af9-809e-b87065f7c641&quot;,&quot;cookiesPolicyJsonUrl&quot;:&quot;/shared/static/tenant/bee-espana/cookies.json&quot;,&quot;noticeId&quot;:&quot;nNQNnpEi&quot;},&quot;importFontUrl&quot;:&quot;/shared/static/tenant/bee-espana/font/poppins/poppins.css&quot;,&quot;posthogConfig&quot;:{&quot;apiKey&quot;:&quot;phc_qKTzelbEg9E7Fy64471wzmS5Fsd4EKqLgKZCxplAzyb&quot;,&quot;enabledNCWS&quot;:true,&quot;host&quot;:&quot;https://eu.i.posthog.com&quot;},&quot;logoContrastUrl&quot;:&quot;/shared/static/tenant/bee-espana/img/logo-dark-beesible.png&quot;,&quot;faviconUrl&quot;:&quot;/shared/static/tenant/bee-espana/img/bee-icono-beesible.png&quot;,&quot;fontFamily&quot;:&quot;Poppins&quot;,&quot;docs&quot;:[{&quot;footprint&quot;:{&quot;name&quot;:&quot;legalWarningPage&quot;},&quot;languages&quot;:[{&quot;src&quot;:&quot;/shared/static/tenant/bee-espana/doc/es/legal-notice.html&quot;,&quot;lang&quot;:&quot;es&quot;},{&quot;src&quot;:&quot;/shared/static/tenant/bee-espana/doc/en/legal-notice.html&quot;,&quot;lang&quot;:&quot;en&quot;},{&quot;src&quot;:&quot;/shared/static/tenant/bee-espana/doc/pt/legal-notice.html&quot;,&quot;lang&quot;:&quot;pt&quot;}],&quot;src&quot;:&quot;/shared/static/tenant/bee-espana/doc/es/legal-notice.html&quot;,&quot;id&quot;:&quot;legal-notice&quot;,&quot;label&quot;:&quot;${LEGAL_NOTICE}&quot;},{&quot;footprint&quot;:{&quot;name&quot;:&quot;privacyPolicyPage&quot;},&quot;languages&quot;:[{&quot;src&quot;:&quot;/shared/static/tenant/bee-espana/doc/es/privacy-policy.html&quot;,&quot;lang&quot;:&quot;es&quot;},{&quot;src&quot;:&quot;/shared/static/tenant/bee-espana/doc/en/privacy-policy.html&quot;,&quot;lang&quot;:&quot;en&quot;},{&quot;src&quot;:&quot;/shared/static/tenant/bee-espana/doc/pt/privacy-policy.html&quot;,&quot;lang&quot;:&quot;pt&quot;}],&quot;src&quot;:&quot;/shared/static/tenant/bee-espana/doc/es/privacy-policy.html&quot;,&quot;id&quot;:&quot;privacy-policy&quot;,&quot;label&quot;:&quot;${PRIVACY_POLICY}&quot;},{&quot;footprint&quot;:{&quot;name&quot;:&quot;cookiesPolicyPage&quot;},&quot;languages&quot;:[{&quot;src&quot;:&quot;/shared/static/tenant/bee-espana/doc/es/cookies-policy.html&quot;,&quot;lang&quot;:&quot;es&quot;},{&quot;src&quot;:&quot;/shared/static/tenant/bee-espana/doc/en/cookies-policy.html&quot;,&quot;lang&quot;:&quot;en&quot;},{&quot;src&quot;:&quot;/shared/static/tenant/bee-espana/doc/pt/cookies-policy.html&quot;,&quot;lang&quot;:&quot;pt&quot;}],&quot;src&quot;:&quot;/shared/static/tenant/bee-espana/doc/es/cookies-policy.html&quot;,&quot;id&quot;:&quot;cookies-policy&quot;,&quot;label&quot;:&quot;${COOKIES_POLICY}&quot;},{&quot;footprint&quot;:{&quot;name&quot;:&quot;termsAndConditionsOfServicePage&quot;},&quot;languages&quot;:[{&quot;src&quot;:&quot;/shared/static/tenant/bee-espana/doc/es/service-terms-and-conditions.html&quot;,&quot;lang&quot;:&quot;es&quot;}],&quot;src&quot;:&quot;/shared/static/tenant/bee-espana/doc/es/service-terms-and-conditions.html&quot;,&quot;id&quot;:&quot;service-terms-and-conditions&quot;,&quot;label&quot;:&quot;${SERVICE_TERMS_AND_CONDITIONS}&quot;}],&quot;logLevel&quot;:3,&quot;oneTrustIdNCWS&quot;:&quot;019763d2-a8bc-770a-ab54-42ad5adb81ff-test&quot;,&quot;oneTrustId&quot;:&quot;&quot;,&quot;logoText&quot;:&quot;&quot;,&quot;authBgSrc&quot;:&quot;/shared/static/img/bg/bg-5.png&quot;,&quot;contactEmail&quot;:&quot;soporte@beesible.ai&quot;,&quot;documentation&quot;:[],&quot;oneTrustAutoblockEnabled&quot;:true,&quot;homeCards&quot;:[{&quot;icon&quot;:&quot;sensors&quot;,&quot;description&quot;:&quot;${HOME_CARD_DIFFUSION_DESCRIPTION}&quot;,&quot;title&quot;:&quot;${DIFFUSION}&quot;},{&quot;icon&quot;:&quot;thumbs_up_down&quot;,&quot;description&quot;:&quot;${HOME_CARD_REVIEWS_DESCRIPTION}&quot;,&quot;title&quot;:&quot;${REVIEWS}&quot;},{&quot;icon&quot;:&quot;assignment&quot;,&quot;description&quot;:&quot;${HOME_CARD_REPORTS_DESCRIPTION}&quot;,&quot;title&quot;:&quot;${REPORTS}&quot;}],&quot;logoUrl&quot;:&quot;/shared/static/tenant/bee-espana/img/logo-dark-beesible.png&quot;,&quot;loginText&quot;:&quot;${LOGIN_WELCOME}&quot;,&quot;userpilotConfig&quot;:{&quot;apiKey&quot;:&quot;b2f839d83e03d958&quot;,&quot;enabledNCWS&quot;:true,&quot;host&quot;:&quot;https://analytex-eu.userpilot.io&quot;},&quot;enableAt&quot;:true,&quot;footerLinks&quot;:[{&quot;label&quot;:&quot;${LEGAL_NOTICE}&quot;,&quot;url&quot;:&quot;/docs/legal-notice&quot;},{&quot;label&quot;:&quot;${PRIVACY_POLICY}&quot;,&quot;url&quot;:&quot;/docs/privacy-policy&quot;},{&quot;label&quot;:&quot;${COOKIES_POLICY}&quot;,&quot;url&quot;:&quot;/docs/cookies-policy&quot;},{&quot;label&quot;:&quot;${SERVICE_TERMS_AND_CONDITIONS}&quot;,&quot;url&quot;:&quot;/docs/service-terms-and-conditions&quot;}],&quot;loginSubText&quot;:&quot;${LOGIN_WELCOME_SUBTEXT}&quot;,&quot;gtmId&quot;:&quot;&quot;,&quot;contactPhone&quot;:&quot;&quot;,&quot;defaultLang&quot;:&quot;es-ES&quot;,&quot;homePreliminarText&quot;:&quot;&quot;,&quot;logoPrimaryContrastUrl&quot;:&quot;/shared/static/tenant/bee-espana/img/logo-light-beesible.png&quot;},&quot;scanConfig&quot;:{&quot;scanFormTitle&quot;:&quot;${SCAN_FORM_TITLE}&quot;,&quot;scanCategories&quot;:[{&quot;icon&quot;:&quot;storefront&quot;,&quot;id&quot;:&quot;main&quot;,&quot;label&quot;:&quot;${SCAN_CATEGORY_MAIN}&quot;},{&quot;icon&quot;:&quot;auto_awesome&quot;,&quot;id&quot;:&quot;assistants&quot;,&quot;label&quot;:&quot;${SCAN_CATEGORY_ASSISTANTS}&quot;},{&quot;icon&quot;:&quot;pin_drop&quot;,&quot;id&quot;:&quot;maps&quot;,&quot;label&quot;:&quot;${SCAN_CATEGORY_MAPS}&quot;},{&quot;icon&quot;:&quot;sensors&quot;,&quot;id&quot;:&quot;directory&quot;,&quot;label&quot;:&quot;${SCAN_CATEGORY_DIRECTORY}&quot;},{&quot;isDefaultCategory&quot;:true,&quot;icon&quot;:&quot;share&quot;,&quot;id&quot;:&quot;other&quot;,&quot;label&quot;:&quot;${SCAN_CATEGORY_OTHER}&quot;}],&quot;branding&quot;:{&quot;posthogConfig&quot;:{&quot;host&quot;:&quot;https://eu.i.posthog.com&quot;,&quot;settings&quot;:{&quot;disable_compression&quot;:true,&quot;person_profiles&quot;:&quot;identified_only&quot;,&quot;autocapture&quot;:false,&quot;capture_heatmaps&quot;:false,&quot;capture_pageview&quot;:false,&quot;capturePerformance&quot;:{&quot;web_vitals&quot;:false,&quot;network_timing&quot;:false}},&quot;apiKey&quot;:&quot;phc_FV6NZbtVkeOyHRLvyitpRGJMO0Uq82jKJXjB74ejFip&quot;,&quot;enabled&quot;:true},&quot;omnitureReportSuite&quot;:&quot;yellbeedigitaluat&quot;,&quot;authBgSrc&quot;:&quot;/shared/static/img/bg/bg-3.png&quot;},&quot;scanResultTitle&quot;:&quot;${SCAN_RESULT_TITLE}&quot;,&quot;scanEnableDownloadPdf&quot;:true,&quot;leadScanModel&quot;:{&quot;date&quot;:&quot;date&quot;,&quot;address&quot;:&quot;address&quot;,&quot;city&quot;:&quot;city&quot;,&quot;phone&quot;:&quot;phone&quot;,&quot;response&quot;:&quot;response&quot;,&quot;postalCode&quot;:&quot;postalCode&quot;,&quot;name&quot;:&quot;name&quot;,&quot;isFinished&quot;:&quot;isFinished&quot;,&quot;email&quot;:&quot;email&quot;},&quot;scanOverallErrorPcntLabel&quot;:&quot;${SCAN_OVERALL_ERROR_PERCENTAGE}&quot;,&quot;enabled&quot;:true,&quot;scanDatasourceIntervalMs&quot;:2000,&quot;scanTitle&quot;:&quot;${SCAN_LANDING_TITLE}&quot;,&quot;scanProperties&quot;:[{&quot;errorsLabel&quot;:&quot;${ERRORS_IN_NAME}&quot;,&quot;field&quot;:&quot;name&quot;,&quot;icon&quot;:&quot;business&quot;,&quot;label&quot;:&quot;${NAME}&quot;,&quot;matchField&quot;:&quot;match_name&quot;},{&quot;errorsLabel&quot;:&quot;${ERRORS_IN_ADDRESS}&quot;,&quot;mergeValueFromFields&quot;:[&quot;address&quot;,&quot;postalCode&quot;,&quot;city&quot;],&quot;field&quot;:&quot;address&quot;,&quot;icon&quot;:&quot;location_on&quot;,&quot;label&quot;:&quot;${COMMERCE_ADDRESS}&quot;,&quot;matchField&quot;:&quot;match_address&quot;},{&quot;errorsLabel&quot;:&quot;${ERRORS_IN_PHONE}&quot;,&quot;field&quot;:&quot;phone&quot;,&quot;icon&quot;:&quot;smartphone&quot;,&quot;label&quot;:&quot;${PHONE}&quot;,&quot;matchField&quot;:&quot;match_phone&quot;}],&quot;scanErrorPcntCutoffWarning&quot;:50,&quot;scanDatasourceMaxAttempts&quot;:10,&quot;provider&quot;:&quot;yext&quot;,&quot;scanTexts&quot;:[&quot;${SCAN_INFO_TEXT_1}&quot;,&quot;${SCAN_INFO_TEXT_2}&quot;,&quot;${SCAN_INFO_TEXT_3}&quot;,&quot;${SCAN_INFO_TEXT_4}&quot;,&quot;${SCAN_INFO_TEXT_5}&quot;],&quot;scanErrorPcntCutoffGood&quot;:10,&quot;id&quot;:&quot;yext-default&quot;,&quot;scanResultStatuses&quot;:[{&quot;shouldCountTowardsCompleteness&quot;:true,&quot;id&quot;:&quot;available&quot;,&quot;showDetails&quot;:true},{&quot;shouldCountAsUnavailable&quot;:true,&quot;id&quot;:&quot;unavailable&quot;,&quot;label&quot;:&quot;${NETWORK_UNAVAILABLE}&quot;},{&quot;shouldCountAsUnavailable&quot;:true,&quot;id&quot;:&quot;notRealTime&quot;,&quot;label&quot;:&quot;${SCAN_NOT_REAL_TIME}&quot;,&quot;isGreyedOut&quot;:true},{&quot;isNegative&quot;:true,&quot;shouldCountTowardsCompleteness&quot;:true,&quot;id&quot;:&quot;noPresence&quot;,&quot;label&quot;:&quot;${SCAN_NO_PRESENCE}&quot;},{&quot;shouldCountAsUnavailable&quot;:true,&quot;id&quot;:&quot;loading&quot;,&quot;showLoading&quot;:true}],&quot;scanFormModel&quot;:{&quot;submitLabel&quot;:&quot;${ACTION_ANALYZE_NOW}&quot;,&quot;attributes&quot;:[{&quot;template&quot;:&quot;field&quot;,&quot;valids&quot;:{&quot;maxLength&quot;:200,&quot;required&quot;:true},&quot;widget&quot;:&quot;scanData&quot;,&quot;field&quot;:&quot;name&quot;,&quot;fillFromQueryParam&quot;:&quot;name&quot;,&quot;defaultLabel&quot;:&quot;Commerce name&quot;,&quot;label&quot;:&quot;${COMMERCE_NAME}&quot;,&quot;type&quot;:&quot;String&quot;},{&quot;template&quot;:&quot;field&quot;,&quot;valids&quot;:{&quot;maxLength&quot;:300,&quot;required&quot;:true},&quot;widget&quot;:&quot;scanData&quot;,&quot;field&quot;:&quot;address&quot;,&quot;fillFromQueryParam&quot;:&quot;address&quot;,&quot;defaultLabel&quot;:&quot;Address&quot;,&quot;label&quot;:&quot;${COMMERCE_ADDRESS}&quot;,&quot;type&quot;:&quot;String&quot;},{&quot;template&quot;:&quot;field&quot;,&quot;valids&quot;:{&quot;maxLength&quot;:30,&quot;required&quot;:true},&quot;widget&quot;:&quot;scanData&quot;,&quot;field&quot;:&quot;postalCode&quot;,&quot;width&quot;:50,&quot;fillFromQueryParam&quot;:&quot;postalCode&quot;,&quot;defaultLabel&quot;:&quot;Postal code&quot;,&quot;label&quot;:&quot;${ADDRESS_POSTAL_CODE}&quot;,&quot;type&quot;:&quot;String&quot;},{&quot;template&quot;:&quot;field&quot;,&quot;valids&quot;:{&quot;maxLength&quot;:100,&quot;required&quot;:true},&quot;widget&quot;:&quot;scanData&quot;,&quot;field&quot;:&quot;city&quot;,&quot;autocomplete&quot;:&quot;city&quot;,&quot;width&quot;:50,&quot;fillFromQueryParam&quot;:&quot;city&quot;,&quot;defaultLabel&quot;:&quot;Locality&quot;,&quot;label&quot;:&quot;${ADDRESS_LOCALITY}&quot;,&quot;type&quot;:&quot;String&quot;},{&quot;template&quot;:&quot;field&quot;,&quot;valids&quot;:{&quot;maxLength&quot;:30,&quot;required&quot;:true},&quot;widget&quot;:&quot;scanData&quot;,&quot;field&quot;:&quot;phone&quot;,&quot;fillFromQueryParam&quot;:&quot;phone&quot;,&quot;defaultLabel&quot;:&quot;Phone&quot;,&quot;label&quot;:&quot;${PHONE}&quot;,&quot;type&quot;:&quot;String&quot;},{&quot;template&quot;:&quot;field&quot;,&quot;valids&quot;:{&quot;patterns&quot;:[{&quot;msgError&quot;:&quot;${FORM_ERR_EMAIL}&quot;,&quot;regExp&quot;:&quot;^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$&quot;}],&quot;required&quot;:true},&quot;widget&quot;:&quot;scanData&quot;,&quot;field&quot;:&quot;email&quot;,&quot;fillFromQueryParam&quot;:&quot;email&quot;,&quot;defaultLabel&quot;:&quot;Email&quot;,&quot;label&quot;:&quot;${EMAIL}&quot;,&quot;type&quot;:&quot;String&quot;},{&quot;template&quot;:&quot;toggle&quot;,&quot;valids&quot;:{&quot;requiredTrue&quot;:true},&quot;widget&quot;:&quot;scanData&quot;,&quot;field&quot;:&quot;acceptTos&quot;,&quot;label&quot;:&quot;${SCAN_TOS}&quot;,&quot;type&quot;:&quot;Boolean&quot;}],&quot;id&quot;:&quot;scan-default&quot;,&quot;widgets&quot;:[{&quot;template&quot;:&quot;generic&quot;,&quot;isEditable&quot;:true,&quot;id&quot;:&quot;scanData&quot;,&quot;isVisible&quot;:true,&quot;order&quot;:10}]},&quot;defaultEndpointProvider&quot;:&quot;globalYext&quot;},&quot;chatConfig&quot;:{&quot;enabled&quot;:true,&quot;config&quot;:{&quot;agentAvatarUrl&quot;:&quot;/shared/static/tenant/bee-espana/img/bee-icono-beesible.png&quot;,&quot;agentName&quot;:&quot;Beelma&quot;,&quot;showHomeCard&quot;:false,&quot;disclaimerText&quot;:&quot;${CHAT_DISCLAIMER}&quot;,&quot;headerImgUrl&quot;:&quot;/shared/static/img/beeai/beelma.png&quot;,&quot;typingMessages&quot;:[&quot;${ANALYZING}...&quot;,&quot;${REASONING_VERB}...&quot;,&quot;${PREPARING_ANSWER}...&quot;]}},&quot;postModel&quot;:{&quot;widgets&quot;:[{&quot;template&quot;:&quot;generic&quot;,&quot;saveOnlyChanges&quot;:true,&quot;isEditable&quot;:true,&quot;id&quot;:&quot;postData&quot;,&quot;isVisible&quot;:true,&quot;label&quot;:&quot;${POST_DATA}&quot;}],&quot;attributes&quot;:[{&quot;template&quot;:&quot;field&quot;,&quot;asyncValids&quot;:{&quot;phone&quot;:true},&quot;widget&quot;:&quot;postData&quot;,&quot;field&quot;:&quot;callToAction.phone&quot;,&quot;completenessWeight&quot;:15,&quot;defaultLabel&quot;:&quot;Phone&quot;,&quot;label&quot;:&quot;${PHONE}&quot;,&quot;type&quot;:&quot;String&quot;},{&quot;fileValids&quot;:{&quot;minHeight&quot;:100,&quot;maxHeight&quot;:2000,&quot;minWidth&quot;:100,&quot;maxFileSize&quot;:&quot;10mb&quot;,&quot;allowedFormats&quot;:[&quot;.png&quot;,&quot;.jfif&quot;,&quot;.pjpeg&quot;,&quot;.jpeg&quot;,&quot;.pjp&quot;,&quot;.jpg&quot;,&quot;.gif&quot;,&quot;.tif&quot;,&quot;.tiff&quot;],&quot;maxWidth&quot;:2000},&quot;template&quot;:&quot;avatar&quot;,&quot;widget&quot;:&quot;postData&quot;,&quot;field&quot;:&quot;multimedia.0.url&quot;,&quot;type&quot;:&quot;internalURL&quot;,&quot;pathS3Signable&quot;:&quot;/&quot;},{&quot;template&quot;:&quot;field&quot;,&quot;valids&quot;:{&quot;maxLength&quot;:1500,&quot;required&quot;:true},&quot;widget&quot;:&quot;postData&quot;,&quot;field&quot;:&quot;summary&quot;,&quot;label&quot;:&quot;${POST_CONTENT}&quot;},{&quot;template&quot;:&quot;field&quot;,&quot;dictionary&quot;:{&quot;values&quot;:[{&quot;label&quot;:&quot;${POST_CTA_TYPE_NONE}&quot;,&quot;value&quot;:&quot;_NONE&quot;},{&quot;label&quot;:&quot;${POST_CTA_TYPE_BOOK}&quot;,&quot;value&quot;:&quot;BOOK&quot;},{&quot;label&quot;:&quot;${POST_CTA_TYPE_CALL}&quot;,&quot;value&quot;:&quot;CALL&quot;},{&quot;label&quot;:&quot;${POST_CTA_TYPE_LEARN_MORE}&quot;,&quot;value&quot;:&quot;LEARN_MORE&quot;},{&quot;label&quot;:&quot;${POST_CTA_TYPE_ORDER}&quot;,&quot;value&quot;:&quot;ORDER&quot;},{&quot;label&quot;:&quot;${POST_CTA_TYPE_SHOP}&quot;,&quot;value&quot;:&quot;SHOP&quot;},{&quot;label&quot;:&quot;${POST_CTA_TYPE_SIGN_UP}&quot;,&quot;value&quot;:&quot;SIGN_UP&quot;}],&quot;valueField&quot;:&quot;value&quot;,&quot;labelField&quot;:&quot;label&quot;},&quot;widget&quot;:&quot;postData&quot;,&quot;field&quot;:&quot;callToAction.actionType&quot;,&quot;defaultValue&quot;:&quot;_NONE&quot;,&quot;width&quot;:50,&quot;label&quot;:&quot;${POST_CTA_TYPE}&quot;},{&quot;template&quot;:&quot;field&quot;,&quot;valids&quot;:{&quot;patterns&quot;:[{&quot;msgError&quot;:&quot;${FORM_ERR_URL}&quot;,&quot;regExp&quot;:&quot;/^(https?:\\/\\/)?(www\\.)?[-a-zñçA-ZÑÇ0-9@:%._\\+~#=]{2,256}\\.[a-z]{2,24}\\b([-a-zA-Z0-9@:%_\\+.~#?&amp;//=]*)$/&quot;},{&quot;msgError&quot;:&quot;${FORM_ERR_URL_PROTOCOL}&quot;,&quot;regExp&quot;:&quot;/^(https?:\\/\\/).*$/&quot;}],&quot;required&quot;:false},&quot;widget&quot;:&quot;postData&quot;,&quot;field&quot;:&quot;callToAction.url&quot;,&quot;width&quot;:50,&quot;label&quot;:&quot;${POST_CTA_URL}&quot;}],&quot;id&quot;:&quot;post-beeEspana&quot;},&quot;globalModel&quot;:{&quot;feedbackURLForm&quot;:&quot;https://form.typeform.com/to/Spo1BdkU&quot;,&quot;webFeedbackModalURL&quot;:&quot;https://form.typeform.com/to/RQPF6wSI&quot;,&quot;interestSurveyModalURL&quot;:&quot;https://form.typeform.com/to/gJoIq0LV&quot;,&quot;npsURLForm&quot;:&quot;https://form.typeform.com/to/Wgoddtf5&quot;,&quot;showBillingBeeGlobal&quot;:true},&quot;recaptchaConfig&quot;:{&quot;enabled&quot;:false},&quot;welcomeModel&quot;:{&quot;submitLabel&quot;:&quot;${WELCOME_NO_CONTROLS_CTA}&quot;,&quot;attributes&quot;:[{&quot;template&quot;:&quot;field&quot;,&quot;valids&quot;:{&quot;patterns&quot;:[{&quot;msgError&quot;:&quot;${FORM_ERR_EMAIL}&quot;,&quot;regExp&quot;:&quot;^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$&quot;}],&quot;required&quot;:true},&quot;widget&quot;:&quot;userData&quot;,&quot;field&quot;:&quot;email&quot;,&quot;footprintSection&quot;:&quot;email_contact&quot;,&quot;fillFromQueryParam&quot;:&quot;email&quot;,&quot;label&quot;:&quot;${EMAIL}&quot;,&quot;isHidden&quot;:true,&quot;tags&quot;:[&quot;accessEmail&quot;]},{&quot;template&quot;:&quot;field&quot;,&quot;valids&quot;:{&quot;minLength&quot;:3,&quot;maxLength&quot;:100},&quot;widget&quot;:&quot;userData&quot;,&quot;field&quot;:&quot;username&quot;,&quot;footprintSection&quot;:&quot;profile_public_name&quot;,&quot;fillFromQueryParam&quot;:&quot;username&quot;,&quot;label&quot;:&quot;${PUBLIC_NAME}&quot;,&quot;isHidden&quot;:true},{&quot;template&quot;:&quot;field&quot;,&quot;valids&quot;:{&quot;minLength&quot;:3,&quot;maxLength&quot;:200},&quot;widget&quot;:&quot;userData&quot;,&quot;field&quot;:&quot;name&quot;,&quot;footprintSection&quot;:&quot;profile_name&quot;,&quot;fillFromQueryParam&quot;:&quot;name&quot;,&quot;label&quot;:&quot;${NAME}&quot;,&quot;isHidden&quot;:true},{&quot;template&quot;:&quot;field&quot;,&quot;asyncValids&quot;:{&quot;phone&quot;:true},&quot;widget&quot;:&quot;userData&quot;,&quot;field&quot;:&quot;phone&quot;,&quot;fillFromQueryParam&quot;:&quot;phone&quot;,&quot;label&quot;:&quot;${PHONE}&quot;,&quot;isHidden&quot;:true},{&quot;template&quot;:&quot;field&quot;,&quot;asyncValids&quot;:{&quot;phone&quot;:true},&quot;widget&quot;:&quot;userData&quot;,&quot;field&quot;:&quot;phone&quot;,&quot;fillFromQueryParam&quot;:&quot;phone&quot;,&quot;label&quot;:&quot;${PHONE}&quot;,&quot;isHidden&quot;:true}],&quot;id&quot;:&quot;welcome-tenant&quot;,&quot;widgets&quot;:[{&quot;template&quot;:&quot;generic&quot;,&quot;isEditable&quot;:true,&quot;id&quot;:&quot;userData&quot;,&quot;isVisible&quot;:true,&quot;order&quot;:10}]},&quot;countryModel&quot;:{&quot;defaultLanguageInCountry&quot;:&quot;es-ES&quot;,&quot;code&quot;:&quot;ES&quot;,&quot;gmapsRegion&quot;:&quot;es&quot;,&quot;fullAddressFieldConfig&quot;:&quot;#route# #street_number# #sublocality#, #postal_code# #locality#, #administrative_area_level_2#, #country#&quot;,&quot;addressFieldsConfig&quot;:{&quot;route&quot;:{&quot;allowManualInput&quot;:true,&quot;valids&quot;:{&quot;maxLength&quot;:100},&quot;label&quot;:&quot;${ADDRESS_STREET}&quot;},&quot;administrative_area_level_2&quot;:{&quot;allowManualInput&quot;:true,&quot;valids&quot;:{&quot;maxLength&quot;:50},&quot;label&quot;:&quot;${ADDRESS_PROVINCE}&quot;},&quot;administrative_area_level_1&quot;:{&quot;allowManualInput&quot;:true,&quot;valids&quot;:{&quot;maxLength&quot;:50},&quot;label&quot;:&quot;${ADDRESS_PROVINCE}&quot;},&quot;locality&quot;:{&quot;allowManualInput&quot;:true,&quot;valids&quot;:{&quot;maxLength&quot;:50},&quot;label&quot;:&quot;${ADDRESS_LOCALITY}&quot;},&quot;street_number&quot;:{&quot;allowManualInput&quot;:true,&quot;valids&quot;:{&quot;maxLength&quot;:10},&quot;label&quot;:&quot;${ADDRESS_STREET_NUMBER}&quot;},&quot;sublocality&quot;:{&quot;allowManualInput&quot;:true,&quot;valids&quot;:{&quot;maxLength&quot;:100},&quot;label&quot;:&quot;${ADDRESS_SUBPREMISE}&quot;},&quot;id&quot;:&quot;default-editable&quot;,&quot;postal_code&quot;:{&quot;allowManualInput&quot;:true,&quot;valids&quot;:{&quot;maxLength&quot;:10},&quot;label&quot;:&quot;${ADDRESS_POSTAL_CODE}&quot;},&quot;subpremise&quot;:{&quot;allowManualInput&quot;:true,&quot;valids&quot;:{&quot;maxLength&quot;:100},&quot;label&quot;:&quot;${ADDRESS_SUBPREMISE}&quot;}},&quot;timeZone&quot;:&quot;Europe/Madrid&quot;,&quot;label&quot;:&quot;${COUNTRY_SPAIN}&quot;,&quot;gmapsPrecision&quot;:{&quot;geometryLocationTypeOrder&quot;:[&quot;ROOFTOP&quot;,&quot;RANGE_INTERPOLATED&quot;,&quot;GEOMETRIC_CENTER&quot;,&quot;APPROXIMATE&quot;],&quot;geometryLocationType&quot;:[&quot;ROOFTOP&quot;,&quot;RANGE_INTERPOLATED&quot;],&quot;requiredAddressComponents&quot;:[&quot;route&quot;,&quot;street_number&quot;,&quot;postal_code&quot;,&quot;locality&quot;]},&quot;phonePrefixes&quot;:[{&quot;label&quot;:&quot;+34 (ES)&quot;,&quot;value&quot;:&quot;+34&quot;}],&quot;defaultCurrency&quot;:&quot;EUR&quot;,&quot;name&quot;:&quot;España&quot;,&quot;gmapsLanguage&quot;:&quot;es&quot;,&quot;id&quot;:&quot;cntr_3fc1eef618cd4b30939a2d77e68c0912&quot;,&quot;gmapsDefaultCoords&quot;:{&quot;lng&quot;:-3.703385,&quot;lat&quot;:40.416724},&quot;subdivisions&quot;:[{&quot;iso3166-2&quot;:&quot;ES-C&quot;,&quot;id&quot;:&quot;C&quot;,&quot;label&quot;:&quot;A Coruña&quot;},{&quot;iso3166-2&quot;:&quot;ES-VI&quot;,&quot;id&quot;:&quot;VI&quot;,&quot;label&quot;:&quot;Álava&quot;},{&quot;iso3166-2&quot;:&quot;ES-AB&quot;,&quot;id&quot;:&quot;AB&quot;,&quot;label&quot;:&quot;Albacete&quot;},{&quot;iso3166-2&quot;:&quot;ES-A&quot;,&quot;id&quot;:&quot;A&quot;,&quot;label&quot;:&quot;Alicante&quot;},{&quot;iso3166-2&quot;:&quot;ES-AL&quot;,&quot;id&quot;:&quot;AL&quot;,&quot;label&quot;:&quot;Almería&quot;},{&quot;iso3166-2&quot;:&quot;ES-O&quot;,&quot;id&quot;:&quot;O&quot;,&quot;label&quot;:&quot;Asturias&quot;},{&quot;iso3166-2&quot;:&quot;ES-AV&quot;,&quot;id&quot;:&quot;AV&quot;,&quot;label&quot;:&quot;Ávila&quot;},{&quot;iso3166-2&quot;:&quot;ES-BA&quot;,&quot;id&quot;:&quot;BA&quot;,&quot;label&quot;:&quot;Badajoz&quot;},{&quot;iso3166-2&quot;:&quot;ES-B&quot;,&quot;id&quot;:&quot;B&quot;,&quot;label&quot;:&quot;Barcelona&quot;},{&quot;iso3166-2&quot;:&quot;ES-BU&quot;,&quot;id&quot;:&quot;BU&quot;,&quot;label&quot;:&quot;Burgos&quot;},{&quot;iso3166-2&quot;:&quot;ES-CC&quot;,&quot;id&quot;:&quot;CC&quot;,&quot;label&quot;:&quot;Cáceres&quot;},{&quot;iso3166-2&quot;:&quot;ES-CA&quot;,&quot;id&quot;:&quot;CA&quot;,&quot;label&quot;:&quot;Cádiz&quot;},{&quot;iso3166-2&quot;:&quot;ES-S&quot;,&quot;id&quot;:&quot;S&quot;,&quot;label&quot;:&quot;Cantabria&quot;},{&quot;iso3166-2&quot;:&quot;ES-CS&quot;,&quot;id&quot;:&quot;CS&quot;,&quot;label&quot;:&quot;Castellón&quot;},{&quot;iso3166-2&quot;:&quot;ES-CE&quot;,&quot;tax&quot;:{&quot;rate&quot;:0.5,&quot;taxRateId&quot;:&quot;tax_IPSIC_CEUTA&quot;,&quot;type&quot;:&quot;IPSIC&quot;},&quot;id&quot;:&quot;CE&quot;,&quot;label&quot;:&quot;Ceuta&quot;},{&quot;iso3166-2&quot;:&quot;ES-CR&quot;,&quot;id&quot;:&quot;CR&quot;,&quot;label&quot;:&quot;Ciudad Real&quot;},{&quot;iso3166-2&quot;:&quot;ES-CO&quot;,&quot;id&quot;:&quot;CO&quot;,&quot;label&quot;:&quot;Córdoba&quot;},{&quot;iso3166-2&quot;:&quot;ES-CU&quot;,&quot;id&quot;:&quot;CU&quot;,&quot;label&quot;:&quot;Cuenca&quot;},{&quot;iso3166-2&quot;:&quot;ES-GI&quot;,&quot;id&quot;:&quot;GI&quot;,&quot;label&quot;:&quot;Girona&quot;},{&quot;iso3166-2&quot;:&quot;ES-GR&quot;,&quot;id&quot;:&quot;GR&quot;,&quot;label&quot;:&quot;Granada&quot;},{&quot;iso3166-2&quot;:&quot;ES-GU&quot;,&quot;id&quot;:&quot;GU&quot;,&quot;label&quot;:&quot;Guadalajara&quot;},{&quot;iso3166-2&quot;:&quot;ES-SS&quot;,&quot;id&quot;:&quot;SS&quot;,&quot;label&quot;:&quot;Guipúzcoa&quot;},{&quot;iso3166-2&quot;:&quot;ES-H&quot;,&quot;id&quot;:&quot;H&quot;,&quot;label&quot;:&quot;Huelva&quot;},{&quot;iso3166-2&quot;:&quot;ES-HU&quot;,&quot;id&quot;:&quot;HU&quot;,&quot;label&quot;:&quot;Huesca&quot;},{&quot;iso3166-2&quot;:&quot;ES-PM&quot;,&quot;id&quot;:&quot;PM&quot;,&quot;label&quot;:&quot;Islas Baleares&quot;},{&quot;iso3166-2&quot;:&quot;ES-J&quot;,&quot;id&quot;:&quot;J&quot;,&quot;label&quot;:&quot;Jaén&quot;},{&quot;iso3166-2&quot;:&quot;ES-LO&quot;,&quot;id&quot;:&quot;LO&quot;,&quot;label&quot;:&quot;La Rioja&quot;},{&quot;iso3166-2&quot;:&quot;ES-GC&quot;,&quot;tax&quot;:{&quot;rate&quot;:7,&quot;taxRateId&quot;:&quot;tax_IGIC7_LAS_PALMAS&quot;,&quot;type&quot;:&quot;IGIC&quot;},&quot;id&quot;:&quot;GC&quot;,&quot;label&quot;:&quot;Las Palmas&quot;},{&quot;iso3166-2&quot;:&quot;ES-LE&quot;,&quot;id&quot;:&quot;LE&quot;,&quot;label&quot;:&quot;León&quot;},{&quot;iso3166-2&quot;:&quot;ES-L&quot;,&quot;id&quot;:&quot;L&quot;,&quot;label&quot;:&quot;Lleida&quot;},{&quot;iso3166-2&quot;:&quot;ES-LU&quot;,&quot;id&quot;:&quot;LU&quot;,&quot;label&quot;:&quot;Lugo&quot;},{&quot;iso3166-2&quot;:&quot;ES-M&quot;,&quot;id&quot;:&quot;M&quot;,&quot;label&quot;:&quot;Madrid&quot;},{&quot;iso3166-2&quot;:&quot;ES-MA&quot;,&quot;id&quot;:&quot;MA&quot;,&quot;label&quot;:&quot;Málaga&quot;},{&quot;iso3166-2&quot;:&quot;ES-ML&quot;,&quot;tax&quot;:{&quot;rate&quot;:0.5,&quot;taxRateId&quot;:&quot;tax_IPSIM_MELILLA&quot;,&quot;type&quot;:&quot;IPSIM&quot;},&quot;id&quot;:&quot;ML&quot;,&quot;label&quot;:&quot;Melilla&quot;},{&quot;iso3166-2&quot;:&quot;ES-MU&quot;,&quot;id&quot;:&quot;MU&quot;,&quot;label&quot;:&quot;Murcia&quot;},{&quot;iso3166-2&quot;:&quot;ES-NA&quot;,&quot;id&quot;:&quot;NA&quot;,&quot;label&quot;:&quot;Navarra&quot;},{&quot;iso3166-2&quot;:&quot;ES-OR&quot;,&quot;id&quot;:&quot;OR&quot;,&quot;label&quot;:&quot;Ourense&quot;},{&quot;iso3166-2&quot;:&quot;ES-P&quot;,&quot;id&quot;:&quot;P&quot;,&quot;label&quot;:&quot;Palencia&quot;},{&quot;iso3166-2&quot;:&quot;ES-PO&quot;,&quot;id&quot;:&quot;PO&quot;,&quot;label&quot;:&quot;Pontevedra&quot;},{&quot;iso3166-2&quot;:&quot;ES-SA&quot;,&quot;id&quot;:&quot;SA&quot;,&quot;label&quot;:&quot;Salamanca&quot;},{&quot;iso3166-2&quot;:&quot;ES-TF&quot;,&quot;tax&quot;:{&quot;rate&quot;:7,&quot;taxRateId&quot;:&quot;tax_IGIC7_TENERIFE&quot;,&quot;type&quot;:&quot;IGIC&quot;},&quot;id&quot;:&quot;TF&quot;,&quot;label&quot;:&quot;Santa Cruz de Tenerife&quot;},{&quot;iso3166-2&quot;:&quot;ES-SG&quot;,&quot;id&quot;:&quot;SG&quot;,&quot;label&quot;:&quot;Segovia&quot;},{&quot;iso3166-2&quot;:&quot;ES-SE&quot;,&quot;id&quot;:&quot;SE&quot;,&quot;label&quot;:&quot;Sevilla&quot;},{&quot;iso3166-2&quot;:&quot;ES-SO&quot;,&quot;id&quot;:&quot;SO&quot;,&quot;label&quot;:&quot;Soria&quot;},{&quot;iso3166-2&quot;:&quot;ES-T&quot;,&quot;id&quot;:&quot;T&quot;,&quot;label&quot;:&quot;Tarragona&quot;},{&quot;iso3166-2&quot;:&quot;ES-TE&quot;,&quot;id&quot;:&quot;TE&quot;,&quot;label&quot;:&quot;Teruel&quot;},{&quot;iso3166-2&quot;:&quot;ES-TO&quot;,&quot;id&quot;:&quot;TO&quot;,&quot;label&quot;:&quot;Toledo&quot;},{&quot;iso3166-2&quot;:&quot;ES-V&quot;,&quot;id&quot;:&quot;V&quot;,&quot;label&quot;:&quot;Valencia&quot;},{&quot;iso3166-2&quot;:&quot;ES-VA&quot;,&quot;id&quot;:&quot;VA&quot;,&quot;label&quot;:&quot;Valladolid&quot;},{&quot;iso3166-2&quot;:&quot;ES-BI&quot;,&quot;id&quot;:&quot;BI&quot;,&quot;label&quot;:&quot;Vizcaya&quot;},{&quot;iso3166-2&quot;:&quot;ES-ZA&quot;,&quot;id&quot;:&quot;ZA&quot;,&quot;label&quot;:&quot;Zamora&quot;},{&quot;iso3166-2&quot;:&quot;ES-Z&quot;,&quot;id&quot;:&quot;Z&quot;,&quot;label&quot;:&quot;Zaragoza&quot;}]},&quot;colorPalette&quot;:{&quot;secondary&quot;:{&quot;100&quot;:&quot;#D2F8F9&quot;,&quot;200&quot;:&quot;#AEF1F2&quot;,&quot;300&quot;:&quot;#76E8EA&quot;,&quot;400&quot;:&quot;#3DDEE1&quot;,&quot;500&quot;:&quot;#18D3D6&quot;,&quot;600&quot;:&quot;#00AEB2&quot;,&quot;700&quot;:&quot;#008385&quot;,&quot;800&quot;:&quot;#005759&quot;,&quot;900&quot;:&quot;#002C2C&quot;,&quot;base&quot;:&quot;#18D3D6&quot;},&quot;white&quot;:{&quot;base&quot;:&quot;#FFFFFF&quot;},&quot;success&quot;:{&quot;100&quot;:&quot;#DCEFE3&quot;,&quot;200&quot;:&quot;#B9E1CB&quot;,&quot;300&quot;:&quot;#90CFAE&quot;,&quot;400&quot;:&quot;#5FB98B&quot;,&quot;500&quot;:&quot;#207D49&quot;,&quot;600&quot;:&quot;#1A643B&quot;,&quot;700&quot;:&quot;#134B2C&quot;,&quot;800&quot;:&quot;#0D321E&quot;,&quot;900&quot;:&quot;#06190F&quot;,&quot;base&quot;:&quot;#207D49&quot;},&quot;dark&quot;:{&quot;base&quot;:&quot;#373737&quot;},&quot;tertiary&quot;:{&quot;100&quot;:&quot;#FFEBFD&quot;,&quot;200&quot;:&quot;#FFDFFB&quot;,&quot;300&quot;:&quot;#FFC9F9&quot;,&quot;400&quot;:&quot;#FFB3F6&quot;,&quot;500&quot;:&quot;#FBA6F2&quot;,&quot;600&quot;:&quot;#CC7EC3&quot;,&quot;700&quot;:&quot;#995E92&quot;,&quot;800&quot;:&quot;#663F62&quot;,&quot;900&quot;:&quot;#331F31&quot;,&quot;base&quot;:&quot;#FBA6F2&quot;},&quot;neutral&quot;:{&quot;secondary&quot;:{&quot;100&quot;:&quot;#F8F8F8&quot;,&quot;200&quot;:&quot;#E2E2E2&quot;,&quot;300&quot;:&quot;#CCCCCC&quot;,&quot;400&quot;:&quot;#B6B6B6&quot;,&quot;500&quot;:&quot;#A4A4A4&quot;,&quot;600&quot;:&quot;#828282&quot;,&quot;700&quot;:&quot;#616161&quot;,&quot;800&quot;:&quot;#3F3F3F&quot;,&quot;900&quot;:&quot;#1F1F1F&quot;,&quot;base&quot;:&quot;#A4A4A4&quot;},&quot;100&quot;:&quot;#F9F7F1&quot;,&quot;200&quot;:&quot;#F7F4ED&quot;,&quot;300&quot;:&quot;#F4F0E3&quot;,&quot;400&quot;:&quot;#DCD7CC&quot;,&quot;500&quot;:&quot;#C4BFB6&quot;,&quot;600&quot;:&quot;#9A968F&quot;,&quot;700&quot;:&quot;#6F6D69&quot;,&quot;800&quot;:&quot;#454443&quot;,&quot;900&quot;:&quot;#1F1F1F&quot;,&quot;base&quot;:&quot;#F4F0E3&quot;},&quot;warning&quot;:{&quot;100&quot;:&quot;#FFF0E0&quot;,&quot;200&quot;:&quot;#FFE3C7&quot;,&quot;300&quot;:&quot;#FFD1A3&quot;,&quot;400&quot;:&quot;#FFBD78&quot;,&quot;500&quot;:&quot;#FFAB5D&quot;,&quot;600&quot;:&quot;#CC894A&quot;,&quot;700&quot;:&quot;#996737&quot;,&quot;800&quot;:&quot;#664524&quot;,&quot;900&quot;:&quot;#332212&quot;,&quot;base&quot;:&quot;#FFAB5D&quot;},&quot;error&quot;:{&quot;100&quot;:&quot;#FADBDB&quot;,&quot;200&quot;:&quot;#F5BCBC&quot;,&quot;300&quot;:&quot;#F09193&quot;,&quot;400&quot;:&quot;#E85F61&quot;,&quot;500&quot;:&quot;#DC3545&quot;,&quot;600&quot;:&quot;#B02A37&quot;,&quot;700&quot;:&quot;#841F29&quot;,&quot;800&quot;:&quot;#58141B&quot;,&quot;900&quot;:&quot;#2C0A0E&quot;,&quot;base&quot;:&quot;#FF4C3F&quot;},&quot;primary&quot;:{&quot;100&quot;:&quot;#EBD4FA&quot;,&quot;200&quot;:&quot;#D7BAF7&quot;,&quot;300&quot;:&quot;#BD8EF2&quot;,&quot;400&quot;:&quot;#A362ED&quot;,&quot;500&quot;:&quot;#801DD4&quot;,&quot;600&quot;:&quot;#6818AA&quot;,&quot;700&quot;:&quot;#501280&quot;,&quot;800&quot;:&quot;#380C55&quot;,&quot;900&quot;:&quot;#20062B&quot;,&quot;base&quot;:&quot;#6818AA&quot;}},&quot;featureFlags&quot;:{&quot;featureShowProfileData&quot;:1,&quot;featureUserTask&quot;:1,&quot;featureSignUpWithoutPromotion&quot;:1,&quot;featureShowProductsSection&quot;:0,&quot;featureGoogleOAuth&quot;:1,&quot;featureLanguageSelector&quot;:1,&quot;featureConfirmationEmail&quot;:1,&quot;featureNewCancelationRevoke&quot;:1,&quot;featureDigitalPresenceAIresponses4reviews&quot;:1,&quot;featureCancellationPlanning&quot;:1,&quot;featureCoAdministration&quot;:1,&quot;featureServiceAreas&quot;:1,&quot;featureWhatsappField&quot;:1,&quot;featureProductWeb&quot;:1,&quot;newsConfiguration&quot;:1,&quot;featureShowPublicationsSection&quot;:1,&quot;featureShowPositionSection&quot;:1,&quot;featureCreatePostWithIA&quot;:1,&quot;featureChat&quot;:1,&quot;featureAppleOAuth&quot;:1,&quot;featureInterestSurveyModal&quot;:0,&quot;featureOnboardingTasks&quot;:0,&quot;digitalPresenceShareCoAdminWithProvider&quot;:1,&quot;featureGbpDataSync&quot;:1,&quot;featureCouponStripe&quot;:1,&quot;featureResponsesIA&quot;:1}},&quot;errors&quot;:[],&quot;warnings&quot;:[],&quot;metadata&quot;:null}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.httpCode == 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data == &#39;#object&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data contains</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.14">{
+  featureFlags: &#39;#object&#39;,
+  cognitoConfig: {
+    allowedMfaTypes: &#39;#[]&#39;,
+    domain: &#39;#string&#39;,
+    client_id: &#39;#string&#39;
+  }
+  }</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

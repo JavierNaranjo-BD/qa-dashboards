@@ -1,0 +1,22 @@
+{
+  "generatedAt": "2026-04-08T13:20:42.142Z",
+  "reportRoot": "D:\\a\\front-beeglobal\\front-beeglobal\\api-tests\\target\\karate-lane-report",
+  "lanes": [
+    {
+      "id": "live",
+      "name": "Karate Extended Live",
+      "exitCode": 0,
+      "status": "green",
+      "summary": null,
+      "note": "Built from step outcome: success"
+    },
+    {
+      "id": "mock",
+      "name": "Karate Extended Mock",
+      "exitCode": 0,
+      "status": "green",
+      "summary": null,
+      "note": "Built from step outcome: success"
+    }
+  ]
+}

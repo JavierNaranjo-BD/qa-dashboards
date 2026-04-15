@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"fbd5c29b-b9fc-481f-8b6c-ea6476a723c6",karate_version:"1.5.2",karate_meta:null});
+  }
+});
+</script>
+
+    <title>com.beedigital.global.web.karate.auth.login</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2026-04-14 11:25:18 AM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[7:101]"><span>[7:101]</span> <span>login returns a successful auth outcome when valid credentials are configured</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">com/beedigital/global/web/karate/auth/login.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Login smoke test</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[7:101]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">extended-live</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[7:101]</span>
+                <span class="scenario-name">login returns a successful auth outcome when valid credentials are configured</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>970</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[7:101]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[7:101]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">11:25:17.684 Karate env: local 
+11:25:17.684 Karate baseUrl: https://adminnewworkspaceuat.beedigital.es/api/v1 
+11:25:17.685 Karate tenant: adminnewworkspaceuat.beedigital.es 
+11:25:17.686 Karate tenantId: beeEspana 
+11:25:17.688 Karate tenantProfile: beeEspana 
+11:25:17.689 Karate loginEmail configured: true 
+11:25:17.689 Karate loginPassword configured: true 
+11:25:17.692 Karate loginToken configured: false 
+11:25:17.698 Karate accessCheckToken configured: false 
+11:25:17.701 Karate sessionToken configured: false 
+11:25:17.701 Karate runUserEventDeliveryScenarios: false 
+11:25:17.701 Karate startApiGlobalMock: false 
+11:25:17.701 Karate apiGlobalMockUrl:  
+11:25:17.701 Karate metricoolMockEnabled: false 
+11:25:17.702 Karate metricoolServiceId configured: true 
+11:25:17.702 Karate metricoolAuthToken configured: false 
+11:25:17.703 Karate yextMockEnabled: false 
+11:25:17.703 Karate yextServiceId configured: true 
+11:25:17.703 Karate yextAuthToken configured: false 
+11:25:17.703 Karate yextPublisherId: yext 
+11:25:17.703 Karate gbpMockEnabled: false 
+11:25:17.703 Karate gbpProductId configured: true 
+11:25:17.704 Karate gbpAuthToken configured: false 
+11:25:17.704 Karate organizationId: beesible 
+11:25:17.704 Karate brandingTitle configured: true 
+11:25:17.705 Karate cognitoDomain configured: true 
+11:25:17.710 Karate supportsMetricool: true 
+11:25:17.710 Karate supportsYext: true 
+11:25:17.710 Karate supportsGbp: true 
+11:25:17.710 Workspace .env detected: false 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.102">
+      <div class="step-ref passed">102</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def auth = callonce read(&#39;live-auth-context.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">956</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.102">11:25:18.673 &lt;&lt; lock released, cached callonce: read(&#39;live-auth-context.feature&#39;)
+</div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.102.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">com.beedigital.global.web.karate.auth.live-auth-context</div>
+      </div>
+      <div class="time-cell passed">936</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.102.0.call">
+    <div class="step-container" id="0.102.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (!loginEmail || !loginPassword) karate.abort()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.102.0.call.0.4">11:25:17.720 &gt;&gt; lock acquired, begin callonce: read(&#39;live-auth-context.feature&#39;)
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.102.0.call">
+    <div class="step-container" id="0.102.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.102.0.call">
+    <div class="step-container" id="0.102.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Tenant = tenant</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.102.0.call">
+    <div class="step-container" id="0.102.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def loginRequest = { email: &#39;#(loginEmail)&#39;, password: &#39;#(loginPassword)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.102.0.call">
+    <div class="step-container" id="0.102.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (loginToken) loginRequest.token = loginToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.102.0.call">
+    <div class="step-container" id="0.102.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;auth&#39;, &#39;login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.102.0.call">
+    <div class="step-container" id="0.102.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request loginRequest</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.102.0.call">
+    <div class="step-container" id="0.102.0.call.0.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">919</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.102.0.call.0.11">11:25:17.752 request:
+1 &gt; POST https://adminnewworkspaceuat.beedigital.es/api/v1/auth/login
+1 &gt; Tenant: adminnewworkspaceuat.beedigital.es
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 68
+1 &gt; Host: adminnewworkspaceuat.beedigital.es
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/22.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;pruebasqabeesible@gmail.com&quot;,&quot;password&quot;:&quot;h1[{6z0=q8*f73V&quot;}
+
+11:25:18.667 response time in milliseconds: 915
+1 &lt; 200
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Date: Tue, 14 Apr 2026 11:25:18 GMT
+1 &lt; X-Frame-Options: DENY
+1 &lt; Vary: origin,access-control-request-method,access-control-request-headers,accept-encoding
+1 &lt; Vary: Origin
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Cache: Miss from cloudfront
+1 &lt; Via: 1.1 a9368f7b67df0d1f561c4fba83f9d61e.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: DFW56-P4
+1 &lt; X-Amz-Cf-Id: K4u9_-2O-w98bfy3aWtEoS6D01vylYJN31b-4QGLZCOdD9Q6rqpMIQ==
+{&quot;httpCode&quot;:200,&quot;httpStatus&quot;:null,&quot;data&quot;:{&quot;jwt&quot;:&quot;eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJCZWVHbG9iYWxXZWIiLCJleHAiOjE3Nzc0NjE5MTgsImlzR3Vlc3QiOmZhbHNlLCJwcm9maWxlSWQiOiJwcm9mXzRjMjNlY2Y1MTA2NDQ0ODdiZDQzOTEzMmRhMGZiOTQ5IiwibWZhVHlwZSI6bnVsbCwicm9sZUlkIjoibWVyY2hhbnQiLCJ0ZW5hbnRJZCI6ImJlZUVzcGFuYSIsImNvZ25pdG86dXNlcm5hbWUiOiIzMjk1YTQ2NC1lMDMxLTcwY2EtMzQ2Yy1lOTJiNDVkNjA5MWEiLCJtZmFSZXF1aXJlZCI6ZmFsc2UsImFjY2Vzc1Rva2VuIjoiZXlKcmFXUWlPaUl5TTJ0RFEweE5iM1pxWTBaa1NXWXdWR2xVUVVOTE9EZGhZelp6VlRGWlhDOVhiSFpZVkcxelUxVTNSVDBpTENKaGJHY2lPaUpTVXpJMU5pSjkuZXlKemRXSWlPaUl6TWprMVlUUTJOQzFsTURNeExUY3dZMkV0TXpRMll5MWxPVEppTkRWa05qQTVNV0VpTENKa1pYWnBZMlZmYTJWNUlqb2laWFV0ZDJWemRDMHhYekk0WXpRNVkyTmlMV0l6WlRZdE5HWmtNQzA1TnpjM0xUZzVOak15TURrNFkyTm1aaUlzSW1semN5STZJbWgwZEhCek9sd3ZYQzlqYjJkdWFYUnZMV2xrY0M1bGRTMTNaWE4wTFRFdVlXMWhlbTl1WVhkekxtTnZiVnd2WlhVdGQyVnpkQzB4WHpGaFJrMXpTR3B2U0NJc0ltTnNhV1Z1ZEY5cFpDSTZJamxzY0dGeU56aGtOR001Tkdoak4yb3daM1J3TTI1eFpqY2lMQ0p2Y21sbmFXNWZhblJwSWpvaVlqVmpPRGxsT0dFdE1HUTNPQzAwT0RrNUxUazVOVFV0WVdFek16VTNOR1ZrT1RsbElpd2laWFpsYm5SZmFXUWlPaUl4WlRRMU5tRmtOeTFpWWpoakxUUmlPR010WVdRMU1DMDNNbVpoWmpKbU9UQXdPV0lpTENKMGIydGxibDkxYzJVaU9pSmhZMk5sYzNNaUxDSnpZMjl3WlNJNkltRjNjeTVqYjJkdWFYUnZMbk5wWjI1cGJpNTFjMlZ5TG1Ga2JXbHVJaXdpWVhWMGFGOTBhVzFsSWpveE56YzJNVFkxT1RFNExDSmxlSEFpT2pFM056WXlOVEl6TVRnc0ltbGhkQ0k2TVRjM05qRTJOVGt4T0N3aWFuUnBJam9pTTJFMU0yTmtaalF0WkdNMk9TMDBOMlEyTFRsaVltWXRabVJtTlRFd1pHSTFZbVJpSWl3aWRYTmxjbTVoYldVaU9pSXpNamsxWVRRMk5DMWxNRE14TFRjd1kyRXRNelEyWXkxbE9USmlORFZrTmpBNU1XRWlmUS5kdEtIVGViNkNjalhxWlJ2NFlLcVFrcmkxc0hzRXc2ZV85Y3g5MjV3VUV2bGFVaHFrQXlxWjBoXzB0VEJ3RlpXTTVJY1ViVUhmMmliS2xodFBUX29BU2UwTmQzdEVmZW1iZFY1SW81T0h6SW5Ka2JZWVFzQzUwblhmWUIyNmVuZzJ2dHdlbHlaSTNpZmtZN2tFY29mVHRYbk9yZWh6cEVfX0F4WFFYc3RTUm5FY3JmWTdXZzFYYVRqVzJwdWpNcGhpNWs5ZVlmWVNVb2dXckg1OWtObXJzYmVVUlhDMlJuSEN3b2FVeWRyd051Z0g5YXBWemdjQXJteEd6ekR2ZmFSRHB5bU1CNGNOdm9ueENhdjlEZVhWbVZsQnNZOEVubzBzU05OVWhxeVJ6Q0U0RENVT2JWR093ODZaN2dzdHRTdUlXTGc3LXl1SE1FUzlVZ1g2YUJ4YVEiLCJpc01mYUVuYWJsZWQiOmZhbHNlLCJlbWFpbCI6InBydWViYXNxYWJlZXNpYmxlQGdtYWlsLmNvbSIsInJlZnJlc2hUb2tlbiI6ImV5SmpkSGtpT2lKS1YxUWlMQ0psYm1NaU9pSkJNalUyUjBOTklpd2lZV3huSWpvaVVsTkJMVTlCUlZBaWZRLkRwLThNNVFZcjFRdThuV0NmN3ZFd2wzU1hZTWJTR2RYaE85OThtV3dJYnIzZTg3NDZoMWlIVEFLTGdoN1Z3Q0ZESkZGTy1vMkFtQzJDcWdCWXF2bFR1eFB2VHdMeXoxbnJHanNNcWlrTjVWTm1pYXR4NzNYNzZtSHJvZHRROU9JaVd1WUgtYmR1UndCdERYMVRJNk5ZMzY3VWNlc3hrMFR2WWQwNW9sY3B1NmJYZmZkak5HTXFjLU81TE9zM3dDTTIzY1NYdE9uVDhTZk02UVZtTTdnUUVnN1B1N2IxLWxhSjBIZHJBWFNqTDFRUk9KU2l4UzJHTHNuazlyVS1Cb3VsbzJMVW5qYjVpdVB2Qk5aazRSc01XVXR6ZTlheVRDbU93VUZIUy1td3J2MDd4b1FRM2JlQXhlNkRKYUFGZXBmc3p2YjQwQVhhVHdqMGNOVm5TeFV0dy5sWFRnWXo5cUd4UWwtTko5LkR3N3pYb3gxcjlUME44ZGVxWWlPY0k1eFEwM3JDdEplUDRKbTBOX3hrSWwxalR1RmZzemo3RW9ZZldrSjF1RExsTmtLMkpmNjBrT0tqTTloc29MaFB1WFlPdmZNRi1CSlRHVms5ZHVFZXFFSXotb3ZjTGJMcDBMZ1dxUXlQNlFaMExjRkp2WTRFQmtMM293dncwUzlUM2ttaXo1SUVpWTV2RXYtaU1SV3lZZXdBMWZxQXR3TFlSWlh0WG96SGdjUUlnZTZGU3NjRjg0bG9wTjVEUXIyU0RwUzVUNVpPSmgxX3laNkQ2TUhXT0hVOUQyaGlwZnN3TUpGdEpMVHRWTUxGSG1iem1xYXRjN1FKMEhGUVFTQVhpRERheWpJS1hMNkNBaVEyUE1RUmZzcG9PaENBTWZLWmxEVERHVW4tVnJpR1R0MXBkamtneTdoUnVncHhTRkFYblpwTXc1Ym1xVlQ1Ym9UMWFLazNnRW5kRFhQeUpPUkpmWktqcGZZS2dPZ1pfV1dhcXVPWE8wcHhjUmhmNEszMkhtN0lsR2NDTjUxeWc4UmNkeTJQMkFiV1NmNFRycDNNaGpKeDF5b3hFNUI2NkFucU9zR0doTzltbjZfUGtSNExqR3dKZmQ5S255QzUzTkdLX3YxMEIwNUVVQmFoaVlJdVBFRG9iYk5mVnJ2ZEMtOTZKWUV5aHNaXzlaZ1JneWJYMHVqYjNiSXVCeGJ5NnZTREtBMDlfWFdTb2l3YkdnZVUxZzJ0czJ5NmRDbDh4c2cxVFQ1UXV4OUpaMU41Y09RZFVndk9UMjdYNUhlVEt2U0FyYVhDVG82TzNEd0x3ZlZrdGdDYi1KeE1ZUEd4cEVEV3FQUEg5cDBtcVo0TUZ4dDc5RnR6WG9LeVJ3SS1LM3VaQmJXZW1pMFQ2MUdyTXUzby1RY3ppU2dYVFYwdWJDY292OENTa3ZZMmRwbm9wU3NvUXJDZjVPYV9HYURoN080bV9WdjVPYWlyY3BIYWpaSUJCYkQtdkkyampjNDBENzZZbldicFBNRlNmUy03VThlM01RUXVUQ19VaDc5UjFGN1kycmJGb3d1WGprSlI5aElFZHJLSUxMNTBCQTlTV0dtTVh0cHo1N1NWR2dYV1lkSWZkMVhmWmtaM0xuc2NlWWZkd0loeDNMdTV6cTRiZWxDOG9LelpYbl9GQVk1ZFE3TkJUMXRVRi1wOVVHV3dfOTlpbVVHdE52OFNzdEFyQkh2bUJSUlIwalZBVUdEN1FZcUJJblloWUpWakVYcUhvaFZKOTVWdXh4TkItZFFSTXZJQTRVc0oxSGVpQnJGU2FHWGdPY1ZJaFdKSWpiWGhsOG1qak5GaW5kY2xab1NOZ1hyV1dzQlRPSWJuVGJQOFdMQm5rLUFVc1dJaFBfbUFKc3F1U1Rzamc1RFZJaXRjSzVVUUMwNTNHd0ZxNkpXeW8wWllJYWFnLTRqNmE5MEJVb1ZxM1pJWUFIM2NmNGlsdV9ZbGVhdWl2RFpWWTF5MmhoTFBOTGgxWTFtWGRRa21SN1hnOU1Vb1cxdGtVNV83ZHVVUjlYNWxjNUh5Zjd2eTRzekNRbVl4bjJBbTRHeFlaNDQwN3Z5b1U1elozQkc5X21kT2piUDhISXFSUVA3VG9vZXNsZkxpcUVidzFrUWc1WHhQaUhqUGdwa0R3Yi1CNkczX09ncWhUZ0lTakYzSjhLUm5fT2paWlJDcElxMVRRenZsVjNDS1JrWVdsYk5PRVJjNjZ0M0ZPWXFaMVpZSmRGNllRd1p5OWxaRGRiYVNBR3FLaGRHRTVCaWUzZXFTQ0dnbmFWUV9DY1dUQXZIdnFPQXAyTGVONEpockNPSE1tR2VSUHk4VUliM2hDWGZGeG83Mm92dUduclVHbGEtek04QUl2WWUwR0k3MWZPNXdDSkRkcHRXLlA2LXpvUGpBc2RkWmxXZjRha0xJUWcifQ.ox4ORsU404ltNI7TrxevljKQoJ0TGlVHOwb4s4DIvqzkOunPd3j9IyWbNxRG4gk_aEGGKmdSYMoZfvNIo5V94cxyJK-tWuuD26xL6bxdzetGdswnsnajnn4ZEDaZidyQOYv7zO2gTWl_n7qrkzuzxpBTqORmtAmL2KYNQ8sEArjXCCEgiimZA_HbPq5o_SPyELtLtP0M3z8so1xVWUcUVdfY8cMZjUBGoTeopZ4_87jbqA5CTiU_RP1CBTy0SbUTUFZlwjQZQsFx1kXI64XT05Qz9HcxS4iNSYkyRe6VJGJ2fTgtIcGIMG__AciWqrjBLpB1xL4B0RxyoIxIqDGunQ&quot;},&quot;errors&quot;:[],&quot;warnings&quot;:[],&quot;metadata&quot;:null}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.102.0.call">
+    <div class="step-container" id="0.102.0.call.0.12">
+      <div class="step-ref passed">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.102.0.call">
+    <div class="step-container" id="0.102.0.call.0.13">
+      <div class="step-ref passed">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def loginResponse = response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.102.0.call">
+    <div class="step-container" id="0.102.0.call.0.14">
+      <div class="step-ref passed">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def loginData = loginResponse.data || {}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.102.0.call">
+    <div class="step-container" id="0.102.0.call.0.15">
+      <div class="step-ref passed">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def jwt = loginData.jwt</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.102.0.call">
+    <div class="step-container" id="0.102.0.call.0.16">
+      <div class="step-ref passed">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def mfaRequired = loginData.mfaRequired</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.102.0.call">
+    <div class="step-container" id="0.102.0.call.0.17">
+      <div class="step-ref passed">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def passwordChangeRequired = loginData.passwordChangeRequired</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.102.0.call">
+    <div class="step-container" id="0.102.0.call.0.18">
+      <div class="step-ref passed">18</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def mfaJwt = loginData.mfaJwt</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.102.0.call">
+    <div class="step-container" id="0.102.0.call.0.19">
+      <div class="step-ref passed">19</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def passwordChangeJwt = loginData.passwordChangeJwt</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.103">
+      <div class="step-ref passed">103</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def response = auth.loginResponse</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.104">
+      <div class="step-ref passed">104</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.httpCode == 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.105">
+      <div class="step-ref passed">105</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.errors == &#39;#[]&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.106">
+      <div class="step-ref passed">106</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data == &#39;#object&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.107">
+      <div class="step-ref passed">107</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data.error == &#39;#notpresent&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.108">
+      <div class="step-ref passed">108</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def hasKnownLoginOutcome = (auth.jwt != null) || auth.mfaRequired != null || auth.passwordChangeRequired != null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.109">
+      <div class="step-ref passed">109</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match hasKnownLoginOutcome == true</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

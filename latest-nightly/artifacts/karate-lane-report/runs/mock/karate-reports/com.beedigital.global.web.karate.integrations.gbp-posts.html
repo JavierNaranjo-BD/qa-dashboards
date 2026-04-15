@@ -1,0 +1,2345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"ec7ad6e7-69a8-4aac-8606-f5c5ea7c6559",karate_version:"1.5.2",karate_meta:null});
+  }
+});
+</script>
+
+    <title>com.beedigital.global.web.karate.integrations.gbp-posts</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">5</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2026-04-14 11:26:16 AM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[5:40]"><span>[5:40]</span> <span>gbp posts returns a deterministic mocked happy path</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[8:148]"><span>[8:148]</span> <span>gbp posts surfaces a mocked downstream unavailable response in a controlled way</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[9:163]"><span>[9:163]</span> <span>gbp posts surfaces a mocked business error wrapped in a controlled response</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[10:176]"><span>[10:176]</span> <span>gbp posts exposes an empty mocked payload as an empty list</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[11:188]"><span>[11:188]</span> <span>gbp posts does not invent multimedia when the mocked wrapper payload is incomplete</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">com/beedigital/global/web/karate/integrations/gbp-posts.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Google Business Profile posts integration entrypoint</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5:40]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">extended-mock</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5:40]</span>
+                <span class="scenario-name">gbp posts returns a deterministic mocked happy path</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>82</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[5:40]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[5:40]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">11:26:16.270 Karate env: local 
+11:26:16.270 Karate baseUrl: http://localhost:4015/api/v1 
+11:26:16.273 Karate tenant: adminnewworkspaceuat.beedigital.es 
+11:26:16.277 Karate tenantId: beeEspana 
+11:26:16.278 Karate tenantProfile: beeEspana 
+11:26:16.278 Karate loginEmail configured: false 
+11:26:16.279 Karate loginPassword configured: false 
+11:26:16.279 Karate loginToken configured: false 
+11:26:16.279 Karate accessCheckToken configured: false 
+11:26:16.279 Karate sessionToken configured: false 
+11:26:16.279 Karate runUserEventDeliveryScenarios: false 
+11:26:16.280 Karate startApiGlobalMock: true 
+11:26:16.280 Karate apiGlobalMockUrl: http://localhost:28088 
+11:26:16.301 Karate metricoolMockEnabled: true 
+11:26:16.301 Karate metricoolServiceId configured: true 
+11:26:16.301 Karate metricoolAuthToken configured: true 
+11:26:16.301 Karate yextMockEnabled: true 
+11:26:16.302 Karate yextServiceId configured: true 
+11:26:16.302 Karate yextAuthToken configured: true 
+11:26:16.302 Karate yextPublisherId: yext 
+11:26:16.302 Karate gbpMockEnabled: true 
+11:26:16.303 Karate gbpProductId configured: true 
+11:26:16.303 Karate gbpAuthToken configured: true 
+11:26:16.303 Karate organizationId: beesible 
+11:26:16.304 Karate brandingTitle configured: true 
+11:26:16.304 Karate cognitoDomain configured: true 
+11:26:16.306 Karate supportsMetricool: true 
+11:26:16.306 Karate supportsYext: true 
+11:26:16.308 Karate supportsGbp: true 
+11:26:16.310 Workspace .env detected: false 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.41">
+      <div class="step-ref passed">41</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (!gbpMockEnabled || !gbpAuthToken || !gbpProductId) karate.abort()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref passed">42</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;products&#39;, gbpProductId, &#39;posts&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.43">
+      <div class="step-ref passed">43</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Tenant = tenant</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.44">
+      <div class="step-ref passed">44</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + gbpAuthToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.45">
+      <div class="step-ref passed">45</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">64</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.45">11:26:16.320 request:
+1 &gt; GET http://localhost:4015/api/v1/products/mock-gbp-product-id/posts
+1 &gt; Tenant: adminnewworkspaceuat.beedigital.es
+1 &gt; Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJCZWVHbG9iYWxXZWIiLCJleHAiOjE3NzYzODE5NTksImlzR3Vlc3QiOmZhbHNlLCJwcm9maWxlSWQiOiJwcm9mX21vY2tfYmVlX2FkbWluXzAwMSIsIm1mYVR5cGUiOiJlbWFpbCIsInJvbGVJZCI6InJvbGVfYWRtaW4iLCJ0ZW5hbnRJZCI6ImJlZUVzcGFuYSIsImNvZ25pdG86dXNlcm5hbWUiOiJiZWUtYWRtaW4tdGVzdC11c2VyIiwibWZhUmVxdWlyZWQiOmZhbHNlLCJhY2Nlc3NUb2tlbiI6Im1vY2stbG9jYWwtYWNjZXNzLXRva2VuIiwiaXNNZmFFbmFibGVkIjpmYWxzZSwiZW1haWwiOiJxYS5tb2NrQGJlZWRpZ2l0YWwubG9jYWwiLCJyZWZyZXNoVG9rZW4iOiJtb2NrLWxvY2FsLXJlZnJlc2gtdG9rZW4ifQ.ksTwkbmJSthaUnQ7ge-kgX0taFsnhQLig5_0DVnQ00q16ZiIMSIdGUKFHVP6F7nJzsWZMqPeR2jip3_qYK8dYy2dVxthp7k8aKPqPG-haSGYBm1Hw9HHQWt2gtCn5_BTFXeS5JXB5GPGEjaVh_ofQPzBOiqU766-KOLhf2NfQvuxjKnJN64m3mXX4JCe19f62EJWRjQDfO-ISMkq7qV4aqF_gRrWzt7lg_I7PSYu1-f7qBIPAYeDQw74ZqXbzmte8o7Qf8k_dSkxmtmuQvPvnvU_8QWHwfmHWDQMc_ZnjwVdXJou_co9ZcVrwkhv5ZT5c0_oamy6eej7T-RhJM2jBQ
+1 &gt; Host: localhost:4015
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/22.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+11:26:16.383 response time in milliseconds: 62
+1 &lt; 200
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Tue, 14 Apr 2026 11:26:16 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;httpCode&quot;:200,&quot;httpStatus&quot;:null,&quot;data&quot;:[{&quot;resourceId&quot;:&quot;locations/123/posts/mock-post-1&quot;,&quot;summary&quot;:&quot;Mock GBP seeded post&quot;,&quot;topicType&quot;:&quot;STANDARD&quot;,&quot;callToAction&quot;:null,&quot;event&quot;:null,&quot;multimedia&quot;:[{&quot;sourceUrl&quot;:&quot;https://mock-assets.example.com/media/post-1.jpg&quot;,&quot;type&quot;:&quot;PHOTO&quot;}],&quot;id&quot;:&quot;mock-post-1&quot;}],&quot;errors&quot;:[],&quot;warnings&quot;:[],&quot;metadata&quot;:null}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.46">
+      <div class="step-ref passed">46</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.47">
+      <div class="step-ref passed">47</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.httpCode == 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.48">
+      <div class="step-ref passed">48</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.errors == []</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.49">
+      <div class="step-ref passed">49</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.warnings == []</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.50">
+      <div class="step-ref passed">50</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data == &#39;#[]&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.51">
+      <div class="step-ref passed">51</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data[0].id == &#39;mock-post-1&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.52">
+      <div class="step-ref passed">52</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data[0].resourceId == &#39;locations/123/posts/mock-post-1&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.53">
+      <div class="step-ref passed">53</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data[0].multimedia == &#39;#[]&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.54">
+      <div class="step-ref passed">54</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>assert response.data[0].multimedia[0].sourceUrl.indexOf(&#39;post-1.jpg&#39;) != -1</span>
+      </div>
+    </div>
+    <div class="time-cell passed">10</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.55">
+      <div class="step-ref passed">55</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data[0].medias == &#39;#notpresent&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[8:148]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">extended-mock</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[8:148]</span>
+                <span class="scenario-name">gbp posts surfaces a mocked downstream unavailable response in a controlled way</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>34</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[8:148]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[8:148]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">11:26:16.467 Karate env: local 
+11:26:16.468 Karate baseUrl: http://localhost:4015/api/v1 
+11:26:16.468 Karate tenant: adminnewworkspaceuat.beedigital.es 
+11:26:16.472 Karate tenantId: beeEspana 
+11:26:16.472 Karate tenantProfile: beeEspana 
+11:26:16.472 Karate loginEmail configured: false 
+11:26:16.473 Karate loginPassword configured: false 
+11:26:16.473 Karate loginToken configured: false 
+11:26:16.473 Karate accessCheckToken configured: false 
+11:26:16.474 Karate sessionToken configured: false 
+11:26:16.474 Karate runUserEventDeliveryScenarios: false 
+11:26:16.474 Karate startApiGlobalMock: true 
+11:26:16.474 Karate apiGlobalMockUrl: http://localhost:28088 
+11:26:16.475 Karate metricoolMockEnabled: true 
+11:26:16.476 Karate metricoolServiceId configured: true 
+11:26:16.476 Karate metricoolAuthToken configured: true 
+11:26:16.476 Karate yextMockEnabled: true 
+11:26:16.476 Karate yextServiceId configured: true 
+11:26:16.476 Karate yextAuthToken configured: true 
+11:26:16.476 Karate yextPublisherId: yext 
+11:26:16.476 Karate gbpMockEnabled: true 
+11:26:16.476 Karate gbpProductId configured: true 
+11:26:16.477 Karate gbpAuthToken configured: true 
+11:26:16.477 Karate organizationId: beesible 
+11:26:16.479 Karate brandingTitle configured: true 
+11:26:16.479 Karate cognitoDomain configured: true 
+11:26:16.479 Karate supportsMetricool: true 
+11:26:16.479 Karate supportsYext: true 
+11:26:16.479 Karate supportsGbp: true 
+11:26:16.479 Workspace .env detected: false 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.149">
+      <div class="step-ref passed">149</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (!gbpMockEnabled || !gbpAuthToken) karate.abort()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.150">
+      <div class="step-ref passed">150</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;products&#39;, &#39;mock-gbp-unavailable&#39;, &#39;posts&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.151">
+      <div class="step-ref passed">151</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Tenant = tenant</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.152">
+      <div class="step-ref passed">152</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + gbpAuthToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.153">
+      <div class="step-ref passed">153</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">30</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.153">11:26:16.487 request:
+1 &gt; GET http://localhost:4015/api/v1/products/mock-gbp-unavailable/posts
+1 &gt; Tenant: adminnewworkspaceuat.beedigital.es
+1 &gt; Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJCZWVHbG9iYWxXZWIiLCJleHAiOjE3NzYzODE5NTksImlzR3Vlc3QiOmZhbHNlLCJwcm9maWxlSWQiOiJwcm9mX21vY2tfYmVlX2FkbWluXzAwMSIsIm1mYVR5cGUiOiJlbWFpbCIsInJvbGVJZCI6InJvbGVfYWRtaW4iLCJ0ZW5hbnRJZCI6ImJlZUVzcGFuYSIsImNvZ25pdG86dXNlcm5hbWUiOiJiZWUtYWRtaW4tdGVzdC11c2VyIiwibWZhUmVxdWlyZWQiOmZhbHNlLCJhY2Nlc3NUb2tlbiI6Im1vY2stbG9jYWwtYWNjZXNzLXRva2VuIiwiaXNNZmFFbmFibGVkIjpmYWxzZSwiZW1haWwiOiJxYS5tb2NrQGJlZWRpZ2l0YWwubG9jYWwiLCJyZWZyZXNoVG9rZW4iOiJtb2NrLWxvY2FsLXJlZnJlc2gtdG9rZW4ifQ.ksTwkbmJSthaUnQ7ge-kgX0taFsnhQLig5_0DVnQ00q16ZiIMSIdGUKFHVP6F7nJzsWZMqPeR2jip3_qYK8dYy2dVxthp7k8aKPqPG-haSGYBm1Hw9HHQWt2gtCn5_BTFXeS5JXB5GPGEjaVh_ofQPzBOiqU766-KOLhf2NfQvuxjKnJN64m3mXX4JCe19f62EJWRjQDfO-ISMkq7qV4aqF_gRrWzt7lg_I7PSYu1-f7qBIPAYeDQw74ZqXbzmte8o7Qf8k_dSkxmtmuQvPvnvU_8QWHwfmHWDQMc_ZnjwVdXJou_co9ZcVrwkhv5ZT5c0_oamy6eej7T-RhJM2jBQ
+1 &gt; Host: localhost:4015
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/22.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+11:26:16.515 response time in milliseconds: 26
+1 &lt; 200
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Tue, 14 Apr 2026 11:26:16 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;httpCode&quot;:0,&quot;httpStatus&quot;:null,&quot;data&quot;:null,&quot;errors&quot;:[{&quot;code&quot;:&quot;ERR011&quot;,&quot;msg&quot;:&quot;Generic error&quot;,&quot;txt&quot;:&quot;Generic error&quot;,&quot;metadata&quot;:null}],&quot;warnings&quot;:[],&quot;metadata&quot;:null}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.154">
+      <div class="step-ref passed">154</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.155">
+      <div class="step-ref passed">155</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data == null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.156">
+      <div class="step-ref passed">156</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.errors == &#39;#[]&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.157">
+      <div class="step-ref passed">157</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def hasExpectedHttpCode = response.httpCode == 0 || response.httpCode == 503</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.158">
+      <div class="step-ref passed">158</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>assert hasExpectedHttpCode</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.159">
+      <div class="step-ref passed">159</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def hasExpectedError = response.errors[0].code == &#39;ERR011&#39; || response.errors[0].code == &#39;MOCK_GBP_503&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.160">
+      <div class="step-ref passed">160</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>assert hasExpectedError</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[9:163]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">extended-mock</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[9:163]</span>
+                <span class="scenario-name">gbp posts surfaces a mocked business error wrapped in a controlled response</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>36</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[9:163]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[9:163]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">11:26:16.553 Karate env: local 
+11:26:16.553 Karate baseUrl: http://localhost:4015/api/v1 
+11:26:16.553 Karate tenant: adminnewworkspaceuat.beedigital.es 
+11:26:16.555 Karate tenantId: beeEspana 
+11:26:16.555 Karate tenantProfile: beeEspana 
+11:26:16.555 Karate loginEmail configured: false 
+11:26:16.555 Karate loginPassword configured: false 
+11:26:16.555 Karate loginToken configured: false 
+11:26:16.555 Karate accessCheckToken configured: false 
+11:26:16.555 Karate sessionToken configured: false 
+11:26:16.555 Karate runUserEventDeliveryScenarios: false 
+11:26:16.555 Karate startApiGlobalMock: true 
+11:26:16.555 Karate apiGlobalMockUrl: http://localhost:28088 
+11:26:16.555 Karate metricoolMockEnabled: true 
+11:26:16.555 Karate metricoolServiceId configured: true 
+11:26:16.555 Karate metricoolAuthToken configured: true 
+11:26:16.555 Karate yextMockEnabled: true 
+11:26:16.555 Karate yextServiceId configured: true 
+11:26:16.555 Karate yextAuthToken configured: true 
+11:26:16.555 Karate yextPublisherId: yext 
+11:26:16.555 Karate gbpMockEnabled: true 
+11:26:16.555 Karate gbpProductId configured: true 
+11:26:16.555 Karate gbpAuthToken configured: true 
+11:26:16.555 Karate organizationId: beesible 
+11:26:16.555 Karate brandingTitle configured: true 
+11:26:16.555 Karate cognitoDomain configured: true 
+11:26:16.555 Karate supportsMetricool: true 
+11:26:16.555 Karate supportsYext: true 
+11:26:16.555 Karate supportsGbp: true 
+11:26:16.557 Workspace .env detected: false 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.164">
+      <div class="step-ref passed">164</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (!gbpMockEnabled || !gbpAuthToken) karate.abort()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.165">
+      <div class="step-ref passed">165</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;products&#39;, &#39;mock-gbp-business-error&#39;, &#39;posts&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.166">
+      <div class="step-ref passed">166</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Tenant = tenant</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.167">
+      <div class="step-ref passed">167</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + gbpAuthToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.168">
+      <div class="step-ref passed">168</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">33</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.168">11:26:16.561 request:
+1 &gt; GET http://localhost:4015/api/v1/products/mock-gbp-business-error/posts
+1 &gt; Tenant: adminnewworkspaceuat.beedigital.es
+1 &gt; Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJCZWVHbG9iYWxXZWIiLCJleHAiOjE3NzYzODE5NTksImlzR3Vlc3QiOmZhbHNlLCJwcm9maWxlSWQiOiJwcm9mX21vY2tfYmVlX2FkbWluXzAwMSIsIm1mYVR5cGUiOiJlbWFpbCIsInJvbGVJZCI6InJvbGVfYWRtaW4iLCJ0ZW5hbnRJZCI6ImJlZUVzcGFuYSIsImNvZ25pdG86dXNlcm5hbWUiOiJiZWUtYWRtaW4tdGVzdC11c2VyIiwibWZhUmVxdWlyZWQiOmZhbHNlLCJhY2Nlc3NUb2tlbiI6Im1vY2stbG9jYWwtYWNjZXNzLXRva2VuIiwiaXNNZmFFbmFibGVkIjpmYWxzZSwiZW1haWwiOiJxYS5tb2NrQGJlZWRpZ2l0YWwubG9jYWwiLCJyZWZyZXNoVG9rZW4iOiJtb2NrLWxvY2FsLXJlZnJlc2gtdG9rZW4ifQ.ksTwkbmJSthaUnQ7ge-kgX0taFsnhQLig5_0DVnQ00q16ZiIMSIdGUKFHVP6F7nJzsWZMqPeR2jip3_qYK8dYy2dVxthp7k8aKPqPG-haSGYBm1Hw9HHQWt2gtCn5_BTFXeS5JXB5GPGEjaVh_ofQPzBOiqU766-KOLhf2NfQvuxjKnJN64m3mXX4JCe19f62EJWRjQDfO-ISMkq7qV4aqF_gRrWzt7lg_I7PSYu1-f7qBIPAYeDQw74ZqXbzmte8o7Qf8k_dSkxmtmuQvPvnvU_8QWHwfmHWDQMc_ZnjwVdXJou_co9ZcVrwkhv5ZT5c0_oamy6eej7T-RhJM2jBQ
+1 &gt; Host: localhost:4015
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/22.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+11:26:16.592 response time in milliseconds: 31
+1 &lt; 200
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Tue, 14 Apr 2026 11:26:16 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;httpCode&quot;:0,&quot;httpStatus&quot;:null,&quot;data&quot;:null,&quot;errors&quot;:[{&quot;code&quot;:&quot;ERR011&quot;,&quot;msg&quot;:&quot;Generic error&quot;,&quot;txt&quot;:&quot;Generic error&quot;,&quot;metadata&quot;:null}],&quot;warnings&quot;:[],&quot;metadata&quot;:null}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.169">
+      <div class="step-ref passed">169</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.170">
+      <div class="step-ref passed">170</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data == null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.171">
+      <div class="step-ref passed">171</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.errors == &#39;#[]&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.172">
+      <div class="step-ref passed">172</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def hasExpectedError = response.errors[0].code == &#39;ERR011&#39; || response.errors[0].code == &#39;MOCK_GBP_BUSINESS_ERROR&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.173">
+      <div class="step-ref passed">173</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>assert hasExpectedError</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[10:176]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">extended-mock</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[10:176]</span>
+                <span class="scenario-name">gbp posts exposes an empty mocked payload as an empty list</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>27</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[10:176]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[10:176]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">11:26:16.624 Karate env: local 
+11:26:16.626 Karate baseUrl: http://localhost:4015/api/v1 
+11:26:16.626 Karate tenant: adminnewworkspaceuat.beedigital.es 
+11:26:16.626 Karate tenantId: beeEspana 
+11:26:16.628 Karate tenantProfile: beeEspana 
+11:26:16.628 Karate loginEmail configured: false 
+11:26:16.628 Karate loginPassword configured: false 
+11:26:16.628 Karate loginToken configured: false 
+11:26:16.628 Karate accessCheckToken configured: false 
+11:26:16.628 Karate sessionToken configured: false 
+11:26:16.628 Karate runUserEventDeliveryScenarios: false 
+11:26:16.628 Karate startApiGlobalMock: true 
+11:26:16.628 Karate apiGlobalMockUrl: http://localhost:28088 
+11:26:16.630 Karate metricoolMockEnabled: true 
+11:26:16.630 Karate metricoolServiceId configured: true 
+11:26:16.630 Karate metricoolAuthToken configured: true 
+11:26:16.630 Karate yextMockEnabled: true 
+11:26:16.630 Karate yextServiceId configured: true 
+11:26:16.630 Karate yextAuthToken configured: true 
+11:26:16.630 Karate yextPublisherId: yext 
+11:26:16.630 Karate gbpMockEnabled: true 
+11:26:16.630 Karate gbpProductId configured: true 
+11:26:16.630 Karate gbpAuthToken configured: true 
+11:26:16.630 Karate organizationId: beesible 
+11:26:16.630 Karate brandingTitle configured: true 
+11:26:16.632 Karate cognitoDomain configured: true 
+11:26:16.632 Karate supportsMetricool: true 
+11:26:16.632 Karate supportsYext: true 
+11:26:16.632 Karate supportsGbp: true 
+11:26:16.632 Workspace .env detected: false 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.177">
+      <div class="step-ref passed">177</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (!gbpMockEnabled || !gbpAuthToken) karate.abort()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.178">
+      <div class="step-ref passed">178</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;products&#39;, &#39;mock-gbp-empty&#39;, &#39;posts&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.179">
+      <div class="step-ref passed">179</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Tenant = tenant</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.180">
+      <div class="step-ref passed">180</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + gbpAuthToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.181">
+      <div class="step-ref passed">181</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">25</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.181">11:26:16.638 request:
+1 &gt; GET http://localhost:4015/api/v1/products/mock-gbp-empty/posts
+1 &gt; Tenant: adminnewworkspaceuat.beedigital.es
+1 &gt; Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJCZWVHbG9iYWxXZWIiLCJleHAiOjE3NzYzODE5NTksImlzR3Vlc3QiOmZhbHNlLCJwcm9maWxlSWQiOiJwcm9mX21vY2tfYmVlX2FkbWluXzAwMSIsIm1mYVR5cGUiOiJlbWFpbCIsInJvbGVJZCI6InJvbGVfYWRtaW4iLCJ0ZW5hbnRJZCI6ImJlZUVzcGFuYSIsImNvZ25pdG86dXNlcm5hbWUiOiJiZWUtYWRtaW4tdGVzdC11c2VyIiwibWZhUmVxdWlyZWQiOmZhbHNlLCJhY2Nlc3NUb2tlbiI6Im1vY2stbG9jYWwtYWNjZXNzLXRva2VuIiwiaXNNZmFFbmFibGVkIjpmYWxzZSwiZW1haWwiOiJxYS5tb2NrQGJlZWRpZ2l0YWwubG9jYWwiLCJyZWZyZXNoVG9rZW4iOiJtb2NrLWxvY2FsLXJlZnJlc2gtdG9rZW4ifQ.ksTwkbmJSthaUnQ7ge-kgX0taFsnhQLig5_0DVnQ00q16ZiIMSIdGUKFHVP6F7nJzsWZMqPeR2jip3_qYK8dYy2dVxthp7k8aKPqPG-haSGYBm1Hw9HHQWt2gtCn5_BTFXeS5JXB5GPGEjaVh_ofQPzBOiqU766-KOLhf2NfQvuxjKnJN64m3mXX4JCe19f62EJWRjQDfO-ISMkq7qV4aqF_gRrWzt7lg_I7PSYu1-f7qBIPAYeDQw74ZqXbzmte8o7Qf8k_dSkxmtmuQvPvnvU_8QWHwfmHWDQMc_ZnjwVdXJou_co9ZcVrwkhv5ZT5c0_oamy6eej7T-RhJM2jBQ
+1 &gt; Host: localhost:4015
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/22.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+11:26:16.660 response time in milliseconds: 22
+1 &lt; 200
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Tue, 14 Apr 2026 11:26:16 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;httpCode&quot;:200,&quot;httpStatus&quot;:null,&quot;data&quot;:[],&quot;errors&quot;:[],&quot;warnings&quot;:[],&quot;metadata&quot;:null}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.182">
+      <div class="step-ref passed">182</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.183">
+      <div class="step-ref passed">183</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.httpCode == 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.184">
+      <div class="step-ref passed">184</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.errors == []</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.185">
+      <div class="step-ref passed">185</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data == []</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[11:188]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">extended-mock</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[11:188]</span>
+                <span class="scenario-name">gbp posts does not invent multimedia when the mocked wrapper payload is incomplete</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>46</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[11:188]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[11:188]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">11:26:16.676 Karate env: local 
+11:26:16.677 Karate baseUrl: http://localhost:4015/api/v1 
+11:26:16.677 Karate tenant: adminnewworkspaceuat.beedigital.es 
+11:26:16.677 Karate tenantId: beeEspana 
+11:26:16.677 Karate tenantProfile: beeEspana 
+11:26:16.677 Karate loginEmail configured: false 
+11:26:16.677 Karate loginPassword configured: false 
+11:26:16.677 Karate loginToken configured: false 
+11:26:16.677 Karate accessCheckToken configured: false 
+11:26:16.677 Karate sessionToken configured: false 
+11:26:16.677 Karate runUserEventDeliveryScenarios: false 
+11:26:16.677 Karate startApiGlobalMock: true 
+11:26:16.677 Karate apiGlobalMockUrl: http://localhost:28088 
+11:26:16.678 Karate metricoolMockEnabled: true 
+11:26:16.678 Karate metricoolServiceId configured: true 
+11:26:16.678 Karate metricoolAuthToken configured: true 
+11:26:16.678 Karate yextMockEnabled: true 
+11:26:16.678 Karate yextServiceId configured: true 
+11:26:16.678 Karate yextAuthToken configured: true 
+11:26:16.678 Karate yextPublisherId: yext 
+11:26:16.678 Karate gbpMockEnabled: true 
+11:26:16.678 Karate gbpProductId configured: true 
+11:26:16.678 Karate gbpAuthToken configured: true 
+11:26:16.678 Karate organizationId: beesible 
+11:26:16.678 Karate brandingTitle configured: true 
+11:26:16.678 Karate cognitoDomain configured: true 
+11:26:16.678 Karate supportsMetricool: true 
+11:26:16.678 Karate supportsYext: true 
+11:26:16.679 Karate supportsGbp: true 
+11:26:16.679 Workspace .env detected: false 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.189">
+      <div class="step-ref passed">189</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (!gbpMockEnabled || !gbpAuthToken) karate.abort()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.190">
+      <div class="step-ref passed">190</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;products&#39;, &#39;mock-gbp-incomplete&#39;, &#39;posts&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.191">
+      <div class="step-ref passed">191</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Tenant = tenant</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.192">
+      <div class="step-ref passed">192</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + gbpAuthToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.193">
+      <div class="step-ref passed">193</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">41</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.193">11:26:16.688 request:
+1 &gt; GET http://localhost:4015/api/v1/products/mock-gbp-incomplete/posts
+1 &gt; Tenant: adminnewworkspaceuat.beedigital.es
+1 &gt; Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJCZWVHbG9iYWxXZWIiLCJleHAiOjE3NzYzODE5NTksImlzR3Vlc3QiOmZhbHNlLCJwcm9maWxlSWQiOiJwcm9mX21vY2tfYmVlX2FkbWluXzAwMSIsIm1mYVR5cGUiOiJlbWFpbCIsInJvbGVJZCI6InJvbGVfYWRtaW4iLCJ0ZW5hbnRJZCI6ImJlZUVzcGFuYSIsImNvZ25pdG86dXNlcm5hbWUiOiJiZWUtYWRtaW4tdGVzdC11c2VyIiwibWZhUmVxdWlyZWQiOmZhbHNlLCJhY2Nlc3NUb2tlbiI6Im1vY2stbG9jYWwtYWNjZXNzLXRva2VuIiwiaXNNZmFFbmFibGVkIjpmYWxzZSwiZW1haWwiOiJxYS5tb2NrQGJlZWRpZ2l0YWwubG9jYWwiLCJyZWZyZXNoVG9rZW4iOiJtb2NrLWxvY2FsLXJlZnJlc2gtdG9rZW4ifQ.ksTwkbmJSthaUnQ7ge-kgX0taFsnhQLig5_0DVnQ00q16ZiIMSIdGUKFHVP6F7nJzsWZMqPeR2jip3_qYK8dYy2dVxthp7k8aKPqPG-haSGYBm1Hw9HHQWt2gtCn5_BTFXeS5JXB5GPGEjaVh_ofQPzBOiqU766-KOLhf2NfQvuxjKnJN64m3mXX4JCe19f62EJWRjQDfO-ISMkq7qV4aqF_gRrWzt7lg_I7PSYu1-f7qBIPAYeDQw74ZqXbzmte8o7Qf8k_dSkxmtmuQvPvnvU_8QWHwfmHWDQMc_ZnjwVdXJou_co9ZcVrwkhv5ZT5c0_oamy6eej7T-RhJM2jBQ
+1 &gt; Host: localhost:4015
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/22.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+11:26:16.725 response time in milliseconds: 37
+1 &lt; 200
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Tue, 14 Apr 2026 11:26:16 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;httpCode&quot;:200,&quot;httpStatus&quot;:null,&quot;data&quot;:[{&quot;resourceId&quot;:&quot;locations/123/posts/mock-post-incomplete&quot;,&quot;summary&quot;:&quot;Mock GBP post without medias&quot;,&quot;id&quot;:&quot;mock-post-incomplete&quot;}],&quot;errors&quot;:[],&quot;warnings&quot;:[],&quot;metadata&quot;:null}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.194">
+      <div class="step-ref passed">194</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.195">
+      <div class="step-ref passed">195</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.httpCode == 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.196">
+      <div class="step-ref passed">196</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.errors == []</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.197">
+      <div class="step-ref passed">197</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.warnings == []</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.198">
+      <div class="step-ref passed">198</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data == &#39;#[]&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.199">
+      <div class="step-ref passed">199</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data[0].id == &#39;mock-post-incomplete&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.200">
+      <div class="step-ref passed">200</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data[0].resourceId == &#39;locations/123/posts/mock-post-incomplete&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.201">
+      <div class="step-ref passed">201</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data[0].summary == &#39;Mock GBP post without medias&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.202">
+      <div class="step-ref passed">202</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data[0].multimedia == &#39;#notpresent&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.203">
+      <div class="step-ref passed">203</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data[0].medias == &#39;#notpresent&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

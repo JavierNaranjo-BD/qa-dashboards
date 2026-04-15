@@ -1,0 +1,2603 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"0b0b5964-1e8c-45e3-a7f0-22928a2c29d7",karate_version:"1.5.2",karate_meta:null});
+  }
+});
+</script>
+
+    <title>com.beedigital.global.web.karate.integrations.yext-publishers</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">8</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2026-04-08 10:11:09 AM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:6]"><span>[1:6]</span> <span>yext diffusion rejects requests without the Tenant header</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:11]"><span>[2:11]</span> <span>yext diffusion without Authorization returns a controlled auth failure response</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[8:90]"><span>[8:90]</span> <span>yext connect rejects requests without the Tenant header</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[9:97]"><span>[9:97]</span> <span>yext connect without Authorization returns a controlled auth failure response</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[10:108]"><span>[10:108]</span> <span>yext connect with an invalid Authorization token returns a controlled auth failure response</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[19:253]"><span>[19:253]</span> <span>yext disconnect rejects requests without the Tenant header</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[20:260]"><span>[20:260]</span> <span>yext disconnect without Authorization returns a controlled auth failure response</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[21:271]"><span>[21:271]</span> <span>yext disconnect with an invalid Authorization token returns a controlled auth failure response</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">com/beedigital/global/web/karate/integrations/yext-publishers.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Yext publisher integration entrypoint</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:6]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:6]</span>
+                <span class="scenario-name">yext diffusion rejects requests without the Tenant header</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>42</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:6]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:6]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">10:11:08.672 Karate env: local 
+10:11:08.672 Karate baseUrl: http://localhost:4000/api/v1 
+10:11:08.672 Karate tenant: localhost 
+10:11:08.672 Karate tenantId:  
+10:11:08.672 Karate tenantProfile:  
+10:11:08.672 Karate loginEmail configured: false 
+10:11:08.672 Karate loginPassword configured: false 
+10:11:08.672 Karate loginToken configured: false 
+10:11:08.672 Karate accessCheckToken configured: false 
+10:11:08.672 Karate sessionToken configured: false 
+10:11:08.672 Karate runUserEventDeliveryScenarios: false 
+10:11:08.672 Karate startApiGlobalMock: false 
+10:11:08.672 Karate apiGlobalMockUrl:  
+10:11:08.672 Karate metricoolMockEnabled: false 
+10:11:08.674 Karate metricoolServiceId configured: false 
+10:11:08.674 Karate metricoolAuthToken configured: false 
+10:11:08.674 Karate yextMockEnabled: false 
+10:11:08.674 Karate yextServiceId configured: false 
+10:11:08.674 Karate yextAuthToken configured: false 
+10:11:08.674 Karate yextPublisherId: yext 
+10:11:08.674 Karate gbpMockEnabled: false 
+10:11:08.674 Karate gbpProductId configured: false 
+10:11:08.674 Karate gbpAuthToken configured: false 
+10:11:08.674 Karate organizationId:  
+10:11:08.674 Karate brandingTitle configured: false 
+10:11:08.674 Karate cognitoDomain configured: false 
+10:11:08.674 Karate supportsMetricool: false 
+10:11:08.674 Karate supportsYext: false 
+10:11:08.674 Karate supportsGbp: false 
+10:11:08.674 Workspace .env detected: false 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;service&#39;, &#39;fake-yext-service-id&#39;, &#39;diffusion&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">39</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8">10:11:08.713 request:
+1 &gt; GET http://localhost:4000/api/v1/service/fake-yext-service-id/diffusion
+1 &gt; Host: localhost:4000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/22.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+10:11:08.723 response time in milliseconds: 10
+1 &lt; 400
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: text/html;charset=utf-8
+1 &lt; Content-Language: en
+1 &lt; Content-Length: 435
+1 &lt; Date: Wed, 08 Apr 2026 10:11:08 GMT
+1 &lt; Connection: close
+&lt;!doctype html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;title&gt;HTTP Status 400 – Bad Request&lt;/title&gt;&lt;style type=&quot;text/css&quot;&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 400 – Bad Request&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt;
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:11]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:11]</span>
+                <span class="scenario-name">yext diffusion without Authorization returns a controlled auth failure response</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>21</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:11]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:11]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">10:11:08.732 Karate env: local 
+10:11:08.732 Karate baseUrl: http://localhost:4000/api/v1 
+10:11:08.732 Karate tenant: localhost 
+10:11:08.732 Karate tenantId:  
+10:11:08.732 Karate tenantProfile:  
+10:11:08.732 Karate loginEmail configured: false 
+10:11:08.732 Karate loginPassword configured: false 
+10:11:08.732 Karate loginToken configured: false 
+10:11:08.732 Karate accessCheckToken configured: false 
+10:11:08.732 Karate sessionToken configured: false 
+10:11:08.732 Karate runUserEventDeliveryScenarios: false 
+10:11:08.732 Karate startApiGlobalMock: false 
+10:11:08.732 Karate apiGlobalMockUrl:  
+10:11:08.732 Karate metricoolMockEnabled: false 
+10:11:08.732 Karate metricoolServiceId configured: false 
+10:11:08.732 Karate metricoolAuthToken configured: false 
+10:11:08.732 Karate yextMockEnabled: false 
+10:11:08.732 Karate yextServiceId configured: false 
+10:11:08.732 Karate yextAuthToken configured: false 
+10:11:08.732 Karate yextPublisherId: yext 
+10:11:08.732 Karate gbpMockEnabled: false 
+10:11:08.732 Karate gbpProductId configured: false 
+10:11:08.732 Karate gbpAuthToken configured: false 
+10:11:08.732 Karate organizationId:  
+10:11:08.732 Karate brandingTitle configured: false 
+10:11:08.732 Karate cognitoDomain configured: false 
+10:11:08.732 Karate supportsMetricool: false 
+10:11:08.732 Karate supportsYext: false 
+10:11:08.732 Karate supportsGbp: false 
+10:11:08.732 Workspace .env detected: false 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;service&#39;, &#39;fake-yext-service-id&#39;, &#39;diffusion&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Tenant = tenant</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">17</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.14">10:11:08.737 request:
+1 &gt; GET http://localhost:4000/api/v1/service/fake-yext-service-id/diffusion
+1 &gt; Tenant: localhost
+1 &gt; Host: localhost:4000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/22.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+10:11:08.753 response time in milliseconds: 16
+1 &lt; 200
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Wed, 08 Apr 2026 10:11:08 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;httpCode&quot;:0,&quot;httpStatus&quot;:null,&quot;data&quot;:null,&quot;errors&quot;:[null],&quot;warnings&quot;:[],&quot;metadata&quot;:null}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response contains { errors: &#39;#[]&#39;, warnings: &#39;#[]&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def hasControlledFailure = response.httpCode == 401 || response.httpCode == 403 || response.errors.length &gt; 0 || response.data == null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>assert hasControlledFailure</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[8:90]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[8:90]</span>
+                <span class="scenario-name">yext connect rejects requests without the Tenant header</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>16</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[8:90]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[8:90]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">10:11:08.779 Karate env: local 
+10:11:08.779 Karate baseUrl: http://localhost:4000/api/v1 
+10:11:08.779 Karate tenant: localhost 
+10:11:08.779 Karate tenantId:  
+10:11:08.779 Karate tenantProfile:  
+10:11:08.779 Karate loginEmail configured: false 
+10:11:08.779 Karate loginPassword configured: false 
+10:11:08.779 Karate loginToken configured: false 
+10:11:08.779 Karate accessCheckToken configured: false 
+10:11:08.779 Karate sessionToken configured: false 
+10:11:08.779 Karate runUserEventDeliveryScenarios: false 
+10:11:08.779 Karate startApiGlobalMock: false 
+10:11:08.779 Karate apiGlobalMockUrl:  
+10:11:08.779 Karate metricoolMockEnabled: false 
+10:11:08.779 Karate metricoolServiceId configured: false 
+10:11:08.779 Karate metricoolAuthToken configured: false 
+10:11:08.779 Karate yextMockEnabled: false 
+10:11:08.779 Karate yextServiceId configured: false 
+10:11:08.779 Karate yextAuthToken configured: false 
+10:11:08.779 Karate yextPublisherId: yext 
+10:11:08.779 Karate gbpMockEnabled: false 
+10:11:08.779 Karate gbpProductId configured: false 
+10:11:08.779 Karate gbpAuthToken configured: false 
+10:11:08.779 Karate organizationId:  
+10:11:08.779 Karate brandingTitle configured: false 
+10:11:08.779 Karate cognitoDomain configured: false 
+10:11:08.779 Karate supportsMetricool: false 
+10:11:08.779 Karate supportsYext: false 
+10:11:08.779 Karate supportsGbp: false 
+10:11:08.779 Workspace .env detected: false 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.91">
+      <div class="step-ref passed">91</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;service&#39;, &#39;fake-yext-service-id&#39;, &#39;diffusion&#39;, &#39;connect&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.92">
+      <div class="step-ref passed">92</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param publisher = &#39;yext&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.93">
+      <div class="step-ref passed">93</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.94">
+      <div class="step-ref passed">94</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">15</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.94">10:11:08.783 request:
+1 &gt; POST http://localhost:4000/api/v1/service/fake-yext-service-id/diffusion/connect?publisher=yext
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 2
+1 &gt; Host: localhost:4000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/22.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{}
+
+10:11:08.797 response time in milliseconds: 14
+1 &lt; 400
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: text/html;charset=utf-8
+1 &lt; Content-Language: en
+1 &lt; Content-Length: 435
+1 &lt; Date: Wed, 08 Apr 2026 10:11:08 GMT
+1 &lt; Connection: close
+&lt;!doctype html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;title&gt;HTTP Status 400 – Bad Request&lt;/title&gt;&lt;style type=&quot;text/css&quot;&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 400 – Bad Request&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt;
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.95">
+      <div class="step-ref passed">95</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[9:97]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[9:97]</span>
+                <span class="scenario-name">yext connect without Authorization returns a controlled auth failure response</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>51</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[9:97]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[9:97]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">10:11:08.809 Karate env: local 
+10:11:08.809 Karate baseUrl: http://localhost:4000/api/v1 
+10:11:08.809 Karate tenant: localhost 
+10:11:08.809 Karate tenantId:  
+10:11:08.809 Karate tenantProfile:  
+10:11:08.811 Karate loginEmail configured: false 
+10:11:08.811 Karate loginPassword configured: false 
+10:11:08.811 Karate loginToken configured: false 
+10:11:08.811 Karate accessCheckToken configured: false 
+10:11:08.811 Karate sessionToken configured: false 
+10:11:08.811 Karate runUserEventDeliveryScenarios: false 
+10:11:08.811 Karate startApiGlobalMock: false 
+10:11:08.811 Karate apiGlobalMockUrl:  
+10:11:08.811 Karate metricoolMockEnabled: false 
+10:11:08.811 Karate metricoolServiceId configured: false 
+10:11:08.811 Karate metricoolAuthToken configured: false 
+10:11:08.811 Karate yextMockEnabled: false 
+10:11:08.811 Karate yextServiceId configured: false 
+10:11:08.811 Karate yextAuthToken configured: false 
+10:11:08.811 Karate yextPublisherId: yext 
+10:11:08.811 Karate gbpMockEnabled: false 
+10:11:08.811 Karate gbpProductId configured: false 
+10:11:08.811 Karate gbpAuthToken configured: false 
+10:11:08.811 Karate organizationId:  
+10:11:08.811 Karate brandingTitle configured: false 
+10:11:08.811 Karate cognitoDomain configured: false 
+10:11:08.811 Karate supportsMetricool: false 
+10:11:08.811 Karate supportsYext: false 
+10:11:08.811 Karate supportsGbp: false 
+10:11:08.811 Workspace .env detected: false 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.98">
+      <div class="step-ref passed">98</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;service&#39;, &#39;fake-yext-service-id&#39;, &#39;diffusion&#39;, &#39;connect&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.99">
+      <div class="step-ref passed">99</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Tenant = tenant</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.100">
+      <div class="step-ref passed">100</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param publisher = &#39;yext&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.101">
+      <div class="step-ref passed">101</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.102">
+      <div class="step-ref passed">102</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">50</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.102">10:11:08.821 request:
+1 &gt; POST http://localhost:4000/api/v1/service/fake-yext-service-id/diffusion/connect?publisher=yext
+1 &gt; Tenant: localhost
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 2
+1 &gt; Host: localhost:4000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/22.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{}
+
+10:11:08.867 response time in milliseconds: 44
+1 &lt; 200
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Wed, 08 Apr 2026 10:11:08 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;httpCode&quot;:0,&quot;httpStatus&quot;:null,&quot;data&quot;:null,&quot;errors&quot;:[null],&quot;warnings&quot;:[],&quot;metadata&quot;:null}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.103">
+      <div class="step-ref passed">103</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.104">
+      <div class="step-ref passed">104</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response contains { errors: &#39;#[]&#39;, warnings: &#39;#[]&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.105">
+      <div class="step-ref passed">105</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def hasControlledFailure = response.httpCode == 401 || response.httpCode == 403 || response.errors.length &gt; 0 || response.data == null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.106">
+      <div class="step-ref passed">106</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>assert hasControlledFailure</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[10:108]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[10:108]</span>
+                <span class="scenario-name">yext connect with an invalid Authorization token returns a controlled auth failure response</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>20</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[10:108]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[10:108]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">10:11:08.893 Karate env: local 
+10:11:08.893 Karate baseUrl: http://localhost:4000/api/v1 
+10:11:08.893 Karate tenant: localhost 
+10:11:08.893 Karate tenantId:  
+10:11:08.893 Karate tenantProfile:  
+10:11:08.893 Karate loginEmail configured: false 
+10:11:08.893 Karate loginPassword configured: false 
+10:11:08.893 Karate loginToken configured: false 
+10:11:08.893 Karate accessCheckToken configured: false 
+10:11:08.893 Karate sessionToken configured: false 
+10:11:08.893 Karate runUserEventDeliveryScenarios: false 
+10:11:08.893 Karate startApiGlobalMock: false 
+10:11:08.893 Karate apiGlobalMockUrl:  
+10:11:08.893 Karate metricoolMockEnabled: false 
+10:11:08.893 Karate metricoolServiceId configured: false 
+10:11:08.893 Karate metricoolAuthToken configured: false 
+10:11:08.893 Karate yextMockEnabled: false 
+10:11:08.893 Karate yextServiceId configured: false 
+10:11:08.893 Karate yextAuthToken configured: false 
+10:11:08.893 Karate yextPublisherId: yext 
+10:11:08.893 Karate gbpMockEnabled: false 
+10:11:08.893 Karate gbpProductId configured: false 
+10:11:08.893 Karate gbpAuthToken configured: false 
+10:11:08.893 Karate organizationId:  
+10:11:08.895 Karate brandingTitle configured: false 
+10:11:08.895 Karate cognitoDomain configured: false 
+10:11:08.895 Karate supportsMetricool: false 
+10:11:08.895 Karate supportsYext: false 
+10:11:08.895 Karate supportsGbp: false 
+10:11:08.895 Workspace .env detected: false 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.109">
+      <div class="step-ref passed">109</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;service&#39;, &#39;fake-yext-service-id&#39;, &#39;diffusion&#39;, &#39;connect&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.110">
+      <div class="step-ref passed">110</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Tenant = tenant</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.111">
+      <div class="step-ref passed">111</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer not-a-real-yext-token&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.112">
+      <div class="step-ref passed">112</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param publisher = &#39;yext&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.113">
+      <div class="step-ref passed">113</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.114">
+      <div class="step-ref passed">114</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">19</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.114">10:11:08.897 request:
+1 &gt; POST http://localhost:4000/api/v1/service/fake-yext-service-id/diffusion/connect?publisher=yext
+1 &gt; Tenant: localhost
+1 &gt; Authorization: Bearer not-a-real-yext-token
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 2
+1 &gt; Host: localhost:4000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/22.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{}
+
+10:11:08.915 response time in milliseconds: 18
+1 &lt; 200
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Wed, 08 Apr 2026 10:11:08 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;httpCode&quot;:401,&quot;httpStatus&quot;:&quot;UNAUTHORIZED&quot;,&quot;data&quot;:null,&quot;errors&quot;:[null],&quot;warnings&quot;:[],&quot;metadata&quot;:null}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.115">
+      <div class="step-ref passed">115</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.116">
+      <div class="step-ref passed">116</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response contains { errors: &#39;#[]&#39;, warnings: &#39;#[]&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.117">
+      <div class="step-ref passed">117</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def hasControlledFailure = response.httpCode == 401 || response.httpCode == 403 || response.errors.length &gt; 0 || response.data == null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.118">
+      <div class="step-ref passed">118</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>assert hasControlledFailure</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[19:253]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[19:253]</span>
+                <span class="scenario-name">yext disconnect rejects requests without the Tenant header</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>17</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[19:253]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[19:253]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">10:11:08.952 Karate env: local 
+10:11:08.952 Karate baseUrl: http://localhost:4000/api/v1 
+10:11:08.952 Karate tenant: localhost 
+10:11:08.952 Karate tenantId:  
+10:11:08.954 Karate tenantProfile:  
+10:11:08.954 Karate loginEmail configured: false 
+10:11:08.954 Karate loginPassword configured: false 
+10:11:08.954 Karate loginToken configured: false 
+10:11:08.954 Karate accessCheckToken configured: false 
+10:11:08.954 Karate sessionToken configured: false 
+10:11:08.954 Karate runUserEventDeliveryScenarios: false 
+10:11:08.954 Karate startApiGlobalMock: false 
+10:11:08.954 Karate apiGlobalMockUrl:  
+10:11:08.954 Karate metricoolMockEnabled: false 
+10:11:08.954 Karate metricoolServiceId configured: false 
+10:11:08.954 Karate metricoolAuthToken configured: false 
+10:11:08.954 Karate yextMockEnabled: false 
+10:11:08.954 Karate yextServiceId configured: false 
+10:11:08.954 Karate yextAuthToken configured: false 
+10:11:08.954 Karate yextPublisherId: yext 
+10:11:08.954 Karate gbpMockEnabled: false 
+10:11:08.954 Karate gbpProductId configured: false 
+10:11:08.954 Karate gbpAuthToken configured: false 
+10:11:08.954 Karate organizationId:  
+10:11:08.954 Karate brandingTitle configured: false 
+10:11:08.954 Karate cognitoDomain configured: false 
+10:11:08.954 Karate supportsMetricool: false 
+10:11:08.954 Karate supportsYext: false 
+10:11:08.954 Karate supportsGbp: false 
+10:11:08.954 Workspace .env detected: false 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.254">
+      <div class="step-ref passed">254</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;service&#39;, &#39;fake-yext-service-id&#39;, &#39;diffusion&#39;, &#39;disconnect&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.255">
+      <div class="step-ref passed">255</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param publisher = &#39;yext&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.256">
+      <div class="step-ref passed">256</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.257">
+      <div class="step-ref passed">257</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">16</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.257">10:11:08.968 request:
+1 &gt; POST http://localhost:4000/api/v1/service/fake-yext-service-id/diffusion/disconnect?publisher=yext
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 2
+1 &gt; Host: localhost:4000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/22.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{}
+
+10:11:08.980 response time in milliseconds: 11
+1 &lt; 400
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: text/html;charset=utf-8
+1 &lt; Content-Language: en
+1 &lt; Content-Length: 435
+1 &lt; Date: Wed, 08 Apr 2026 10:11:08 GMT
+1 &lt; Connection: close
+&lt;!doctype html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;title&gt;HTTP Status 400 – Bad Request&lt;/title&gt;&lt;style type=&quot;text/css&quot;&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 400 – Bad Request&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt;
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.258">
+      <div class="step-ref passed">258</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[20:260]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[20:260]</span>
+                <span class="scenario-name">yext disconnect without Authorization returns a controlled auth failure response</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>17</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[20:260]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[20:260]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">10:11:08.996 Karate env: local 
+10:11:08.996 Karate baseUrl: http://localhost:4000/api/v1 
+10:11:08.996 Karate tenant: localhost 
+10:11:08.996 Karate tenantId:  
+10:11:08.996 Karate tenantProfile:  
+10:11:08.996 Karate loginEmail configured: false 
+10:11:08.996 Karate loginPassword configured: false 
+10:11:08.996 Karate loginToken configured: false 
+10:11:08.996 Karate accessCheckToken configured: false 
+10:11:08.996 Karate sessionToken configured: false 
+10:11:08.996 Karate runUserEventDeliveryScenarios: false 
+10:11:08.996 Karate startApiGlobalMock: false 
+10:11:08.996 Karate apiGlobalMockUrl:  
+10:11:08.996 Karate metricoolMockEnabled: false 
+10:11:08.996 Karate metricoolServiceId configured: false 
+10:11:08.996 Karate metricoolAuthToken configured: false 
+10:11:08.996 Karate yextMockEnabled: false 
+10:11:08.996 Karate yextServiceId configured: false 
+10:11:08.996 Karate yextAuthToken configured: false 
+10:11:08.996 Karate yextPublisherId: yext 
+10:11:08.996 Karate gbpMockEnabled: false 
+10:11:08.996 Karate gbpProductId configured: false 
+10:11:08.997 Karate gbpAuthToken configured: false 
+10:11:08.997 Karate organizationId:  
+10:11:08.997 Karate brandingTitle configured: false 
+10:11:08.997 Karate cognitoDomain configured: false 
+10:11:08.997 Karate supportsMetricool: false 
+10:11:08.997 Karate supportsYext: false 
+10:11:08.997 Karate supportsGbp: false 
+10:11:08.997 Workspace .env detected: false 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.261">
+      <div class="step-ref passed">261</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;service&#39;, &#39;fake-yext-service-id&#39;, &#39;diffusion&#39;, &#39;disconnect&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.262">
+      <div class="step-ref passed">262</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Tenant = tenant</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.263">
+      <div class="step-ref passed">263</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param publisher = &#39;yext&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.264">
+      <div class="step-ref passed">264</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.265">
+      <div class="step-ref passed">265</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">16</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.265">10:11:08.999 request:
+1 &gt; POST http://localhost:4000/api/v1/service/fake-yext-service-id/diffusion/disconnect?publisher=yext
+1 &gt; Tenant: localhost
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 2
+1 &gt; Host: localhost:4000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/22.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{}
+
+10:11:09.013 response time in milliseconds: 14
+1 &lt; 200
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Wed, 08 Apr 2026 10:11:09 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;httpCode&quot;:0,&quot;httpStatus&quot;:null,&quot;data&quot;:null,&quot;errors&quot;:[null],&quot;warnings&quot;:[],&quot;metadata&quot;:null}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.266">
+      <div class="step-ref passed">266</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.267">
+      <div class="step-ref passed">267</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response contains { errors: &#39;#[]&#39;, warnings: &#39;#[]&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.268">
+      <div class="step-ref passed">268</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def hasControlledFailure = response.httpCode == 401 || response.httpCode == 403 || response.errors.length &gt; 0 || response.data == null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.269">
+      <div class="step-ref passed">269</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>assert hasControlledFailure</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[21:271]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[21:271]</span>
+                <span class="scenario-name">yext disconnect with an invalid Authorization token returns a controlled auth failure response</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>27</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[21:271]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[21:271]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">10:11:09.021 Karate env: local 
+10:11:09.021 Karate baseUrl: http://localhost:4000/api/v1 
+10:11:09.021 Karate tenant: localhost 
+10:11:09.021 Karate tenantId:  
+10:11:09.021 Karate tenantProfile:  
+10:11:09.021 Karate loginEmail configured: false 
+10:11:09.021 Karate loginPassword configured: false 
+10:11:09.021 Karate loginToken configured: false 
+10:11:09.021 Karate accessCheckToken configured: false 
+10:11:09.021 Karate sessionToken configured: false 
+10:11:09.021 Karate runUserEventDeliveryScenarios: false 
+10:11:09.021 Karate startApiGlobalMock: false 
+10:11:09.023 Karate apiGlobalMockUrl:  
+10:11:09.129 Karate metricoolMockEnabled: false 
+10:11:09.129 Karate metricoolServiceId configured: false 
+10:11:09.129 Karate metricoolAuthToken configured: false 
+10:11:09.129 Karate yextMockEnabled: false 
+10:11:09.129 Karate yextServiceId configured: false 
+10:11:09.129 Karate yextAuthToken configured: false 
+10:11:09.129 Karate yextPublisherId: yext 
+10:11:09.129 Karate gbpMockEnabled: false 
+10:11:09.129 Karate gbpProductId configured: false 
+10:11:09.129 Karate gbpAuthToken configured: false 
+10:11:09.129 Karate organizationId:  
+10:11:09.129 Karate brandingTitle configured: false 
+10:11:09.129 Karate cognitoDomain configured: false 
+10:11:09.129 Karate supportsMetricool: false 
+10:11:09.129 Karate supportsYext: false 
+10:11:09.129 Karate supportsGbp: false 
+10:11:09.129 Workspace .env detected: false 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.272">
+      <div class="step-ref passed">272</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;service&#39;, &#39;fake-yext-service-id&#39;, &#39;diffusion&#39;, &#39;disconnect&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.273">
+      <div class="step-ref passed">273</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Tenant = tenant</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.274">
+      <div class="step-ref passed">274</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer not-a-real-yext-token&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.275">
+      <div class="step-ref passed">275</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param publisher = &#39;yext&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.276">
+      <div class="step-ref passed">276</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.277">
+      <div class="step-ref passed">277</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">26</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.277">10:11:09.133 request:
+1 &gt; POST http://localhost:4000/api/v1/service/fake-yext-service-id/diffusion/disconnect?publisher=yext
+1 &gt; Tenant: localhost
+1 &gt; Authorization: Bearer not-a-real-yext-token
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 2
+1 &gt; Host: localhost:4000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/22.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{}
+
+10:11:09.155 response time in milliseconds: 20
+1 &lt; 200
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Wed, 08 Apr 2026 10:11:09 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;httpCode&quot;:401,&quot;httpStatus&quot;:&quot;UNAUTHORIZED&quot;,&quot;data&quot;:null,&quot;errors&quot;:[null],&quot;warnings&quot;:[],&quot;metadata&quot;:null}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.278">
+      <div class="step-ref passed">278</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.279">
+      <div class="step-ref passed">279</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response contains { errors: &#39;#[]&#39;, warnings: &#39;#[]&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.280">
+      <div class="step-ref passed">280</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def hasControlledFailure = response.httpCode == 401 || response.httpCode == 403 || response.errors.length &gt; 0 || response.data == null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.281">
+      <div class="step-ref passed">281</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>assert hasControlledFailure</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

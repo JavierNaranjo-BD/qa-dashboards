@@ -1,0 +1,5 @@
+# Created at 2026-04-15T08:53:52.196
+Boot Manifest-JAR contains absolute paths in classpath 'D:\a\front-beeglobal\front-beeglobal\api-tests\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
+

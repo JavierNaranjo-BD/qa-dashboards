@@ -1,0 +1,2009 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"f870ebba-64be-4397-b4b1-baf6c379c200",karate_version:"1.5.2",karate_meta:null});
+  }
+});
+</script>
+
+    <title>com.beedigital.global.web.karate.auth.metricool</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">5</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2026-04-08 01:19:56 PM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[11:130]"><span>[11:130]</span> <span>metricool returns a deterministic happy path when API-GLOBAL is mocked</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[12:144]"><span>[12:144]</span> <span>metricool surfaces a mocked downstream unauthorized response in a controlled way</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[13:156]"><span>[13:156]</span> <span>metricool surfaces a mocked downstream unavailable response in a controlled way</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[14:168]"><span>[14:168]</span> <span>metricool exposes a mocked incomplete downstream payload without inventing a loginUrl</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[15:181]"><span>[15:181]</span> <span>metricool surfaces a mocked business error wrapped in a 200 response</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">com/beedigital/global/web/karate/auth/metricool.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Metricool integration entrypoint</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[11:130]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">extended-mock</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[11:130]</span>
+                <span class="scenario-name">metricool returns a deterministic happy path when API-GLOBAL is mocked</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>295</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[11:130]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[11:130]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">13:19:55.933 Karate env: local 
+13:19:55.935 Karate baseUrl: http://localhost:4015/api/v1 
+13:19:55.935 Karate tenant: adminnewworkspaceuat.beedigital.es 
+13:19:55.935 Karate tenantId: beeEspana 
+13:19:55.935 Karate tenantProfile: beeEspana 
+13:19:55.935 Karate loginEmail configured: true 
+13:19:55.935 Karate loginPassword configured: true 
+13:19:55.937 Karate loginToken configured: false 
+13:19:55.938 Karate accessCheckToken configured: false 
+13:19:55.939 Karate sessionToken configured: false 
+13:19:55.941 Karate runUserEventDeliveryScenarios: false 
+13:19:55.941 Karate startApiGlobalMock: true 
+13:19:55.942 Karate apiGlobalMockUrl: http://localhost:28088 
+13:19:55.942 Karate metricoolMockEnabled: true 
+13:19:55.943 Karate metricoolServiceId configured: true 
+13:19:55.944 Karate metricoolAuthToken configured: true 
+13:19:55.944 Karate yextMockEnabled: true 
+13:19:55.944 Karate yextServiceId configured: true 
+13:19:55.945 Karate yextAuthToken configured: true 
+13:19:55.945 Karate yextPublisherId: yext 
+13:19:55.946 Karate gbpMockEnabled: true 
+13:19:55.946 Karate gbpProductId configured: true 
+13:19:55.946 Karate gbpAuthToken configured: true 
+13:19:55.946 Karate organizationId: beesible 
+13:19:55.947 Karate brandingTitle configured: true 
+13:19:55.947 Karate cognitoDomain configured: true 
+13:19:55.948 Karate supportsMetricool: true 
+13:19:55.948 Karate supportsYext: true 
+13:19:55.948 Karate supportsGbp: true 
+13:19:55.957 Workspace .env detected: false 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.131">
+      <div class="step-ref passed">131</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (!metricoolMockEnabled || !metricoolAuthToken || !metricoolServiceId) karate.abort()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.132">
+      <div class="step-ref passed">132</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def expectedLoginUrl = &#39;https://mock.metricool.local/login?tenant=&#39; + tenantId + &#39;&amp;serviceId=&#39; + metricoolServiceId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.133">
+      <div class="step-ref passed">133</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;metricool&#39;, metricoolServiceId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">21</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.134">
+      <div class="step-ref passed">134</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Tenant = tenant</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.135">
+      <div class="step-ref passed">135</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + metricoolAuthToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.136">
+      <div class="step-ref passed">136</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">202</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.136">13:19:56.152 request:
+1 &gt; GET http://localhost:4015/api/v1/metricool/mock-metricool-service
+1 &gt; Tenant: adminnewworkspaceuat.beedigital.es
+1 &gt; Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJCZWVHbG9iYWxXZWIiLCJleHAiOjE3NzU4NzAzODIsImlzR3Vlc3QiOmZhbHNlLCJwcm9maWxlSWQiOiJwcm9mX21vY2tfYmVlX2FkbWluXzAwMSIsIm1mYVR5cGUiOiJlbWFpbCIsInJvbGVJZCI6InJvbGVfYWRtaW4iLCJ0ZW5hbnRJZCI6ImJlZUVzcGFuYSIsImNvZ25pdG86dXNlcm5hbWUiOiJiZWUtYWRtaW4tdGVzdC11c2VyIiwibWZhUmVxdWlyZWQiOmZhbHNlLCJhY2Nlc3NUb2tlbiI6Im1vY2stbG9jYWwtYWNjZXNzLXRva2VuIiwiaXNNZmFFbmFibGVkIjpmYWxzZSwiZW1haWwiOiJwcnVlYmFzcWFiZWVzaWJsZUBnbWFpbC5jb20iLCJyZWZyZXNoVG9rZW4iOiJtb2NrLWxvY2FsLXJlZnJlc2gtdG9rZW4ifQ.Ib5NhdllgNALnlr1bSagOJtGrRZFgHnbuM4t_YyY-j5YB_ygq4sGFHW2J8Wgy4-gTpc3UP4EV0rxxfj9lgem4tEumORzvrI3bNY8QLokFFeK2RfeiQ5c7EDia4avoZK6pwGV4KE301VOc8ufmAycrfGaktMDb0459jqUV3bdCJzKwWu6tDOXb0e6Shpj-bvxcrvZ70ysduPMq5aiuOKw5Ij7SvYgr4riQIEK3NfV6Usztp2DYoybPTe1aT-9DXDGM7QN1MeLvEQ5_hWkDINT1UsFxVb5ibAMHIfE7AMWe24MSmaU09Wvq0d_gvLt7k7NdTQss7uzvKEKzGWGbyHbxg
+1 &gt; Host: localhost:4015
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/22.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+13:19:56.221 response time in milliseconds: 64
+1 &lt; 200
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Wed, 08 Apr 2026 13:19:56 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;httpCode&quot;:200,&quot;httpStatus&quot;:null,&quot;data&quot;:{&quot;loginUrl&quot;:&quot;https://mock.metricool.local/login?tenant=beeEspana&amp;serviceId=mock-metricool-service&quot;},&quot;errors&quot;:[],&quot;warnings&quot;:[],&quot;metadata&quot;:null}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.137">
+      <div class="step-ref passed">137</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.138">
+      <div class="step-ref passed">138</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.httpCode == 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">43</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.139">
+      <div class="step-ref passed">139</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.errors == []</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.140">
+      <div class="step-ref passed">140</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.warnings == []</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.141">
+      <div class="step-ref passed">141</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data == { loginUrl: &#39;#(expectedLoginUrl)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[12:144]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">extended-mock</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[12:144]</span>
+                <span class="scenario-name">metricool surfaces a mocked downstream unauthorized response in a controlled way</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>41</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[12:144]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[12:144]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">13:19:56.392 Karate env: local 
+13:19:56.396 Karate baseUrl: http://localhost:4015/api/v1 
+13:19:56.396 Karate tenant: adminnewworkspaceuat.beedigital.es 
+13:19:56.396 Karate tenantId: beeEspana 
+13:19:56.396 Karate tenantProfile: beeEspana 
+13:19:56.396 Karate loginEmail configured: true 
+13:19:56.396 Karate loginPassword configured: true 
+13:19:56.396 Karate loginToken configured: false 
+13:19:56.396 Karate accessCheckToken configured: false 
+13:19:56.398 Karate sessionToken configured: false 
+13:19:56.398 Karate runUserEventDeliveryScenarios: false 
+13:19:56.398 Karate startApiGlobalMock: true 
+13:19:56.398 Karate apiGlobalMockUrl: http://localhost:28088 
+13:19:56.398 Karate metricoolMockEnabled: true 
+13:19:56.398 Karate metricoolServiceId configured: true 
+13:19:56.400 Karate metricoolAuthToken configured: true 
+13:19:56.400 Karate yextMockEnabled: true 
+13:19:56.400 Karate yextServiceId configured: true 
+13:19:56.400 Karate yextAuthToken configured: true 
+13:19:56.400 Karate yextPublisherId: yext 
+13:19:56.400 Karate gbpMockEnabled: true 
+13:19:56.400 Karate gbpProductId configured: true 
+13:19:56.400 Karate gbpAuthToken configured: true 
+13:19:56.400 Karate organizationId: beesible 
+13:19:56.400 Karate brandingTitle configured: true 
+13:19:56.402 Karate cognitoDomain configured: true 
+13:19:56.402 Karate supportsMetricool: true 
+13:19:56.402 Karate supportsYext: true 
+13:19:56.402 Karate supportsGbp: true 
+13:19:56.402 Workspace .env detected: false 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.145">
+      <div class="step-ref passed">145</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (!metricoolMockEnabled || !metricoolAuthToken) karate.abort()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.146">
+      <div class="step-ref passed">146</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;metricool&#39;, &#39;mock-metricool-unauthorized&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.147">
+      <div class="step-ref passed">147</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Tenant = tenant</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.148">
+      <div class="step-ref passed">148</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + metricoolAuthToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.149">
+      <div class="step-ref passed">149</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">27</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.149">13:19:56.430 request:
+1 &gt; GET http://localhost:4015/api/v1/metricool/mock-metricool-unauthorized
+1 &gt; Tenant: adminnewworkspaceuat.beedigital.es
+1 &gt; Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJCZWVHbG9iYWxXZWIiLCJleHAiOjE3NzU4NzAzODIsImlzR3Vlc3QiOmZhbHNlLCJwcm9maWxlSWQiOiJwcm9mX21vY2tfYmVlX2FkbWluXzAwMSIsIm1mYVR5cGUiOiJlbWFpbCIsInJvbGVJZCI6InJvbGVfYWRtaW4iLCJ0ZW5hbnRJZCI6ImJlZUVzcGFuYSIsImNvZ25pdG86dXNlcm5hbWUiOiJiZWUtYWRtaW4tdGVzdC11c2VyIiwibWZhUmVxdWlyZWQiOmZhbHNlLCJhY2Nlc3NUb2tlbiI6Im1vY2stbG9jYWwtYWNjZXNzLXRva2VuIiwiaXNNZmFFbmFibGVkIjpmYWxzZSwiZW1haWwiOiJwcnVlYmFzcWFiZWVzaWJsZUBnbWFpbC5jb20iLCJyZWZyZXNoVG9rZW4iOiJtb2NrLWxvY2FsLXJlZnJlc2gtdG9rZW4ifQ.Ib5NhdllgNALnlr1bSagOJtGrRZFgHnbuM4t_YyY-j5YB_ygq4sGFHW2J8Wgy4-gTpc3UP4EV0rxxfj9lgem4tEumORzvrI3bNY8QLokFFeK2RfeiQ5c7EDia4avoZK6pwGV4KE301VOc8ufmAycrfGaktMDb0459jqUV3bdCJzKwWu6tDOXb0e6Shpj-bvxcrvZ70ysduPMq5aiuOKw5Ij7SvYgr4riQIEK3NfV6Usztp2DYoybPTe1aT-9DXDGM7QN1MeLvEQ5_hWkDINT1UsFxVb5ibAMHIfE7AMWe24MSmaU09Wvq0d_gvLt7k7NdTQss7uzvKEKzGWGbyHbxg
+1 &gt; Host: localhost:4015
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/22.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+13:19:56.452 response time in milliseconds: 21
+1 &lt; 200
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Wed, 08 Apr 2026 13:19:56 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;httpCode&quot;:401,&quot;httpStatus&quot;:null,&quot;data&quot;:null,&quot;errors&quot;:[{&quot;code&quot;:&quot;MOCK401&quot;,&quot;msg&quot;:&quot;Metricool mock unauthorized&quot;,&quot;txt&quot;:null,&quot;metadata&quot;:null}],&quot;warnings&quot;:[],&quot;metadata&quot;:null}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.150">
+      <div class="step-ref passed">150</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.151">
+      <div class="step-ref passed">151</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.httpCode == 401</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.152">
+      <div class="step-ref passed">152</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data == null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.153">
+      <div class="step-ref passed">153</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.errors[0].code == &#39;MOCK401&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[13:156]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">extended-mock</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[13:156]</span>
+                <span class="scenario-name">metricool surfaces a mocked downstream unavailable response in a controlled way</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>66</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[13:156]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[13:156]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">13:19:56.516 Karate env: local 
+13:19:56.517 Karate baseUrl: http://localhost:4015/api/v1 
+13:19:56.518 Karate tenant: adminnewworkspaceuat.beedigital.es 
+13:19:56.521 Karate tenantId: beeEspana 
+13:19:56.521 Karate tenantProfile: beeEspana 
+13:19:56.521 Karate loginEmail configured: true 
+13:19:56.521 Karate loginPassword configured: true 
+13:19:56.521 Karate loginToken configured: false 
+13:19:56.521 Karate accessCheckToken configured: false 
+13:19:56.521 Karate sessionToken configured: false 
+13:19:56.525 Karate runUserEventDeliveryScenarios: false 
+13:19:56.525 Karate startApiGlobalMock: true 
+13:19:56.525 Karate apiGlobalMockUrl: http://localhost:28088 
+13:19:56.525 Karate metricoolMockEnabled: true 
+13:19:56.525 Karate metricoolServiceId configured: true 
+13:19:56.525 Karate metricoolAuthToken configured: true 
+13:19:56.525 Karate yextMockEnabled: true 
+13:19:56.525 Karate yextServiceId configured: true 
+13:19:56.525 Karate yextAuthToken configured: true 
+13:19:56.525 Karate yextPublisherId: yext 
+13:19:56.525 Karate gbpMockEnabled: true 
+13:19:56.525 Karate gbpProductId configured: true 
+13:19:56.525 Karate gbpAuthToken configured: true 
+13:19:56.527 Karate organizationId: beesible 
+13:19:56.527 Karate brandingTitle configured: true 
+13:19:56.527 Karate cognitoDomain configured: true 
+13:19:56.527 Karate supportsMetricool: true 
+13:19:56.527 Karate supportsYext: true 
+13:19:56.527 Karate supportsGbp: true 
+13:19:56.527 Workspace .env detected: false 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.157">
+      <div class="step-ref passed">157</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (!metricoolMockEnabled || !metricoolAuthToken) karate.abort()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.158">
+      <div class="step-ref passed">158</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;metricool&#39;, &#39;mock-metricool-unavailable&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.159">
+      <div class="step-ref passed">159</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Tenant = tenant</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.160">
+      <div class="step-ref passed">160</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + metricoolAuthToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.161">
+      <div class="step-ref passed">161</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">61</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.161">13:19:56.533 request:
+1 &gt; GET http://localhost:4015/api/v1/metricool/mock-metricool-unavailable
+1 &gt; Tenant: adminnewworkspaceuat.beedigital.es
+1 &gt; Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJCZWVHbG9iYWxXZWIiLCJleHAiOjE3NzU4NzAzODIsImlzR3Vlc3QiOmZhbHNlLCJwcm9maWxlSWQiOiJwcm9mX21vY2tfYmVlX2FkbWluXzAwMSIsIm1mYVR5cGUiOiJlbWFpbCIsInJvbGVJZCI6InJvbGVfYWRtaW4iLCJ0ZW5hbnRJZCI6ImJlZUVzcGFuYSIsImNvZ25pdG86dXNlcm5hbWUiOiJiZWUtYWRtaW4tdGVzdC11c2VyIiwibWZhUmVxdWlyZWQiOmZhbHNlLCJhY2Nlc3NUb2tlbiI6Im1vY2stbG9jYWwtYWNjZXNzLXRva2VuIiwiaXNNZmFFbmFibGVkIjpmYWxzZSwiZW1haWwiOiJwcnVlYmFzcWFiZWVzaWJsZUBnbWFpbC5jb20iLCJyZWZyZXNoVG9rZW4iOiJtb2NrLWxvY2FsLXJlZnJlc2gtdG9rZW4ifQ.Ib5NhdllgNALnlr1bSagOJtGrRZFgHnbuM4t_YyY-j5YB_ygq4sGFHW2J8Wgy4-gTpc3UP4EV0rxxfj9lgem4tEumORzvrI3bNY8QLokFFeK2RfeiQ5c7EDia4avoZK6pwGV4KE301VOc8ufmAycrfGaktMDb0459jqUV3bdCJzKwWu6tDOXb0e6Shpj-bvxcrvZ70ysduPMq5aiuOKw5Ij7SvYgr4riQIEK3NfV6Usztp2DYoybPTe1aT-9DXDGM7QN1MeLvEQ5_hWkDINT1UsFxVb5ibAMHIfE7AMWe24MSmaU09Wvq0d_gvLt7k7NdTQss7uzvKEKzGWGbyHbxg
+1 &gt; Host: localhost:4015
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/22.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+13:19:56.582 response time in milliseconds: 48
+1 &lt; 200
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Wed, 08 Apr 2026 13:19:56 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;httpCode&quot;:503,&quot;httpStatus&quot;:null,&quot;data&quot;:null,&quot;errors&quot;:[{&quot;code&quot;:&quot;MOCK503&quot;,&quot;msg&quot;:&quot;Metricool mock unavailable&quot;,&quot;txt&quot;:null,&quot;metadata&quot;:null}],&quot;warnings&quot;:[],&quot;metadata&quot;:null}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.162">
+      <div class="step-ref passed">162</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.163">
+      <div class="step-ref passed">163</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.httpCode == 503</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.164">
+      <div class="step-ref passed">164</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data == null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.165">
+      <div class="step-ref passed">165</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.errors[0].code == &#39;MOCK503&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[14:168]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">extended-mock</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[14:168]</span>
+                <span class="scenario-name">metricool exposes a mocked incomplete downstream payload without inventing a loginUrl</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>75</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[14:168]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[14:168]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">13:19:56.658 Karate env: local 
+13:19:56.660 Karate baseUrl: http://localhost:4015/api/v1 
+13:19:56.660 Karate tenant: adminnewworkspaceuat.beedigital.es 
+13:19:56.660 Karate tenantId: beeEspana 
+13:19:56.662 Karate tenantProfile: beeEspana 
+13:19:56.662 Karate loginEmail configured: true 
+13:19:56.662 Karate loginPassword configured: true 
+13:19:56.662 Karate loginToken configured: false 
+13:19:56.662 Karate accessCheckToken configured: false 
+13:19:56.664 Karate sessionToken configured: false 
+13:19:56.664 Karate runUserEventDeliveryScenarios: false 
+13:19:56.664 Karate startApiGlobalMock: true 
+13:19:56.664 Karate apiGlobalMockUrl: http://localhost:28088 
+13:19:56.664 Karate metricoolMockEnabled: true 
+13:19:56.664 Karate metricoolServiceId configured: true 
+13:19:56.664 Karate metricoolAuthToken configured: true 
+13:19:56.664 Karate yextMockEnabled: true 
+13:19:56.666 Karate yextServiceId configured: true 
+13:19:56.666 Karate yextAuthToken configured: true 
+13:19:56.666 Karate yextPublisherId: yext 
+13:19:56.667 Karate gbpMockEnabled: true 
+13:19:56.667 Karate gbpProductId configured: true 
+13:19:56.667 Karate gbpAuthToken configured: true 
+13:19:56.667 Karate organizationId: beesible 
+13:19:56.667 Karate brandingTitle configured: true 
+13:19:56.667 Karate cognitoDomain configured: true 
+13:19:56.667 Karate supportsMetricool: true 
+13:19:56.667 Karate supportsYext: true 
+13:19:56.667 Karate supportsGbp: true 
+13:19:56.667 Workspace .env detected: false 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.169">
+      <div class="step-ref passed">169</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (!metricoolMockEnabled || !metricoolAuthToken) karate.abort()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.170">
+      <div class="step-ref passed">170</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;metricool&#39;, &#39;mock-metricool-missing-login-url&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.171">
+      <div class="step-ref passed">171</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Tenant = tenant</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.172">
+      <div class="step-ref passed">172</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + metricoolAuthToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.173">
+      <div class="step-ref passed">173</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">68</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.173">13:19:56.680 request:
+1 &gt; GET http://localhost:4015/api/v1/metricool/mock-metricool-missing-login-url
+1 &gt; Tenant: adminnewworkspaceuat.beedigital.es
+1 &gt; Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJCZWVHbG9iYWxXZWIiLCJleHAiOjE3NzU4NzAzODIsImlzR3Vlc3QiOmZhbHNlLCJwcm9maWxlSWQiOiJwcm9mX21vY2tfYmVlX2FkbWluXzAwMSIsIm1mYVR5cGUiOiJlbWFpbCIsInJvbGVJZCI6InJvbGVfYWRtaW4iLCJ0ZW5hbnRJZCI6ImJlZUVzcGFuYSIsImNvZ25pdG86dXNlcm5hbWUiOiJiZWUtYWRtaW4tdGVzdC11c2VyIiwibWZhUmVxdWlyZWQiOmZhbHNlLCJhY2Nlc3NUb2tlbiI6Im1vY2stbG9jYWwtYWNjZXNzLXRva2VuIiwiaXNNZmFFbmFibGVkIjpmYWxzZSwiZW1haWwiOiJwcnVlYmFzcWFiZWVzaWJsZUBnbWFpbC5jb20iLCJyZWZyZXNoVG9rZW4iOiJtb2NrLWxvY2FsLXJlZnJlc2gtdG9rZW4ifQ.Ib5NhdllgNALnlr1bSagOJtGrRZFgHnbuM4t_YyY-j5YB_ygq4sGFHW2J8Wgy4-gTpc3UP4EV0rxxfj9lgem4tEumORzvrI3bNY8QLokFFeK2RfeiQ5c7EDia4avoZK6pwGV4KE301VOc8ufmAycrfGaktMDb0459jqUV3bdCJzKwWu6tDOXb0e6Shpj-bvxcrvZ70ysduPMq5aiuOKw5Ij7SvYgr4riQIEK3NfV6Usztp2DYoybPTe1aT-9DXDGM7QN1MeLvEQ5_hWkDINT1UsFxVb5ibAMHIfE7AMWe24MSmaU09Wvq0d_gvLt7k7NdTQss7uzvKEKzGWGbyHbxg
+1 &gt; Host: localhost:4015
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/22.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+13:19:56.735 response time in milliseconds: 52
+1 &lt; 200
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Wed, 08 Apr 2026 13:19:56 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;httpCode&quot;:200,&quot;httpStatus&quot;:null,&quot;data&quot;:{},&quot;errors&quot;:[],&quot;warnings&quot;:[{&quot;code&quot;:&quot;MOCK_WARN&quot;,&quot;msg&quot;:&quot;Metricool mock returned an incomplete payload&quot;,&quot;txt&quot;:null,&quot;metadata&quot;:null}],&quot;metadata&quot;:null}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.174">
+      <div class="step-ref passed">174</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.175">
+      <div class="step-ref passed">175</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.httpCode == 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.176">
+      <div class="step-ref passed">176</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.errors == []</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.177">
+      <div class="step-ref passed">177</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.warnings[0].code == &#39;MOCK_WARN&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.178">
+      <div class="step-ref passed">178</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data == {}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[15:181]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">extended-mock</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[15:181]</span>
+                <span class="scenario-name">metricool surfaces a mocked business error wrapped in a 200 response</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>38</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[15:181]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[15:181]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">13:19:56.801 Karate env: local 
+13:19:56.801 Karate baseUrl: http://localhost:4015/api/v1 
+13:19:56.803 Karate tenant: adminnewworkspaceuat.beedigital.es 
+13:19:56.803 Karate tenantId: beeEspana 
+13:19:56.803 Karate tenantProfile: beeEspana 
+13:19:56.803 Karate loginEmail configured: true 
+13:19:56.806 Karate loginPassword configured: true 
+13:19:56.808 Karate loginToken configured: false 
+13:19:56.808 Karate accessCheckToken configured: false 
+13:19:56.808 Karate sessionToken configured: false 
+13:19:56.810 Karate runUserEventDeliveryScenarios: false 
+13:19:56.810 Karate startApiGlobalMock: true 
+13:19:56.810 Karate apiGlobalMockUrl: http://localhost:28088 
+13:19:56.810 Karate metricoolMockEnabled: true 
+13:19:56.810 Karate metricoolServiceId configured: true 
+13:19:56.810 Karate metricoolAuthToken configured: true 
+13:19:56.810 Karate yextMockEnabled: true 
+13:19:56.810 Karate yextServiceId configured: true 
+13:19:56.811 Karate yextAuthToken configured: true 
+13:19:56.811 Karate yextPublisherId: yext 
+13:19:56.812 Karate gbpMockEnabled: true 
+13:19:56.812 Karate gbpProductId configured: true 
+13:19:56.812 Karate gbpAuthToken configured: true 
+13:19:56.812 Karate organizationId: beesible 
+13:19:56.812 Karate brandingTitle configured: true 
+13:19:56.812 Karate cognitoDomain configured: true 
+13:19:56.812 Karate supportsMetricool: true 
+13:19:56.812 Karate supportsYext: true 
+13:19:56.812 Karate supportsGbp: true 
+13:19:56.812 Workspace .env detected: false 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.182">
+      <div class="step-ref passed">182</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (!metricoolMockEnabled || !metricoolAuthToken) karate.abort()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.183">
+      <div class="step-ref passed">183</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;metricool&#39;, &#39;mock-metricool-business-error&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.184">
+      <div class="step-ref passed">184</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Tenant = tenant</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.185">
+      <div class="step-ref passed">185</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + metricoolAuthToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.186">
+      <div class="step-ref passed">186</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">30</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.186">13:19:56.827 request:
+1 &gt; GET http://localhost:4015/api/v1/metricool/mock-metricool-business-error
+1 &gt; Tenant: adminnewworkspaceuat.beedigital.es
+1 &gt; Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJCZWVHbG9iYWxXZWIiLCJleHAiOjE3NzU4NzAzODIsImlzR3Vlc3QiOmZhbHNlLCJwcm9maWxlSWQiOiJwcm9mX21vY2tfYmVlX2FkbWluXzAwMSIsIm1mYVR5cGUiOiJlbWFpbCIsInJvbGVJZCI6InJvbGVfYWRtaW4iLCJ0ZW5hbnRJZCI6ImJlZUVzcGFuYSIsImNvZ25pdG86dXNlcm5hbWUiOiJiZWUtYWRtaW4tdGVzdC11c2VyIiwibWZhUmVxdWlyZWQiOmZhbHNlLCJhY2Nlc3NUb2tlbiI6Im1vY2stbG9jYWwtYWNjZXNzLXRva2VuIiwiaXNNZmFFbmFibGVkIjpmYWxzZSwiZW1haWwiOiJwcnVlYmFzcWFiZWVzaWJsZUBnbWFpbC5jb20iLCJyZWZyZXNoVG9rZW4iOiJtb2NrLWxvY2FsLXJlZnJlc2gtdG9rZW4ifQ.Ib5NhdllgNALnlr1bSagOJtGrRZFgHnbuM4t_YyY-j5YB_ygq4sGFHW2J8Wgy4-gTpc3UP4EV0rxxfj9lgem4tEumORzvrI3bNY8QLokFFeK2RfeiQ5c7EDia4avoZK6pwGV4KE301VOc8ufmAycrfGaktMDb0459jqUV3bdCJzKwWu6tDOXb0e6Shpj-bvxcrvZ70ysduPMq5aiuOKw5Ij7SvYgr4riQIEK3NfV6Usztp2DYoybPTe1aT-9DXDGM7QN1MeLvEQ5_hWkDINT1UsFxVb5ibAMHIfE7AMWe24MSmaU09Wvq0d_gvLt7k7NdTQss7uzvKEKzGWGbyHbxg
+1 &gt; Host: localhost:4015
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/22.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+13:19:56.852 response time in milliseconds: 25
+1 &lt; 200
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Wed, 08 Apr 2026 13:19:56 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;httpCode&quot;:200,&quot;httpStatus&quot;:null,&quot;data&quot;:null,&quot;errors&quot;:[{&quot;code&quot;:&quot;MOCK_BUSINESS_ERROR&quot;,&quot;msg&quot;:&quot;Metricool mock business error&quot;,&quot;txt&quot;:null,&quot;metadata&quot;:null}],&quot;warnings&quot;:[],&quot;metadata&quot;:null}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.187">
+      <div class="step-ref passed">187</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.188">
+      <div class="step-ref passed">188</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.httpCode == 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.189">
+      <div class="step-ref passed">189</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data == null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.190">
+      <div class="step-ref passed">190</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.errors[0].code == &#39;MOCK_BUSINESS_ERROR&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.191">
+      <div class="step-ref passed">191</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.warnings == []</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
