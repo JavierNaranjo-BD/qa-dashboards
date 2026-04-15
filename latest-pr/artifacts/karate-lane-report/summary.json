@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-15T08:09:23.063Z",
+  "generatedAt": "2026-04-15T08:16:17.160Z",
   "reportRoot": "D:\\a\\front-beeglobal\\front-beeglobal\\api-tests\\target\\karate-lane-report",
   "lanes": [
     {
@@ -12,7 +12,7 @@
         "failures": 13,
         "errors": 0,
         "skipped": 0,
-        "durationSeconds": 10.68,
+        "durationSeconds": 9.911,
         "status": "red"
       },
       "note": ""
