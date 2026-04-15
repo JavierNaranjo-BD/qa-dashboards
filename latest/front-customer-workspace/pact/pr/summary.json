@@ -1,0 +1,21 @@
+{
+  "service": "front-customer-workspace",
+  "environment": "qa",
+  "channel": "pr",
+  "lane": "pact",
+  "status": "passed",
+  "testsRun": 8,
+  "failures": 0,
+  "errors": 0,
+  "durationSeconds": 520.24,
+  "generatedAt": "2026-04-15T12:31:15.211Z",
+  "runUrl": "https://github.com/BeeDigital-AI/front-customer-workspace/actions/runs/24454118348",
+  "branch": "864/merge",
+  "commitSha": "2c80292a6460613da727ccfce6d00bcea7f76a3e",
+  "artifacts": [
+    {
+      "name": "playwright-pact-results",
+      "path": "e2e/playwright/pact/results.json"
+    }
+  ]
+}
