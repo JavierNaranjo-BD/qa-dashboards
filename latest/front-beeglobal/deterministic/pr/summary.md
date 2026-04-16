@@ -1,19 +1,19 @@
 # front-beeglobal · deterministic · pr
 ## Estado
-- **Status**: failed
+- **Status**: passed
 - **Environment**: qa
-- **Generated at**: 2026-04-15T16:13:29.112Z
+- **Generated at**: 2026-04-16T06:48:32.961Z
 ## Resultado
 - **Tests run**: 15
-- **Failures**: 1
+- **Failures**: 0
 - **Errors**: 0
-- **Duration (s)**: 69.11
+- **Duration (s)**: 23.23
 ## Trazabilidad
-- **Run URL**: https://github.com/BeeDigital-AI/front-beeglobal/actions/runs/24464904440
+- **Run URL**: https://github.com/BeeDigital-AI/front-beeglobal/actions/runs/24496142639
 
 - **Branch**: feature/qa-5-tenant-aware-mock-server
 
-- **Commit SHA**: 68887a02e9a6f49882775b9f9056dafb8bf80c10
+- **Commit SHA**: 33c3c59672c31e3a9e33891aa55f7147013cd98a
 
 ## Artefactos publicados
 - [Summary JSON](./summary.json)
