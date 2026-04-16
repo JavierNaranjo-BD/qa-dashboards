@@ -1,22 +1,14 @@
-# front-beeglobal · deterministic · pr
-## Estado
-- **Status**: passed
-- **Environment**: qa
-- **Generated at**: 2026-04-16T11:33:46.029Z
-## Resultado
-- **Tests run**: 15
-- **Failures**: 0
-- **Errors**: 0
-- **Duration (s)**: 37
-## Trazabilidad
-- **Run URL**: https://github.com/BeeDigital-AI/front-beeglobal/actions/runs/24507699564
+# Karate Lane Report
 
-- **Branch**: feature/qa-5-tenant-aware-mock-server
+Generated at: 2026-04-16T12:28:10.119Z
 
-- **Commit SHA**: 38bbee79b7d682761af383909167760f0e796102
+## Karate Extended Deterministic
+- Status: red
+- Exit code: 1
+- Tests: 15
+- Failures: 13
+- Errors: 0
+- Skipped: 0
+- Duration: 9.183s
+- Artifacts: runs/deterministic
 
-## Artefactos publicados
-- [Summary JSON](./summary.json)
-- [karate-lane-report-summary-md](./summary.md)
-- [karate-lane-report-index](./index.html)
-- [karate-lane-report-runs](./runs/)
