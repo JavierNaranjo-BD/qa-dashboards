@@ -1,0 +1,28 @@
+{
+  "service": "qa-global-smart-tests-hub",
+  "environment": "dev",
+  "channel": "manual",
+  "lane": "playwright-e2e-manual-full",
+  "suite": "full",
+  "executionTarget": "local",
+  "status": "failed",
+  "testsRun": 0,
+  "failures": 0,
+  "errors": 0,
+  "durationSeconds": 0,
+  "generatedAt": "2026-04-16T16:03:44.070Z",
+  "runUrl": "https://github.com/BeeDigital-AI/qa-global-smart-tests-hub/actions/runs/24520517026",
+  "branch": "feature/qa-41-dashboard-metricas",
+  "commitSha": "f329ad7c78804f5aa5f05ba5110913fb976121da",
+  "allowFailure": true,
+  "artifacts": [
+    {
+      "name": "playwright-report",
+      "path": "artifacts/playwright-report"
+    },
+    {
+      "name": "test-results",
+      "path": "artifacts/test-results"
+    }
+  ]
+}
