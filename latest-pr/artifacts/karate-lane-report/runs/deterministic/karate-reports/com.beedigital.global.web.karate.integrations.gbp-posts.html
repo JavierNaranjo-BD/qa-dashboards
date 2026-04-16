@@ -21,7 +21,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   capture_pageview:false,
   api_transport:'sendBeacon',
   loaded: function(posthog) { 
-    posthog.capture("report_feature",{distinct_id:"d4c7ed14-c85c-455a-bee7-d4b1cc5fae84",karate_version:"1.5.2",karate_meta:null});
+    posthog.capture("report_feature",{distinct_id:"47cb39ac-7f74-4c5d-87dd-b53fa39a42d7",karate_version:"1.5.2",karate_meta:null});
   }
 });
 </script>
@@ -38,8 +38,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">2</div>
-      <div id="nav-fail" class="bg-danger">0</div>
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">2</div>
     </div>
   </div>
   <div id="nav-env">
@@ -49,15 +49,15 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2026-04-16 09:49:30 AM</div>
+    <div>2026-04-16 09:57:06 AM</div>
   </div>
 </div>
 
         <div class="nav-container">
-          <div class="nav-item passed">
+          <div class="nav-item failed">
             <a href="#[6:58]"><span>[6:58]</span> <span>gbp posts returns a deterministic local happy path</span></a>
           </div>
-          <div class="nav-item passed">
+          <div class="nav-item failed">
             <a href="#[7:78]"><span>[7:78]</span> <span>gbp posts supports a deterministic local create update delete lifecycle</span></a>
           </div>
         </div>
@@ -83,8 +83,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>108</span>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>138</span>
             </div>
           </div>
           <div class="step-row">
@@ -116,36 +116,36 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4">09:49:30.092 Karate env: local 
-09:49:30.092 Karate baseUrl: http://localhost:4000/api/v1 
-09:49:30.093 Karate tenant: adminnewworkspaceuat.beedigital.es 
-09:49:30.093 Karate tenantId: beeEspana 
-09:49:30.093 Karate tenantProfile: beeEspana 
-09:49:30.093 Karate loginEmail configured: true 
-09:49:30.093 Karate loginPassword configured: true 
-09:49:30.093 Karate loginToken configured: false 
-09:49:30.093 Karate accessCheckToken configured: false 
-09:49:30.093 Karate sessionToken configured: false 
-09:49:30.093 Karate runUserEventDeliveryScenarios: false 
-09:49:30.093 Karate startApiGlobalMock: false 
-09:49:30.093 Karate apiGlobalMockUrl:  
-09:49:30.093 Karate metricoolMockEnabled: false 
-09:49:30.093 Karate metricoolServiceId configured: true 
-09:49:30.093 Karate metricoolAuthToken configured: false 
-09:49:30.093 Karate yextMockEnabled: false 
-09:49:30.093 Karate yextServiceId configured: true 
-09:49:30.093 Karate yextAuthToken configured: false 
-09:49:30.093 Karate yextPublisherId: yext 
-09:49:30.093 Karate gbpMockEnabled: false 
-09:49:30.093 Karate gbpProductId configured: true 
-09:49:30.093 Karate gbpAuthToken configured: false 
-09:49:30.093 Karate organizationId: beesible 
-09:49:30.093 Karate brandingTitle configured: true 
-09:49:30.093 Karate cognitoDomain configured: true 
-09:49:30.093 Karate supportsMetricool: true 
-09:49:30.093 Karate supportsYext: true 
-09:49:30.093 Karate supportsGbp: true 
-09:49:30.093 Workspace .env detected: false 
+  <div class="preformatted" data-parent="0.4">09:57:05.987 Karate env: local 
+09:57:05.987 Karate baseUrl: http://localhost:4000/api/v1 
+09:57:05.987 Karate tenant: adminnewworkspaceuat.beedigital.es 
+09:57:05.987 Karate tenantId: beeEspana 
+09:57:05.987 Karate tenantProfile: beeEspana 
+09:57:05.987 Karate loginEmail configured: true 
+09:57:05.987 Karate loginPassword configured: true 
+09:57:05.987 Karate loginToken configured: false 
+09:57:05.987 Karate accessCheckToken configured: false 
+09:57:05.987 Karate sessionToken configured: false 
+09:57:05.987 Karate runUserEventDeliveryScenarios: false 
+09:57:05.987 Karate startApiGlobalMock: false 
+09:57:05.987 Karate apiGlobalMockUrl:  
+09:57:05.987 Karate metricoolMockEnabled: false 
+09:57:05.987 Karate metricoolServiceId configured: true 
+09:57:05.987 Karate metricoolAuthToken configured: false 
+09:57:05.987 Karate yextMockEnabled: false 
+09:57:05.990 Karate yextServiceId configured: true 
+09:57:05.990 Karate yextAuthToken configured: false 
+09:57:05.990 Karate yextPublisherId: yext 
+09:57:05.990 Karate gbpMockEnabled: false 
+09:57:05.990 Karate gbpProductId configured: true 
+09:57:05.990 Karate gbpAuthToken configured: false 
+09:57:05.990 Karate organizationId: beesible 
+09:57:05.990 Karate brandingTitle configured: true 
+09:57:05.990 Karate cognitoDomain configured: true 
+09:57:05.990 Karate supportsMetricool: true 
+09:57:05.990 Karate supportsYext: true 
+09:57:05.990 Karate supportsGbp: true 
+09:57:05.990 Workspace .env detected: false 
 </div>   
 
   
@@ -193,7 +193,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def auth = callonce read(&#39;../auth/local-auth-context.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">48</div>
+    <div class="time-cell passed">99</div>
   </div>
 
    
@@ -202,7 +202,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.60">09:49:30.141 &lt;&lt; lock released, cached callonce: read(&#39;../auth/local-auth-context.feature&#39;)
+  <div class="preformatted" data-parent="0.60">09:57:06.091 &lt;&lt; lock released, cached callonce: read(&#39;../auth/local-auth-context.feature&#39;)
 </div>   
 
   <div>
@@ -213,7 +213,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <div class="step-indent"></div>
         <div class="step-cell passed">com.beedigital.global.web.karate.integrations.auth.local-auth-context</div>
       </div>
-      <div class="time-cell passed">43</div>
+      <div class="time-cell passed">33</div>
     </div>
     <div>
       <div><div>
@@ -229,7 +229,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>if (!loginEmail || !loginPassword) karate.abort()</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -238,7 +238,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.60.0.call.0.4">09:49:30.095 &gt;&gt; lock acquired, begin callonce: read(&#39;../auth/local-auth-context.feature&#39;)
+  <div class="preformatted" data-parent="0.60.0.call.0.4">09:57:06.050 &gt;&gt; lock acquired, begin callonce: read(&#39;../auth/local-auth-context.feature&#39;)
 </div>   
 
   
@@ -314,7 +314,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def loginRequest = { email: &#39;#(loginEmail)&#39;, password: &#39;#(loginPassword)&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -398,7 +398,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">43</div>
+    <div class="time-cell passed">27</div>
   </div>
 
    
@@ -407,7 +407,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.60.0.call.0.10">09:49:30.101 request:
+  <div class="preformatted" data-parent="0.60.0.call.0.10">09:57:06.063 request:
 1 &gt; POST http://localhost:4000/api/v1/auth/login
 1 &gt; Tenant: adminnewworkspaceuat.beedigital.es
 1 &gt; Content-Type: application/json; charset=UTF-8
@@ -418,7 +418,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;email&quot;:&quot;pruebasqabeesible@gmail.com&quot;,&quot;password&quot;:&quot;h1[{6z0=q8*f73V&quot;}
 
-09:49:30.141 response time in milliseconds: 40
+09:57:06.089 response time in milliseconds: 24
 1 &lt; 200
 1 &lt; Vary: Origin
 1 &lt; Vary: Access-Control-Request-Method
@@ -431,10 +431,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Thu, 16 Apr 2026 09:49:30 GMT
+1 &lt; Date: Thu, 16 Apr 2026 09:57:06 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-{&quot;httpCode&quot;:200,&quot;httpStatus&quot;:null,&quot;data&quot;:{&quot;jwt&quot;:&quot;eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJCZWVHbG9iYWxXZWIiLCJleHAiOjE3NzY1NDg5NzAsImlzR3Vlc3QiOmZhbHNlLCJwcm9maWxlSWQiOiJwcm9mX21vY2tfYmVlX2FkbWluXzAwMSIsIm1mYVR5cGUiOiJlbWFpbCIsInJvbGVJZCI6InJvbGVfYWRtaW4iLCJ0ZW5hbnRJZCI6ImJlZUVzcGFuYSIsImNvZ25pdG86dXNlcm5hbWUiOiJiZWUtYWRtaW4tdGVzdC11c2VyIiwibWZhUmVxdWlyZWQiOmZhbHNlLCJhY2Nlc3NUb2tlbiI6Im1vY2stbG9jYWwtYWNjZXNzLXRva2VuIiwiaXNNZmFFbmFibGVkIjpmYWxzZSwiZW1haWwiOiJwcnVlYmFzcWFiZWVzaWJsZUBnbWFpbC5jb20iLCJyZWZyZXNoVG9rZW4iOiJtb2NrLWxvY2FsLXJlZnJlc2gtdG9rZW4ifQ.nBqSYP3ZxngCkAtB1l_eeJNPXAcCwH1cnwiUyDhYA6jt-_FZkFGWuBD-Bc6LdVgIx1xPJhusKgrTCbA1zuiNBvVLWlQxShyQhOZJ8NC2ES6BtoAfaRqZtvmcGdfrOkJA392lcsdseVaN2cMhugrjtbQ4QhHeCrcCUA3f6PoYSA1bEYiup9hPpQVcmcxA2t2nVRU6lqn5_oG89km6j0Vb0r36qhgKzjYMikcz_J9Ko7BP_BBaK1l8vtJgEM7P1yoF3Yh-tbOWnBWtmosBSwwzC4oAJVzlF5mJB95DcQqIsoR6bBe3IIADT3tkXlQU4vD_OXxJn9Hsqd0I5V05mh0K6w&quot;},&quot;errors&quot;:[],&quot;warnings&quot;:[],&quot;metadata&quot;:null}
+{&quot;httpCode&quot;:200,&quot;httpStatus&quot;:null,&quot;data&quot;:{&quot;error&quot;:&quot;${USER_PASSWORD_INCORRECT}&quot;},&quot;errors&quot;:[],&quot;warnings&quot;:[],&quot;metadata&quot;:null}
 
 </div>   
 
@@ -511,7 +511,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def loginData = loginResponse.data || {}</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -539,7 +539,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def jwt = loginData.jwt</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -656,7 +656,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + auth.jwt</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -684,7 +684,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">48</div>
+    <div class="time-cell passed">25</div>
   </div>
 
    
@@ -693,17 +693,17 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.65">09:49:30.147 request:
+  <div class="preformatted" data-parent="0.65">09:57:06.095 request:
 1 &gt; GET http://localhost:4000/api/v1/products/mock-gbp-product-id/posts
 1 &gt; Tenant: adminnewworkspaceuat.beedigital.es
-1 &gt; Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJCZWVHbG9iYWxXZWIiLCJleHAiOjE3NzY1NDg5NzAsImlzR3Vlc3QiOmZhbHNlLCJwcm9maWxlSWQiOiJwcm9mX21vY2tfYmVlX2FkbWluXzAwMSIsIm1mYVR5cGUiOiJlbWFpbCIsInJvbGVJZCI6InJvbGVfYWRtaW4iLCJ0ZW5hbnRJZCI6ImJlZUVzcGFuYSIsImNvZ25pdG86dXNlcm5hbWUiOiJiZWUtYWRtaW4tdGVzdC11c2VyIiwibWZhUmVxdWlyZWQiOmZhbHNlLCJhY2Nlc3NUb2tlbiI6Im1vY2stbG9jYWwtYWNjZXNzLXRva2VuIiwiaXNNZmFFbmFibGVkIjpmYWxzZSwiZW1haWwiOiJwcnVlYmFzcWFiZWVzaWJsZUBnbWFpbC5jb20iLCJyZWZyZXNoVG9rZW4iOiJtb2NrLWxvY2FsLXJlZnJlc2gtdG9rZW4ifQ.nBqSYP3ZxngCkAtB1l_eeJNPXAcCwH1cnwiUyDhYA6jt-_FZkFGWuBD-Bc6LdVgIx1xPJhusKgrTCbA1zuiNBvVLWlQxShyQhOZJ8NC2ES6BtoAfaRqZtvmcGdfrOkJA392lcsdseVaN2cMhugrjtbQ4QhHeCrcCUA3f6PoYSA1bEYiup9hPpQVcmcxA2t2nVRU6lqn5_oG89km6j0Vb0r36qhgKzjYMikcz_J9Ko7BP_BBaK1l8vtJgEM7P1yoF3Yh-tbOWnBWtmosBSwwzC4oAJVzlF5mJB95DcQqIsoR6bBe3IIADT3tkXlQU4vD_OXxJn9Hsqd0I5V05mh0K6w
+1 &gt; Authorization: Bearer null
 1 &gt; Host: localhost:4000
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/22.0.2)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-09:49:30.191 response time in milliseconds: 44
+09:57:06.116 response time in milliseconds: 21
 1 &lt; 200
 1 &lt; Vary: Origin
 1 &lt; Vary: Access-Control-Request-Method
@@ -716,10 +716,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Thu, 16 Apr 2026 09:49:30 GMT
+1 &lt; Date: Thu, 16 Apr 2026 09:57:06 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-{&quot;httpCode&quot;:200,&quot;httpStatus&quot;:null,&quot;data&quot;:[{&quot;resourceId&quot;:&quot;locations/123/posts/mock-post-1&quot;,&quot;summary&quot;:&quot;Mock GBP seeded post&quot;,&quot;topicType&quot;:&quot;STANDARD&quot;,&quot;callToAction&quot;:null,&quot;event&quot;:null,&quot;multimedia&quot;:[{&quot;sourceUrl&quot;:&quot;https://mock-assets.example.com/media/post-1.jpg&quot;,&quot;type&quot;:&quot;PHOTO&quot;}],&quot;id&quot;:&quot;mock-post-1&quot;}],&quot;errors&quot;:[],&quot;warnings&quot;:[],&quot;metadata&quot;:null}
+{&quot;httpCode&quot;:401,&quot;httpStatus&quot;:&quot;UNAUTHORIZED&quot;,&quot;data&quot;:null,&quot;errors&quot;:[{&quot;code&quot;:&quot;ERR006&quot;,&quot;msg&quot;:&quot;Unauthorized&quot;,&quot;txt&quot;:&quot;Unauthorized&quot;,&quot;metadata&quot;:null}],&quot;warnings&quot;:[],&quot;metadata&quot;:null}
 
 </div>   
 
@@ -762,13 +762,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.67">
-      <div class="step-ref passed">67</div>
+      <div class="step-ref failed">67</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>And</span>&nbsp;<span>match response.httpCode == 200</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell failed">12</div>
   </div>
 
    
@@ -777,7 +777,15 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
+  <div class="preformatted" data-parent="0.67">09:57:06.130 classpath:com/beedigital/global/web/karate/integrations/gbp-posts.feature:67
+And match response.httpCode == 200
+match failed: EQUALS
+  $ | not equal (NUMBER:NUMBER)
+  401
+  200
+
+classpath:com/beedigital/global/web/karate/integrations/gbp-posts.feature:67
+</div>   
 
   
 
@@ -790,13 +798,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.68">
-      <div class="step-ref passed">68</div>
+      <div class="step-ref skipped">68</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>match response.errors == []</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -818,13 +826,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.69">
-      <div class="step-ref passed">69</div>
+      <div class="step-ref skipped">69</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>match response.warnings == []</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -846,13 +854,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.70">
-      <div class="step-ref passed">70</div>
+      <div class="step-ref skipped">70</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>match response.data == &#39;#[]&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -874,13 +882,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.71">
-      <div class="step-ref passed">71</div>
+      <div class="step-ref skipped">71</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>match response.data[0].id == &#39;mock-post-1&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -902,13 +910,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.72">
-      <div class="step-ref passed">72</div>
+      <div class="step-ref skipped">72</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>match response.data[0].resourceId == &#39;locations/123/posts/mock-post-1&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -930,13 +938,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.73">
-      <div class="step-ref passed">73</div>
+      <div class="step-ref skipped">73</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>match response.data[0].multimedia == &#39;#[]&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -958,13 +966,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.74">
-      <div class="step-ref passed">74</div>
+      <div class="step-ref skipped">74</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>assert response.data[0].multimedia[0].sourceUrl.indexOf(&#39;post-1.jpg&#39;) != -1</span>
       </div>
     </div>
-    <div class="time-cell passed">6</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -986,13 +994,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.75">
-      <div class="step-ref passed">75</div>
+      <div class="step-ref skipped">75</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>match response.data[0].medias == &#39;#notpresent&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1020,8 +1028,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>315</span>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>211</span>
             </div>
           </div>
           <div class="step-row">
@@ -1053,36 +1061,36 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4">09:49:30.218 Karate env: local 
-09:49:30.218 Karate baseUrl: http://localhost:4000/api/v1 
-09:49:30.218 Karate tenant: adminnewworkspaceuat.beedigital.es 
-09:49:30.218 Karate tenantId: beeEspana 
-09:49:30.218 Karate tenantProfile: beeEspana 
-09:49:30.218 Karate loginEmail configured: true 
-09:49:30.218 Karate loginPassword configured: true 
-09:49:30.218 Karate loginToken configured: false 
-09:49:30.218 Karate accessCheckToken configured: false 
-09:49:30.218 Karate sessionToken configured: false 
-09:49:30.218 Karate runUserEventDeliveryScenarios: false 
-09:49:30.218 Karate startApiGlobalMock: false 
-09:49:30.220 Karate apiGlobalMockUrl:  
-09:49:30.220 Karate metricoolMockEnabled: false 
-09:49:30.220 Karate metricoolServiceId configured: true 
-09:49:30.220 Karate metricoolAuthToken configured: false 
-09:49:30.220 Karate yextMockEnabled: false 
-09:49:30.220 Karate yextServiceId configured: true 
-09:49:30.220 Karate yextAuthToken configured: false 
-09:49:30.220 Karate yextPublisherId: yext 
-09:49:30.220 Karate gbpMockEnabled: false 
-09:49:30.220 Karate gbpProductId configured: true 
-09:49:30.222 Karate gbpAuthToken configured: false 
-09:49:30.222 Karate organizationId: beesible 
-09:49:30.222 Karate brandingTitle configured: true 
-09:49:30.222 Karate cognitoDomain configured: true 
-09:49:30.222 Karate supportsMetricool: true 
-09:49:30.222 Karate supportsYext: true 
-09:49:30.222 Karate supportsGbp: true 
-09:49:30.222 Workspace .env detected: false 
+  <div class="preformatted" data-parent="0.4">09:57:06.185 Karate env: local 
+09:57:06.185 Karate baseUrl: http://localhost:4000/api/v1 
+09:57:06.185 Karate tenant: adminnewworkspaceuat.beedigital.es 
+09:57:06.185 Karate tenantId: beeEspana 
+09:57:06.185 Karate tenantProfile: beeEspana 
+09:57:06.185 Karate loginEmail configured: true 
+09:57:06.185 Karate loginPassword configured: true 
+09:57:06.186 Karate loginToken configured: false 
+09:57:06.187 Karate accessCheckToken configured: false 
+09:57:06.187 Karate sessionToken configured: false 
+09:57:06.187 Karate runUserEventDeliveryScenarios: false 
+09:57:06.187 Karate startApiGlobalMock: false 
+09:57:06.187 Karate apiGlobalMockUrl:  
+09:57:06.187 Karate metricoolMockEnabled: false 
+09:57:06.187 Karate metricoolServiceId configured: true 
+09:57:06.187 Karate metricoolAuthToken configured: false 
+09:57:06.187 Karate yextMockEnabled: false 
+09:57:06.187 Karate yextServiceId configured: true 
+09:57:06.187 Karate yextAuthToken configured: false 
+09:57:06.187 Karate yextPublisherId: yext 
+09:57:06.188 Karate gbpMockEnabled: false 
+09:57:06.189 Karate gbpProductId configured: true 
+09:57:06.189 Karate gbpAuthToken configured: false 
+09:57:06.189 Karate organizationId: beesible 
+09:57:06.189 Karate brandingTitle configured: true 
+09:57:06.189 Karate cognitoDomain configured: true 
+09:57:06.189 Karate supportsMetricool: true 
+09:57:06.190 Karate supportsYext: true 
+09:57:06.190 Karate supportsGbp: true 
+09:57:06.191 Workspace .env detected: false 
 </div>   
 
   
@@ -1130,7 +1138,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def auth = callonce read(&#39;../auth/local-auth-context.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1186,7 +1194,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def productId = gbpProductId</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1270,7 +1278,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def postDate = OffsetDateTime.now().plusHours(2).withNano(0).toString()</span>
       </div>
     </div>
-    <div class="time-cell passed">10</div>
+    <div class="time-cell passed">11</div>
   </div>
 
    
@@ -1298,7 +1306,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def createRequest = { summary: &#39;Deterministic GBP post created locally&#39;, postDate: &#39;#(postDate)&#39;, callToAction: { actionType: &#39;_NONE&#39;, url: &#39;https://www.example.com&#39; }, multimedia: [ { url: &#39;#(mediaPathPrefix + createdMediaName)&#39; } ] }</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1326,7 +1334,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def createPayload = karate.toJson(createRequest)</span>
       </div>
     </div>
-    <div class="time-cell passed">5</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -1438,7 +1446,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>multipart field data = createPayload</span>
       </div>
     </div>
-    <div class="time-cell passed">75</div>
+    <div class="time-cell passed">146</div>
   </div>
 
    
@@ -1466,7 +1474,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">49</div>
+    <div class="time-cell passed">48</div>
   </div>
 
    
@@ -1475,11 +1483,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.92">09:49:30.326 request:
+  <div class="preformatted" data-parent="0.92">09:57:06.363 request:
 1 &gt; POST http://localhost:4000/api/v1/products/mock-gbp-product-id/posts
 1 &gt; Tenant: adminnewworkspaceuat.beedigital.es
-1 &gt; Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJCZWVHbG9iYWxXZWIiLCJleHAiOjE3NzY1NDg5NzAsImlzR3Vlc3QiOmZhbHNlLCJwcm9maWxlSWQiOiJwcm9mX21vY2tfYmVlX2FkbWluXzAwMSIsIm1mYVR5cGUiOiJlbWFpbCIsInJvbGVJZCI6InJvbGVfYWRtaW4iLCJ0ZW5hbnRJZCI6ImJlZUVzcGFuYSIsImNvZ25pdG86dXNlcm5hbWUiOiJiZWUtYWRtaW4tdGVzdC11c2VyIiwibWZhUmVxdWlyZWQiOmZhbHNlLCJhY2Nlc3NUb2tlbiI6Im1vY2stbG9jYWwtYWNjZXNzLXRva2VuIiwiaXNNZmFFbmFibGVkIjpmYWxzZSwiZW1haWwiOiJwcnVlYmFzcWFiZWVzaWJsZUBnbWFpbC5jb20iLCJyZWZyZXNoVG9rZW4iOiJtb2NrLWxvY2FsLXJlZnJlc2gtdG9rZW4ifQ.nBqSYP3ZxngCkAtB1l_eeJNPXAcCwH1cnwiUyDhYA6jt-_FZkFGWuBD-Bc6LdVgIx1xPJhusKgrTCbA1zuiNBvVLWlQxShyQhOZJ8NC2ES6BtoAfaRqZtvmcGdfrOkJA392lcsdseVaN2cMhugrjtbQ4QhHeCrcCUA3f6PoYSA1bEYiup9hPpQVcmcxA2t2nVRU6lqn5_oG89km6j0Vb0r36qhgKzjYMikcz_J9Ko7BP_BBaK1l8vtJgEM7P1yoF3Yh-tbOWnBWtmosBSwwzC4oAJVzlF5mJB95DcQqIsoR6bBe3IIADT3tkXlQU4vD_OXxJn9Hsqd0I5V05mh0K6w
-1 &gt; Content-Type: multipart/form-data; boundary=e74b3eee069e193f
+1 &gt; Authorization: Bearer null
+1 &gt; Content-Type: multipart/form-data; boundary=75de3a5af141abc1
 1 &gt; Content-Length: 382
 1 &gt; Host: localhost:4000
 1 &gt; Connection: Keep-Alive
@@ -1493,7 +1501,7 @@ Completed: true
 IsInMemory: true
 
 
-09:49:30.368 response time in milliseconds: 40
+09:57:06.401 response time in milliseconds: 38
 1 &lt; 200
 1 &lt; Vary: Origin
 1 &lt; Vary: Access-Control-Request-Method
@@ -1506,10 +1514,10 @@ IsInMemory: true
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Thu, 16 Apr 2026 09:49:30 GMT
+1 &lt; Date: Thu, 16 Apr 2026 09:57:06 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-{&quot;httpCode&quot;:200,&quot;httpStatus&quot;:&quot;OK&quot;,&quot;data&quot;:{&quot;resourceId&quot;:&quot;locations/123/posts/mock-post-2&quot;,&quot;summary&quot;:&quot;Deterministic GBP post created locally&quot;,&quot;topicType&quot;:&quot;STANDARD&quot;,&quot;callToAction&quot;:null,&quot;event&quot;:null,&quot;multimedia&quot;:[{&quot;sourceUrl&quot;:&quot;https://mock-assets.example.com/bee-espana/static/place/created-post.png&quot;,&quot;type&quot;:&quot;PHOTO&quot;}],&quot;id&quot;:&quot;mock-post-2&quot;},&quot;errors&quot;:[],&quot;warnings&quot;:[],&quot;metadata&quot;:null}
+{&quot;httpCode&quot;:401,&quot;httpStatus&quot;:&quot;UNAUTHORIZED&quot;,&quot;data&quot;:null,&quot;errors&quot;:[{&quot;code&quot;:&quot;ERR006&quot;,&quot;msg&quot;:&quot;Unauthorized&quot;,&quot;txt&quot;:&quot;Unauthorized&quot;,&quot;metadata&quot;:null}],&quot;warnings&quot;:[],&quot;metadata&quot;:null}
 
 </div>   
 
@@ -1552,13 +1560,13 @@ IsInMemory: true
 
   <div class="step-row">
     <div class="step-container" id="0.94">
-      <div class="step-ref passed">94</div>
+      <div class="step-ref failed">94</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>And</span>&nbsp;<span>match response.httpCode == 200</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell failed">1</div>
   </div>
 
    
@@ -1567,7 +1575,15 @@ IsInMemory: true
 
   
 
-     
+  <div class="preformatted" data-parent="0.94">09:57:06.405 classpath:com/beedigital/global/web/karate/integrations/gbp-posts.feature:94
+And match response.httpCode == 200
+match failed: EQUALS
+  $ | not equal (NUMBER:NUMBER)
+  401
+  200
+
+classpath:com/beedigital/global/web/karate/integrations/gbp-posts.feature:94
+</div>   
 
   
 
@@ -1580,13 +1596,13 @@ IsInMemory: true
 
   <div class="step-row">
     <div class="step-container" id="0.95">
-      <div class="step-ref passed">95</div>
+      <div class="step-ref skipped">95</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>match response.errors == []</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1608,13 +1624,13 @@ IsInMemory: true
 
   <div class="step-row">
     <div class="step-container" id="0.96">
-      <div class="step-ref passed">96</div>
+      <div class="step-ref skipped">96</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>match response.data.id == &#39;#string&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1636,13 +1652,13 @@ IsInMemory: true
 
   <div class="step-row">
     <div class="step-container" id="0.97">
-      <div class="step-ref passed">97</div>
+      <div class="step-ref skipped">97</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>match response.data.summary == &#39;Deterministic GBP post created locally&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1664,13 +1680,13 @@ IsInMemory: true
 
   <div class="step-row">
     <div class="step-container" id="0.98">
-      <div class="step-ref passed">98</div>
+      <div class="step-ref skipped">98</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>match response.data.multimedia == &#39;#[]&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1692,13 +1708,13 @@ IsInMemory: true
 
   <div class="step-row">
     <div class="step-container" id="0.99">
-      <div class="step-ref passed">99</div>
+      <div class="step-ref skipped">99</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def createdPostId = response.data.id</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1720,13 +1736,13 @@ IsInMemory: true
 
   <div class="step-row">
     <div class="step-container" id="0.100">
-      <div class="step-ref passed">100</div>
+      <div class="step-ref skipped">100</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>assert response.data.multimedia[0].sourceUrl.indexOf(createdMediaName) != -1</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1748,13 +1764,13 @@ IsInMemory: true
 
   <div class="step-row">
     <div class="step-container" id="0.102">
-      <div class="step-ref passed">102</div>
+      <div class="step-ref skipped">102</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>Given</span>&nbsp;<span>path &#39;products&#39;, productId, &#39;posts&#39;, createdPostId</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1776,13 +1792,13 @@ IsInMemory: true
 
   <div class="step-row">
     <div class="step-container" id="0.103">
-      <div class="step-ref passed">103</div>
+      <div class="step-ref skipped">103</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>header Tenant = tenant</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1804,13 +1820,13 @@ IsInMemory: true
 
   <div class="step-row">
     <div class="step-container" id="0.104">
-      <div class="step-ref passed">104</div>
+      <div class="step-ref skipped">104</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + auth.jwt</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1832,13 +1848,13 @@ IsInMemory: true
 
   <div class="step-row">
     <div class="step-container" id="0.105">
-      <div class="step-ref passed">105</div>
+      <div class="step-ref skipped">105</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">38</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1847,35 +1863,7 @@ IsInMemory: true
 
   
 
-  <div class="preformatted" data-parent="0.105">09:49:30.377 request:
-2 &gt; GET http://localhost:4000/api/v1/products/mock-gbp-product-id/posts/mock-post-2
-2 &gt; Tenant: adminnewworkspaceuat.beedigital.es
-2 &gt; Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJCZWVHbG9iYWxXZWIiLCJleHAiOjE3NzY1NDg5NzAsImlzR3Vlc3QiOmZhbHNlLCJwcm9maWxlSWQiOiJwcm9mX21vY2tfYmVlX2FkbWluXzAwMSIsIm1mYVR5cGUiOiJlbWFpbCIsInJvbGVJZCI6InJvbGVfYWRtaW4iLCJ0ZW5hbnRJZCI6ImJlZUVzcGFuYSIsImNvZ25pdG86dXNlcm5hbWUiOiJiZWUtYWRtaW4tdGVzdC11c2VyIiwibWZhUmVxdWlyZWQiOmZhbHNlLCJhY2Nlc3NUb2tlbiI6Im1vY2stbG9jYWwtYWNjZXNzLXRva2VuIiwiaXNNZmFFbmFibGVkIjpmYWxzZSwiZW1haWwiOiJwcnVlYmFzcWFiZWVzaWJsZUBnbWFpbC5jb20iLCJyZWZyZXNoVG9rZW4iOiJtb2NrLWxvY2FsLXJlZnJlc2gtdG9rZW4ifQ.nBqSYP3ZxngCkAtB1l_eeJNPXAcCwH1cnwiUyDhYA6jt-_FZkFGWuBD-Bc6LdVgIx1xPJhusKgrTCbA1zuiNBvVLWlQxShyQhOZJ8NC2ES6BtoAfaRqZtvmcGdfrOkJA392lcsdseVaN2cMhugrjtbQ4QhHeCrcCUA3f6PoYSA1bEYiup9hPpQVcmcxA2t2nVRU6lqn5_oG89km6j0Vb0r36qhgKzjYMikcz_J9Ko7BP_BBaK1l8vtJgEM7P1yoF3Yh-tbOWnBWtmosBSwwzC4oAJVzlF5mJB95DcQqIsoR6bBe3IIADT3tkXlQU4vD_OXxJn9Hsqd0I5V05mh0K6w
-2 &gt; Host: localhost:4000
-2 &gt; Connection: Keep-Alive
-2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/22.0.2)
-2 &gt; Accept-Encoding: gzip,deflate
-
-
-09:49:30.413 response time in milliseconds: 35
-2 &lt; 200
-2 &lt; Vary: Origin
-2 &lt; Vary: Access-Control-Request-Method
-2 &lt; Vary: Access-Control-Request-Headers
-2 &lt; X-Content-Type-Options: nosniff
-2 &lt; X-XSS-Protection: 0
-2 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-2 &lt; Pragma: no-cache
-2 &lt; Expires: 0
-2 &lt; X-Frame-Options: DENY
-2 &lt; Content-Type: application/json
-2 &lt; Transfer-Encoding: chunked
-2 &lt; Date: Thu, 16 Apr 2026 09:49:30 GMT
-2 &lt; Keep-Alive: timeout=60
-2 &lt; Connection: keep-alive
-{&quot;httpCode&quot;:200,&quot;httpStatus&quot;:null,&quot;data&quot;:{&quot;resourceId&quot;:&quot;locations/123/posts/mock-post-2&quot;,&quot;summary&quot;:&quot;Deterministic GBP post created locally&quot;,&quot;topicType&quot;:&quot;STANDARD&quot;,&quot;callToAction&quot;:null,&quot;event&quot;:null,&quot;multimedia&quot;:[{&quot;sourceUrl&quot;:&quot;https://mock-assets.example.com/bee-espana/static/place/created-post.png&quot;,&quot;type&quot;:&quot;PHOTO&quot;}],&quot;id&quot;:&quot;mock-post-2&quot;},&quot;errors&quot;:[],&quot;warnings&quot;:[],&quot;metadata&quot;:null}
-
-</div>   
+     
 
   
 
@@ -1888,13 +1876,13 @@ IsInMemory: true
 
   <div class="step-row">
     <div class="step-container" id="0.106">
-      <div class="step-ref passed">106</div>
+      <div class="step-ref skipped">106</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1916,13 +1904,13 @@ IsInMemory: true
 
   <div class="step-row">
     <div class="step-container" id="0.107">
-      <div class="step-ref passed">107</div>
+      <div class="step-ref skipped">107</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>match response.httpCode == 200</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1944,13 +1932,13 @@ IsInMemory: true
 
   <div class="step-row">
     <div class="step-container" id="0.108">
-      <div class="step-ref passed">108</div>
+      <div class="step-ref skipped">108</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>match response.errors == []</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1972,13 +1960,13 @@ IsInMemory: true
 
   <div class="step-row">
     <div class="step-container" id="0.109">
-      <div class="step-ref passed">109</div>
+      <div class="step-ref skipped">109</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>match response.data.id == createdPostId</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -2000,13 +1988,13 @@ IsInMemory: true
 
   <div class="step-row">
     <div class="step-container" id="0.110">
-      <div class="step-ref passed">110</div>
+      <div class="step-ref skipped">110</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>match response.data.summary == &#39;Deterministic GBP post created locally&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -2028,13 +2016,13 @@ IsInMemory: true
 
   <div class="step-row">
     <div class="step-container" id="0.111">
-      <div class="step-ref passed">111</div>
+      <div class="step-ref skipped">111</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>assert response.data.multimedia[0].sourceUrl.indexOf(createdMediaName) != -1</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -2056,13 +2044,13 @@ IsInMemory: true
 
   <div class="step-row">
     <div class="step-container" id="0.113">
-      <div class="step-ref passed">113</div>
+      <div class="step-ref skipped">113</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def updateRequest = { summary: &#39;Deterministic GBP post updated locally&#39;, postDate: &#39;#(postDate)&#39;, callToAction: { actionType: &#39;_NONE&#39;, url: &#39;https://www.example.com/updated&#39; }, multimedia: [ { url: &#39;#(mediaPathPrefix + updatedMediaName)&#39; } ] }</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -2084,13 +2072,13 @@ IsInMemory: true
 
   <div class="step-row">
     <div class="step-container" id="0.114">
-      <div class="step-ref passed">114</div>
+      <div class="step-ref skipped">114</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def updatePayload = karate.toJson(updateRequest)</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -2112,13 +2100,13 @@ IsInMemory: true
 
   <div class="step-row">
     <div class="step-container" id="0.115">
-      <div class="step-ref passed">115</div>
+      <div class="step-ref skipped">115</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>Given</span>&nbsp;<span>path &#39;products&#39;, productId, &#39;posts&#39;, createdPostId</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -2140,13 +2128,13 @@ IsInMemory: true
 
   <div class="step-row">
     <div class="step-container" id="0.116">
-      <div class="step-ref passed">116</div>
+      <div class="step-ref skipped">116</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>header Tenant = tenant</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -2168,13 +2156,13 @@ IsInMemory: true
 
   <div class="step-row">
     <div class="step-container" id="0.117">
-      <div class="step-ref passed">117</div>
+      <div class="step-ref skipped">117</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + auth.jwt</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -2196,13 +2184,13 @@ IsInMemory: true
 
   <div class="step-row">
     <div class="step-container" id="0.118">
-      <div class="step-ref passed">118</div>
+      <div class="step-ref skipped">118</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>multipart field data = updatePayload</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -2224,13 +2212,13 @@ IsInMemory: true
 
   <div class="step-row">
     <div class="step-container" id="0.119">
-      <div class="step-ref passed">119</div>
+      <div class="step-ref skipped">119</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>When</span>&nbsp;<span>method put</span>
       </div>
     </div>
-    <div class="time-cell passed">51</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -2239,43 +2227,7 @@ IsInMemory: true
 
   
 
-  <div class="preformatted" data-parent="0.119">09:49:30.421 request:
-3 &gt; PUT http://localhost:4000/api/v1/products/mock-gbp-product-id/posts/mock-post-2
-3 &gt; Tenant: adminnewworkspaceuat.beedigital.es
-3 &gt; Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJCZWVHbG9iYWxXZWIiLCJleHAiOjE3NzY1NDg5NzAsImlzR3Vlc3QiOmZhbHNlLCJwcm9maWxlSWQiOiJwcm9mX21vY2tfYmVlX2FkbWluXzAwMSIsIm1mYVR5cGUiOiJlbWFpbCIsInJvbGVJZCI6InJvbGVfYWRtaW4iLCJ0ZW5hbnRJZCI6ImJlZUVzcGFuYSIsImNvZ25pdG86dXNlcm5hbWUiOiJiZWUtYWRtaW4tdGVzdC11c2VyIiwibWZhUmVxdWlyZWQiOmZhbHNlLCJhY2Nlc3NUb2tlbiI6Im1vY2stbG9jYWwtYWNjZXNzLXRva2VuIiwiaXNNZmFFbmFibGVkIjpmYWxzZSwiZW1haWwiOiJwcnVlYmFzcWFiZWVzaWJsZUBnbWFpbC5jb20iLCJyZWZyZXNoVG9rZW4iOiJtb2NrLWxvY2FsLXJlZnJlc2gtdG9rZW4ifQ.nBqSYP3ZxngCkAtB1l_eeJNPXAcCwH1cnwiUyDhYA6jt-_FZkFGWuBD-Bc6LdVgIx1xPJhusKgrTCbA1zuiNBvVLWlQxShyQhOZJ8NC2ES6BtoAfaRqZtvmcGdfrOkJA392lcsdseVaN2cMhugrjtbQ4QhHeCrcCUA3f6PoYSA1bEYiup9hPpQVcmcxA2t2nVRU6lqn5_oG89km6j0Vb0r36qhgKzjYMikcz_J9Ko7BP_BBaK1l8vtJgEM7P1yoF3Yh-tbOWnBWtmosBSwwzC4oAJVzlF5mJB95DcQqIsoR6bBe3IIADT3tkXlQU4vD_OXxJn9Hsqd0I5V05mh0K6w
-3 &gt; Content-Type: multipart/form-data; boundary=62959186c4619873
-3 &gt; Content-Length: 390
-3 &gt; Host: localhost:4000
-3 &gt; Connection: Keep-Alive
-3 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/22.0.2)
-3 &gt; Accept-Encoding: gzip,deflate
-
-content-disposition: form-data; name=&quot;data&quot;; filename=&quot;&quot;
-content-type: application/json; charset=UTF-8
-content-length: 231
-Completed: true
-IsInMemory: true
-
-
-09:49:30.469 response time in milliseconds: 46
-3 &lt; 200
-3 &lt; Vary: Origin
-3 &lt; Vary: Access-Control-Request-Method
-3 &lt; Vary: Access-Control-Request-Headers
-3 &lt; X-Content-Type-Options: nosniff
-3 &lt; X-XSS-Protection: 0
-3 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-3 &lt; Pragma: no-cache
-3 &lt; Expires: 0
-3 &lt; X-Frame-Options: DENY
-3 &lt; Content-Type: application/json
-3 &lt; Transfer-Encoding: chunked
-3 &lt; Date: Thu, 16 Apr 2026 09:49:30 GMT
-3 &lt; Keep-Alive: timeout=60
-3 &lt; Connection: keep-alive
-{&quot;httpCode&quot;:200,&quot;httpStatus&quot;:&quot;OK&quot;,&quot;data&quot;:{&quot;resourceId&quot;:&quot;locations/123/posts/mock-post-2&quot;,&quot;summary&quot;:&quot;Deterministic GBP post updated locally&quot;,&quot;topicType&quot;:&quot;STANDARD&quot;,&quot;callToAction&quot;:null,&quot;event&quot;:null,&quot;multimedia&quot;:[{&quot;sourceUrl&quot;:&quot;https://mock-assets.example.com/bee-espana/static/place/updated-post.png&quot;,&quot;type&quot;:&quot;PHOTO&quot;}],&quot;id&quot;:&quot;mock-post-2&quot;},&quot;errors&quot;:[],&quot;warnings&quot;:[],&quot;metadata&quot;:null}
-
-</div>   
+     
 
   
 
@@ -2288,13 +2240,13 @@ IsInMemory: true
 
   <div class="step-row">
     <div class="step-container" id="0.120">
-      <div class="step-ref passed">120</div>
+      <div class="step-ref skipped">120</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -2316,13 +2268,13 @@ IsInMemory: true
 
   <div class="step-row">
     <div class="step-container" id="0.121">
-      <div class="step-ref passed">121</div>
+      <div class="step-ref skipped">121</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>match response.httpCode == 200</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -2344,13 +2296,13 @@ IsInMemory: true
 
   <div class="step-row">
     <div class="step-container" id="0.122">
-      <div class="step-ref passed">122</div>
+      <div class="step-ref skipped">122</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>match response.errors == []</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -2372,13 +2324,13 @@ IsInMemory: true
 
   <div class="step-row">
     <div class="step-container" id="0.123">
-      <div class="step-ref passed">123</div>
+      <div class="step-ref skipped">123</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>match response.data.id == createdPostId</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -2400,13 +2352,13 @@ IsInMemory: true
 
   <div class="step-row">
     <div class="step-container" id="0.124">
-      <div class="step-ref passed">124</div>
+      <div class="step-ref skipped">124</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>match response.data.summary == &#39;Deterministic GBP post updated locally&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -2428,13 +2380,13 @@ IsInMemory: true
 
   <div class="step-row">
     <div class="step-container" id="0.125">
-      <div class="step-ref passed">125</div>
+      <div class="step-ref skipped">125</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>assert response.data.multimedia[0].sourceUrl.indexOf(updatedMediaName) != -1</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -2456,13 +2408,13 @@ IsInMemory: true
 
   <div class="step-row">
     <div class="step-container" id="0.127">
-      <div class="step-ref passed">127</div>
+      <div class="step-ref skipped">127</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>Given</span>&nbsp;<span>path &#39;products&#39;, productId, &#39;posts&#39;, createdPostId</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -2484,13 +2436,13 @@ IsInMemory: true
 
   <div class="step-row">
     <div class="step-container" id="0.128">
-      <div class="step-ref passed">128</div>
+      <div class="step-ref skipped">128</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>header Tenant = tenant</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -2512,13 +2464,13 @@ IsInMemory: true
 
   <div class="step-row">
     <div class="step-container" id="0.129">
-      <div class="step-ref passed">129</div>
+      <div class="step-ref skipped">129</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + auth.jwt</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -2540,13 +2492,13 @@ IsInMemory: true
 
   <div class="step-row">
     <div class="step-container" id="0.130">
-      <div class="step-ref passed">130</div>
+      <div class="step-ref skipped">130</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">35</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -2555,35 +2507,7 @@ IsInMemory: true
 
   
 
-  <div class="preformatted" data-parent="0.130">09:49:30.473 request:
-4 &gt; GET http://localhost:4000/api/v1/products/mock-gbp-product-id/posts/mock-post-2
-4 &gt; Tenant: adminnewworkspaceuat.beedigital.es
-4 &gt; Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJCZWVHbG9iYWxXZWIiLCJleHAiOjE3NzY1NDg5NzAsImlzR3Vlc3QiOmZhbHNlLCJwcm9maWxlSWQiOiJwcm9mX21vY2tfYmVlX2FkbWluXzAwMSIsIm1mYVR5cGUiOiJlbWFpbCIsInJvbGVJZCI6InJvbGVfYWRtaW4iLCJ0ZW5hbnRJZCI6ImJlZUVzcGFuYSIsImNvZ25pdG86dXNlcm5hbWUiOiJiZWUtYWRtaW4tdGVzdC11c2VyIiwibWZhUmVxdWlyZWQiOmZhbHNlLCJhY2Nlc3NUb2tlbiI6Im1vY2stbG9jYWwtYWNjZXNzLXRva2VuIiwiaXNNZmFFbmFibGVkIjpmYWxzZSwiZW1haWwiOiJwcnVlYmFzcWFiZWVzaWJsZUBnbWFpbC5jb20iLCJyZWZyZXNoVG9rZW4iOiJtb2NrLWxvY2FsLXJlZnJlc2gtdG9rZW4ifQ.nBqSYP3ZxngCkAtB1l_eeJNPXAcCwH1cnwiUyDhYA6jt-_FZkFGWuBD-Bc6LdVgIx1xPJhusKgrTCbA1zuiNBvVLWlQxShyQhOZJ8NC2ES6BtoAfaRqZtvmcGdfrOkJA392lcsdseVaN2cMhugrjtbQ4QhHeCrcCUA3f6PoYSA1bEYiup9hPpQVcmcxA2t2nVRU6lqn5_oG89km6j0Vb0r36qhgKzjYMikcz_J9Ko7BP_BBaK1l8vtJgEM7P1yoF3Yh-tbOWnBWtmosBSwwzC4oAJVzlF5mJB95DcQqIsoR6bBe3IIADT3tkXlQU4vD_OXxJn9Hsqd0I5V05mh0K6w
-4 &gt; Host: localhost:4000
-4 &gt; Connection: Keep-Alive
-4 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/22.0.2)
-4 &gt; Accept-Encoding: gzip,deflate
-
-
-09:49:30.507 response time in milliseconds: 34
-4 &lt; 200
-4 &lt; Vary: Origin
-4 &lt; Vary: Access-Control-Request-Method
-4 &lt; Vary: Access-Control-Request-Headers
-4 &lt; X-Content-Type-Options: nosniff
-4 &lt; X-XSS-Protection: 0
-4 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-4 &lt; Pragma: no-cache
-4 &lt; Expires: 0
-4 &lt; X-Frame-Options: DENY
-4 &lt; Content-Type: application/json
-4 &lt; Transfer-Encoding: chunked
-4 &lt; Date: Thu, 16 Apr 2026 09:49:30 GMT
-4 &lt; Keep-Alive: timeout=60
-4 &lt; Connection: keep-alive
-{&quot;httpCode&quot;:200,&quot;httpStatus&quot;:null,&quot;data&quot;:{&quot;resourceId&quot;:&quot;locations/123/posts/mock-post-2&quot;,&quot;summary&quot;:&quot;Deterministic GBP post updated locally&quot;,&quot;topicType&quot;:&quot;STANDARD&quot;,&quot;callToAction&quot;:null,&quot;event&quot;:null,&quot;multimedia&quot;:[{&quot;sourceUrl&quot;:&quot;https://mock-assets.example.com/bee-espana/static/place/updated-post.png&quot;,&quot;type&quot;:&quot;PHOTO&quot;}],&quot;id&quot;:&quot;mock-post-2&quot;},&quot;errors&quot;:[],&quot;warnings&quot;:[],&quot;metadata&quot;:null}
-
-</div>   
+     
 
   
 
@@ -2596,13 +2520,13 @@ IsInMemory: true
 
   <div class="step-row">
     <div class="step-container" id="0.131">
-      <div class="step-ref passed">131</div>
+      <div class="step-ref skipped">131</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -2624,13 +2548,13 @@ IsInMemory: true
 
   <div class="step-row">
     <div class="step-container" id="0.132">
-      <div class="step-ref passed">132</div>
+      <div class="step-ref skipped">132</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>match response.httpCode == 200</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -2652,13 +2576,13 @@ IsInMemory: true
 
   <div class="step-row">
     <div class="step-container" id="0.133">
-      <div class="step-ref passed">133</div>
+      <div class="step-ref skipped">133</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>match response.errors == []</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -2680,13 +2604,13 @@ IsInMemory: true
 
   <div class="step-row">
     <div class="step-container" id="0.134">
-      <div class="step-ref passed">134</div>
+      <div class="step-ref skipped">134</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>match response.data.id == createdPostId</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -2708,13 +2632,13 @@ IsInMemory: true
 
   <div class="step-row">
     <div class="step-container" id="0.135">
-      <div class="step-ref passed">135</div>
+      <div class="step-ref skipped">135</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>match response.data.summary == &#39;Deterministic GBP post updated locally&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -2736,13 +2660,13 @@ IsInMemory: true
 
   <div class="step-row">
     <div class="step-container" id="0.136">
-      <div class="step-ref passed">136</div>
+      <div class="step-ref skipped">136</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>assert response.data.multimedia[0].sourceUrl.indexOf(updatedMediaName) != -1</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -2764,13 +2688,13 @@ IsInMemory: true
 
   <div class="step-row">
     <div class="step-container" id="0.138">
-      <div class="step-ref passed">138</div>
+      <div class="step-ref skipped">138</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>Given</span>&nbsp;<span>path &#39;products&#39;, productId, &#39;posts&#39;, createdPostId</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -2792,13 +2716,13 @@ IsInMemory: true
 
   <div class="step-row">
     <div class="step-container" id="0.139">
-      <div class="step-ref passed">139</div>
+      <div class="step-ref skipped">139</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>header Tenant = tenant</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -2820,13 +2744,13 @@ IsInMemory: true
 
   <div class="step-row">
     <div class="step-container" id="0.140">
-      <div class="step-ref passed">140</div>
+      <div class="step-ref skipped">140</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + auth.jwt</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -2848,13 +2772,13 @@ IsInMemory: true
 
   <div class="step-row">
     <div class="step-container" id="0.141">
-      <div class="step-ref passed">141</div>
+      <div class="step-ref skipped">141</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>When</span>&nbsp;<span>method delete</span>
       </div>
     </div>
-    <div class="time-cell passed">29</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -2863,35 +2787,7 @@ IsInMemory: true
 
   
 
-  <div class="preformatted" data-parent="0.141">09:49:30.514 request:
-5 &gt; DELETE http://localhost:4000/api/v1/products/mock-gbp-product-id/posts/mock-post-2
-5 &gt; Tenant: adminnewworkspaceuat.beedigital.es
-5 &gt; Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJCZWVHbG9iYWxXZWIiLCJleHAiOjE3NzY1NDg5NzAsImlzR3Vlc3QiOmZhbHNlLCJwcm9maWxlSWQiOiJwcm9mX21vY2tfYmVlX2FkbWluXzAwMSIsIm1mYVR5cGUiOiJlbWFpbCIsInJvbGVJZCI6InJvbGVfYWRtaW4iLCJ0ZW5hbnRJZCI6ImJlZUVzcGFuYSIsImNvZ25pdG86dXNlcm5hbWUiOiJiZWUtYWRtaW4tdGVzdC11c2VyIiwibWZhUmVxdWlyZWQiOmZhbHNlLCJhY2Nlc3NUb2tlbiI6Im1vY2stbG9jYWwtYWNjZXNzLXRva2VuIiwiaXNNZmFFbmFibGVkIjpmYWxzZSwiZW1haWwiOiJwcnVlYmFzcWFiZWVzaWJsZUBnbWFpbC5jb20iLCJyZWZyZXNoVG9rZW4iOiJtb2NrLWxvY2FsLXJlZnJlc2gtdG9rZW4ifQ.nBqSYP3ZxngCkAtB1l_eeJNPXAcCwH1cnwiUyDhYA6jt-_FZkFGWuBD-Bc6LdVgIx1xPJhusKgrTCbA1zuiNBvVLWlQxShyQhOZJ8NC2ES6BtoAfaRqZtvmcGdfrOkJA392lcsdseVaN2cMhugrjtbQ4QhHeCrcCUA3f6PoYSA1bEYiup9hPpQVcmcxA2t2nVRU6lqn5_oG89km6j0Vb0r36qhgKzjYMikcz_J9Ko7BP_BBaK1l8vtJgEM7P1yoF3Yh-tbOWnBWtmosBSwwzC4oAJVzlF5mJB95DcQqIsoR6bBe3IIADT3tkXlQU4vD_OXxJn9Hsqd0I5V05mh0K6w
-5 &gt; Host: localhost:4000
-5 &gt; Connection: Keep-Alive
-5 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/22.0.2)
-5 &gt; Accept-Encoding: gzip,deflate
-
-
-09:49:30.541 response time in milliseconds: 27
-5 &lt; 200
-5 &lt; Vary: Origin
-5 &lt; Vary: Access-Control-Request-Method
-5 &lt; Vary: Access-Control-Request-Headers
-5 &lt; X-Content-Type-Options: nosniff
-5 &lt; X-XSS-Protection: 0
-5 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-5 &lt; Pragma: no-cache
-5 &lt; Expires: 0
-5 &lt; X-Frame-Options: DENY
-5 &lt; Content-Type: application/json
-5 &lt; Transfer-Encoding: chunked
-5 &lt; Date: Thu, 16 Apr 2026 09:49:30 GMT
-5 &lt; Keep-Alive: timeout=60
-5 &lt; Connection: keep-alive
-{&quot;httpCode&quot;:200,&quot;httpStatus&quot;:&quot;OK&quot;,&quot;data&quot;:{&quot;resourceId&quot;:&quot;locations/123/posts/mock-post-2&quot;},&quot;errors&quot;:[],&quot;warnings&quot;:[],&quot;metadata&quot;:null}
-
-</div>   
+     
 
   
 
@@ -2904,13 +2800,13 @@ IsInMemory: true
 
   <div class="step-row">
     <div class="step-container" id="0.142">
-      <div class="step-ref passed">142</div>
+      <div class="step-ref skipped">142</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -2932,13 +2828,13 @@ IsInMemory: true
 
   <div class="step-row">
     <div class="step-container" id="0.143">
-      <div class="step-ref passed">143</div>
+      <div class="step-ref skipped">143</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>match response.httpCode == 200</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -2960,13 +2856,13 @@ IsInMemory: true
 
   <div class="step-row">
     <div class="step-container" id="0.144">
-      <div class="step-ref passed">144</div>
+      <div class="step-ref skipped">144</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>match response.errors == []</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -2988,13 +2884,13 @@ IsInMemory: true
 
   <div class="step-row">
     <div class="step-container" id="0.145">
-      <div class="step-ref passed">145</div>
+      <div class="step-ref skipped">145</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>match response.data.resourceId == &#39;locations/123/posts/&#39; + createdPostId</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
