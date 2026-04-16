@@ -2,12 +2,12 @@
 ## Estado
 - **Status**: passed
 - **Environment**: qa
-- **Generated at**: 2026-04-16T08:40:13.833Z
+- **Generated at**: 2026-04-16T08:48:23.419Z
 ## Resultado
 - **Tests run**: 15
 - **Failures**: 0
 - **Errors**: 0
-- **Duration (s)**: 13.73
+- **Duration (s)**: 10.02
 ## Trazabilidad
 - **Run URL**: https://github.com/BeeDigital-AI/front-beeglobal/actions/runs/24500580038
 

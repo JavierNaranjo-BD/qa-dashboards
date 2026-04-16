@@ -7,8 +7,8 @@
   "testsRun": 15,
   "failures": 0,
   "errors": 0,
-  "durationSeconds": 13.73,
-  "generatedAt": "2026-04-16T08:40:13.833Z",
+  "durationSeconds": 10.02,
+  "generatedAt": "2026-04-16T08:48:23.419Z",
   "artifacts": [
     {
       "name": "karate-lane-report-summary-md",
@@ -35,7 +35,7 @@
         "failures": 0,
         "errors": 0,
         "skipped": 0,
-        "durationSeconds": 13.73,
+        "durationSeconds": 10.02,
         "status": "green"
       },
       "note": ""
