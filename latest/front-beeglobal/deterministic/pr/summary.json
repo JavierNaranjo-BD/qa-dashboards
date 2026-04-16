@@ -7,8 +7,8 @@
   "testsRun": 15,
   "failures": 0,
   "errors": 0,
-  "durationSeconds": 9.111,
-  "generatedAt": "2026-04-16T09:15:16.090Z",
+  "durationSeconds": 7.252,
+  "generatedAt": "2026-04-16T09:49:34.081Z",
   "artifacts": [
     {
       "name": "karate-lane-report-summary-md",
@@ -35,13 +35,13 @@
         "failures": 0,
         "errors": 0,
         "skipped": 0,
-        "durationSeconds": 9.111,
+        "durationSeconds": 7.252,
         "status": "green"
       },
       "note": ""
     }
   ],
-  "runUrl": "https://github.com/BeeDigital-AI/front-beeglobal/actions/runs/24502077311",
-  "commitSha": "d3517da0d5cc01a043cc6bb5584aeffc4c486fe2",
+  "runUrl": "https://github.com/BeeDigital-AI/front-beeglobal/actions/runs/24503526247",
+  "commitSha": "2e0feef566ddd7767b6c50f6649fa73c02d0c10a",
   "branch": "feature/qa-5-tenant-aware-mock-server"
 }
