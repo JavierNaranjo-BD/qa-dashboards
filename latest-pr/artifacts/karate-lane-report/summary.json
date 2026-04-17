@@ -1,21 +1,55 @@
 {
-  "generatedAt": "2026-04-16T12:28:10.119Z",
+  "service": "front-beeglobal",
+  "environment": "qa",
+  "channel": "pr",
+  "lane": "deterministic",
+  "status": "passed",
+  "testsRun": 15,
+  "failures": 0,
+  "errors": 0,
+  "durationSeconds": 13.99,
+  "generatedAt": "2026-04-17T08:23:42.367Z",
+  "artifacts": [
+    {
+      "kind": "summary-html",
+      "name": "karate-lane-report-summary-html",
+      "path": "summary.html"
+    },
+    {
+      "kind": "summary-md",
+      "name": "karate-lane-report-summary-md",
+      "path": "summary.md"
+    },
+    {
+      "kind": "framework-report",
+      "name": "karate-lane-report-index",
+      "path": "index.html"
+    },
+    {
+      "kind": "lane-detail",
+      "name": "karate-lane-report-runs",
+      "path": "runs/"
+    }
+  ],
   "reportRoot": "D:\\a\\front-beeglobal\\front-beeglobal\\api-tests\\target\\karate-lane-report",
   "lanes": [
     {
       "id": "deterministic",
       "name": "Karate Extended Deterministic",
-      "exitCode": 1,
-      "status": "red",
+      "exitCode": 0,
+      "status": "green",
       "summary": {
         "testsRun": 15,
-        "failures": 13,
+        "failures": 0,
         "errors": 0,
         "skipped": 0,
-        "durationSeconds": 9.183,
-        "status": "red"
+        "durationSeconds": 13.99,
+        "status": "green"
       },
       "note": ""
     }
-  ]
+  ],
+  "runUrl": "https://github.com/BeeDigital-AI/front-beeglobal/actions/runs/24555340431",
+  "commitSha": "6158cd2234a699d74fe2781185999cd9c6f1aaf0",
+  "branch": "feature/qa-5-tenant-aware-mock-server"
 }

@@ -1,42 +1,98 @@
 {
-  "generatedAt": "2026-04-17T08:06:04.467Z",
-  "totalEntries": 2,
+  "generatedAt": "2026-04-17T08:23:49.787Z",
+  "totalEntries": 5,
   "entries": [
     {
       "service": "front-beeglobal",
       "lane": "deterministic",
       "channel": "pr",
       "environment": "qa",
-      "status": "failed",
-      "generatedAt": "2026-04-15T16:13:29.112Z",
+      "status": "passed",
+      "generatedAt": "2026-04-17T08:23:42.367Z",
       "testsRun": 15,
-      "failures": 1,
+      "failures": 0,
       "errors": 0,
-      "durationSeconds": 69.11,
+      "durationSeconds": 13.99,
       "branch": "feature/qa-5-tenant-aware-mock-server",
-      "commitSha": "68887a02e9a6f49882775b9f9056dafb8bf80c10",
-      "runUrl": "https://github.com/BeeDigital-AI/front-beeglobal/actions/runs/24464904440",
+      "commitSha": "6158cd2234a699d74fe2781185999cd9c6f1aaf0",
+      "runUrl": "https://github.com/BeeDigital-AI/front-beeglobal/actions/runs/24555340431",
       "location": {
-        "directory": "front-beeglobal/deterministic/pr",
-        "summaryJson": "front-beeglobal/deterministic/pr/summary.json",
-        "summaryMd": "front-beeglobal/deterministic/pr/summary.md",
-        "summaryHtml": null
+        "directory": "legacy/pr/artifacts/karate-lane-report",
+        "summaryJson": "legacy/pr/artifacts/karate-lane-report/summary.json",
+        "summaryMd": "legacy/pr/artifacts/karate-lane-report/summary.md",
+        "summaryHtml": "legacy/pr/artifacts/karate-lane-report/summary.html"
       },
       "artifacts": [
         {
-          "name": "karate-lane-report-index",
-          "path": "index.html",
-          "href": null
-        },
-        {
-          "name": "karate-lane-report-runs",
-          "path": "runs/",
-          "href": null
+          "name": "karate-lane-report-summary-html",
+          "path": "summary.html",
+          "href": "legacy/pr/artifacts/karate-lane-report/summary.html",
+          "kind": "summary-html"
         },
         {
           "name": "karate-lane-report-summary-md",
           "path": "summary.md",
-          "href": "front-beeglobal/deterministic/pr/summary.md"
+          "href": "legacy/pr/artifacts/karate-lane-report/summary.md",
+          "kind": "summary-md"
+        },
+        {
+          "name": "karate-lane-report-index",
+          "path": "index.html",
+          "href": "legacy/pr/artifacts/karate-lane-report/index.html",
+          "kind": "framework-report"
+        },
+        {
+          "name": "karate-lane-report-runs",
+          "path": "runs/",
+          "href": "legacy/pr/artifacts/karate-lane-report/runs",
+          "kind": "lane-detail"
+        }
+      ]
+    },
+    {
+      "service": "front-beeglobal",
+      "lane": "deterministic",
+      "channel": "pr",
+      "environment": "qa",
+      "status": "passed",
+      "generatedAt": "2026-04-17T08:23:42.367Z",
+      "testsRun": 15,
+      "failures": 0,
+      "errors": 0,
+      "durationSeconds": 13.99,
+      "branch": "feature/qa-5-tenant-aware-mock-server",
+      "commitSha": "6158cd2234a699d74fe2781185999cd9c6f1aaf0",
+      "runUrl": "https://github.com/BeeDigital-AI/front-beeglobal/actions/runs/24555340431",
+      "location": {
+        "directory": "front-beeglobal/deterministic/pr",
+        "summaryJson": "front-beeglobal/deterministic/pr/summary.json",
+        "summaryMd": "front-beeglobal/deterministic/pr/summary.md",
+        "summaryHtml": "front-beeglobal/deterministic/pr/summary.html"
+      },
+      "artifacts": [
+        {
+          "name": "karate-lane-report-summary-html",
+          "path": "summary.html",
+          "href": "front-beeglobal/deterministic/pr/summary.html",
+          "kind": "summary-html"
+        },
+        {
+          "name": "karate-lane-report-summary-md",
+          "path": "summary.md",
+          "href": "front-beeglobal/deterministic/pr/summary.md",
+          "kind": "summary-md"
+        },
+        {
+          "name": "karate-lane-report-index",
+          "path": "index.html",
+          "href": null,
+          "kind": "framework-report"
+        },
+        {
+          "name": "karate-lane-report-runs",
+          "path": "runs/",
+          "href": null,
+          "kind": "lane-detail"
         }
       ]
     },
@@ -46,14 +102,14 @@
       "channel": "pr",
       "environment": "qa",
       "status": "passed",
-      "generatedAt": "2026-04-15T12:31:15.211Z",
+      "generatedAt": "2026-04-16T11:40:39.045Z",
       "testsRun": 8,
       "failures": 0,
       "errors": 0,
-      "durationSeconds": 520.24,
+      "durationSeconds": 559.83,
       "branch": "864/merge",
-      "commitSha": "2c80292a6460613da727ccfce6d00bcea7f76a3e",
-      "runUrl": "https://github.com/BeeDigital-AI/front-customer-workspace/actions/runs/24454118348",
+      "commitSha": "d98d89953f8b69582384e39046292ac467fc01ec",
+      "runUrl": "https://github.com/BeeDigital-AI/front-customer-workspace/actions/runs/24507714672",
       "location": {
         "directory": "front-customer-workspace/pact/pr",
         "summaryJson": "front-customer-workspace/pact/pr/summary.json",
@@ -64,6 +120,72 @@
         {
           "name": "playwright-pact-results",
           "path": "e2e/playwright/pact/results.json",
+          "href": null
+        }
+      ]
+    },
+    {
+      "service": "qa-global-smart-tests-hub",
+      "lane": "playwright-e2e-manual-full",
+      "channel": "manual",
+      "environment": "dev",
+      "status": "failed",
+      "generatedAt": "2026-04-16T16:03:44.070Z",
+      "testsRun": 0,
+      "failures": 0,
+      "errors": 0,
+      "durationSeconds": 0,
+      "branch": "feature/qa-41-dashboard-metricas",
+      "commitSha": "f329ad7c78804f5aa5f05ba5110913fb976121da",
+      "runUrl": "https://github.com/BeeDigital-AI/qa-global-smart-tests-hub/actions/runs/24520517026",
+      "location": {
+        "directory": "qa-global-smart-tests-hub/playwright-e2e-manual-full",
+        "summaryJson": "qa-global-smart-tests-hub/playwright-e2e-manual-full/summary.json",
+        "summaryMd": "qa-global-smart-tests-hub/playwright-e2e-manual-full/summary.md",
+        "summaryHtml": null
+      },
+      "artifacts": [
+        {
+          "name": "playwright-report",
+          "path": "artifacts/playwright-report",
+          "href": "qa-global-smart-tests-hub/playwright-e2e-manual-full/artifacts/playwright-report"
+        },
+        {
+          "name": "test-results",
+          "path": "artifacts/test-results",
+          "href": "qa-global-smart-tests-hub/playwright-e2e-manual-full/artifacts/test-results"
+        }
+      ]
+    },
+    {
+      "service": "qa-global-smart-tests-hub",
+      "lane": "playwright-e2e-manual-minimal",
+      "channel": "manual",
+      "environment": "dev",
+      "status": "passed",
+      "generatedAt": "2026-04-16T16:02:45.352Z",
+      "testsRun": 0,
+      "failures": 0,
+      "errors": 0,
+      "durationSeconds": 0,
+      "branch": "feature/qa-41-dashboard-metricas",
+      "commitSha": "f329ad7c78804f5aa5f05ba5110913fb976121da",
+      "runUrl": "https://github.com/BeeDigital-AI/qa-global-smart-tests-hub/actions/runs/24520517026",
+      "location": {
+        "directory": "qa-global-smart-tests-hub/playwright-e2e-manual-minimal",
+        "summaryJson": "qa-global-smart-tests-hub/playwright-e2e-manual-minimal/summary.json",
+        "summaryMd": "qa-global-smart-tests-hub/playwright-e2e-manual-minimal/summary.md",
+        "summaryHtml": null
+      },
+      "artifacts": [
+        {
+          "name": "playwright-report",
+          "path": "artifacts/playwright-report",
+          "href": "qa-global-smart-tests-hub/playwright-e2e-manual-minimal/artifacts/playwright-report"
+        },
+        {
+          "name": "test-results",
+          "path": "artifacts/test-results",
           "href": null
         }
       ]
