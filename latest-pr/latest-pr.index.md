@@ -4,7 +4,6 @@ Esta página agrupa los últimos resultados publicados para ejecuciones de tipo 
 
 ## front-beeglobal
 ### deterministic
-- [Ver summary](../latest/front-beeglobal/deterministic/pr/summary.html)
 - [Ver summary.json](../latest/front-beeglobal/deterministic/pr/summary.json)
 
 ## front-customer-workspace
@@ -13,6 +12,10 @@ Esta página agrupa los últimos resultados publicados para ejecuciones de tipo 
 - [Ver summary.json](../latest/front-customer-workspace/pact/pr/summary.json)
 
 ## qa-global-smart-tests-hub
-### playwright-e2e
-- [Ver summary](../latest/qa-global-smart-tests-hub/playwright-e2e/pr/summary.html)
-- [Ver summary.json](../latest/qa-global-smart-tests-hub/playwright-e2e/pr/summary.json)
+### playwright-e2e-push-minimal
+- [Ver summary](../latest/qa-global-smart-tests-hub/playwright-e2e-push-minimal/summary.html)
+- [Ver summary.json](../latest/qa-global-smart-tests-hub/playwright-e2e-push-minimal/summary.json)
+
+### playwright-e2e-push-full
+- [Ver summary](../latest/qa-global-smart-tests-hub/playwright-e2e-push-full/summary.html)
+- [Ver summary.json](../latest/qa-global-smart-tests-hub/playwright-e2e-push-full/summary.json)

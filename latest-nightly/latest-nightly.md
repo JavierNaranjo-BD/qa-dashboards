@@ -4,8 +4,11 @@ Esta página agrupa los últimos resultados publicados para ejecuciones de tipo 
 
 ## front-beeglobal
 ### deterministic
-- [Ver summary](../latest/front-beeglobal/deterministic/nightly/summary.html)
-- [Ver summary.json](../latest/front-beeglobal/deterministic/nightly/summary.json)
+### live
+- [Ver summary.json](../latest/front-beeglobal/live/nightly/summary.json)
+
+### mock
+- [Ver summary.json](../latest/front-beeglobal/mock/nightly/summary.json)
 
 ## front-customer-workspace
 ### pact
@@ -13,6 +16,10 @@ Esta página agrupa los últimos resultados publicados para ejecuciones de tipo 
 - [Ver summary.json](../latest/front-customer-workspace/pact/nightly/summary.json)
 
 ## qa-global-smart-tests-hub
-### playwright-e2e
-- [Ver summary](../latest/qa-global-smart-tests-hub/playwright-e2e/nightly/summary.html)
-- [Ver summary.json](../latest/qa-global-smart-tests-hub/playwright-e2e/nightly/summary.json)
+### playwright-e2e-nightly-minimal
+- [Ver summary](../latest/qa-global-smart-tests-hub/playwright-e2e-nightly-minimal/summary.html)
+- [Ver summary.json](../latest/qa-global-smart-tests-hub/playwright-e2e-nightly-minimal/summary.json)
+
+### playwright-e2e-nightly-full
+- [Ver summary](../latest/qa-global-smart-tests-hub/playwright-e2e-nightly-full/summary.html)
+- [Ver summary.json](../latest/qa-global-smart-tests-hub/playwright-e2e-nightly-full/summary.json)

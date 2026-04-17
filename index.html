@@ -1,3 +1,360 @@
-﻿<!doctype html>
-<html><head><meta charset="utf-8"><title>qa-dashboards</title></head>
-<body><h1>qa-dashboards</h1><p>Dashboard root. CI publishes to /latest-pr and /latest-nightly.</p></body></html>
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>qa-dashboards</title>
+  <style>
+    :root {
+      --bg: #f5f1e8;
+      --panel: #fffaf2;
+      --ink: #18222d;
+      --muted: #5d6b78;
+      --accent: #0f766e;
+      --accent-soft: #d7f3ef;
+      --warn: #a16207;
+      --warn-soft: #fef3c7;
+      --error: #b42318;
+      --error-soft: #fecdca;
+      --border: #d8cfc2;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top right, #f6dec7 0, transparent 28%),
+        linear-gradient(180deg, #f7f2ea 0%, var(--bg) 100%);
+    }
+    .wrap {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 32px 20px 48px;
+    }
+    .hero, .panel {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 24px;
+      box-shadow: 0 12px 40px rgba(24, 34, 45, 0.08);
+    }
+    .grid {
+      display: grid;
+      gap: 16px;
+    }
+    .grid.top {
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      margin-top: 20px;
+    }
+    .grid.entries {
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      margin-top: 20px;
+    }
+    .entry {
+      background: rgba(255, 250, 242, 0.72);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 18px;
+    }
+    h1, h2, h3 {
+      margin: 0 0 12px;
+    }
+    p {
+      margin: 0 0 12px;
+    }
+    .muted {
+      color: var(--muted);
+    }
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+    .pill {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 700;
+    }
+    .pill.ok {
+      background: var(--accent-soft);
+      color: var(--accent);
+    }
+    .pill.error {
+      background: var(--error-soft);
+      color: var(--error);
+    }
+    .pill.warn {
+      background: var(--warn-soft);
+      color: var(--warn);
+    }
+    .cta {
+      display: inline-block;
+      margin-top: 14px;
+      padding: 10px 14px;
+      border-radius: 12px;
+      background: var(--accent);
+      color: #fffaf2;
+      text-decoration: none;
+      font-weight: 700;
+    }
+    .cta:hover {
+      opacity: 0.92;
+    }
+    .meta {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px 14px;
+      margin-top: 14px;
+      font-size: 0.95rem;
+    }
+    .meta div {
+      min-width: 0;
+    }
+    .label {
+      display: block;
+      color: var(--muted);
+      font-size: 0.8rem;
+      margin-bottom: 3px;
+    }
+    a {
+      color: var(--accent);
+    }
+    ul {
+      margin: 8px 0 0 18px;
+      padding: 0;
+      line-height: 1.7;
+    }
+    code {
+      font-family: Consolas, monospace;
+      font-size: 0.9em;
+      background: #f0ebe2;
+      padding: 1px 4px;
+      border-radius: 4px;
+    }
+    .empty {
+      margin-top: 20px;
+      padding: 20px;
+      border: 1px dashed var(--border);
+      border-radius: 16px;
+      color: var(--muted);
+      background: rgba(255, 250, 242, 0.55);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <h1>qa-dashboards</h1>
+      <p class="muted">Raiz del mirror de GitHub Pages para dashboards, summaries canonicos y artefactos navegables.</p>
+      <p>El layout canonico actual es <code>latest/&lt;service&gt;/&lt;lane&gt;/&lt;channel&gt;/summary.(json|md|html)</code>. La portada lee <a href="./latest/index.json">latest/index.json</a> para descubrir automaticamente lo publicado.</p>
+    </section>
+
+    <div class="grid top">
+      <section class="panel">
+        <h2>Portadas agregadas</h2>
+        <ul>
+          <li><a href="./latest-pr/index.html">latest-pr</a></li>
+          <li><a href="./latest-nightly/index.html">latest-nightly</a></li>
+          <li><a href="./latest/legacy/pr/index.html">latest/legacy/pr</a></li>
+          <li><a href="./latest/legacy/nightly/index.html">latest/legacy/nightly</a></li>
+        </ul>
+      </section>
+
+      <section class="panel">
+        <h2>Catalogo canonico</h2>
+        <ul>
+          <li><a href="./latest/index.json">latest/index.json</a></li>
+        </ul>
+        <p class="muted">Cada entrada expone summary, metadatos minimos y enlaces a artefactos realmente presentes en el mirror.</p>
+      </section>
+    </div>
+
+    <section class="panel" style="margin-top: 20px;">
+      <h2>Ejecuciones publicadas</h2>
+      <p id="catalog-status" class="muted">Cargando catalogo...</p>
+      <div id="entries" class="grid entries"></div>
+      <div id="empty-state" class="empty" hidden>No hay entradas publicadas todavia en <code>latest/index.json</code>.</div>
+    </section>
+  </div>
+
+  <script>
+    const statusNode = document.getElementById('catalog-status');
+    const entriesNode = document.getElementById('entries');
+    const emptyStateNode = document.getElementById('empty-state');
+
+    function escapeHtml(value) {
+      return String(value)
+        .replaceAll('&', '&amp;')
+        .replaceAll('<', '&lt;')
+        .replaceAll('>', '&gt;')
+        .replaceAll('"', '&quot;')
+        .replaceAll("'", '&#39;');
+    }
+
+    function renderStatusPill(status) {
+      const normalized = status === 'passed' ? 'ok' : status === 'failed' ? 'error' : 'warn';
+      return `<span class="pill ${normalized}">${escapeHtml(status || 'unknown')}</span>`;
+    }
+
+    function renderLink(label, href) {
+      if (!href) {
+        return `<li>${escapeHtml(label)} <span class="muted">(no publicado)</span></li>`;
+      }
+
+      return `<li><a href="./latest/${escapeHtml(href)}">${escapeHtml(label)}</a></li>`;
+    }
+
+    function renderArtifactLinks(artifacts) {
+      if (!Array.isArray(artifacts) || artifacts.length === 0) {
+        return '<li class="muted">Sin artefactos declarados</li>';
+      }
+
+      return artifacts
+        .map(artifact => {
+          const label = artifact.kind
+            ? `${artifact.name || artifact.path || 'artifact'} [${artifact.kind}]`
+            : artifact.name || artifact.path || 'artifact';
+          return renderLink(label, artifact.href);
+        })
+        .join('');
+    }
+
+    function getPrimaryLink(entry, artifacts) {
+      if (entry.location && entry.location.summaryHtml) {
+        return {
+          label: 'Abrir summary HTML',
+          href: `./latest/${entry.location.summaryHtml}`,
+        };
+      }
+
+      const frameworkReport = artifacts.find(artifact => artifact.kind === 'framework-report' && artifact.href);
+      if (frameworkReport) {
+        return {
+          label: `Abrir ${frameworkReport.name || 'framework report'}`,
+          href: `./latest/${frameworkReport.href}`,
+        };
+      }
+
+      if (entry.location && entry.location.summaryMd) {
+        return {
+          label: 'Abrir summary MD',
+          href: `./latest/${entry.location.summaryMd}`,
+        };
+      }
+
+      if (entry.location && entry.location.summaryJson) {
+        return {
+          label: 'Abrir summary JSON',
+          href: `./latest/${entry.location.summaryJson}`,
+        };
+      }
+
+      return null;
+    }
+
+    function compareArtifacts(left, right) {
+      const order = {
+        'summary-html': 0,
+        'summary-md': 1,
+        'framework-report': 2,
+        'raw-results': 3,
+        'lane-detail': 4,
+      };
+
+      const leftRank = Object.prototype.hasOwnProperty.call(order, left.kind)
+        ? order[left.kind]
+        : Number.MAX_SAFE_INTEGER;
+      const rightRank = Object.prototype.hasOwnProperty.call(order, right.kind)
+        ? order[right.kind]
+        : Number.MAX_SAFE_INTEGER;
+
+      if (leftRank !== rightRank) {
+        return leftRank - rightRank;
+      }
+
+      return String(left.name || left.path || '').localeCompare(String(right.name || right.path || ''));
+    }
+
+    function renderEntry(entry) {
+      const artifacts = Array.isArray(entry.artifacts)
+        ? entry.artifacts.slice().sort(compareArtifacts)
+        : [];
+      const primaryLink = getPrimaryLink(entry, artifacts);
+
+      return `
+        <article class="entry">
+          <div class="eyebrow">${escapeHtml(entry.service || 'unknown')} / ${escapeHtml(entry.channel || 'unknown')}</div>
+          <h3>${escapeHtml(entry.lane || 'unknown')}</h3>
+          <p>${renderStatusPill(entry.status)}</p>
+          <div class="meta">
+            <div>
+              <span class="label">Environment</span>
+              <span>${escapeHtml(entry.environment || 'n/a')}</span>
+            </div>
+            <div>
+              <span class="label">Generated at</span>
+              <span>${escapeHtml(entry.generatedAt || 'n/a')}</span>
+            </div>
+            <div>
+              <span class="label">Tests</span>
+              <span>${escapeHtml(entry.testsRun ?? 'n/a')}</span>
+            </div>
+            <div>
+              <span class="label">Failures / Errors</span>
+              <span>${escapeHtml(`${entry.failures ?? 'n/a'} / ${entry.errors ?? 'n/a'}`)}</span>
+            </div>
+          </div>
+          ${
+            primaryLink
+              ? `<a class="cta" href="${escapeHtml(primaryLink.href)}">${escapeHtml(primaryLink.label)}</a>`
+              : '<p class="muted" style="margin-top: 14px;">Sin enlace principal publicado todavia.</p>'
+          }
+          <div style="margin-top: 16px;">
+            <strong>Summary</strong>
+            <ul>
+              ${renderLink('summary.json', entry.location && entry.location.summaryJson)}
+              ${renderLink('summary.md', entry.location && entry.location.summaryMd)}
+              ${renderLink('summary.html', entry.location && entry.location.summaryHtml)}
+            </ul>
+          </div>
+          <div style="margin-top: 16px;">
+            <strong>Artefactos</strong>
+            <ul>
+              ${renderArtifactLinks(artifacts)}
+            </ul>
+          </div>
+        </article>
+      `;
+    }
+
+    async function main() {
+      try {
+        const response = await fetch('./latest/index.json', { cache: 'no-store' });
+        if (!response.ok) {
+          throw new Error(`HTTP ${response.status}`);
+        }
+
+        const payload = await response.json();
+        const entries = Array.isArray(payload.entries) ? payload.entries : [];
+        statusNode.textContent = `Catalogo actualizado: ${payload.generatedAt || 'sin fecha'} · ${entries.length} entradas.`;
+
+        if (entries.length === 0) {
+          emptyStateNode.hidden = false;
+          return;
+        }
+
+        entriesNode.innerHTML = entries.map(renderEntry).join('');
+      } catch (error) {
+        statusNode.textContent = `No se pudo cargar latest/index.json: ${error.message}`;
+        emptyStateNode.hidden = false;
+      }
+    }
+
+    main();
+  </script>
+</body>
+</html>

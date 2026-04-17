@@ -1,0 +1,72 @@
+{
+  "generatedAt": "2026-04-17T08:06:04.467Z",
+  "totalEntries": 2,
+  "entries": [
+    {
+      "service": "front-beeglobal",
+      "lane": "deterministic",
+      "channel": "pr",
+      "environment": "qa",
+      "status": "failed",
+      "generatedAt": "2026-04-15T16:13:29.112Z",
+      "testsRun": 15,
+      "failures": 1,
+      "errors": 0,
+      "durationSeconds": 69.11,
+      "branch": "feature/qa-5-tenant-aware-mock-server",
+      "commitSha": "68887a02e9a6f49882775b9f9056dafb8bf80c10",
+      "runUrl": "https://github.com/BeeDigital-AI/front-beeglobal/actions/runs/24464904440",
+      "location": {
+        "directory": "front-beeglobal/deterministic/pr",
+        "summaryJson": "front-beeglobal/deterministic/pr/summary.json",
+        "summaryMd": "front-beeglobal/deterministic/pr/summary.md",
+        "summaryHtml": null
+      },
+      "artifacts": [
+        {
+          "name": "karate-lane-report-index",
+          "path": "index.html",
+          "href": null
+        },
+        {
+          "name": "karate-lane-report-runs",
+          "path": "runs/",
+          "href": null
+        },
+        {
+          "name": "karate-lane-report-summary-md",
+          "path": "summary.md",
+          "href": "front-beeglobal/deterministic/pr/summary.md"
+        }
+      ]
+    },
+    {
+      "service": "front-customer-workspace",
+      "lane": "pact",
+      "channel": "pr",
+      "environment": "qa",
+      "status": "passed",
+      "generatedAt": "2026-04-15T12:31:15.211Z",
+      "testsRun": 8,
+      "failures": 0,
+      "errors": 0,
+      "durationSeconds": 520.24,
+      "branch": "864/merge",
+      "commitSha": "2c80292a6460613da727ccfce6d00bcea7f76a3e",
+      "runUrl": "https://github.com/BeeDigital-AI/front-customer-workspace/actions/runs/24454118348",
+      "location": {
+        "directory": "front-customer-workspace/pact/pr",
+        "summaryJson": "front-customer-workspace/pact/pr/summary.json",
+        "summaryMd": "front-customer-workspace/pact/pr/summary.md",
+        "summaryHtml": null
+      },
+      "artifacts": [
+        {
+          "name": "playwright-pact-results",
+          "path": "e2e/playwright/pact/results.json",
+          "href": null
+        }
+      ]
+    }
+  ]
+}
