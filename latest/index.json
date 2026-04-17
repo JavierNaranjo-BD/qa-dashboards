@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-04-17T09:41:28.133Z",
-  "totalEntries": 5,
+  "generatedAt": "2026-04-17T10:21:45.512Z",
+  "totalEntries": 7,
   "entries": [
     {
       "service": "front-beeglobal",
@@ -206,6 +206,100 @@
           "name": "test-results",
           "path": "artifacts/test-results",
           "href": null
+        }
+      ]
+    },
+    {
+      "service": "qa-global-smart-tests-hub",
+      "lane": "playwright-e2e-push-full",
+      "channel": "push",
+      "environment": "pro",
+      "status": "failed",
+      "generatedAt": "2026-04-17T10:20:18.379Z",
+      "testsRun": 0,
+      "failures": 0,
+      "errors": 0,
+      "durationSeconds": 0,
+      "branch": "master",
+      "commitSha": "d2da5537f7c0d7e3a8aca38c8dc366076d0a6520",
+      "runUrl": "https://github.com/BeeDigital-AI/qa-global-smart-tests-hub/actions/runs/24560001547",
+      "location": {
+        "directory": "qa-global-smart-tests-hub/playwright-e2e-push-full",
+        "summaryJson": "qa-global-smart-tests-hub/playwright-e2e-push-full/summary.json",
+        "summaryMd": "qa-global-smart-tests-hub/playwright-e2e-push-full/summary.md",
+        "summaryHtml": "qa-global-smart-tests-hub/playwright-e2e-push-full/summary.html"
+      },
+      "artifacts": [
+        {
+          "name": "summary-html",
+          "path": "summary.html",
+          "href": "qa-global-smart-tests-hub/playwright-e2e-push-full/summary.html",
+          "kind": "summary-html"
+        },
+        {
+          "name": "summary-markdown",
+          "path": "summary.md",
+          "href": "qa-global-smart-tests-hub/playwright-e2e-push-full/summary.md",
+          "kind": "summary-md"
+        },
+        {
+          "name": "playwright-report",
+          "path": "artifacts/playwright-report/index.html",
+          "href": "qa-global-smart-tests-hub/playwright-e2e-push-full/artifacts/playwright-report/index.html",
+          "kind": "framework-report"
+        },
+        {
+          "name": "test-results",
+          "path": "artifacts/test-results",
+          "href": "qa-global-smart-tests-hub/playwright-e2e-push-full/artifacts/test-results",
+          "kind": "raw-results"
+        }
+      ]
+    },
+    {
+      "service": "qa-global-smart-tests-hub",
+      "lane": "playwright-e2e-push-minimal",
+      "channel": "push",
+      "environment": "pro",
+      "status": "passed",
+      "generatedAt": "2026-04-17T10:21:32.959Z",
+      "testsRun": 0,
+      "failures": 0,
+      "errors": 0,
+      "durationSeconds": 0,
+      "branch": "master",
+      "commitSha": "d2da5537f7c0d7e3a8aca38c8dc366076d0a6520",
+      "runUrl": "https://github.com/BeeDigital-AI/qa-global-smart-tests-hub/actions/runs/24560001547",
+      "location": {
+        "directory": "qa-global-smart-tests-hub/playwright-e2e-push-minimal",
+        "summaryJson": "qa-global-smart-tests-hub/playwright-e2e-push-minimal/summary.json",
+        "summaryMd": "qa-global-smart-tests-hub/playwright-e2e-push-minimal/summary.md",
+        "summaryHtml": "qa-global-smart-tests-hub/playwright-e2e-push-minimal/summary.html"
+      },
+      "artifacts": [
+        {
+          "name": "summary-html",
+          "path": "summary.html",
+          "href": "qa-global-smart-tests-hub/playwright-e2e-push-minimal/summary.html",
+          "kind": "summary-html"
+        },
+        {
+          "name": "summary-markdown",
+          "path": "summary.md",
+          "href": "qa-global-smart-tests-hub/playwright-e2e-push-minimal/summary.md",
+          "kind": "summary-md"
+        },
+        {
+          "name": "playwright-report",
+          "path": "artifacts/playwright-report/index.html",
+          "href": "qa-global-smart-tests-hub/playwright-e2e-push-minimal/artifacts/playwright-report/index.html",
+          "kind": "framework-report"
+        },
+        {
+          "name": "test-results",
+          "path": "artifacts/test-results",
+          "href": null,
+          "kind": "raw-results"
         }
       ]
     }

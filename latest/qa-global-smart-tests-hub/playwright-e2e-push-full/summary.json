@@ -1,0 +1,40 @@
+{
+  "service": "qa-global-smart-tests-hub",
+  "environment": "pro",
+  "channel": "push",
+  "lane": "playwright-e2e-push-full",
+  "suite": "full",
+  "executionTarget": "lambdatest",
+  "status": "failed",
+  "testsRun": 0,
+  "failures": 0,
+  "errors": 0,
+  "durationSeconds": 0,
+  "generatedAt": "2026-04-17T10:20:18.379Z",
+  "runUrl": "https://github.com/BeeDigital-AI/qa-global-smart-tests-hub/actions/runs/24560001547",
+  "branch": "master",
+  "commitSha": "d2da5537f7c0d7e3a8aca38c8dc366076d0a6520",
+  "allowFailure": true,
+  "artifacts": [
+    {
+      "kind": "summary-md",
+      "name": "summary-markdown",
+      "path": "summary.md"
+    },
+    {
+      "kind": "summary-html",
+      "name": "summary-html",
+      "path": "summary.html"
+    },
+    {
+      "kind": "framework-report",
+      "name": "playwright-report",
+      "path": "artifacts/playwright-report/index.html"
+    },
+    {
+      "kind": "raw-results",
+      "name": "test-results",
+      "path": "artifacts/test-results"
+    }
+  ]
+}
