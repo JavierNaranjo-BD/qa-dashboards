@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-17T10:21:45.512Z",
+  "generatedAt": "2026-04-17T11:14:42.976Z",
   "totalEntries": 7,
   "entries": [
     {
@@ -102,14 +102,14 @@
       "channel": "pr",
       "environment": "qa",
       "status": "passed",
-      "generatedAt": "2026-04-17T09:41:26.429Z",
+      "generatedAt": "2026-04-17T11:14:41.263Z",
       "testsRun": 8,
       "failures": 0,
       "errors": 0,
-      "durationSeconds": 494.97,
-      "branch": "878/merge",
-      "commitSha": "4010f0a2459a736f60a94908bcf3e550cfb202c3",
-      "runUrl": "https://github.com/BeeDigital-AI/front-customer-workspace/actions/runs/24558159247",
+      "durationSeconds": 480.27,
+      "branch": "879/merge",
+      "commitSha": "33fab71ed11537eebe0e684fd5beb256ffa47a10",
+      "runUrl": "https://github.com/BeeDigital-AI/front-customer-workspace/actions/runs/24561865210",
       "location": {
         "directory": "front-customer-workspace/pact/pr",
         "summaryJson": "front-customer-workspace/pact/pr/summary.json",

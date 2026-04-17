@@ -2,18 +2,18 @@
 ## Estado
 - **Status**: passed
 - **Environment**: qa
-- **Generated at**: 2026-04-17T09:41:26.429Z
+- **Generated at**: 2026-04-17T11:14:41.263Z
 ## Resultado
 - **Tests run**: 8
 - **Failures**: 0
 - **Errors**: 0
-- **Duration (s)**: 494.97
+- **Duration (s)**: 480.27
 ## Trazabilidad
-- **Run URL**: https://github.com/BeeDigital-AI/front-customer-workspace/actions/runs/24558159247
+- **Run URL**: https://github.com/BeeDigital-AI/front-customer-workspace/actions/runs/24561865210
 
-- **Branch**: 878/merge
+- **Branch**: 879/merge
 
-- **Commit SHA**: 4010f0a2459a736f60a94908bcf3e550cfb202c3
+- **Commit SHA**: 33fab71ed11537eebe0e684fd5beb256ffa47a10
 
 ## Artefactos publicados
 - [Summary JSON](./summary.json)

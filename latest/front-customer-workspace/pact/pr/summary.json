@@ -7,11 +7,11 @@
   "testsRun": 8,
   "failures": 0,
   "errors": 0,
-  "durationSeconds": 494.97,
-  "generatedAt": "2026-04-17T09:41:26.429Z",
-  "runUrl": "https://github.com/BeeDigital-AI/front-customer-workspace/actions/runs/24558159247",
-  "branch": "878/merge",
-  "commitSha": "4010f0a2459a736f60a94908bcf3e550cfb202c3",
+  "durationSeconds": 480.27,
+  "generatedAt": "2026-04-17T11:14:41.263Z",
+  "runUrl": "https://github.com/BeeDigital-AI/front-customer-workspace/actions/runs/24561865210",
+  "branch": "879/merge",
+  "commitSha": "33fab71ed11537eebe0e684fd5beb256ffa47a10",
   "artifacts": [
     {
       "kind": "summary-md",
