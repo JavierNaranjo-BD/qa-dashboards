@@ -2,18 +2,18 @@
 ## Estado
 - **Status**: passed
 - **Environment**: qa
-- **Generated at**: 2026-04-17T08:23:42.367Z
+- **Generated at**: 2026-04-17T08:52:14.677Z
 ## Resultado
 - **Tests run**: 15
 - **Failures**: 0
 - **Errors**: 0
-- **Duration (s)**: 13.99
+- **Duration (s)**: 11.52
 ## Trazabilidad
-- **Run URL**: https://github.com/BeeDigital-AI/front-beeglobal/actions/runs/24555340431
+- **Run URL**: https://github.com/BeeDigital-AI/front-beeglobal/actions/runs/24556433148
 
 - **Branch**: feature/qa-5-tenant-aware-mock-server
 
-- **Commit SHA**: 6158cd2234a699d74fe2781185999cd9c6f1aaf0
+- **Commit SHA**: 565d48a13cb326d7504379dcf8136bfc43241af2
 
 ## Artefactos publicados
 - [Summary JSON](./summary.json)

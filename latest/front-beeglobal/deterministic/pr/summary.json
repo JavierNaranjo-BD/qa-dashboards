@@ -7,8 +7,8 @@
   "testsRun": 15,
   "failures": 0,
   "errors": 0,
-  "durationSeconds": 13.99,
-  "generatedAt": "2026-04-17T08:23:42.367Z",
+  "durationSeconds": 11.52,
+  "generatedAt": "2026-04-17T08:52:14.677Z",
   "artifacts": [
     {
       "kind": "summary-html",
@@ -43,13 +43,13 @@
         "failures": 0,
         "errors": 0,
         "skipped": 0,
-        "durationSeconds": 13.99,
+        "durationSeconds": 11.52,
         "status": "green"
       },
       "note": ""
     }
   ],
-  "runUrl": "https://github.com/BeeDigital-AI/front-beeglobal/actions/runs/24555340431",
-  "commitSha": "6158cd2234a699d74fe2781185999cd9c6f1aaf0",
+  "runUrl": "https://github.com/BeeDigital-AI/front-beeglobal/actions/runs/24556433148",
+  "commitSha": "565d48a13cb326d7504379dcf8136bfc43241af2",
   "branch": "feature/qa-5-tenant-aware-mock-server"
 }
