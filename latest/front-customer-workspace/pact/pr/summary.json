@@ -7,15 +7,31 @@
   "testsRun": 8,
   "failures": 0,
   "errors": 0,
-  "durationSeconds": 559.83,
-  "generatedAt": "2026-04-16T11:40:39.045Z",
-  "runUrl": "https://github.com/BeeDigital-AI/front-customer-workspace/actions/runs/24507714672",
+  "durationSeconds": 523.85,
+  "generatedAt": "2026-04-17T08:32:16.768Z",
+  "runUrl": "https://github.com/BeeDigital-AI/front-customer-workspace/actions/runs/24555356998",
   "branch": "864/merge",
-  "commitSha": "d98d89953f8b69582384e39046292ac467fc01ec",
+  "commitSha": "95ccde38dcd1999b4569272aefae4f6c950a220d",
   "artifacts": [
     {
+      "kind": "summary-md",
+      "name": "summary-markdown",
+      "path": "summary.md"
+    },
+    {
+      "kind": "summary-html",
+      "name": "summary-html",
+      "path": "summary.html"
+    },
+    {
+      "kind": "raw-results",
       "name": "playwright-pact-results",
-      "path": "e2e/playwright/pact/results.json"
+      "path": "artifacts/results.json"
+    },
+    {
+      "kind": "framework-report",
+      "name": "playwright-report",
+      "path": "artifacts/playwright-report/index.html"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-17T08:23:49.787Z",
+  "generatedAt": "2026-04-17T08:32:18.686Z",
   "totalEntries": 5,
   "entries": [
     {
@@ -102,25 +102,44 @@
       "channel": "pr",
       "environment": "qa",
       "status": "passed",
-      "generatedAt": "2026-04-16T11:40:39.045Z",
+      "generatedAt": "2026-04-17T08:32:16.768Z",
       "testsRun": 8,
       "failures": 0,
       "errors": 0,
-      "durationSeconds": 559.83,
+      "durationSeconds": 523.85,
       "branch": "864/merge",
-      "commitSha": "d98d89953f8b69582384e39046292ac467fc01ec",
-      "runUrl": "https://github.com/BeeDigital-AI/front-customer-workspace/actions/runs/24507714672",
+      "commitSha": "95ccde38dcd1999b4569272aefae4f6c950a220d",
+      "runUrl": "https://github.com/BeeDigital-AI/front-customer-workspace/actions/runs/24555356998",
       "location": {
         "directory": "front-customer-workspace/pact/pr",
         "summaryJson": "front-customer-workspace/pact/pr/summary.json",
         "summaryMd": "front-customer-workspace/pact/pr/summary.md",
-        "summaryHtml": null
+        "summaryHtml": "front-customer-workspace/pact/pr/summary.html"
       },
       "artifacts": [
         {
+          "name": "summary-html",
+          "path": "summary.html",
+          "href": "front-customer-workspace/pact/pr/summary.html",
+          "kind": "summary-html"
+        },
+        {
+          "name": "summary-markdown",
+          "path": "summary.md",
+          "href": "front-customer-workspace/pact/pr/summary.md",
+          "kind": "summary-md"
+        },
+        {
+          "name": "playwright-report",
+          "path": "artifacts/playwright-report/index.html",
+          "href": "front-customer-workspace/pact/pr/artifacts/playwright-report/index.html",
+          "kind": "framework-report"
+        },
+        {
           "name": "playwright-pact-results",
-          "path": "e2e/playwright/pact/results.json",
-          "href": null
+          "path": "artifacts/results.json",
+          "href": "front-customer-workspace/pact/pr/artifacts/results.json",
+          "kind": "raw-results"
         }
       ]
     },
