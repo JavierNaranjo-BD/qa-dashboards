@@ -1,0 +1,47 @@
+{
+  "service": "front-beeglobal",
+  "environment": "qa",
+  "channel": "pr",
+  "lane": "deterministic",
+  "status": "passed",
+  "testsRun": 15,
+  "failures": 0,
+  "errors": 0,
+  "durationSeconds": 13.73,
+  "generatedAt": "2026-04-16T08:40:13.833Z",
+  "artifacts": [
+    {
+      "name": "karate-lane-report-summary-md",
+      "path": "summary.md"
+    },
+    {
+      "name": "karate-lane-report-index",
+      "path": "index.html"
+    },
+    {
+      "name": "karate-lane-report-runs",
+      "path": "runs/"
+    }
+  ],
+  "reportRoot": "D:\\a\\front-beeglobal\\front-beeglobal\\api-tests\\target\\karate-lane-report",
+  "lanes": [
+    {
+      "id": "deterministic",
+      "name": "Karate Extended Deterministic",
+      "exitCode": 0,
+      "status": "green",
+      "summary": {
+        "testsRun": 15,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "durationSeconds": 13.73,
+        "status": "green"
+      },
+      "note": ""
+    }
+  ],
+  "runUrl": "https://github.com/BeeDigital-AI/front-beeglobal/actions/runs/24500580038",
+  "commitSha": "16ab266215adfe07a4082392fd09fb5e9b179e69",
+  "branch": "feature/qa-5-tenant-aware-mock-server"
+}

@@ -3,51 +3,119 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Latest PR QA dashboards</title>
+  <title>BeeDigital QA Progress Dashboard</title>
   <style>
+    :root {
+      --bg: #f5f1e8;
+      --panel: #fffaf2;
+      --ink: #18222d;
+      --muted: #5d6b78;
+      --accent: #0f766e;
+      --accent-soft: #d7f3ef;
+      --warn: #a16207;
+      --warn-soft: #fef3c7;
+      --border: #d8cfc2;
+    }
+    * { box-sizing: border-box; }
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      color: #18222d;
-      background: #f5f1e8;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top right, #f6dec7 0, transparent 28%),
+        linear-gradient(180deg, #f7f2ea 0%, var(--bg) 100%);
     }
     .wrap {
-      max-width: 980px;
+      max-width: 1180px;
       margin: 0 auto;
       padding: 32px 20px 48px;
     }
-    .panel {
-      background: #fffaf2;
-      border: 1px solid #d8cfc2;
-      border-radius: 16px;
-      padding: 20px;
+    h1, h2, h3 { margin: 0 0 12px; }
+    p { margin: 0 0 12px; }
+    .hero {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 28px;
+      box-shadow: 0 12px 40px rgba(24, 34, 45, 0.08);
+    }
+    .muted { color: var(--muted); }
+    .grid {
+      display: grid;
+      gap: 16px;
       margin-top: 20px;
     }
-    h1, h2, h3 {
-      margin-top: 0;
+    .grid.cards {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
-    a {
-      color: #0f766e;
-      text-decoration: none;
+    .grid.panels {
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     }
-    a:hover {
-      text-decoration: underline;
+    .card, .panel {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 20px;
+      box-shadow: 0 8px 30px rgba(24, 34, 45, 0.05);
     }
-    ul {
-      margin: 8px 0 0 18px;
+    .metric {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 6px;
     }
-    .muted {
-      color: #5d6b78;
+    .metric-label {
+      color: var(--muted);
+      font-size: 0.95rem;
     }
-    .badge {
+    .section {
+      margin-top: 24px;
+    }
+    .pill {
       display: inline-block;
       padding: 4px 10px;
       border-radius: 999px;
-      font-size: 0.85rem;
+      font-size: 0.9rem;
       font-weight: 700;
-      background: #fef3c7;
-      color: #a16207;
-      margin-left: 8px;
+    }
+    .pill.ok {
+      background: var(--accent-soft);
+      color: var(--accent);
+    }
+    .pill.risk {
+      background: var(--warn-soft);
+      color: var(--warn);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+    }
+    th, td {
+      text-align: left;
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+      font-size: 0.95rem;
+    }
+    th {
+      background: #efe6d8;
+    }
+    tr:last-child td {
+      border-bottom: none;
+    }
+    ul {
+      margin: 8px 0 0 18px;
+      padding: 0;
+    }
+    code {
+      font-family: Consolas, monospace;
+      font-size: 0.9em;
+      background: #f0ebe2;
+      padding: 1px 4px;
+      border-radius: 4px;
     }
   </style>
 </head>
@@ -55,7 +123,7 @@
   <div class="wrap">
     <section class="hero">
       <h1>BeeDigital QA Progress Dashboard</h1>
-      <p class="muted">Snapshot generado el 15 abr 2026, 12:35. Pensado para dailies, seguimiento local y lectura rapida del avance en integraciones, contratos y lanes de CI.</p>
+      <p class="muted">Snapshot generado el 16 abr 2026, 12:28. Pensado para dailies, seguimiento local y lectura rapida del avance en integraciones, contratos y lanes de CI.</p>
     </section>
 
     <section class="section grid cards">
@@ -108,7 +176,7 @@
         <p><strong>Tests:</strong> 15</p>
         <p><strong>Fallos:</strong> 13</p>
         <p><strong>Errores:</strong> 0</p>
-        <p><strong>Duracion:</strong> 8.765 s</p>
+        <p><strong>Duracion:</strong> 9.183 s</p>
         <p><strong>Kafka contracts:</strong> 3 schemas, 11 ejemplos (3 positivos, 8 negativos)</p>
       </div>
       <div class="panel">
@@ -128,7 +196,7 @@
 
     <section class="section">
       <h2>Resumen consolidado de lanes</h2>
-      <p class="muted">Ultima actualizacion: 15 abr 2026, 12:35</p>
+      <p class="muted">Ultima actualizacion: 16 abr 2026, 12:28</p>
       
     <table>
       <thead>
@@ -149,7 +217,7 @@
       <td>15</td>
       <td>13</td>
       <td>0</td>
-      <td>8.765</td>
+      <td>9.183</td>
       <td><a href="./lanes/deterministic.html">Abrir ejecucion</a></td>
     </tr>
   </tbody>
@@ -250,7 +318,7 @@
       </thead>
       <tbody>
     <tr>
-      <td>15 abr 2026, 12:35</td>
+      <td>16 abr 2026, 12:28</td>
       <td>9/9</td>
       <td>15</td>
     </tr>
