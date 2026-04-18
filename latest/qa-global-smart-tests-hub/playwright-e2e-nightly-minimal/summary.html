@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>qa-global-smart-tests-hub · playwright-e2e-nightly-minimal · nightly</title>
+  <style>
+    :root {
+      --bg: #f4efe6;
+      --panel: #fffaf2;
+      --ink: #18222d;
+      --muted: #5d6b78;
+      --accent: #0f766e;
+      --accent-soft: #d7f3ef;
+      --warn: #a16207;
+      --warn-soft: #fef3c7;
+      --error: #b42318;
+      --error-soft: #fecdca;
+      --border: #d8cfc2;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top right, #f6dec7 0, transparent 28%),
+        linear-gradient(180deg, #f7f2ea 0%, var(--bg) 100%);
+    }
+    .wrap {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 32px 20px 48px;
+    }
+    .hero, .panel {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 24px;
+      box-shadow: 0 12px 40px rgba(24, 34, 45, 0.08);
+    }
+    .grid {
+      display: grid;
+      gap: 16px;
+      margin-top: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+    .metric {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .metric-label, .muted {
+      color: var(--muted);
+    }
+    .section {
+      margin-top: 20px;
+    }
+    .pill {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+    .pill.ok {
+      background: var(--accent-soft);
+      color: var(--accent);
+    }
+    .pill.warn {
+      background: var(--warn-soft);
+      color: var(--warn);
+    }
+    .pill.error {
+      background: var(--error-soft);
+      color: var(--error);
+    }
+    ul {
+      margin: 8px 0 0 18px;
+      padding: 0;
+      line-height: 1.7;
+    }
+    a {
+      color: var(--accent);
+    }
+    dl {
+      display: grid;
+      grid-template-columns: max-content 1fr;
+      gap: 10px 14px;
+      margin: 0;
+    }
+    dt {
+      font-weight: 700;
+    }
+    dd {
+      margin: 0;
+      color: var(--muted);
+      word-break: break-word;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <h1>qa-global-smart-tests-hub · playwright-e2e-nightly-minimal · nightly</h1>
+      <p class="muted">Resumen canónico de ejecución preparado para GitHub Pages, wiki QA y consumo downstream.</p>
+      <p>Estado: <span class="pill ok">passed</span></p>
+    </section>
+
+    <section class="grid">
+      <div class="panel">
+        <div class="metric">0</div>
+        <div class="metric-label">Tests ejecutados</div>
+      </div>
+      <div class="panel">
+        <div class="metric">0</div>
+        <div class="metric-label">Fallos funcionales</div>
+      </div>
+      <div class="panel">
+        <div class="metric">0</div>
+        <div class="metric-label">Errores técnicos</div>
+      </div>
+      <div class="panel">
+        <div class="metric">0</div>
+        <div class="metric-label">Duración (s)</div>
+      </div>
+    </section>
+
+    <section class="panel section">
+      <h2>Trazabilidad</h2>
+      <dl>
+        <dt>Environment</dt>
+        <dd>pro</dd>
+        <dt>Generated at</dt>
+        <dd>2026-04-18T09:19:26.462Z</dd>
+        <dt>Suite</dt>
+        <dd>minimal</dd>
+        <dt>Execution target</dt>
+        <dd>lambdatest</dd>
+        <dt>Run URL</dt>
+        <dd><a href="https://github.com/BeeDigital-AI/qa-global-smart-tests-hub/actions/runs/24601566922">https://github.com/BeeDigital-AI/qa-global-smart-tests-hub/actions/runs/24601566922</a></dd>
+        <dt>Branch</dt>
+        <dd>master</dd>
+        <dt>Commit SHA</dt>
+        <dd>d2da5537f7c0d7e3a8aca38c8dc366076d0a6520</dd>
+      </dl>
+    </section>
+
+    <section class="panel section">
+      <h2>Artefactos publicados</h2>
+      <ul><li><a href="./summary.json">summary-json</a></li><li><a href="./summary.md">summary-markdown</a></li><li><a href="./summary.html">summary-html</a></li><li><a href="./artifacts/playwright-report/index.html">playwright-report</a></li><li><a href="./artifacts/test-results">test-results</a></li></ul>
+    </section>
+  </div>
+</body>
+</html>
