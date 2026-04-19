@@ -2,7 +2,7 @@
 ## Estado
 - **Status**: passed
 - **Environment**: pro
-- **Generated at**: 2026-04-18T09:19:26.462Z
+- **Generated at**: 2026-04-19T09:23:45.418Z
 - **Suite**: minimal
 
 - **Execution target**: lambdatest
@@ -13,7 +13,7 @@
 - **Errors**: 0
 - **Duration (s)**: 0
 ## Trazabilidad
-- **Run URL**: https://github.com/BeeDigital-AI/qa-global-smart-tests-hub/actions/runs/24601566922
+- **Run URL**: https://github.com/BeeDigital-AI/qa-global-smart-tests-hub/actions/runs/24625672323
 
 - **Branch**: master
 

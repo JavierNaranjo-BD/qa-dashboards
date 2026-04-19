@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-18T09:25:44.228Z",
+  "generatedAt": "2026-04-19T09:24:00.806Z",
   "totalEntries": 9,
   "entries": [
     {
@@ -215,14 +215,14 @@
       "channel": "nightly",
       "environment": "pro",
       "status": "failed",
-      "generatedAt": "2026-04-18T09:25:30.309Z",
+      "generatedAt": "2026-04-19T09:21:21.191Z",
       "testsRun": 0,
       "failures": 0,
       "errors": 0,
       "durationSeconds": 0,
       "branch": "master",
       "commitSha": "d2da5537f7c0d7e3a8aca38c8dc366076d0a6520",
-      "runUrl": "https://github.com/BeeDigital-AI/qa-global-smart-tests-hub/actions/runs/24601566922",
+      "runUrl": "https://github.com/BeeDigital-AI/qa-global-smart-tests-hub/actions/runs/24625672323",
       "location": {
         "directory": "qa-global-smart-tests-hub/playwright-e2e-nightly-full",
         "summaryJson": "qa-global-smart-tests-hub/playwright-e2e-nightly-full/summary.json",
@@ -262,14 +262,14 @@
       "channel": "nightly",
       "environment": "pro",
       "status": "passed",
-      "generatedAt": "2026-04-18T09:19:26.462Z",
+      "generatedAt": "2026-04-19T09:23:45.418Z",
       "testsRun": 0,
       "failures": 0,
       "errors": 0,
       "durationSeconds": 0,
       "branch": "master",
       "commitSha": "d2da5537f7c0d7e3a8aca38c8dc366076d0a6520",
-      "runUrl": "https://github.com/BeeDigital-AI/qa-global-smart-tests-hub/actions/runs/24601566922",
+      "runUrl": "https://github.com/BeeDigital-AI/qa-global-smart-tests-hub/actions/runs/24625672323",
       "location": {
         "directory": "qa-global-smart-tests-hub/playwright-e2e-nightly-minimal",
         "summaryJson": "qa-global-smart-tests-hub/playwright-e2e-nightly-minimal/summary.json",
